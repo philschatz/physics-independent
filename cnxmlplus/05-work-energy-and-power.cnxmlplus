@@ -1,0 +1,2172 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml/0.4" xmlns:style="http://siyavula.com/cnxml/style/0.1">
+  <metadata>
+    <cnxml-version>0.1</cnxml-version>
+    <pspicture-generator-version>1.1</pspicture-generator-version>
+  </metadata>
+  <content>
+    <section type="chapter">
+      <title>Work, energy and power</title>
+      <section type="section">
+        <title>Introduction</title>
+        <shortcode>ESCEB</shortcode>
+        <para>We use the idea of work every day.  We talk about going to work, doing homework, working in class. What do we mean and are we correct?  </para>
+        <para>In Physics we mean something very specific when we use the term work! Work is done when an applied force causes an object to move through a displacement.</para>
+		<para>Going to work involves a body – you – moving to a specific place i.e. the workplace and so work is done on the body moving.  While when you are sitting in your chair – you are not moving and so no work is done.  Be careful to not confuse what we say is work and what Physics says is work!</para>
+        <para>You will learn that work and energy are closely related. You shall see that the energy of an object is its capacity to do work and doing work is the process of transferring energy from one object or form to another. In other
+words,</para>
+        <list list-type="bulleted">
+          <item>
+            <para>an object with lots of energy can do lots of work.</para>
+          </item>
+          <item>
+            <para>when work is done, energy is lost by the object doing work and gained by the object on which the work is done.</para>
+          </item>
+        </list>
+        <para>Lifting objects or throwing them requires that you do work on them. Even making an electrical current flow requires that something do work. Something must have energy and transfer it through doing work to make things happen.</para>
+        <video>
+      <title>Chapter introduction</title>
+            <shortcode>VPnqs</shortcode>
+<url>http://www.youtube.com/embed/2WS1sG9fhOk</url>
+<width>300</width>
+    	<height>245</height>
+<url>http://www.youtube.com/watch?feature=player_embedded&amp;v=2WS1sG9fhOk</url>
+      </video>
+      </section>
+      <section type="section">
+        <title>Work</title>
+        <shortcode>ESCEC</shortcode>
+        <definition>
+          <term>Work</term>
+          <meaning>
+            <para>When a force exerted on an object causes it to move, work is done on the object (except if the force and displacement are at right angles to each other).</para>
+          </meaning>
+        </definition>
+        <para>This means that in order for work to be done, an object must have its position changed by an amount <latex> \Delta x </latex> an applied force F, such that there is some non-zero component of the force in the direction of the displacement. Work is calculated as:</para>
+        
+
+        <latex display="block" >W=F\Delta x\cos\theta </latex>
+        
+		<latex display="block" > W = work in joules (J) \\ 
+								F =  applied force in newtons (N) \\
+								\Delta x = displacement in metres (m) \\
+								θ is the angle between the applied force and the direction of motion</latex>
+		
+        
+        <figure id="fig:wpe12:wgeneral">
+          <type>figure</type>
+          <pspicture>
+            <code>
+              (0,-1)(2,2)
+\psline{-&gt;}(0,0)(2;60)
+\psline[linestyle=dashed](2;60)(1,0)
+\psline{-&gt;}(0,0)(2;0)
+\uput[l](2;60){$F$}
+\rput(0.5;30){$\theta$}
+\psline{-&gt;}(0,-0.2)(1,-0.2)
+\uput[d](0.5,-0.2){$F\cos\theta$}
+comment :  Put a line below this image with separate displacement delta x i.e  ------>  delta x
+
+            </code>
+          </pspicture>
+          <caption>
+            <para>The force F causes the object to be displaced by <latex>\Delta x</latex> at angle θ.</para>
+          </caption>
+        </figure>
+        <para>It is very important to note that for work to be done there must be a component of the applied force in the direction of motion. Forces perpendicular to the direction of motion do no work.</para>
+        
+
+        <para>For example work is done on the object in <link target-id="fig:wpe12:wparallel"/>,</para>
+        <figure id="fig:wpe12:wparallel">
+          <type>figure</type>
+          <pspicture>
+            <code>
+              (-2,-1)(9,4)
+\rput(0,1.5){\psframe(0,0)(1,1)
+\psline[linewidth=2pt]{-&gt;}(-1,0.5)(0,0.5)
+\uput[l](-1,0.5){$F$}
+\rput(3,0){\psframe[linestyle=dashed](0,0)(1,1)
+}
+\pcline[offset=-8pt]{|-&gt;}(0,0)(3,0)
+\lput*{:U}{$\Delta x$}
+}
+\uput[u](1,-1){(a)}
+\rput(7,0){
+\psframe(0,0)(1,1)
+\psline[linewidth=2pt]{-&gt;}(-1,0.5)(0,0.5)
+\uput[l](-1,0.5){$F$}
+\rput(0,3){\psframe[linestyle=dashed](0,0)(1,1)
+}
+\pcline[offset=-8pt]{|-&gt;}(1,0)(1,3)
+\lput*{:U}{$\Delta y$}
+\uput[u](0,-1){(b)}
+}
+
+            </code>
+          </pspicture>
+          <caption>
+            <para>(a) The force F causes the object to be displaced by <latex>\Delta x</latex> in the same direction as the force. <latex>\theta =0°</latex> and <latex>\cos\theta =1</latex>. Work is done in this situation. (b) A force F is applied to the object. The object is displaced by <latex>\Delta y</latex> at right angles to the force. <latex>\theta =90°</latex> and <latex>\cos\theta =0</latex>. Work is not done in this situation.</para>
+          </caption>
+        </figure>
+		<image style:width='.6'> 
+			<src> images/wepmanwithbox.png </src> 
+			<attribution> Don Duffield </attribution>
+			</image>
+			<para> Consider the man walking at a constant speed for 4 m. He applies an upward force of 10 N on the box, and gravity acts downwards on the box with a force of 10 N. For this problem ignore any frictional forces.  What work is the man doing on the box? Explain your thinking.</para>
+			<para> Looking at the man, we can see that <latex> \Delta x</latex> is 4 m.  However the force applied by the man on the box is at <latex> {90}^{0}</latex> to the direction of motion.  We can see by applying the formula <latex> {W}={F}_{applied}\cos\theta </latex> that the value of W is zero. So NO work has been done by the man on the box!  Remember that work requires the force or a component of the force to act parallel to the direction of displacement.</para>
+			
+        <activity type="investigation">
+          <title>Is work done?</title>
+          <para>Decide whether on not work is done in the following situations. Remember that for work to be done a force must be applied in the direction of motion and there must be a displacement. Give reasons for your answer.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Max pushes against a wall and becomes tired.</para>
+            </item>
+            <item>
+              <para>A book falls off a table and free falls to the ground.</para>
+            </item>
+            <item>
+              <para>A rocket accelerates through space.</para>
+            </item>
+            <item>
+              <para>A waiter holds a tray full of meals above his head with one arm and carries it straight across the room at constant speed. (Careful! This is a tricky question.)</para>
+            </item>
+          </list>
+        </activity>
+        
+        <pspicture>
+          <code>
+            (0,-1)(10,3)
+\def\cart{\psframe(0,0.4)(1,1)\pscircle(0.2,0.2){0.2}\pscircle(0.8,0.2){0.2}}
+\psline[linewidth=2pt](0,0)(3,0)
+\rput(1,0){\cart}
+\psline{-&gt;}(0,0.75)(1,0.75)
+\uput[ul](1,0.75){$F$}
+\rput(1,0){\psline{-&gt;}(0,-0.2)(1,-0.2)
+\uput[dl](1,-0.2){$\Delta x$}}
+
+\rput{30}(4,0){\psline[linewidth=2pt](0,0)(3,0)
+\rput(1,0){\cart}
+\psline{-&gt;}(0,0.75)(1,0.75)
+\uput[ul](1,0.75){$F$}
+\rput(1,0){\psline{-&gt;}(0,-0.2)(1,-0.2)
+\uput[dl](1,-0.2){$\Delta x$}}
+}
+
+\rput{-30}(7.4,1.5){\psline[linewidth=2pt](0,0)(3,0)
+\rput(1,0){\cart}
+\psline{-&gt;}(0,0.75)(1,0.75)
+\uput[ul](1,0.75){$F$}
+\rput(1,0){\psline{-&gt;}(0,-0.2)(1,-0.2)
+\uput[dl](1,-0.2){$\Delta x$}}
+}
+
+          </code>
+        </pspicture>
+		<para>For each of the above pictures, the force vector is acting in the same direction as the displacement vector. As a result, the <latex>\theta =0°</latex> because there is no difference in angle between the direction of applied force and the direction of displacement.</para>
+        <para>As with all physical quantities, work must have units. Following from the definition, work is measured in <unit>N·m</unit>. The name given to this combination of S.I. units is the joule (symbol J).</para>
+        <definition>
+          <term>Joule</term>
+          <meaning>
+            <para>1 joule is the work done when an object is moved <unit_number><number>1</number><unit>m</unit></unit_number> under the application of a force of <unit_number><number>1</number><unit>N</unit></unit_number> in the direction of motion.</para>
+          </meaning>
+        </definition>
+        <para>The work done by an object can be positive or negative. Since force (<latex>F_{applied}</latex>) and displacement <latex>\Delta x</latex> are both vectors, the result of the above equation depends on their directions:</para>
+        <list list-type="bulleted">
+          <item>
+            <para>If <latex>{F}_{applied}</latex> acts in the same direction as the motion then positive work is being done. In this case the object on which the force is applied gains energy.</para>
+          </item>
+          <item>
+            <para>If the direction of motion and <latex>{F}_{applied }</latex> are opposite, then negative
+work is being done. This means that energy is transferred in the opposite direction. For example, if you try to push a car uphill by applying a force up the slope and instead the car rolls down the hill you are doing negative work on the car. Alternatively, the car is doing positive work on you!</para>
+          </item>
+        </list>
+        <note type="tip">
+          <para>The everyday use of the word "work" differs from the physics use. In physics, only the component of the applied force that is parallel to the motion does work on an object. So, for example, a person holding up a heavy book does no work on the book.</para>
+        </note>
+		
+        <worked_example>
+          <title>Calculating work on a car when speeding up.</title>
+          <question>
+            <para>The car is speeding up and a force of <unit_number><number>500</number><unit>N</unit></unit_number> is applied forward on the car while it is travelling <unit_number><number>20</number><unit>m</unit></unit_number> forward.  Calculate the work done on the car.</para>
+			<image style:width='0.6'> 
+			<src> photos/WEPThebusybraincar500Nforceforward.jpg </src> 
+			<attribution> Photo by Thebusybrain on Flickr</attribution>
+			</image>
+          </question>
+          <answer>
+            <workstep>
+              <title>Analyse the question to determine what information is provided</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>The force applied is F=<unit_number><number>500</number><unit>N</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The distance moved is <latex>\Delta x</latex> = <unit_number><number>20</number><unit>m</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The applied force and distance moved are in the same
+direction. Therefore, <latex>{F}_{applied}= 500 \text{N}</latex>.</para>
+                </item>
+              </list>
+              <para>These quantities are all in the correct units, so no unit conversions
+are required.</para>
+            </workstep>
+            <workstep>
+              <title>Analyse the question to determine what is being asked</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>We are asked to find the work done on the car. We know from the
+definition that work done is <latex>W={F}_{applied }</latex><latex>\Delta x</latex> <latex>\cos\theta </latex></para>
+                </item>
+              </list>
+            </workstep>
+            <workstep>
+              <title>Next we substitute the values and calculate the work done</title>
+              <latex display="block">
+		\begin{align}
+		 W&amp; = {F}_{applied}\Delta x\cos\theta\\
+		 &amp; = \left(500 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(\cos 0\right)\\
+		 &amp; = \left(500 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(1\right)\\
+		 &amp; = 10 000 \mathrm{J} 
+		\end{align}
+		</latex>
+              
+
+              <para>Remember that the answer must be <emphasis effect="italics">positive</emphasis> as the applied force and the motion are in the same direction (forwards). In this case, the car gains kinetic energy.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+        <worked_example>
+          <title>Calculating work on the car while braking</title>
+          <question>
+           <para>The car is slowing down and a force of <unit_number><number>300</number><unit>N</unit></unit_number> is applied backward on the car while it is travelling <unit_number><number>25</number><unit>m</unit></unit_number> forward.  Calculate the work done on the car.</para>
+		   <image style:width='0.6'> 
+			<src> photos/WEPThebusybraincar300Nforcebackward.jpg </src> 
+			<attribution> Photo by Thebusybrain on Flickr</attribution>
+			</image>
+          </question>
+          <answer>
+            <workstep>
+              <title>Analyse the question to determine what information is provided</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>The force applied is F=<unit_number><number>300</number><unit>N</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The distance moved is <latex>\Delta x</latex> = <unit_number><number>25</number><unit>m</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The applied force and distance moved are in the opposite direction. Therefore, <latex>{F}_{applied}= 300 \text{N}</latex>.</para>
+                </item>
+              </list>
+              <para>These quantities are all in the correct units, so no unit conversions are required.</para>
+            </workstep>
+            <workstep>
+              <title>Analyse the question to determine what is being asked</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>We are asked to find the work done on the car. We know from the definition that work done is <latex>W={F}_{applied }</latex><latex>\Delta x</latex> <latex>\cos\theta </latex></para>
+                </item>
+              </list>
+            </workstep>
+            <workstep>
+              <title>Next we substitute the values and calculate the work done</title>
+              <latex display="block">
+		\begin{align}
+		 W&amp; = {F}_{applied}\Delta x\cos\theta\\
+		 &amp; = \left(300 \mathrm{N}\right)\left(25 \mathrm{m}\right) \left(\cos 180\right)\\
+		 &amp; = \left(300 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(-1\right)\\
+		 &amp; = - 7 500 \mathrm{J} 
+		\end{align}
+		</latex>
+              
+
+              <para>Note that the answer must be <emphasis effect="italics">negative</emphasis> as the applied force and the motion are in opposite directions. This means that the energy is being lost by the car.  This may be energy lost as heat to the environment.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+        <para>What happens when the applied force and the motion are not parallel? By using the formula <latex>W={F}_{applied }</latex><latex>\Delta x</latex> <latex>\cos\theta </latex> , we are actually calculating the <emphasis effect="italics">component </emphasis> of the applied force in the direction of motion. Note that this means a force perpendicular to the direction of motion can do no work.</para>
+        <worked_example>
+          <title>Calculating work done  on a box pulled at an angle.</title>
+          <question>
+            <para>Calculate the work done on a box, if it is pulled <unit_number><number>5</number><unit>m</unit></unit_number> along the ground by applying a force of F=<unit_number><number>20</number><unit>N</unit></unit_number> at an angle of <unit_number><number>60</number><unit>°</unit></unit_number> to the horizontal.</para>
+            <pspicture>
+              <code>
+                (0,0)(2,2.5)
+\psline{-}(0,0)(0,0.5)\psline{-}(0,0.5)(0.5,0.5)
+\psline{-}(0.5,0.5)(0.5,0)\psline{-}(0,0)(0.5,0)
+\psline{-&gt;}(0.5,0.5)(1.5,2.5)
+\rput(0.9,0.7){$60^{\circ}$}
+\rput(1,2.1){$F$}
+\psline[linestyle=dotted]{-}(0.5,0.5)(2.,0.5)
+
+              </code>
+            </pspicture>
+          </question>
+          <answer>
+            <workstep>
+              <title>Analyse the question to determine what information is provided</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>The force applied is F=<unit_number><number>20</number><unit>N</unit></unit_number></para>
+                </item>
+                <item>
+                  <para>The distance moved is <latex>\Delta x</latex> = <unit_number><number>5</number><unit>m</unit></unit_number> along the ground</para>
+                </item>
+                <item>
+                  <para>The angle between the applied force and the motion is <unit_number><number>60</number><unit>°</unit></unit_number></para>
+                </item>
+              </list>
+              <para>These quantities are in the correct units so we do not need to perform
+any unit conversions.</para>
+            </workstep>
+            <workstep>
+              <title>Analyse the question to determine what is being asked</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>We are asked to find the work done on the box.</para>
+                </item>
+              </list>
+            </workstep>
+                         
+            <workstep>
+              <title>Substitute and calculate the work done</title>
+              <para>Now we can calculate the work done on the box:</para>
+              
+
+              <latex display="block">
+		\begin{align}
+		 W&amp; = {F}_{applied}\Delta x\cos\theta\\
+		 &amp; = \left(20 \mathrm{N}\right)\left(5 \mathrm{m}\right) \left(\cos 60\right)\\
+		 &amp; = 50 \mathrm{J} 
+		\end{align}
+		</latex>
+              
+
+              <para>Note that the answer is positive as the component of the force <latex>{F}_{applied }</latex> is in the same direction as the motion.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+        <exercises><title>Work</title>
+          <entry>
+<shortcode>01tk</shortcode>
+<problem>
+            <para>A <unit_number><number>10</number><unit>N</unit></unit_number> force is applied to push a block across a friction free surface for a displacement of <unit_number><number>5.0</number><unit>m</unit></unit_number> to the right. The block has a weight <latex>{F}_{g }</latex> of <unit_number><number>20</number><unit>N</unit></unit_number>. Determine the work done by the following forces: normal force, weight <latex>{F}_{g }</latex>, applied force.</para>
+            <pspicture>
+              <code>
+                (0,0)(2,2)
+\psframe(0.5,0.5)(1.5,1.5)
+\psline[linewidth=2pt](0,0.5)(2,0.5)
+\psline{-&gt;}(1,1.5)(1,2)
+\uput[l](1,2){$N$}
+\psline{-&gt;}(1,0.5)(1,0)
+\uput[l](1,0){$F_g$}
+\psline{-&gt;}(1.5,1)(2,1)
+\uput[r](2,1){$F_{app}$}
+
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001015/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tm</shortcode>
+<problem>
+            <para>A <unit_number><number>10</number><unit>N</unit></unit_number> frictional force slows a moving block to a stop after a displacement of <unit_number><number>5.0</number><unit>m</unit></unit_number> to the right. The block has a weight of <unit_number><number>20</number><unit>N</unit></unit_number> Determine the work done by the following forces: normal force, weight, frictional force.</para>
+            <pspicture>
+              <code>
+                (0,0)(2,2)
+\psframe(0.5,0.5)(1.5,1.5)
+\psline[linewidth=2pt](0,0.5)(2,0.5)
+\psline{-&gt;}(1,1.5)(1,2)
+\uput[l](1,2){$N$}
+\psline{-&gt;}(1,0.5)(1,0)
+\uput[l](1,0){$F_g$}
+\psline{-&gt;}(0.5,1)(0,1)
+\uput[l](0,1){$F_{friction}$}
+
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001016/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tn</shortcode>
+<problem>
+            <para>A <unit_number><number>10</number><unit>N</unit></unit_number> force is applied to push a block across a frictional surface at constant speed for a displacement of <unit_number><number>5.0</number><unit>m</unit></unit_number> to the right. The block has a weight of <unit_number><number>20</number><unit>N</unit></unit_number> and the frictional force is <unit_number><number>10</number><unit>N</unit></unit_number>. Determine the work done by the following forces: normal force, weight, frictional force.</para>
+            <pspicture>
+              <code>
+                (0,0)(2,2)
+\psframe(0.5,0.5)(1.5,1.5)
+\psline[linewidth=2pt](0,0.5)(2,0.5)
+\psline{-&gt;}(1,1.5)(1,2)
+\uput[l](1,2){$N$}
+\psline{-&gt;}(1,0.5)(1,0)
+\uput[l](1,0){$F_g$}
+\psline{-&gt;}(0.5,1)(0,1)
+\uput[l](0,1){$F_{friction}$}
+\psline{-&gt;}(1.5,1)(2,1)
+\uput[r](2,1){$F_{app}$}
+
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001017/00000002/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tp</shortcode>
+<problem>
+            <para>A <unit_number><number>20</number><unit>N</unit></unit_number> object is sliding at constant speed across a friction free surface for a displacement of <unit_number><number>5</number><unit>m</unit></unit_number> to the right. Determine if there is any work done.</para>
+            <pspicture>
+              <code>
+                (0,0)(2,2)
+\psframe(0.5,0.5)(1.5,1.5)
+\psline[linewidth=2pt](0,0.5)(2,0.5)
+\psline{-&gt;}(1,1.5)(1,2)
+\uput[l](1,2){$N$}
+\psline{-&gt;}(1,0.5)(1,0)
+\uput[l](1,0){$F_g$}
+
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001018/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tq</shortcode>
+<problem>
+            <para>A <unit_number><number>20</number><unit>N</unit></unit_number> object is pulled upward at constant speed by a <unit_number><number>20</number><unit>N</unit></unit_number> force for a vertical displacement of <unit_number><number>5</number><unit>m</unit></unit_number>. Determine if there is any work done.</para>
+            <pspicture>
+              <code>
+                (0,0)(2,2)
+\psframe(0.5,0.5)(1.5,1.5)
+\psline{-&gt;}(1,1.5)(1,2)
+\uput[l](1,2){$T$}
+\psline{-&gt;}(1,0.5)(1,0)
+\uput[l](1,0){$F_g$}
+
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001019/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tr</shortcode>
+<problem>
+            <para>Before beginning its descent, a roller coaster is always pulled up the first hill to a high initial height. Work is done on the roller coaster to achieve this initial height. A coaster designer is considering three different incline angles <emphasis effect="bold">of the hill</emphasis> at which to drag the <unit_number><number>2000</number><unit>kg</unit></unit_number> car train to the top of the <unit_number><number>60</number><unit>m</unit></unit_number> high hill. In each case, the force applied to the car will be applied parallel to the hill. Her critical question is: which angle would require the least work? Analyse the data, determine the work done in each case, and answer this critical question.</para>
+            <table>
+              <tgroup cols="4">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <colspec colname="c3" colnum="3"/>
+                <colspec colname="c4" colnum="4"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <para><emphasis effect="bold">Angle of Incline</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Applied Force</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Distance</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Work</emphasis></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para><unit_number><number>35</number><unit>°</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number><coeff>1.1</coeff><exp>4</exp></number><unit>N</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number>100</number><unit>m</unit></unit_number></para>
+                    </entry>
+                    <entry/>
+                  </row>
+                  <row>
+                    <entry>
+                      <para><unit_number><number>45</number><unit>°</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number><coeff>1.3</coeff><exp>4</exp></number><unit>N</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number>90</number><unit>m</unit></unit_number></para>
+                    </entry>
+                    <entry/>
+                  </row>
+                  <row>
+                    <entry>
+                      <para><unit_number><number>55</number><unit>°</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number><coeff>1.5</coeff><exp>4</exp></number><unit>N</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number>80</number><unit>m</unit></unit_number></para>
+                    </entry>
+                    <entry/>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001020/view">
+              <table>
+              <tgroup cols="4">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <colspec colname="c3" colnum="3"/>
+                <colspec colname="c4" colnum="4"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <para><emphasis effect="bold">Angle of Incline</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Applied Force</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Distance</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Work</emphasis></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para><unit_number><number>35</number><unit>°</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number><coeff>1.1</coeff><exp>4</exp></number><unit>N</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number>100</number><unit>m</unit></unit_number></para>
+                    </entry>
+                    <entry><unit_number><number><coeff>9.01</coeff><exp>5</exp></number><unit>J</unit></unit_number></entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para><unit_number><number>45</number><unit>°</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number><coeff>1.3</coeff><exp>4</exp></number><unit>N</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number>90</number><unit>m</unit></unit_number></para>
+                    </entry>
+                    <entry><unit_number><number><coeff>8.27</coeff><exp>5</exp></number><unit>J</unit></unit_number></entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para><unit_number><number>55</number><unit>°</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number><coeff>1.5</coeff><exp>4</exp></number><unit>N</unit></unit_number></para>
+                    </entry>
+                    <entry>
+                      <para><unit_number><number>80</number><unit>m</unit></unit_number></para>
+                    </entry>
+                    <entry><unit_number><number><coeff>6.88</coeff><exp>5</exp></number><unit>J</unit></unit_number></entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+            <correct>
+            <para>An angle of 55° requires the least amount of work to be done.</para>
+            </correct>
+              </solution>
+</entry>
+<entry>
+<shortcode>01ts</shortcode>
+<problem>
+            <para>Big Bertha carries a <unit_number><number>150</number><unit>N</unit></unit_number> suitcase up four flights of stairs (a total height of <unit_number><number>12</number><unit>m</unit></unit_number>) and then pushes it with a horizontal force of <unit_number><number>60</number><unit>N</unit></unit_number> at a constant speed of <unit_number><number>0.25</number><unit>m·s<sup>-1</sup></unit></unit_number> for a horizontal distance of <unit_number><number>50</number><unit>m</unit></unit_number> on a frictionless surface. How much work does Big Bertha do on the suitcase during this entire trip?</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001021/00000002/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tt</shortcode>
+<problem>
+            <para>A mother pushes down on a pram with a force of <unit_number><number>50</number><unit>N</unit></unit_number> at an angle of <unit_number><number>30</number><unit>°</unit></unit_number>. The pram is moving on a frictionless surface. If the mother pushes the pram for a horizontal distance of <unit_number><number>30</number><unit>m</unit></unit_number>, how much does she do on the pram?</para>
+            <pspicture>
+              <code>
+                (1,0)(5.2,4.4)
+\psline[linewidth=2pt](0,0)(5,0)	\psarc(2.5,2.5){1.5}{180}{360}
+\psarc(1.75,2.5){0.75}{0}{180}
+\psline(2.5,2.5)(4,2.5)
+\psline(4,2.5)(4,3)
+\psdot(4,3)
+\rput(4,3){\psline{&lt;-}(0,0)(1;30)\uput[u](1;30){$F_{app}$}\psline[linestyle=dashed](0,0)(1,0)\rput(0.75;15){$\theta$}}
+\psline(3.2,0.4)(3.2,1.2)
+\psline(1.8,0.4)(1.8,1.2)
+\pscircle(1.8,0.2){0.2}
+\pscircle(3.2,0.2){0.2}
+
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001022/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tu</shortcode>
+<problem>
+            <para>How much work is done by an applied force to raise a <unit_number><number>2000</number><unit>N</unit></unit_number> lift 5 floors vertically at a constant speed? Each floor is <unit_number><number>5</number><unit>m</unit></unit_number> high.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001023/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tv</shortcode>
+<problem>
+            <para>A student with a mass of <unit_number><number>60</number><unit>kg</unit></unit_number> runs up three flights of stairs in <unit_number><number>15</number><unit>s</unit></unit_number>, covering a vertical distance of <unit_number><number>10</number><unit>m</unit></unit_number>. Determine the amount of work done by the student to elevate her body to this height. Assume that her speed is constant.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001024/view"/>
+		<correct/>
+</entry>
+</exercises>
+ <section type="subsection">
+ <title>Net work</title>
+ <para> The total work done on an object can be calculated by adding the work done by each individual force that is applied in the plane of motion.  Take note that some values may be negative if energy is removed from the object. </para>
+       <worked_example>
+          <title>Calculating the net work on a car.</title>
+          <question>
+            <para>The same car is now accelerating forward, but friction is working against the motion of the car. A force of <unit_number><number>300</number><unit>N</unit></unit_number> is applied forward on the car while it is travelling <unit_number><number>20</number><unit>m</unit></unit_number> forward.  A frictional force of <unit_number><number>100</number><unit>N</unit></unit_number> acts to oppose the motion. Calculate the net work done on the car.</para>
+			<image style:width='0.6'> 
+			<src> photos/WEPThebusybraincarfrictionandapplied.jpg </src> 
+			<attribution> Photo by Thebusybrain on Flickr</attribution>
+			</image>
+			<para> Only forces with a component in the plane of motion are shown on the diagram.  No work is done by <latex>{F}_{g}</latex> or <latex>{F}_{Normal} as they act perpendicular to the direction of motion.</latex></para>
+          </question>
+          <answer>
+            <workstep>
+              <title>Analyse the question to determine what information is provided</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>The force applied is F=<unit_number><number>300</number><unit>N</unit></unit_number> forwards. </para>
+                </item>
+				 <item>
+                  <para>The force of friction is F=<unit_number><number>100</number><unit>N</unit></unit_number> backwards. </para>
+                </item>
+                <item>
+                  <para>The distance moved is <latex>\Delta x</latex> = <unit_number><number>20</number><unit>m</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The applied force and distance moved are in the same plane so we can calculate the work done by the applied forward force and the work done by the force of friction backwards.</para>
+                </item>
+              </list>
+              <para>These quantities are all in the correct units, so no unit conversions are required.</para>
+            </workstep>
+            <workstep>
+              <title>Analyse the question to determine what is being asked</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>We are asked to find the net work done on the car. We know from the definition that work done is <latex>W={F}_{applied }</latex><latex>\Delta x</latex> <latex>\cos\theta </latex></para>
+                </item>
+              </list>
+            </workstep>
+            <workstep>
+              <title>Next we calculate the work done by each force.</title>
+              <latex display="block">
+		\begin{align}
+		 W&amp; = {F}_{applied}\Delta x\cos\theta\\
+		 &amp; = \left(300 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(\cos 0\right)\\
+		 &amp; = \left(300 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(1\right)\\
+		 &amp; = 6 000 \mathrm{J} 
+		\end{align}
+        </latex>
+        <latex display="block">
+		\begin{align}
+		 W&amp; = {F}_{friction}\Delta x\cos\theta\\
+		 &amp; = \left(100 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(\cos 180\right)\\
+		 &amp; = \left(100 \mathrm{N}\right)\left(20 \mathrm{m}\right) \left(-1\right)\\
+		 &amp; = 2 000 \mathrm{J} 
+		\end{align}
+        </latex>
+        <latex display="block">
+		\begin{align}
+		{W}_{net}&amp; = {W}_{applied} + {W}_{friction} \\
+		 &amp; = \left(6000 \mathrm{J}\right) + \left(-2000 \mathrm{m}\right) \\
+		 &amp; = 4 000 \mathrm{J} 
+		\end{align}
+		</latex>
+               <para>The answer shown in this worked example shows that although energy has been lost by the car to friction, the total work done on the car has resulted in a net energy gain.  This can be seen by the positive answer.</para>
+
+              <para>There is an alternative method to solve the same problem, which is to determine the net force acting on the car and to use this to calculate the work. This means that the vector forces acting in the plane of motion must be added to get the net force <latex>{F}_{net}</latex>.  The net force is then applied over the displacement to get the net work <latex>{W}_{net}</latex>.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+		<worked_example>
+          <title>Calculating the net work on a car using the alternative method.</title>
+          <question>
+            <para>The same car is now accelerating forward, but friction is working against the motion of the car. A force of <unit_number><number>300</number><unit>N</unit></unit_number> is applied forward on the car while it is travelling <unit_number><number>20</number><unit>m</unit></unit_number> forward.  A frictional force of <unit_number><number>100</number><unit>N</unit></unit_number> acts to oppose the motion. Calculate the net work done on the car.</para>
+			<image style:width='0.6'> 
+			<src> photos/WEPCarwithfriction.jpg </src> 
+			<attribution> Photo by Bigod on Flickr</attribution>
+			</image>
+			<para> Only forces with a component in the plane of motion are shown on the diagram.  No work is done by <latex>{F}_{g}</latex> or <latex>{F}_{Normal} </latex> as they act perpendicular to the direction of motion.  The net force acting in the plane of motion will be calculated using the non-perpendicular forces.</para>
+          </question>
+          <answer>
+            <workstep>
+              <title>Analyse the question to determine what information is provided</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>The force applied is F=<unit_number><number>300</number><unit>N</unit></unit_number> forwards. </para>
+                </item>
+				 <item>
+                  <para>The force of friction is F=<unit_number><number>100</number><unit>N</unit></unit_number> backwards. </para>
+                </item>
+                <item>
+                  <para>The distance moved is <latex>\Delta x</latex> = <unit_number><number>20</number><unit>m</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The applied forces <latex>{F}_{applied}= 300 \text{N}</latex> and the force of friction <latex>{F}_{friction}= 100 \text{N}</latex>are in the same plane as distance moved. Therefore, we can add the vectors.  As vectors require direction, we will say that forward is positive and therefore backward is negative. Note, the force of friction is acting at <latex>{180}^{0}</latex> i.e. backwards and so is acting in the opposite vector direction i.e. negative. </para> 
+                </item>
+              </list>
+              <para>These quantities are all in the correct units, so no unit conversions are required.</para>
+            </workstep>
+            <workstep>
+              <title>Analyse the question to determine what is being asked</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>We are asked to find the net work done on the car. We know from the definition that work done is <latex>W_{net}={F}_{net}</latex><latex>\Delta x</latex>  </para>
+                </item>
+              </list>
+            </workstep>
+            <workstep>
+              <title> We calculate the net force acting on the car, and we convert this into net work.</title>
+	      <para> Let forwards be positive.</para>
+			  <latex display="block">
+		\begin{align}
+		 {F}_{net}&amp; = {F}_{applied} + {F}_{friction}\\
+		 &amp; = \left(+300 \mathrm{N}\right) + \left(-100 \mathrm{m}\right)\\
+		 F_{net}&amp; = 200 \mathrm{N} forwards 
+		 \end{align}
+         </latex>
+         <latex display="block">
+		\begin{align}
+		 {W}_{net}&amp; = {F}_{net}\Delta x\\
+		 &amp; = \left(200 \mathrm{N}\right)\left(20 \mathrm{m}\right)\\
+		 &amp; = 4 000 \mathrm{J} 
+		\end{align}
+		</latex>
+        </workstep>
+        </answer>
+        </worked_example>
+ 
+ </section>
+ </section>
+      <section type="section">
+        <title>Energy</title>
+        <shortcode>ESCED</shortcode>
+        <section type="subsection">
+          <title>External and internal forces</title>
+          <shortcode>ESCEE</shortcode>
+          <para>In Grade 10, you saw that mechanical energy was conserved in the absence of external forces. It is important to know whether a force is an internal force or an external force in the system, because this is related to whether the force can change an object's total mechanical energy when it does work on an object.</para>
+          <para>When an external force (for example friction, air resistance, applied force) does work on an object, the total mechanical energy (KE + PE) of that object changes. If positive work is done, then the object will gain energy. If negative work is done, then the object will lose energy. The gain or loss in energy can be in the form of potential energy, kinetic energy, or both. However, the work which is done is equal to the change in mechanical energy of the object.</para>
+          <activity type="investigation">
+            <title>External forces</title>
+            <para>We can investigate the effect of external forces on an object's total mechanical energy by rolling a ball along the floor from point A to point B.</para>
+            <pspicture>
+              <code>
+                (0,-0.7)(7.78,0.7)
+\psline[linewidth=0.04cm](0.0,-0.24)(7.76,-0.22)
+\pscircle[linewidth=0.04,dimen=outer](2.3,0.12){0.36}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(2.76,0.2)(3.76,0.2)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.85,0.525){\small direction of motion of the ball}
+\psdots[dotsize=0.12](0.58,-0.24)
+\psdots[dotsize=0.13](6.58,-0.22)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.59,-0.555){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.59,-0.535){B}
+
+              </code>
+            </pspicture>
+            <para>Find a nice smooth surface (e.g. a highly polished floor), mark off two positions, A and B, and roll the ball between them.</para>
+            
+
+            <para>The total mechanical energy of the ball, at each point, is the sum of its kinetic energy (KE) and gravitational potential energy (PE):</para>
+            
+
+            <latex display="block">
+		\begin{align}
+		 {E}_{\mathrm{total},\mathrm{A}}&amp; = {\mathrm{KE}}_{\mathrm{A}}+{\mathrm{PE}}_{\mathrm{A}}\\
+		 &amp; = \frac{1}{2}m{v}_{A}^{2}+mg{h}_{A}\\
+		 &amp; = \frac{1}{2}m{v}_{A}^{2}+mg\left(0\right)\\
+		 &amp; = \frac{1}{2}m{v}_{A}^{2} 
+		\end{align}
+		</latex>
+            
+
+            <latex display="block">
+		\begin{align}
+		 {E}_{\mathrm{total},\mathrm{B}}&amp; = {\mathrm{KE}}_{\mathrm{B}}+{\mathrm{PE}}_{\mathrm{B}}\\
+		 &amp; = \frac{1}{2}m{v}_{B}^{2}+mg{h}_{B}\\
+		 &amp; = \frac{1}{2}m{v}_{B}^{2}+mg\left(0\right)\\
+		 &amp; = \frac{1}{2}m{v}_{B}^{2} 
+		\end{align}
+		</latex>
+            
+
+            <para>In the absence of friction and other external forces, the ball should slide along the floor and its speed should be <emphasis effect="italics">the same</emphasis> at positions A and B. Since there are no external forces acting on the ball, its total mechanical energy at points A and B are equal.</para>
+            
+
+            <latex display="block">
+		\begin{align}
+		 {v}_{A}&amp; = {v}_{B}\\
+		  \frac{1}{2}m{v}_{A}^{2}&amp; = \frac{1}{2}m{v}_{B}^{2}\\
+		  {E}_{\mathrm{total},\mathrm{A}}&amp; = {E}_{\mathrm{total},\mathrm{B}} 
+		\end{align}
+		</latex>
+            
+
+            <para>Now, let's investigate what happens when there is friction (an <emphasis effect="italics">external force</emphasis>) acting on the ball.</para>
+            
+
+            <para>Roll the ball along a rough surface or a carpeted floor. What happens to the speed of the ball at point A compared to point B?</para>
+            
+
+            <para>If the surface you are rolling the ball along is very rough and provides a large external frictional force, then the ball should be moving much slower at point B than at point A.</para>
+            
+
+            <para>Let's compare the total mechanical energy of the ball at points A and B:</para>
+            
+
+            <latex display="block">
+		\begin{align}
+		 {E}_{\mathrm{total},\mathrm{A}}&amp; = {\mathrm{KE}}_{\mathrm{A}}+{\mathrm{PE}}_{\mathrm{A}}\\
+		 &amp; = \frac{1}{2}m{v}_{A}^{2}+mg{h}_{A}\\
+		 &amp; = \frac{1}{2}m{v}_{A}^{2}+mg\left(0\right)\\
+		 &amp; = \frac{1}{2}m{v}_{A}^{2} 
+		\end{align}
+		</latex>
+            
+
+            <latex display="block">
+		\begin{align}
+		 {E}_{\mathrm{total},\mathrm{B}}&amp; = {\mathrm{KE}}_{\mathrm{B}}+{\mathrm{PE}}_{\mathrm{B}}\\
+		 &amp; = \frac{1}{2}m{v}_{B}^{2}+mg{h}_{B}\\
+		 &amp; = \frac{1}{2}m{v}_{B}^{2}+mg\left(0\right)\\
+		 &amp; = \frac{1}{2}m{v}_{B}^{2} 
+		\end{align}
+		</latex>
+            
+
+            <para>However, in this case, <latex>{v}_{A}\ne {v}_{B}</latex> and therefore <latex>{E}_{\mathrm{total},\mathrm{A}}\ne {E}_{\mathrm{total},\mathrm{B}}</latex>. Since</para>
+            
+
+            <latex display="block">
+		\begin{align}
+		 {v}_{A}&amp; &gt; {v}_{B}\\
+		  {E}_{\mathrm{total},\mathrm{A}}&amp; &gt; {E}_{\mathrm{total},\mathrm{B}} 
+		\end{align}
+		</latex>
+            
+
+            <para>Therefore, the ball has lost mechanical energy as it moves across the carpet.
+However, although the ball has lost mechanical energy, energy in the larger system has still been conserved. In this case, the missing
+energy is the work done by the carpet through applying a frictional force on the ball. In this case the carpet is doing negative work on the ball.</para>
+          </activity>
+          <para>When an internal force does work on an object by an (for example, gravitational and spring forces), the total mechanical energy (KE + PE) of that object remains constant but the object's energy can change form. For example, as an object falls in a gravitational field from a high elevation to a lower elevation, some of the object's potential energy is changed into kinetic energy. However, the sum of the kinetic and potential energies remain constant. When the only forces doing work are internal forces, energy changes forms - from kinetic to potential (or vice versa); yet the total amount of mechanical energy is conserved.</para>
+        </section>
+        <section type="subsection">
+          <title>Capacity to do work</title>
+          <shortcode>ESCEF</shortcode>
+          <para>Energy is the capacity to do work. When positive work is done on an object, the system doing the work loses energy. In fact, <emphasis effect="bold">the energy lost by a system is exactly equal to the work done by the system.</emphasis> An object with larger potential energy has a greater capacity to do work.</para>
+          <worked_example>
+            <title>Work done on a system</title>
+            <question>
+              <para>Show that a hammer of mass <unit_number><number>2</number><unit>kg</unit></unit_number> does more work when dropped from a height of <unit_number><number>10</number><unit>m</unit></unit_number> than when dropped from a height of <unit_number><number>5</number><unit>m</unit></unit_number>. Confirm that the hammer has a greater potential energy at <unit_number><number>10</number><unit>m</unit></unit_number> than at <unit_number><number>5</number><unit>m</unit></unit_number>.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Determine what is given and what is required</title>
+                <para>We are given:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the mass of the hammer, <latex>m=2 \text{kg}</latex></para>
+                  </item>
+                  <item>
+                    <para>height 1, <latex>{h}_{1}=10 \text{m}</latex></para>
+                  </item>
+                  <item>
+                    <para>height 2, <latex>{h}_{2}=5 \text{m}</latex></para>
+                  </item>
+                </list>
+                <para>We are required to show that the hammer does more work when dropped from <latex>{h}_{1}</latex> than from <latex>{h}_{2}</latex>. We are also required to confirm that the hammer has a greater potential energy at <unit_number><number>10</number><unit>m</unit></unit_number> than at <unit_number><number>5</number><unit>m</unit></unit_number>.</para>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <list list-type="enumerated">
+                  <item>
+                    <para>Calculate the work done by the hammer, <latex>{W}_{1}</latex>, when dropped from <latex>{h}_{1}</latex> using:</para>
+                    
+
+                    <latex>{W}_{1}={F}_{g}·{h}_{1}.</latex>
+                    
+
+                    
+                  </item>
+                  <item>
+                    <para>Calculate the work done by the hammer, <latex>{W}_{2}</latex>, when dropped from <latex>{h}_{2}</latex> using:</para>
+                    
+
+                    <latex>{W}_{2}={F}_{g}·{h}_{2}.</latex>
+                    
+
+                    
+                  </item>
+                  <item>
+                    <para>Compare <latex>{W}_{1}</latex> and <latex>{W}_{2}</latex></para>
+                  </item>
+                  <item>
+                    <para>Calculate potential energy at <latex>{h}_{1}</latex> and <latex>{h}_{2}</latex> and compare using:</para>
+                    
+
+                    <latex>PE=m·g·h.</latex>
+                    
+
+                    
+                  </item>
+                </list>
+              </workstep>
+              <workstep>
+                <title>Calculate <latex>{W}_{1}</latex></title>
+                <latex display="block">
+		\begin{align}
+		 {W}_{1}&amp; = {F}_{g}·{h}_{1}\\
+		 &amp; = m·g·{h}_{1}\\
+		 &amp; = \left(2 \text{kg}\right)\left(9,8 \text{m}·{\text{s}}^{-2}\right)\left(10 \mathrm{m}\right)\\
+		 &amp; = 196 \text{J} 
+		\end{align}
+		</latex>
+                
+
+                
+              </workstep>
+              <workstep>
+                <title>Calculate <latex>{W}_{2}</latex></title>
+                <latex display="block">
+		\begin{align}
+		 {W}_{2}&amp; = {F}_{g}·{h}_{2}\\
+		 &amp; = m·g·{h}_{2}\\
+		 &amp; = \left(2 \text{kg}\right)\left(9,8 \text{m}·{\text{s}}^{-2}\right)\left(5 \mathrm{m}\right)\\
+		 &amp; = 98 \text{J} 
+		\end{align}
+		</latex>
+                
+
+                
+              </workstep>
+              <workstep>
+                <title>Compare <latex>{W}_{1}</latex> and <latex>{W}_{2}</latex></title>
+                <para>We have <latex>{W}_{1}=196 \text{J}</latex> and <latex>{W}_{2}=98 \text{J}</latex>. <latex>{W}_{1}&gt;{W}_{2}</latex> as required.</para>
+              </workstep>
+              <workstep>
+                <title>Calculate potential energy</title>
+                <para>From <link target-id="todo"/>, we see that:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 PE&amp; = m·g·h\\
+		 &amp; = {F}_{g}·h\\
+		 &amp; = W 
+		\end{align}
+		</latex>
+                
+
+                <para>This means that the potential energy is equal to the work done. Therefore, <latex>P{E}_{1}&gt;P{E}_{2}</latex>, because <latex>{W}_{1}&gt;{W}_{2}</latex>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <para>This leads us to the work-energy theorem.</para>
+          <definition>
+            <term>Work-energy theorem</term>
+            <meaning>
+              <para>The work-energy theorem states that the work done on an object is equal to the change in its kinetic energy:</para>
+              <latex>W=\Delta KE=K{E}_{f}-K{E}_{i}</latex>
+            </meaning>
+          </definition>
+          <para>The work-energy theorem is another example of the conservation of energy which you saw in Grade 10.</para>
+          <worked_example>
+            <title>Work-energy theorem</title>
+            <question>
+              <para>A <unit_number><number>1</number><unit>kg</unit></unit_number> brick is dropped from a height of <unit_number><number>10</number><unit>m</unit></unit_number>. Calculate the work done on the brick when it hits the ground assuming that there is no air resistance.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Determine what is given and what is required</title>
+                <list list-type="bulleted">
+                  <item>
+                    <para>Mass of the brick: <latex>m=1 \text{kg}</latex>.</para>
+                  </item>
+                  <item>
+                    <para>Initial height of the brick: <latex>{h}_{i}=10 \text{m}</latex>.</para>
+                  </item>
+                  <item>
+                    <para>Final height of the brick: <latex>{h}_{f}=0 \text{m}</latex>.</para>
+                  </item>
+                  <item>
+                    <para>We are required to determine the work done on the brick as it hits the ground.</para>
+                  </item>
+                </list>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <para>The brick is falling freely, so energy is conserved. We know that the work done is equal to the difference in kinetic energy. The brick has no kinetic energy at the moment it is dropped, because it is stationary. When the brick hits the ground, all the brick's potential energy is converted to kinetic energy.</para>
+              </workstep>
+              <workstep>
+                <title>Determine the brick's potential energy at <latex>{h}_{i}</latex></title>
+                <latex display="block">
+		\begin{align}
+		 PE&amp; = m·g·h\\
+		 &amp; = \left(1 \text{kg}\right)\left(9,8 \text{m}·{\text{s}}^{-2}\right)\left(10 \mathrm{m}\right)\\
+		 &amp; = 98 \text{J} 
+		\end{align}
+		</latex>
+                
+
+                
+              </workstep>
+              <workstep>
+                <title>Determine the work done on the brick</title>
+                <para>The brick had <unit_number><number>98</number><unit>J</unit></unit_number> of potential energy when it was released and <unit_number><number>0</number><unit>J</unit></unit_number> of kinetic energy. When the brick hit the ground, it had <unit_number><number>0</number><unit>J</unit></unit_number> of potential energy and <unit_number><number>98</number><unit>J</unit></unit_number> of kinetic energy. Therefore <latex>K{E}_{i}=0 \text{J}</latex> and <latex>K{E}_{f}=98 \text{J}</latex>.</para>
+                
+
+                <para>From the work-energy theorem:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 W&amp; = \Delta KE\\
+		 &amp; = K{E}_{f}-K{E}_{i}\\
+		 &amp; = 98 \text{J}-0 \text{J}\\
+		 &amp; = 98 \text{J} 
+		\end{align}
+		</latex>
+                
+
+                <para>Hence, <unit_number><number>98</number><unit>J</unit></unit_number> of work was done on the brick.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Work-energy theorem 2</title>
+            <question>
+              <para>The driver of a <unit_number><number>1000</number><unit>kg</unit></unit_number> car travelling at a speed of <unit_number><number>16.7</number><unit>m·s<sup>-1</sup></unit></unit_number> applies the car's brakes when he sees a red robot. The car's brakes provide a frictional force of <unit_number><number>8000</number><unit>N</unit></unit_number>. Determine the stopping distance of the car.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Determine what is given and what is required</title>
+                <para>We are given:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>mass of the car: m = <unit_number><number>1000</number><unit>kg</unit></unit_number></para>
+                  </item>
+                  <item>
+                    <para>speed of the car: v = <unit_number><number>16.7</number><unit>m·s<sup>-1</sup></unit></unit_number></para>
+                  </item>
+                  <item>
+                    <para>frictional force of brakes: F = <unit_number><number>8000</number><unit>N</unit></unit_number></para>
+                  </item>
+                </list>
+                <para>We are required to determine the stopping distance of the car.</para>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <para>We apply the work-energy theorem. We know that all the car's kinetic energy is lost to friction. Therefore, the change in the car's kinetic energy is equal to the work done by the frictional force of the car's brakes.</para>
+                
+
+                <para>Therefore, we first need to determine the car's kinetic energy at the moment of braking using:</para>
+                
+
+                <latex>KE=\frac{1}{2}m{v}^{2}</latex>
+                
+
+                <para>This energy is equal to the work done by the brakes. We have the force applied by the brakes, and we can use:</para>
+                
+
+                <latex>W=F·d</latex>
+                
+
+                <para>to determine the stopping distance.</para>
+              </workstep>
+              <workstep>
+                <title>Determine the kinetic energy of the car</title>
+                <latex display="block">
+		\begin{align}
+		 KE&amp; = \frac{1}{2}m{v}^{2}\\
+		 &amp; = \frac{1}{2}\left(1000 \text{kg}\right){\left(16,7 \text{m}·{\text{s}}^{-1}\right)}^{2}\\
+		 &amp; = 139445 \text{J} 
+		\end{align}
+		</latex>
+                
+
+                
+              </workstep>
+              <workstep>
+                <title>Determine the work done</title>
+                <para>Assume the stopping distance is <latex>{d}_{0}</latex>. Then the work done is:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 W&amp; = F·d\\
+		 &amp; = \left(-8000 \mathrm{N}\right)\left({\mathrm{d}}_{0}\right) 
+		\end{align}
+		</latex>
+                
+
+                <para>The force has a negative sign because it acts in a direction opposite to the direction of motion.</para>
+              </workstep>
+              <workstep>
+                <title>Apply the work-enemy theorem</title>
+                <para>The change in kinetic energy is equal to the work done.</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 \Delta KE&amp; = W\\
+		  K{E}_{f}-K{E}_{i}&amp; = \left(-8000 \mathrm{N}\right)\left({\mathrm{d}}_{0}\right)\\
+		  0 \text{J}-139445 \text{J}&amp; = \left(-8000 \mathrm{N}\right)\left({\mathrm{d}}_{0}\right)\\
+		  \therefore {d}_{0}&amp; = \frac{139445 \text{J}}{8000 \mathrm{N}}\\
+		 &amp; = 17,4 \mathrm{m} 
+		\end{align}
+		</latex>
+                
+
+                
+              </workstep>
+              <workstep>
+                <title>Write the final answer</title>
+                <para>The car stops in <unit_number><number>17.4</number><unit>m</unit></unit_number>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <note type="tip">
+            <para>A force only does work on an object for the time that it is in contact with the object. For example, a person pushing a trolley does work on the trolley, but the road does no work on the tyres of a car if they turn without slipping (the force is not applied over any distance because a different piece of tyre touches the road every instant).</para>
+          </note>
+          <para>In the example of a falling mass the potential energy is known as <emphasis effect="italics">gravitational potential energy</emphasis> as it is the gravitational force exerted by the earth which causes the mass to accelerate towards the ground. The gravitational field of the earth is what does the work in this case.</para>
+          <para>Another example is a rubber-band. In order to stretch a rubber-band we have
+to do work on it. This means we transfer energy to the rubber-band and
+it gains potential energy. This potential energy is called <emphasis effect="italics">elastic potential energy</emphasis>. Once released, the rubber-band begins to
+move and elastic potential energy is transferred into kinetic energy.</para>
+          <math_extension>
+            <title>Other forms of potential energy</title>
+            <body>
+              <list list-type="enumerated">
+                <item>
+                  <para>elastic potential energy - potential energy is stored in a compressed or extended spring or rubber band. This potential energy is calculated by:</para>
+                  <latex>\frac{1}{2}k{x}^{2}</latex>
+                  <para>where k is a constant that is a measure of the stiffness of the spring or rubber band and x is the extension of the spring or rubber band.</para>
+                </item>
+                <item>
+                  <para>Chemical potential energy is related to the making and breaking of chemical bonds. For example, a battery converts chemical energy into electrical energy.</para>
+                </item>
+                <item>
+                  <para>The electrical potential energy of an electrically charged object is defined as the work that must be done to move it from an infinite distance away to its present location, in the absence of any non-electrical forces on the object. This energy is non-zero if there is another electrically charged object nearby otherwise it is given by:</para>
+                  
+
+                  <latex>k\frac{{q}_{1}{q}_{2}}{d}</latex>
+                  
+
+                  <para>where k is Coulomb's constant. For example, an electric motor lifting an elevator converts electrical energy into gravitational potential energy.</para>
+                </item>
+                <item>
+                  <para>Nuclear energy is the energy released when the nucleus of an atom is split or fused. A nuclear reactor converts nuclear energy into heat.</para>
+                </item>
+              </list>
+              <para>Some of these forms of energy will be studied in later chapters.</para>
+            </body>
+          </math_extension>
+          <activity type="investigation">
+            <title>Energy resources</title>
+            <para>Energy can be taken from almost anywhere. Power plants use many different types of energy sources, including oil, coal, nuclear, biomass (organic gases), wind, solar, geothermal (the heat from the earth's rocks is very hot underground and is used to turn water to steam), tidal and hydroelectric (waterfalls). Most power stations work by using steam to turn turbines which then drive generators and create an electric current.</para>
+            
+
+            <para>Most of these sources are dependant upon the sun's energy, because
+without it we would not have weather for wind and tides. The sun
+is also responsible for growing plants which decompose into fossil
+fuels like oil and coal. All these sources can be put under 2
+headings, renewable and non-renewable. Renewable sources are
+sources which will not run out, like solar energy and wind power.
+Non-renewable sources are ones which will run out eventually, like
+oil and coal.</para>
+            
+
+            <para>It is important that we learn to appreciate conservation in
+situations like this. The planet has a number of linked systems
+and if we don't appreciate the long-term consequences of our
+actions we run the risk of doing damage now that we will only
+suffer from in many years time.</para>
+            <para>Investigate two types of renewable and two types of non-renewable energy resources, listing advantages and disadvantages of each type. Write up the results as a short report.</para>
+          </activity>
+          <exercises><title>Energy</title>
+            <entry>
+<shortcode>01tw</shortcode>
+<problem>
+              <para>Fill in the table with the missing information using the positions of the ball in the diagram below combined with the work-energy theorem.</para>
+              <pspicture>
+                <code>
+                  (0,0)(10,5.4)
+\def\ball{\pscircle[fillcolor=darkgray,fillstyle=solid](0,0.2){0.2}}
+\def\effects{\psline(0.1,0.25)(0.1,0.4)\psline(0.2,0.25)(0.2,0.6)\psline(0.3,0.25)(0.3,0.4)}
+\psline[linewidth=2pt](0,0)(10,0)
+\psline(1,0)(1,5)(2,5)(3,3)(5,3)(6,1)(8,1)(9,0)
+\rput(1.5,5){\ball}
+\rput(3.2,3){\ball\rput{26}(-0.2,0){\effects}}
+\rput(4.8,3){\ball\rput{90}{\effects}}
+\rput(6.2,1){\ball\rput{26}(-0.2,0){\effects}}
+\rput(7.8,1){\ball\rput{90}{\effects}}
+\rput(9.2,0){\ball\rput{45}(-0.2,0){\effects}}
+\rput(0.8,0){\ball\rput(-0.2,0.2){\effects}}
+\uput[d](1.5,5){A}
+\uput[d](3.2,3){B}
+\uput[d](4.8,3){C}
+\uput[d](6.2,1){D}
+\uput[d](7.8,1){E}
+\uput[d](9.2,0){F}
+\uput[d](0.8,0){G}
+
+                </code>
+              </pspicture>
+              <table>
+                <tgroup cols="4">
+                  <colspec colname="c1" colnum="1"/>
+                  <colspec colname="c2" colnum="2"/>
+                  <colspec colname="c3" colnum="3"/>
+                  <colspec colname="c4" colnum="4"/>
+                  <tbody>
+                    <row>
+                      <entry>
+                        <para><emphasis effect="bold">position</emphasis></para>
+                      </entry>
+                      <entry>
+                        <para><emphasis effect="bold"><latex>KE</latex></emphasis></para>
+                      </entry>
+                      <entry>
+                        <para><emphasis effect="bold"><latex>PE</latex></emphasis></para>
+                      </entry>
+                      <entry>
+                        <para><emphasis effect="bold">v</emphasis></para>
+                      </entry>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>A</para>
+                      </entry>
+                      <entry/>
+                      <entry>
+                        <para><unit_number><number>50</number><unit>J</unit></unit_number></para>
+                      </entry>
+                      <entry/>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>B</para>
+                      </entry>
+                      <entry/>
+                      <entry>
+                        <para><unit_number><number>30</number><unit>J</unit></unit_number></para>
+                      </entry>
+                      <entry/>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>C</para>
+                      </entry>
+                      <entry/>
+                      <entry/>
+                      <entry/>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>D</para>
+                      </entry>
+                      <entry/>
+                      <entry>
+                        <para><unit_number><number>10</number><unit>J</unit></unit_number></para>
+                      </entry>
+                      <entry/>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>E</para>
+                      </entry>
+                      <entry/>
+                      <entry/>
+                      <entry/>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>F</para>
+                      </entry>
+                      <entry/>
+                      <entry/>
+                      <entry/>
+                    </row>
+                    <row>
+                      <entry>
+                        <para>G</para>
+                      </entry>
+                      <entry/>
+                      <entry/>
+                      <entry/>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001032/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01tx</shortcode>
+<problem>
+              <para>A falling ball hits the ground at <unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number> in a vacuum. Would the speed of the ball be increased or decreased if air resistance were taken into account. Discuss using the work-energy theorem.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001033/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ty</shortcode>
+<problem>
+              <para>A pendulum with mass <unit_number><number>300</number><unit>g</unit></unit_number> is attached to the ceiling. It is pulled up to point A which is a height h = <unit_number><number>30</number><unit>cm</unit></unit_number> from the equilibrium position.</para>
+              <pspicture>
+                <code>
+                  (0,-2.7428205)(7.799532,2.7188206)
+\definecolor{color318b}{rgb}{0.6,0.6,0.6}
+\psline[linewidth=0.042cm](3.18,2.6611793)(5.42,2.6611793)
+\psline[linewidth=0.03cm](4.28,2.6811793)(4.3,-1.0388206)
+\pscircle[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=color318b](4.3,-1.6188205){0.58}
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](4.2845316,2.6838205)(1.7696021,-0.05733404)
+\rput{-42.843517}(0.69505125,0.8063853){\pscircle[linewidth=0.042,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer,fillstyle=solid,fillcolor=color318b](1.375203,-0.48259795){0.58}}
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](4.249403,2.7038207)(6.7643323,-0.03733404)
+\rput{-42.843517}(2.224418,4.744511){\pscircle[linewidth=0.042,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer,fillstyle=solid,fillcolor=color318b](7.1587315,-0.46259794){0.58}}
+\psline[linewidth=0.048cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.66,-2.6988206)(5.04,-2.7188206)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.37,-0.4938206){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.31,-1.6338207){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.18,-0.4738206){C}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.29,-2.5538206){v}
+\psline[linewidth=0.042cm](0.38,-0.3988206)(0.38,-1.6388206)
+\psline[linewidth=0.042cm](0.38,-0.4188206)(0.62,-0.4188206)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.13,-1.0738206){h}
+\psline[linewidth=0.042cm](0.38,-1.6188205)(0.62,-1.6188205)
+
+                </code>
+              </pspicture>
+              <para>Calculate the speed of the pendulum when it reaches point B (the equilibrium point). Assume that there are no external forces acting on the pendulum.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001034/view"/>
+		<correct/>
+</entry>
+</exercises>
+        </section>
+      </section>
+      <section type="section">
+        <title>Power</title>
+        <shortcode>ESCEG</shortcode>
+        <para>Now that we understand the relationship between work and energy, we are ready to look at a quantity that defines how long it takes for a certain amount of work to be done. For example, a mother pushing a trolley full of groceries can take <unit_number><number>30</number><unit>s</unit></unit_number> or <unit_number><number>60</number><unit>s</unit></unit_number> to push the trolley down an aisle. She does the same amount of work, but takes a different length of time. We use the idea of <emphasis effect="italics">power</emphasis> to describe the rate at which work is done.</para>
+        <note type="aside">
+          <para>The unit watt is named after Scottish inventor and engineer James Watt (19 January 1736 - 19 August 1819) whose improvements to the steam engine were fundamental to the Industrial Revolution. A key feature of it was that it brought the engine out of the remote coal fields into factories.</para>
+        </note>
+        <definition>
+          <term>Power</term>
+          <meaning>
+            <para>Power is defined as the rate at which work is done or the rate at which energy is expended. The mathematical definition for power is:</para>
+            
+
+            <latex>P=F·v</latex>
+            
+
+            
+          </meaning>
+        </definition>
+        <para><link target-id="uid129"/> is easily derived from the definition of work. We know that:</para>
+        
+
+        <latex>W=F·d.</latex>
+        
+
+        <para>However, power is defined as the rate at which work is done. Therefore,</para>
+        
+
+        <latex>P=\frac{\Delta W}{\Delta t}.</latex>
+        
+
+        <para>This can be written as:</para>
+        
+
+        <latex display="block">
+		\begin{align}
+		 P&amp; = \frac{\Delta W}{\Delta t}\\
+		 &amp; = \frac{\Delta \left(F·d\right)}{\Delta t}\\
+		 &amp; = F\frac{\Delta d}{\Delta t}\\
+		 &amp; = F·v 
+		\end{align}
+		</latex>
+        
+
+        <para>The unit of power is watt (symbol W).</para>
+        <activity type="investigation">
+          <title>Watt</title>
+          <para>Show that the W is equivalent to <unit>J·s<sup>-1</sup></unit>.</para>
+        </activity>
+        <activity type="project">
+          <title>James Watt</title>
+          <para>Write a short report 5 pages on the life of James Watt describing his many other inventions.</para>
+        </activity>
+        <note type="aside">
+          <para>Historically, the <emphasis effect="italics">horsepower</emphasis> (symbol hp) was the unit used to describe the power delivered by a machine. One horsepower is equivalent to approximately <unit_number><number>750</number><unit>W</unit></unit_number>. The horsepower was derived by James Watt to give an indication of the power of his steam engine in terms of the power of a horse, which was what most people used to for example, turn a mill wheel.</para>
+        </note>
+        <worked_example>
+          <title>Power calculation 1</title>
+          <question>
+            <para>Calculate the power required for a force of <unit_number><number>10</number><unit>N</unit></unit_number> applied to move a <unit_number><number>10</number><unit>kg</unit></unit_number> box at a speed of <unit_number><number>1</number><unit>ms</unit></unit_number> over a frictionless surface.</para>
+          </question>
+          <answer>
+            <workstep>
+              <title>Determine what is given and what is required.</title>
+              <list list-type="bulleted">
+                <item>
+                  <para>We are given the force, <latex>F=10 \text{N}</latex>.</para>
+                </item>
+                <item>
+                  <para>We are given the speed, <latex>v=1 \text{m}·{\text{s}}^{-1}</latex>.</para>
+                </item>
+                <item>
+                  <para>We are required to calculate the power required.</para>
+                </item>
+              </list>
+            </workstep>
+            <workstep>
+              <title>Draw a force diagram</title>
+              <pspicture>
+                <code>
+                  (0,-1)(5,2)
+\psline[linewidth=2pt](0,0)(5,0)
+\psframe(1.5,0)(3.5,2)
+\psline{-&gt;}(2.5,1)(2.5,-1)
+\uput[ur](2.5,-1){$W$}
+\psline{-&gt;}(0,1)(1.5,1)
+\uput[ul](1.5,1){$F$}
+
+                </code>
+              </pspicture>
+            </workstep>
+            <workstep>
+              <title>Determine how to approach the problem</title>
+              <para>From the force diagram, we see that the weight of the box is acting at right angles to the direction of motion. The weight does not contribute to the work done and does not contribute to the power calculation.
+We can therefore calculate power from: <latex>P=F·v</latex>.</para>
+            </workstep>
+            <workstep>
+              <title>Calculate the power required</title>
+              <latex display="block">
+		\begin{align}
+		 P&amp; = F·v\\
+		 &amp; = \left(10 \mathrm{N}\right)\left(1 \text{m}·{\text{s}}^{-1}\right)\\
+		 &amp; = 10 \text{W} 
+		\end{align}
+		</latex>
+              
+
+              
+            </workstep>
+            <workstep>
+              <title>Write the final answer</title>
+              <para><unit_number><number>10</number><unit>W</unit></unit_number> of power are required for a force of <unit_number><number>10</number><unit>N</unit></unit_number> to move a <unit_number><number>10</number><unit>kg</unit></unit_number> box at a speed of <unit_number><number>1</number><unit>ms</unit></unit_number> over a frictionless surface.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+        <para>Machines are designed and built to do work on objects. All machines usually have a power rating. The power rating indicates the rate at which that machine can do work upon other objects.</para>
+        
+
+        <para>A car engine is an example of a machine which is given a power rating. The power rating relates to how rapidly the car can accelerate. Suppose that a 50 kW engine could accelerate the car from <unit_number><number>0</number><unit>km·hr<sup>-1</sup></unit></unit_number> to <unit_number><number>60</number><unit>km·hr<sup>-1</sup></unit></unit_number> in <unit_number><number>16</number><unit>s</unit></unit_number>. Then a car with four times the power rating (i.e. <unit_number><number>200</number><unit>kW</unit></unit_number>) could do the same amount of work in a quarter of the time. That is, a <unit_number><number>200</number><unit>kW</unit></unit_number> engine could accelerate the same car from <unit_number><number>0</number><unit>km·hr<sup>-1</sup></unit></unit_number> to <unit_number><number>60</number><unit>km·hr<sup>-1</sup></unit></unit_number> in <unit_number><number>4</number><unit>s</unit></unit_number>.</para>
+        <worked_example>
+          <title>Power calculation 2</title>
+          <question>
+            <para>A forklift lifts a crate of mass <unit_number><number>100</number><unit>kg</unit></unit_number> at a constant velocity to a height of <unit_number><number>8</number><unit>m</unit></unit_number> over a time of <unit_number><number>4</number><unit>s</unit></unit_number>. The forklift then holds the crate in place for <unit_number><number>20</number><unit>s</unit></unit_number>. Calculate how much power the forklift exerts in lifting the crate? How much power does the forklift exert in holding the crate in place?</para>
+          </question>
+          <answer>
+            <workstep>
+              <title>Determine what is given and what is required</title>
+              <para>We are given:</para>
+              <list list-type="bulleted">
+                <item>
+                  <para>mass of crate: m=<unit_number><number>100</number><unit>kg</unit></unit_number></para>
+                </item>
+                <item>
+                  <para>height that crate is raised: h=<unit_number><number>8</number><unit>m</unit></unit_number></para>
+                </item>
+                <item>
+                  <para>time taken to raise crate: <latex>{t}_{r}=4 \text{s}</latex></para>
+                </item>
+                <item>
+                  <para>time that crate is held in place: <latex>{t}_{s}=20 \text{s}</latex></para>
+                </item>
+              </list>
+              <para>We are required to calculate the power exerted.</para>
+            </workstep>
+            <workstep>
+              <title>Determine how to approach the problem</title>
+              <para>We can use:</para>
+              
+
+              <latex>P=F\frac{\Delta x}{\Delta t}</latex>
+              
+
+              <para>to calculate power. The force required to raise the crate is equal to the weight of the crate.</para>
+            </workstep>
+            <workstep>
+              <title>Calculate the power required to raise the crate</title>
+              <latex display="block">
+		\begin{align}
+		 P&amp; = F\frac{\Delta x}{\Delta t}\\
+		 &amp; = m·g\frac{\Delta x}{\Delta t}\\
+		 &amp; = \left(100 \text{kg}\right)\left(9,8 \text{m}·{\text{s}}^{-2}\right)\frac{8 \mathrm{m}}{4 \text{s}}\\
+		 &amp; = 1960 \text{W} 
+		\end{align}
+		</latex>
+              
+
+              
+            </workstep>
+            <workstep>
+              <title>Calculate the power required to hold the crate in place</title>
+              <para>While the crate is being held in place, there is no displacement. This means there is no work done on the crate and therefore there is no power exerted.</para>
+            </workstep>
+            <workstep>
+              <title>Write the final answer</title>
+              <para><unit_number><number>1960</number><unit>W</unit></unit_number> of power is exerted to raise the crate and no power is exerted to hold the crate in place.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+        <activity type="g_experiment">
+          <title>Simple measurements of human power</title>
+          <para>You can perform various physical activities, for example lifting measured weights or climbing a flight of stairs to estimate your output power, using a stop watch. Note: the human body is not very efficient in these activities, so your actual power will be much greater than estimated here.</para>
+        </activity>
+        <exercises><title>Power</title>
+          <entry>
+<shortcode>01tz</shortcode>
+<problem>
+            <para>[IEB 2005/11 HG] Which of the following is equivalent to the SI unit of power:</para>
+            <list list-type="enumerated">
+              <item>
+                <para><unit>V·A</unit></para>
+              </item>
+              <item>
+                <para><unit>V·A<sup>-1</sup></unit></para>
+              </item>
+              <item>
+                <para><unit>kg·m·s<sup>-1</sup></unit></para>
+              </item>
+              <item>
+                <para><unit>kg·m·s<sup>-2</sup></unit></para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001035/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u0</shortcode>
+<problem>
+            <para>Two students, Bill and Bob, are in the weight lifting room of their local gym. Bill lifts the <unit_number><number>50</number><unit>kg</unit></unit_number> barbell over his head 10 times in one minute while Bob lifts the <unit_number><number>50</number><unit>kg</unit></unit_number> barbell over his head 10 times in <unit_number><number>10</number><unit>seconds</unit></unit_number>. Who does the most work? Who delivers the most power? Explain your answers.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001036/00000002/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u1</shortcode>
+<problem>
+            <para>Jack and Jill ran up the hill. Jack is twice as massive as Jill; yet Jill ascended the same distance in half the time. Who did the most work? Who delivered the most power? Explain your answers.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001037/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u2</shortcode>
+<problem>
+            <para>Alex (mass <unit_number><number>60</number><unit>kg</unit></unit_number>) is training for the Comrades Marathon. Part of Alex's training schedule involves push-ups. Alex does his push-ups by applying a force to elevate his centre-of-mass by <unit_number><number>20</number><unit>cm</unit></unit_number>. Determine the number of push-ups that Alex must do in order to do <unit_number><number>10</number><unit>J</unit></unit_number> of work. If Alex does all this work in <unit_number><number>60</number><unit>s</unit></unit_number>, then determine Alex's power.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001038/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u3</shortcode>
+<problem>
+            <para>When doing a chin-up, a physics student lifts her <unit_number><number>40</number><unit>kg</unit></unit_number> body a distance of <unit_number><number>0.25</number><unit>m</unit></unit_number> in <unit_number><number>2</number><unit>s</unit></unit_number>. What is the power delivered by the student's biceps?</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001039/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u4</shortcode>
+<problem>
+            <para>The unit of power that is used on a monthly electricity account is <emphasis effect="italics">kilowatt-hours</emphasis> (symbol <unit>kWh</unit>). This is a unit of energy delivered by the flow of <unit_number><number>1</number><unit>kW</unit></unit_number> of electricity for <unit_number><number>1</number><unit>hour</unit></unit_number>. Show how many joules of energy you get when you buy <unit_number><number>1</number><unit>kWh</unit></unit_number> of electricity.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001040/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u5</shortcode>
+<problem>
+            <para>An escalator is used to move 20 passengers every minute from the first floor of a shopping mall to the second. The second floor is located 5-meters above the first floor. The average passenger's mass is <unit_number><number>70</number><unit>kg</unit></unit_number>. Determine the power requirement of the escalator in order to move this number of passengers in this amount of time.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001041/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u6</shortcode>
+<problem>
+            <para>Calculate the power required for an electric motor to pump <unit_number><number>20</number><unit>kg</unit></unit_number> of water up to ground level from a borehole of depth <unit_number><number>10</number><unit>m</unit></unit_number> in half a minute.</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001042/view"/>
+		<correct/>
+</entry>
+</exercises>
+      </section>
+      <section type="section">
+	<title>Chapter summary</title>
+        <presentation>
+          <shortcode>VPqtf</shortcode>
+          <url>http://www.slideshare.net/slideshow/embed_code/12064993</url>
+        </presentation>
+        <figure>
+          <type>table</type>
+          <table>
+            <tgroup cols="6">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <colspec colname="c5" colnum="5"/>
+              <colspec colname="c6" colnum="6"/>
+              <tbody>
+                <row>
+                  <entry nameend="c6" namest="c1" align="center">
+                    <para><emphasis effect="bold">Units</emphasis></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para><emphasis effect="bold">Quantity</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Symbol</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Unit</emphasis></para>
+                  </entry>
+                  <entry nameend="c5" namest="c4" align="center">
+                    <para><emphasis effect="bold">S.I. Units</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Direction</emphasis></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>velocity</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\stackrel{\to }{v}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                  <entry>
+                    <para><unit>m·s<sup>-1</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>m·s<sup>-1</sup></unit></para>
+                  </entry>
+                  <entry>
+                    ✓ 
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>momentum</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\stackrel{\to }{p}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                  <entry>
+                    <para><unit>kg·m·s<sup>-1</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m·s<sup>-1</sup></unit></para>
+                  </entry>
+                  <entry>
+                    ✓</entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>energy</para>
+                  </entry>
+                  <entry>
+                    <para>E</para>
+                  </entry>
+                  <entry>
+                    <para>J</para>
+                  </entry>
+                  <entry>
+                    <para><unit>kg·m<sup>2</sup>·s<sup>-2</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m<sup>2</sup>·s<sup>-2</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Work</para>
+                  </entry>
+                  <entry>
+                    <para>W</para>
+                  </entry>
+                  <entry>
+                    <para>J</para>
+                  </entry>
+                  <entry>
+                    <para><unit>N·m</unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m<sup>2</sup>·s<sup>-2</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Kinetic Energy</para>
+                  </entry>
+                  <entry>
+                    <para><latex>{E}_{K}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>J</para>
+                  </entry>
+                  <entry>
+                    <para><unit>N·m</unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m<sup>2</sup>·s<sup>-2</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Potential Energy</para>
+                  </entry>
+                  <entry>
+                    <para><latex>{E}_{P}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>J</para>
+                  </entry>
+                  <entry>
+                    <para><unit>N·m</unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m<sup>2</sup>·s<sup>-2</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Mechanical Energy</para>
+                  </entry>
+                  <entry>
+                    <para>U</para>
+                  </entry>
+                  <entry>
+                    <para>J</para>
+                  </entry>
+                  <entry>
+                    <para><unit>N·m</unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m<sup>2</sup>·s<sup>-2</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Power</para>
+                  </entry>
+                  <entry>
+                    <para>P</para>
+                  </entry>
+                  <entry>
+                    <para>W</para>
+                  </entry>
+                  <entry>
+                    <para><unit>N·m·s<sup>-1</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">or </emphasis>  <unit>kg·m<sup>2</sup>·s<sup>-3</sup></unit></para>
+                  </entry>
+                  <entry>
+                    <para>—</para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </figure>
+        <list list-type="bulleted">
+          <item>
+            <para><emphasis effect="bold">Momentum</emphasis>: <latex>\stackrel{\to }{p}=m\stackrel{\to }{v}</latex></para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Kinetic energy</emphasis>: <latex>{E}_{k}=\frac{1}{2}m{\stackrel{\to }{v}}^{2}</latex></para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Conservation of Energy</emphasis>:
+Energy is never created nor destroyed, but is only transformed from
+one form to another.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Conservation of Mechanical Energy</emphasis>:
+In the absence of friction, the total mechanical energy of an object
+is conserved.</para>
+          </item>
+          <item>
+            <para>When a force moves in the direction along which it acts, work is done.</para>
+          </item>
+          <item>
+            <para>Work is the process of converting energy.</para>
+          </item>
+          <item>
+            <para>Energy is the ability to do work.</para>
+          </item>
+        </list>
+      </section>
+      <exercises><title/><entry>
+<shortcode>01u7</shortcode>
+<problem>
+          <para>The force vs. displacement graph shows the amount of force applied to an object by three different people. Abdul applies force to the object for the first <unit_number><number>4</number><unit>m</unit></unit_number> of its displacement, Beth applies force from the <unit_number><number>4</number><unit>m</unit></unit_number> point to the <unit_number><number>6</number><unit>m</unit></unit_number> point, and Charles applies force from the <unit_number><number>6</number><unit>m</unit></unit_number> point to the <unit_number><number>8</number><unit>m</unit></unit_number> point. Calculate the work done by each person on the object? Which of the three does the most work on the object?</para>
+          <pspicture>
+            <code>
+              (0,-4)(7,4)
+\psset{unit=0.75}
+\psaxes{&lt;-&gt;}(0,0)(0,-5)(9,5)
+\psline(0,-4)(4,0)(6,4)(8,4)
+\psdots(0,-4)(4,0)(6,4)(8,4)
+\pcline[linestyle=none,offset=8pt](0,-4)(4,0)
+\lput*{:U}{Abdul}
+\pcline[linestyle=none,offset=8pt](4,0)(6,4)
+\lput*{:U}{Beth}
+\pcline[linestyle=none,offset=8pt](6,4)(8,4)
+\lput*{:U}{Charles}
+
+            </code>
+          </pspicture>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001043/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u8</shortcode>
+<problem>
+          <para>How much work does a person do in pushing a shopping trolley with a force of <unit_number><number>200</number><unit>N</unit></unit_number> over a distance of <unit_number><number>80</number><unit>m</unit></unit_number> in the direction of the force?</para>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001044/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01u9</shortcode>
+<problem>
+          <para>How much work does the force of gravity do in pulling a <unit_number><number>20</number><unit>kg</unit></unit_number> box down a <unit_number><number>45</number><unit>°</unit></unit_number> frictionless inclined plane of length <unit_number><number>18</number><unit>m</unit></unit_number>?</para>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001045/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ua</shortcode>
+<problem>
+          <para>[IEB 2001/11 HG1] Of which one of the following quantities is
+<unit>kg·m<sup>2</sup>·s<sup>-3</sup></unit> the base S.I. unit?</para>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <para>a</para>
+                  </entry>
+                  <entry>
+                    <para>Energy</para>
+                  </entry>
+                  <entry>
+                    <para>c</para>
+                  </entry>
+                  <entry>
+                    <para>Power</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>b</para>
+                  </entry>
+                  <entry>
+                    <para>Force</para>
+                  </entry>
+                  <entry>
+                    <para>d</para>
+                  </entry>
+                  <entry>
+                    <para>Momentum</para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001046/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ub</shortcode>
+<problem>
+          <para>[IEB 2003/11 HG1] A motor is used to raise a mass m through a vertical height h in time t.
+What is the power of the motor while doing this?</para>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <para>a</para>
+                  </entry>
+                  <entry>
+                    <para><latex>mght</latex></para>
+                  </entry>
+                  <entry>
+                    <para>c</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\frac{mgt}{h}</latex></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>b</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\frac{mgh}{t}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>d</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\frac{ht}{mg}</latex></para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001047/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01uc</shortcode>
+<problem>
+          <para>[IEB 2002/11 HG1] An electric motor lifts a load of mass M vertically through a height h at a constant speed v. Which of the following expressions can be used to calculate the power transferred by the motor to the load while it is lifted at constant speed?</para>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <para>a</para>
+                  </entry>
+                  <entry>
+                    <para><latex>Mgh</latex></para>
+                  </entry>
+                  <entry>
+                    <para>c</para>
+                  </entry>
+                  <entry>
+                    <para><latex>Mgv</latex></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>b</para>
+                  </entry>
+                  <entry>
+                    <para><latex>Mgh+\frac{1}{2}</latex> Mv <latex>{}^{2}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>d</para>
+                  </entry>
+                  <entry>
+                    <para><latex>Mgv+\frac{1}{2}</latex><latex>\frac{{\mathrm{Mv}}^{3}}{\mathrm{h}}</latex></para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001048/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ud</shortcode>
+<problem>
+          <para>[IEB 2001/11 HG1] An escalator is a moving staircase that is powered by an electric motor. People are lifted up the escalator at a constant speed of v through a vertical height h.</para>
+          
+
+          <para>What is the energy gained by a person of mass m standing on the escalator when he is lifted from the bottom to the top?</para>
+          <pspicture>
+            <code>
+              (0,-1.381)(3.64,1.381)
+\psline[linewidth=0.042cm](0.02,-1.02)(0.04,-0.82)
+\psline[linewidth=0.042cm](0.04,-0.82)(0.44,-0.82)
+\psline[linewidth=0.042cm](0.44,-0.84)(0.42,-0.56)
+\psline[linewidth=0.042cm](0.4,-0.58)(0.84,-0.58)
+\psline[linewidth=0.042cm](0.84,-0.58)(0.84,-0.42)
+\psline[linewidth=0.042cm](0.84,-0.42)(1.24,-0.42)
+\psline[linewidth=0.042cm](1.24,-0.42)(1.24,-0.2)
+\psline[linewidth=0.042cm](1.24,-0.2)(1.64,-0.2)
+\psline[linewidth=0.042cm](1.64,-0.2)(1.64,0.0)
+\psline[linewidth=0.042cm](1.64,0.0)(2.02,0.0)
+\psline[linewidth=0.042cm](2.02,0.0)(2.04,0.2)
+\psline[linewidth=0.042cm](2.04,0.2)(2.46,0.2)
+\psline[linewidth=0.042cm](2.46,0.2)(2.46,0.42)
+\psline[linewidth=0.042cm](2.46,0.42)(2.84,0.42)
+\pscircle[linewidth=0.042,dimen=outer](0.13,-0.05){0.13}
+\psline[linewidth=0.042cm](0.16,-0.18)(0.16,-0.64)
+\psline[linewidth=0.042cm](0.16,-0.64)(0.34,-0.8)
+\psline[linewidth=0.042cm](0.16,-0.68)(0.04,-0.84)
+\psline[linewidth=0.042cm](0.06,-0.36)(0.2,-0.42)
+\psline[linewidth=0.042cm](0.2,-0.42)(0.36,-0.34)
+\psbezier[linewidth=0.042](0.02,-1.04)(0.1,0.04535568)(0.32,-0.12)(0.7,0.14)(1.08,0.4)(2.7093678,1.36)(2.88,0.9)(3.0506325,0.44)(2.62,0.4)(2.76,0.48)
+\psline[linewidth=0.042cm](0.04,-1.02)(0.02,-1.36)
+\psline[linewidth=0.042cm](0.02,-1.36)(2.82,0.08)
+\psline[linewidth=0.042cm](2.82,0.08)(2.82,0.46)
+\pscircle[linewidth=0.042,dimen=outer](2.61,1.21){0.13}
+\psline[linewidth=0.042cm](2.64,1.08)(2.64,0.62)
+\psline[linewidth=0.042cm](2.64,0.62)(2.82,0.46)
+\psline[linewidth=0.042cm](2.64,0.58)(2.52,0.42)
+\psline[linewidth=0.042cm](2.54,0.9)(2.68,0.84)
+\psline[linewidth=0.042cm](2.68,0.84)(2.84,0.92)
+\psline[linewidth=0.042cm](3.26,0.42)(3.26,-0.78)
+\psline[linewidth=0.042cm](3.26,-0.78)(3.06,-0.78)
+\psline[linewidth=0.042cm](3.28,0.4)(3.06,0.4)
+\rput(3.51,-0.175){h}
+
+            </code>
+          </pspicture>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <para>a</para>
+                  </entry>
+                  <entry>
+                    <para><latex>mgh</latex></para>
+                  </entry>
+                  <entry>
+                    <para>c</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\frac{mgh}{\sin\theta }</latex></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>b</para>
+                  </entry>
+                  <entry>
+                    <para><latex>mgh\sin\theta </latex></para>
+                  </entry>
+                  <entry>
+                    <para>d</para>
+                  </entry>
+                  <entry>
+                    <para><latex>\frac{1}{2}m{v}^{2}</latex></para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001049/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ue</shortcode>
+<problem>
+          <para>[IEB 2003/11 HG1] In which of the following situations is there no work done on the object?</para>
+          <list list-type="enumerated">
+            <item>
+              <para>An apple falls to the ground.</para>
+            </item>
+            <item>
+              <para>A brick is lifted from the ground to the top of a building.</para>
+            </item>
+            <item>
+              <para>A car slows down to a stop.</para>
+            </item>
+            <item>
+              <para>A box moves at constant velocity across a frictionless horizontal surface.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001050/view"/>
+		<correct/>
+</entry>
+</exercises>
+    </section>
+  </content>
+</document>

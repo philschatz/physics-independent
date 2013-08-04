@@ -1,0 +1,2781 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml/0.4" xmlns:style="http://siyavula.com/cnxml/style/0.1">
+  <metadata>
+    <cnxml-version>0.1</cnxml-version>
+    <pspicture-generator-version>1.1</pspicture-generator-version>
+  </metadata>
+  <content>
+    <section type="chapter">
+      <title>Momentum and impulse</title>
+      <section type="section">
+        <title>Introduction</title>
+        <shortcode>ESBEO</shortcode>
+        <para>In Grade 10 we studied motion but not what caused the motion. In this chapter we will learn that a net force is needed to cause motion. We recall what a force is and learn about how force and motion are related. We are introduced to two new concepts, momentum and impulse, and we learn more about turning forces and the force of gravity.</para>
+            <image style:width='0.5'>
+            <src>photos/Mosquito-by-John-Tran-on-Flickr-8143929538_b7d3e4406c_o-cropped.jpg</src>
+            <attribution>http://www.flickr.com/</attribution>
+            </image>
+            <image style:width='0.5'>
+            <src>photos/Moon-by-Mark-Winterbourne-on-Flickr-6066305557_780128a95d_o-cropped.jpg</src>
+            <attribution>http://www.flickr.com/</attribution>
+            </image>
+            <image style:width='0.5'>
+            <src>photos/Motorbike-by-Natesh-Ramasamy-on-Flickr-7346123072_85a510e237_k.jpg</src>
+            <attribution>http://www.flickr.com/photos/ramnaganat/7346123072/sizes/k/</attribution>
+            </image>
+            <image style:width='0.5'>
+            <src>photos/Car-by-Moyan-Brenn-on-Flickr-5952275132_9c214f99ec_o.jpg</src>
+            <attribution>http://www.flickr.com/photos/aigle_dore/5952275132/sizes/o/</attribution>
+            </image>
+            <image style:width='0.5'>
+            <src>photos/Truck-by-David-Guos-Master-on-Flickr-7553870574_1fbf12ca69_o.jpg</src>
+            <attribution>http://www.flickr.com/photos/76969036@N02/7553870574/sizes/o/</attribution>
+            </image>
+        <linked-concepts>
+        <concept><text>Units and unit conversions</text><subject>science</subject><grade>10</grade><chapter>science skills</chapter></concept>
+        <concept><text>Equations</text><subject>maths</subject><grade>10</grade><chapter>equations and inequalities</chapter></concept>
+        <concept><text>Techniques of vector addition</text><subject>science</subject><grade>10</grade><chapter>vectors and scalars</chapter></concept>
+      </linked-concepts>
+
+      </section>
+      <section type="section">
+        <title>Momentum</title>
+        <shortcode>ESBFF</shortcode>
+        <para>Momentum is a physical quantity which is closely related to forces. Momentum is 
+        a property which applies to moving objects, in fact it is mass in motion. If something 
+        has mass and it is moving then it has momentum.</para>
+        <definition>
+          <term>Momentum</term>
+          <meaning>
+            <para>The linear momentum of a particle (object) is a vector quantity equal to the
+            product of the mass of the particle (object) and its velocity.
+            </para>
+          </meaning>
+        </definition>
+        <para>The momentum (symbol <latex>\vec{p}</latex>) of an object of mass m moving at velocity <latex>v</latex> is:</para>
+        <latex>\vec{p}=m\vec{v}</latex>
+        <para>Momentum is related to both the mass and velocity of an object. A small car 
+        travelling at the same velocity as a big truck will have a smaller momentum than 
+        the truck. The smaller the mass, the smaller the momentum for a fixed velocity. If 
+        the mass is constant then the greater the velocity the greater the momentum. The momentum 
+        will always be in the same direction as the velocity because mass is a scalar not a 
+        vector.</para>
+
+
+        <section type="subsection">
+          <title>Vector nature of momentum</title>
+          <shortcode>ESBFG</shortcode>
+        
+
+        <para>A car travelling at <unit_number><number>120</number><unit>km·hr<sup>-1</sup></unit></unit_number> will have a larger momentum than the same car travelling at <unit_number><number>60</number><unit>km·hr<sup>-1</sup></unit></unit_number>. Momentum is also related to velocity; the smaller the velocity, the smaller the momentum.</para>
+        
+
+        <para>Different objects can also have the same momentum, for example a car travelling slowly can have the same momentum as a motorcycle travelling relatively fast. We can easily demonstrate this.</para>
+        
+
+        <para>Consider a car of mass <unit_number><number>1000</number><unit>kg</unit></unit_number> 
+        with a velocity of <unit_number><number>8</number><unit>m·s<sup>-1</sup></unit></unit_number> 
+        (about <unit_number><number>30</number><unit>km·hr<sup>-1</sup></unit></unit_number>) East. 
+        The momentum of the car is therefore:</para>
+        
+
+        <para><latex display='block'>
+        \begin{align}
+         \vec{p}&amp; = m\vec{v} \\ 
+        &amp; = \left(<number>1000</number>\right)\left(8\right) \\ 
+        &amp; = <unit_number><number>8000</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{East} 
+        \end{align}
+        </latex></para>
+        
+
+        <para>Now consider a motorcycle of mass 
+        <unit_number><number>250</number><unit>kg</unit></unit_number> 
+        travelling at <unit_number><number>32</number><unit>m·s<sup>-1</sup></unit></unit_number> 
+        (about <unit_number><number>115</number><unit>km·hr<sup>-1</sup></unit></unit_number>). 
+        The momentum of the motorcycle is:</para>
+        
+
+        <latex display='block'>
+\begin{align}
+ \vec{p} &amp;= m\vec{v} \\ 
+ &amp; = \left(250 \text{kg}\right)\left(32 \text{m}·{\text{s}}^{-1}\right) \\ 
+ &amp; = <unit_number><number>8000</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{East}
+\end{align}</latex>
+        
+
+        <para>Even though the motorcycle is considerably lighter than the car, the fact that the motorcycle is travelling much faster than the car means that the momentum of both vehicles is the same.</para>
+        
+
+        <para>From the calculations above, you are able to derive the unit for momentum as <unit>kg·m·s<sup>-1</sup></unit>.</para>
+        
+
+ <para>Momentum is also vector quantity, because it is the product of a scalar (m) with a 
+ vector <latex>(\vec{v})</latex>.</para>
+        
+
+        <para>This means that whenever we calculate the momentum of an object, we need to include 
+        the direction of the momentum.</para>
+	<video>
+          <title>Momentum</title>
+          <shortcode>VPkki</shortcode>
+	  <url>http://www.youtube.com/embed/XFhntPxow0U</url>
+	  <width>300</width>
+	  <height>245</height>
+	  <url>http://www.khanacademy.org/video/introduction-to-momentum?playlist=Physics</url>
+	</video>
+        <worked_example>
+          <title>Momentum of a soccer ball</title>
+          <question>
+            <para>A soccer ball of mass <unit_number><number>420</number><unit>g</unit></unit_number> 
+            is kicked at <unit_number><number>20</number><unit>m·s<sup>-1</sup></unit></unit_number> 
+            towards the goal post. Calculate the momentum of the ball.</para>
+            <image style:width='0.5'>
+            <src>photos/SoccerLadyKicking-by-KM_Klemencic-on-Flickr-7892058384_0892ae36c9_k.jpg</src>
+            <attribution>http://www.flickr.com/photos/klemencic/7892058384/sizes/k/</attribution>
+            </image>
+          </question>
+          <answer>
+            <workstep>
+              <title>Identify what information is given and what is asked for</title>
+              <para>The question explicitly gives:</para>
+              <list list-type="bulleted">
+                <item>
+                  <para>the mass of the ball, and</para>
+                </item>
+                <item>
+                  <para>the velocity of the ball.</para>
+                </item>
+              </list>
+              <para>The mass of the ball must be converted to SI units.</para>
+              
+
+              <latex>420 \mathrm{g}=<number>0.42</number> \text{kg}</latex>
+              
+
+              <para>We are asked to calculate the momentum of the ball. From the definition of momentum,
+              <latex>\vec{p}=m\vec{v}</latex> we see that we need the mass and velocity of the 
+              ball, which we are given.</para>
+            </workstep>
+            <workstep>
+              <title>Do the calculation</title>
+              <para>We calculate the magnitude of the momentum of the ball,</para>
+              
+
+              <latex display='block'>
+\begin{align}
+ \vec{p}&amp; = m\vec{v} \\ 
+&amp; = \left(<number>0.42</number>\right)\left(20\right) \\ 
+&amp; = <unit_number><number>8.40</number><unit>kg·m·s<sup>-1</sup></unit></unit_number> 
+\end{align}</latex>
+     
+            </workstep>
+            <workstep>
+              <title>Quote the final answer</title>
+              <para>We quote the answer with the direction of motion included,
+<latex>\vec{p}</latex> = <unit_number><number>8.40</number><unit>kg·m·s<sup>-1</sup></unit></unit_number> in the direction of the goal post.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+        <worked_example>
+          <title>Momentum of a cricket ball</title>
+          <question>
+            <para>A cricket ball of mass <unit_number><number>160</number><unit>g</unit></unit_number> is bowled at <unit_number><number>40</number><unit>m·s<sup>-1</sup></unit></unit_number> towards a batsman. Calculate the momentum of the cricket ball.</para>
+           <image style:width='.6'>
+            <src>photos/Bowler-by-gareth1953-on-Flickr-5858562848_02ab046a55_o.jpg</src>
+    
+            <attribution>http://www.flickr.com/photos/gareth1953/5858562848/sizes/o/</attribution>
+            </image>
+          </question>
+          <answer>
+            <workstep>
+              <title>Identify what information is given and what is asked for</title>
+              <para>The question explicitly gives</para>
+              <list list-type="bulleted">
+                <item>
+                  <para>the mass of the ball (m = <unit_number><number>160</number><unit>g</unit></unit_number> = <unit_number><number>0.16</number><unit>kg</unit></unit_number>), and</para>
+                </item>
+                <item>
+		  <para>the velocity of the ball <latex>(\vec{v}</latex> = <unit_number><number>40</number><unit>m·s<sup>-1</sup></unit></unit_number> towards the batsman)</para>
+                </item>
+              </list>
+              <para>To calculate the momentum we will use</para>
+              
+
+              <latex>\vec{p}=m\vec{v}</latex>
+    
+            </workstep>
+            <workstep>
+              <title>Do the calculation</title>
+              <latex display='block'>
+\begin{align}
+ \vec{p}&amp; = m\vec{v} \\ 
+ &amp; = \left(<number>0.16</number>\right)\left(40\right) \\ 
+ &amp; = <unit_number><number>6.4</number><unit>kg·m·s<sup>-1</sup></unit></unit_number> \\ 
+ &amp; = <unit_number><number>6.4</number><unit>kg·m·s<sup>-1</sup></unit></unit_number> \text{in the direction of the batsman} 
+\end{align}</latex>
+  
+            </workstep>
+          </answer>
+        </worked_example>
+        <worked_example>
+          <title>Momentum of the Moon</title>
+          <question>
+            <para>The Moon is <unit_number><number>384400</number><unit>km</unit></unit_number> away from the Earth and orbits the Earth in <number>27.3</number> days. If the Moon has a mass of <unit_number><number><coeff>7.35</coeff><exp>22</exp></number><unit>kg</unit></unit_number>, what is the magnitude of its momentum if we assume a circular orbit?</para>
+            <image style:width='0.5'>
+            <src>photos/Moon-by-Mark-Winterbourne-on-Flickr-6066305557_780128a95d_o-cropped.jpg</src>
+            <attribution>http://www.flickr.com/</attribution>
+            </image>
+          </question>
+          <answer>
+            <workstep>
+              <title>Identify what information is given and what is asked for</title>
+              <para>The question explicitly gives</para>
+              <list list-type="bulleted">
+                <item>
+                  <para>the mass of the Moon (m = <unit_number><number><coeff>7.35</coeff><exp>22</exp></number><unit>kg</unit></unit_number>)</para>
+                </item>
+                <item>
+                  <para>the distance to the Moon (<unit_number><number>384400</number><unit>km</unit></unit_number> = <unit_number><number>384400000</number><unit>m</unit></unit_number> = <unit_number><number><coeff>3.844</coeff><exp>8</exp></number><unit>m</unit></unit_number>)</para>
+                </item>
+                <item>
+                  <para>the time for one orbit of the Moon (<latex><number>27.3</number>~\text{days}=<number>27.3</number>\times 24\times 60\times 60=<number>2.36</number>\times {10}^{6}~\text{s}</latex>)</para>
+                </item>
+              </list>
+              <para>We are asked to calculate only the magnitude of the momentum of the Moon (i.e. we do not need to specify a direction). In order to do this we require the mass and the magnitude of the velocity of the Moon, since</para>
+              
+
+              <latex>\vec{p}=m\vec{v}</latex>
+
+            </workstep>
+            <workstep>
+              <title>Find the magnitude of the velocity of the Moon</title>
+              <para>The magnitude of the average velocity is the same as the speed. Therefore:</para>
+              
+
+              <latex>v=\frac{\Delta x}{\Delta t}</latex>
+              
+
+              <para>We are given the time the Moon takes for one orbit but not how far it travels in that time. However, we can work this out from the distance to the Moon and the fact that the Moon has a circular orbit. Using the equation for the circumference, C, of a circle in terms of its radius, we can determine the distance travelled by the Moon in one
+orbit:</para>
+              
+
+              <latex display='block'>
+\begin{align}
+ C&amp; = 2\pi r \\ 
+ &amp; = 2\pi \left(<number>3.844</number>\times {10}^{8}\right) \\ 
+&amp; = <unit_number><number><coeff>2.42</coeff><exp>9</exp></number><unit>m</unit></unit_number> 
+\end{align}</latex>
+              
+
+              <para>Combining the distance travelled by the Moon in an orbit and the time
+taken by the Moon to complete one orbit, we can determine the
+magnitude of the Moon's velocity or speed,</para>
+              
+
+              <latex display='block'>
+\begin{align}
+ v&amp; = \frac{\Delta x}{\Delta t} \\ 
+ &amp; = \frac{C}{T} \\ 
+ &amp; = \frac{<number>2.42</number>\times {10}^{9}m}{<number>2.36</number>\times {10}^{6}s} \\ 
+ &amp; = <unit_number><number><coeff>1.02</coeff><exp>3</exp></number><unit>m·s<sup>-1</sup></unit></unit_number>. 
+\end{align}</latex>
+
+            </workstep>
+            <workstep>
+              <title>Finally calculate the momentum and quote the answer</title>
+              <para>The magnitude of the Moon's momentum is:</para>
+              
+
+              <latex display='block'>
+\begin{align}
+ \vec{p}&amp; = m\vec{v} \\ 
+&amp; = \left(<number>7.35</number>\times {10}^{22}\right)\left(<number>1.02</number>\times {10}^{3}\right) \\ 
+&amp; = <unit_number><number><coeff>7.50</coeff><exp>25</exp></number><unit>kg·m·s<sup>-1</sup></unit></unit_number>
+\end{align}</latex>
+
+            </workstep>
+          </answer>
+        </worked_example>
+          <para>As we have said, momentum is a vector quantity. Since momentum is a vector, the techniques of vector addition discussed in <link url="http://everythingscience.co.za/grade-10/">Vectors and scalars in Grade 10</link> must be used when dealing with momentum.</para>
+        </section>
+        <section type="subsection">
+          <title>Change in momentum</title>
+          <shortcode>ESBFH</shortcode>
+          <para>Particles or objects can collide with other particles or objects, we know 
+          that this will 
+          often change their velocity (and maybe their mass) so their momentum is likely
+          to change as well. We will deal with collisions in detail a little bit later
+          but we are going to start to look at the details of the change in momentum
+          for a single particle or object.</para>
+<section type='subsubsection'>
+<title>Case 1: Object bouncing off a wall</title>
+          <para>Lets start with a simple picture, a ball of mass, <latex>m</latex>, moving
+          with initial velocity, <latex>\vec{v}_i</latex>, to the right towards a wall. 
+          It will have momentum
+          <latex>\vec{p}_i=m\vec{v}_i</latex> to the right as shown in this picture:</para>
+
+<pspicture>
+<code>
+(0,3)(9,5)
+\psline[linecolor=orange]{->}(2,4)(6,4)
+\uput[u](4,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](7,4.75)(7.5,3.25)
+</code>
+</pspicture>
+<para>The ball bounces off the wall. It will now be moving to the left, with the same mass,
+but a different velocity, <latex>\vec{v}_f</latex> and therefore, a different 
+momentum, <latex>\vec{p}_f=m\vec{v}_f</latex>, as shown in this picture:</para>
+
+<pspicture>
+<code>
+(0,1)(9,3)
+
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](7,2.75)(7.5,1.25)
+
+\psline[]{->}(6,2)(4,2)
+\uput[u](5,2){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](6,2){9pt}
+
+</code>
+</pspicture>
+<para>We know that the final momentum vector must be the sum of the initial momentum 
+vector and the change in momentum vector, <latex>\Delta \vec{p}=m\Delta \vec{v}</latex>.
+This means that, using tail-to-head vector addition, <latex>\Delta \vec{p}</latex>, must
+be the vector that starts at the head of <latex>\vec{p}_i</latex> and ends on the head of
+<latex>\vec{p}_f</latex> as shown in this picture:</para>
+
+<pspicture>
+<code>
+(0,-1.5)(9,1)
+\rput(.5,0){
+\psline[linecolor=orange]{->}(3,0)(7,0)
+\psline[linecolor=blue]{->}(7,-0.5)(1,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(1,-0.5)(1,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\psline[]{&lt;-}(1,0)(3,0)
+\uput[u](2,0){$\vec{p}_f$}
+\uput[u](5,0){$\vec{p}_i$}
+\uput[d](4,-0.5){$\Delta\vec{p}$}
+}
+
+</code>
+</pspicture>
+
+<para>We also know from algebraic addition of vectors that:
+<latex display='block'>
+\begin{align}
+\vec{p}_f &amp;=\vec{p}_i + \Delta \vec{p} \\
+\vec{p}_f - \vec{p}_i &amp;= \Delta \vec{p} \\
+\Delta \vec{p} &amp;= \vec{p}_f - \vec{p}_i 
+\end{align}
+</latex>
+If we put this all together we can show the sequence and the change in momentum
+in one diagram:</para>
+<pspicture>
+<code>
+(0,-1.5)(9,5)
+\psline[linecolor=orange]{->}(2,4)(6,4)
+\uput[u](4,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](7,4.75)(7.5,3.25)
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](7,2.75)(7.5,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,3)(8,3)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,1)(8,1)
+
+\psline[]{->}(6,2)(4,2)
+\uput[u](5,2){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](6,2){9pt}
+
+\rput(.5,0){
+\psline[linecolor=orange]{->}(3,0)(7,0)
+\psline[linecolor=blue]{->}(7,-0.5)(1,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(1,-0.5)(1,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\psline[]{&lt;-}(1,0)(3,0)
+\uput[u](2,0){$\vec{p}_f$}
+\uput[u](5,0){$\vec{p}_i$}
+\uput[d](4,-0.5){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+<para>We have just shown the case for a rebounding object. There are a few other cases we
+can use to illustrate the basic features but they are all built up in the same way.</para>
+</section>
+<section type='subsubsection'>
+<title>Case 2: Object stops</title>
+<image style:width='0.6'>
+<src>photos/TennisBallNet-by-swampa-on-Flickr-4308348195_ab53ed1b31_o.jpg</src>
+<attribution>http://www.flickr.com/photos/swampa/4308348195/sizes/o/</attribution>
+</image>
+<para>In some scenarios the object may come to a standstill (rest). An example of such a case
+is a tennis ball hitting the net. The net stops the ball but doesn't cause it to bounce back.
+At the instant before it falls to the ground its velocity is zero. This scenario is described
+in this image:</para>
+<pspicture>
+<code>
+(0,-1.5)(12,5)
+\psline[linecolor=orange]{->}(2,4)(6,4)
+\uput[u](4,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](7,4.75)(7.15,3.25)
+\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](7,2.75)(7.15,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,3)(11,3)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,1)(11,1)
+
+\uput[u](6,2.25){$\vec{p}_f=0$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](6.5,2){9pt}
+
+\rput(1,0){
+\psline[linecolor=orange]{->}(3,0)(7,0)
+\psline[linecolor=blue]{->}(7,-0.5)(3,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(3,-0.5)(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\uput[u](3,0){$\vec{p}_f$}
+\uput[u](5,0){$\vec{p}_i$}
+\uput[d](4.5,-0.5){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+
+
+
+
+</section> <!-- end subsubsectoin> -->
+<section type='subsubsection'>
+<title>Case 3: Object continues more slowly</title>
+<para>In this case, the object continue in the same direction but more slowly. To give this
+some context, this could happen when a ball hits a glass window and goes through
+it or an object sliding on a frictionless surface encounters a small rough patch before carrying
+on along the frictionless surface.</para>
+<pspicture>
+<code>
+(0,-1.5)(12,5)
+\psline[linecolor=orange]{->}(2,4)(6,4)
+\uput[u](4,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](7,4.75)(7.15,3.25)
+\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](7,2.75)(7.15,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,3)(11,3)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,1)(11,1)
+
+\psline[]{->}(8,2)(10,2)
+\uput[u](9,2){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](8,2){9pt}
+
+\rput(1,0){
+\psline[linecolor=orange]{->}(3,0)(7,0)
+\psline[linecolor=blue]{->}(7,-0.5)(5,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,-0.5)(5,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\psline[]{-&gt;}(3,0)(5,0)
+\uput[u](4,0){$\vec{p}_f$}
+\uput[u](5,0){$\vec{p}_i$}
+\uput[d](6,-0.5){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+
+
+<para><emphasis effect='bold'>Important:</emphasis> note that even though the momentum remains in the same direction the change in momentum is in the opposite direction.</para>
+
+</section> <!-- end subsubsectoin> -->
+
+
+
+
+<section type='subsubsection'>
+<title>Case 4: Object gets a boost</title>
+<para>In this case the object interacts with something that increases the velocity it has
+without changing its direction. For example, in squash the ball can bounce off a back wall
+towards the front wall and a player can hit it with a racquet in the same direction, increasing 
+its velocity.</para>
+<image style:width='0.6'>
+<src>photos/SquashCourt-by-MisterIan-on-Flickr-4084230081_700410d2e9_o.jpg</src>
+<attribution>http://www.flickr.com/photos/misterian/4084230081/sizes/o/in/photostream/</attribution>
+</image>
+<para>If we analyse this scenario in the same way as the first 3 cases, it will look like this:</para>
+
+<pspicture>
+<code>
+(0,-1.5)(12,5)
+\psline[linecolor=orange]{->}(2,4)(4,4)
+\uput[u](3,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+
+% Wall
+
+%\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](5,4.75)(5.15,3.25)
+\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](5,2.75)(5.15,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,3)(11,3)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,1)(11,1)
+
+\psline[]{->}(6,2)(10,2)
+\uput[u](8,2){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](6,2){9pt}
+
+\rput(1,0){
+\psline[linecolor=orange,linewidth=1.5pt]{->}(3,0)(5,0)
+\psline[linecolor=blue]{->}(5,-0.5)(7,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,-0.5)(5,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\psline[]{-&gt;}(3,0)(7,0)
+\uput[u](5,0){$\vec{p}_f$}
+\uput[u](4,0){$\vec{p}_i$}
+\uput[d](6,-0.5){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+
+</section> <!-- end subsubsectoin> -->
+
+
+<section type='subsubsection'>
+<title>Case 5: Vertical bounce</title>
+<para>All of the example that we've shown so far have been in the horizontal direction. 
+That is just a coincidence, this approach applies for vertical or horizontal cases. In 
+fact, it applies to any scenario where the initial and final vectors fall on the same 
+line, any 1-dimensional (1D) problem. We will only deal with 1D scenarios in this
+chapter. For example, a stationary basketball player bouncing a ball.</para>
+<image style:width='0.6'>
+<src>photos/BasketBall-by-SauMag-on-Flickr-8270038026_c0b9f653d5_o.jpg</src>
+<attribution>http://www.flickr.com/photos/saumag/8270038026/sizes/o/</attribution>
+</image>
+<para>To illustrate the point, here is what the analysis would look like for a ball 
+bouncing off the floor:</para>
+<pspicture>
+<code>
+(0,-.5)(6.5,10)
+\psline[linecolor=orange]{->}(1,8)(1,4)
+\uput[l](1,6){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](1,8){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](0.5,.75)(1.5,1.25)
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](2.5,.75)(3.5,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](2,9)(2,.5)
+\psline[linestyle=dotted,linecolor=gray!30!black](4,9)(4,.5)
+
+\psline[]{->}(3,2)(3,4)
+\uput[l](3,3){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](3,2){9pt}
+
+\rput(0,1){
+\psline[linecolor=orange]{->}(5,5)(5,1)
+\uput[l](5,3){$\vec{p}_i$}
+
+
+\psline[]{->}(5,5)(5,7)
+\uput[l](5,6){$\vec{p}_f$}
+
+\psline[linecolor=blue]{->}(5.5,1)(5.5,7)
+\psdot(5,5)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,1)(5.5,1)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,7)(5.5,7)
+\uput[r]{90}(5.5,4){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+
+
+</section> <!-- end subsubsectoin> -->
+
+          <exercises><title/>
+            <entry>
+<shortcode>01wu</shortcode>
+<problem>
+              <list list-type="enumerated">
+                <item>
+                  <para>The fastest recorded delivery for a cricket ball is <unit_number><number>161.3</number><unit>km·hr<sup>-1</sup></unit></unit_number>, bowled by Shoaib Akhtar of Pakistan during a match against England in the 2003 Cricket World Cup, held in South Africa. Calculate the ball's momentum if it has a mass of <unit_number><number>160</number><unit>g</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The fastest tennis service by a man is <unit_number><number>246.2</number><unit>km·hr<sup>-1</sup></unit></unit_number> by Andy Roddick of the United States of America during a match in London in 2004. Calculate the ball's momentum if it has a mass of <unit_number><number>58</number><unit>g</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>The fastest server in the women's game is Venus Williams of the United States of America, who recorded a serve of <unit_number><number>205</number><unit>km·hr<sup>-1</sup></unit></unit_number> during a match in Switzerland in 1998. Calculate the ball's momentum if it has a mass of <unit_number><number>58</number><unit>g</unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>If you had a choice of facing Shoaib, Andy or Venus and didn't want to get hurt, who would you choose based on the momentum of each ball.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000001-2/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01wv</shortcode>
+<problem>
+              <para>Two golf balls roll towards each other. They each have a mass of <unit_number><number>100</number><unit>g</unit></unit_number>. Ball 1 is moving at <latex>\vec{v}_{1}=<number>2.4</number>\text{m}·{\text{s}}^{-1}</latex> to the right, while ball 2 is moving at <latex>\vec{v}_{2}=3\text{m}·{\text{s}}^{-1}</latex> to the left. Calculate the total momentum of the system.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/nicoladt/questions/A000005"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ww</shortcode>
+<problem>
+              <para>Two motorcycles are involved in a head on collision. Motorcycle A has a mass of <unit_number><number>200</number><unit>kg</unit></unit_number> and was travelling at <unit_number><number>120</number><unit>km·hr<sup>-1</sup></unit></unit_number> south. Motor cycle B has a mass of <unit_number><number>250</number><unit>kg</unit></unit_number> and was travelling north at <unit_number><number>100</number><unit>km·hr<sup>-1</sup></unit></unit_number>. A and B are about to collide. Calculate the momentum of the system before the collision takes place.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000948/view"/>
+		<correct/>
+</entry>
+</exercises>
+        </section>
+    </section>
+        <section type="section">
+          <title>Newton's Second Law revisited</title>
+          <shortcode>ESBFI</shortcode>
+          <para>In the previous section we considered a number of scenarios where the momentum
+          of an object changed but we didn't look at the details of what caused the momentum to change.
+          In each case it interacted with something which we know would have exerted a force
+          on the object and we've learnt a lot about forces in Grade 11 so now we can tie
+          the two together.</para>
+          <para>You have learnt about Newton's Laws of motion in Grade 11. We know that an 
+          object will continue in its state of motion unless acted on by a force so unless a
+          force acts the velocity will not change and therefore the momentum will not change. If
+          a force is acting on an object then Newton's Second Law describes the relationship 
+          between the motion of an object and the 
+          net force on the object:</para>
+          <latex display='block'>
+          \vec{F}_{\text{net}}=m\vec{a}_{\text{net}}
+          </latex> 
+          <para>
+          We can therefore say that because a net force causes an object
+          to change its motion, it also causes its momentum 
+          to change. </para>
+	 <latex display='block'>
+		  \begin{align}
+		   \vec{F}_{net}  &amp; =m\vec{a}_{\text{net}} \\
+			 \vec{F}_{net}  &amp; =m\frac{\Delta \vec{v}}{\Delta t} \\
+			 \vec{F}_{net}  &amp; =\frac{m\Delta \vec{v}}{\Delta t} \\
+			 \vec{F}_{net}  &amp; =\frac{\Delta \vec{p}}{\Delta t}
+		  \end{align}
+		  </latex>
+          <para>We can now define Newton's Second Law of motion in terms of momentum.</para>
+          <definition>
+            <term>Newton's Second Law of Motion (N2)</term>
+            <meaning>
+              <para>The net or resultant force acting on an object is equal to the rate of 
+              change of momentum.</para>
+            </meaning>
+          </definition>
+          <para>Mathematically, Newton's Second Law can be stated as:</para>
+          
+
+         <latex>\vec{F}_{net}=\frac{\Delta \vec{p}}{\Delta t}</latex>
+			
+		  
+		  
+          <para>Let us apply this to the last case from the previous section, 
+            consider a tennis ball 
+          (mass = <unit_number><number>0.1</number><unit>kg</unit></unit_number>) 
+          that is dropped at an initial velocity of <unit_number><number>5</number> 
+          <unit>m·s<sup>-1</sup></unit></unit_number> and bounces back at a final 
+          velocity of <unit_number><number>3</number><unit>m·s<sup>-1</sup></unit></unit_number>. 
+          As the ball approaches the floor it has an initial momentum <latex>\vec{p}_i</latex>
+          when it moves away from the floor it has a final momentum <latex>\vec{p}_f</latex>.
+          The bounce on the floor can 
+          be thought of as a collision taking place where the floor exerts a force on the 
+          tennis ball to change its momentum.</para>
+          
+<pspicture>
+<code>
+(0,-.5)(6.5,10)
+\psline[linecolor=orange]{->}(1,8)(1,4)
+\uput[l](1,6){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](1,8){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](0.5,.75)(1.5,1.25)
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](2.5,.75)(3.5,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](2,9)(2,.5)
+\psline[linestyle=dotted,linecolor=gray!30!black](4,9)(4,.5)
+
+\psline[]{->}(3,2)(3,4)
+\uput[l](3,3){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](3,2){9pt}
+
+\rput(0,1){
+\psline[linecolor=orange]{->}(5,5)(5,1)
+\uput[l](5,3){$\vec{p}_i$}
+
+
+\psline[]{->}(5,5)(5,7)
+\uput[l](5,6){$\vec{p}_f$}
+
+\psline[linecolor=blue]{->}(5.5,1)(5.5,7)
+\psdot(5,5)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,1)(5.5,1)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,7)(5.5,7)
+\uput[r]{90}(5.5,4){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+
+          <para><emphasis effect='bold'>Remember:</emphasis> momentum and velocity 
+          are vectors so we have to choose a 
+          direction as positive. For this example we choose the initial direction 
+          of motion as positive, in other words, downwards is positive.</para>
+          
+
+          <latex display='block'>
+\begin{align}
+ \vec{p}_{i}&amp; = m\vec{v}_{i} \\ 
+&amp; = \left(<number>0.1</number>\right)\left(+5\right) \\ 
+&amp; = <unit_number><number>0.5</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{downwards} 
+\end{align}</latex>
+          
+
+          <para>When the tennis ball bounces back it changes direction. The final velocity will 
+          thus have a negative value because it is in the negative direction.
+            The momentum after the bounce can be calculated as follows:</para>
+          
+
+          <latex display='block'>
+\begin{align}
+ \vec{p}_{f}&amp; = m\vec{v}_{f} \\ 
+&amp; = \left(<number>0.1</number>\right)\left(-3\right) \\ 
+&amp; = <number>-0.3</number> \\ 
+&amp; = <unit_number><number>0.3</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{upwards} 
+\end{align}</latex>
+          
+
+          <para>Now let us look at what happens to the momentum of the tennis ball. The momentum changes during this bounce.</para>
+          
+
+          <para>We keep our initial choice of downwards as positive. This means that the final 
+          momentum will have a negative number.</para>
+          
+
+          <latex display='block'>
+\begin{align}
+ \Delta \vec{p}&amp; = \vec{p}_{f}-\vec{p}_{i} \\ 
+&amp; = m\vec{v}_{f}-m\vec{v}_{i} \\ 
+&amp; = \left(<number>-0.3</number>\right)-\left(<number>0.5</number>\right) \\ 
+&amp; = <number>-0.8</number> \\ 
+&amp; =<unit_number><number>0.8</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{upwards} 
+\end{align}</latex>
+          
+
+          <para>You will notice that this number is bigger than the previous momenta calculated. 
+          This should be the case as the change has to cancel out the initial momentum and then still
+          be as large as the final momentum over and above the initial momentum.
+          </para>
+		  <worked_example>
+		  <title>Change in Momentum</title>
+		  <question>
+		  <para>A tennis ball of mass <unit_number><number>58</number><unit>g</unit></unit_number> strikes a wall perpendicularly with a velocity of <unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number>.  It rebounds at a velocity of <unit_number><number>8</number> <unit>m·s<sup>-1</sup></unit></unit_number>. Calculate the change in the momentum of the tennis ball caused by the wall.</para>
+		</question>
+            <answer>
+              <workstep>
+                <title>Identify the information given and what is asked</title>
+                <para>The question explicitly gives a number of values which we identify and 
+                convert into SI units:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the ball's mass (m = <unit_number><number>58</number><unit>g</unit></unit_number>=<unit_number><number>0.058</number><unit>kg</unit></unit_number>),</para>
+                  </item>
+                  <item>
+                    <para>the ball's initial velocity (<latex>\vec{v}_{i}=<unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>) towards the wall, and</para>
+                  </item>
+                  <item>
+                    <para>the ball's final velocity (<latex>\vec{v}_{f}=<unit_number><number>8</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>) away from the wall</para>
+                  </item>
+                </list>
+                
+
+                <para>We are asked to calculate the change in momentum of the ball,</para>
+                
+
+                <latex display='block'>\Delta \vec{p}=m\vec{v}_{f}-m\vec{v}_{i}</latex>
+<pspicture>
+<code>
+(0,-1.5)(9,5)
+\psline[linecolor=orange]{->}(2,4)(6,4)
+\uput[u](4,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](7,4.75)(7.5,3.25)
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](7,2.75)(7.5,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,3)(8,3)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,1)(8,1)
+
+\psline[]{->}(6,2)(4,2)
+\uput[u](5,2){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](6,2){9pt}
+
+\rput(.5,0){
+\psline[linecolor=orange]{->}(3,0)(7,0)
+\psline[linecolor=blue]{->}(7,-0.5)(1,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(1,-0.5)(1,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\psline[]{&lt;-}(1,0)(3,0)
+\uput[u](2,0){$\vec{p}_f$}
+\uput[u](5,0){$\vec{p}_i$}
+\uput[d](4,-0.5){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+                
+
+                <para>We have everything we need to find <latex>\Delta \vec{p}</latex>. Since the initial momentum is directed towards the wall and the final momentum is away from the wall, we can use the algebraic method of subtraction discussed in Vectors in Grade 10.</para>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>Let us choose towards the wall as the positive direction.</para>
+              </workstep>
+              <workstep>
+                <title>Do the calculation and quote the answer</title>
+                <latex display='block'>
+\begin{align}
+ \Delta \vec{p}&amp; = m\vec{v}_{f}-m\vec{v}_{i} \\ 
+&amp; = \left(<number>0.058</number>\right)\left(-8\right)-\left(<number>0.058</number>\right)\left(+10\right) \\ 
+&amp; = \left(<number>-0.46</number>\right)-\left(<number>.58</number>\right) \\ 
+&amp; = <number>-1.04</number> \\ 
+&amp; = <unit_number><number>1.04</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{away from the wall} 
+\end{align}</latex>
+</workstep>
+</answer>
+</worked_example>
+
+
+
+
+
+<para><emphasis effect="bold">We suggest a vector diagram to illustrate p initial and p final and delta p.  Also link to pHet animation </emphasis></para>
+<worked_example>
+            <title>Change in Momentum</title>
+            <question>
+	      <para>A rubber ball of mass <unit_number><number>0.8</number><unit>kg</unit></unit_number> is dropped and strikes the floor with an initial velocity of <unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number>. It bounces back with a final velocity of <unit_number><number>4</number> <unit>m·s<sup>-1</sup></unit></unit_number>. Calculate the change in the momentum of the rubber ball caused by the floor.</para>
+			  <figure>
+                <type>figure</type>
+<pspicture>
+<code>
+(-1,-.5)(4.5,10)
+\psline[linecolor=orange]{->}(1,8)(1,4)
+\uput[l](1,6){<unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number>}
+\pscircle[fillcolor=purple!80!black,fillstyle=solid,shadow=true](1,8){9pt}
+
+% Wall
+
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](0.5,.75)(1.5,1.25)
+\psframe[fillcolor=gray,fillstyle=solid,linecolor=gray!40!black](2.5,.75)(3.5,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](2,9)(2,.5)
+%\psline[linestyle=dotted,linecolor=gray!30!black](4,9)(4,.5)
+
+\psline[]{->}(3,2)(3,4)
+\uput[r](3,3){<unit_number><number>4</number> <unit>m·s<sup>-1</sup></unit></unit_number>}
+\pscircle[fillcolor=purple!80!black,fillstyle=solid,shadow=true](3,2){9pt}
+
+%\rput(0,1){
+%\psline[linecolor=orange]{->}(5,5)(5,1)
+%\uput[l](5,3){$\vec{p}_i$}
+
+
+%\psline[]{->}(5,5)(5,7)
+%\uput[l](5,6){$\vec{p}_f$}
+
+%\psline[linecolor=blue]{->}(5.5,1)(5.5,7)
+%\psdot(5,5)
+%\psline[linecolor=blue,linestyle=dotted]{-}(5,1)(5.5,1)
+%\psline[linecolor=blue,linestyle=dotted]{-}(5,7)(5.5,7)
+%\uput[r]{90}(5.5,4){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+%}
+
+</code>
+</pspicture>
+
+<!--                <pspicture>
+                  <code>
+                    (0,-2.23)(6.12,2.21)
+\psline[](0.0,-2.21)(6.1,-2.21)
+\pscircle[](2.15,1.86){0.35}
+\pscircle[](3.39,0.02){0.35}
+\psline[]{-&gt;}(2.14,1.39)(2.16,-1.63)
+\psline[]{-&gt;}(3.38,-1.89)(3.38,-0.51)
+\rput(1.5459375,0.42){6 $\text{m}\cdot\text{s}^{-1}$}
+\rput(4.0909376,-0.98){4 $\text{m}\cdot\text{s}^{-1}$}
+\rput(3.4551563,1.88){m = 0,8 kg}
+
+                  </code>
+                </pspicture> -->
+              </figure>
+            </question>
+            <answer>
+<workstep>
+                <title>Identify the information given and what is asked</title>
+                <para>The question explicitly gives a number of values which we identify and
+                convert into SI units:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the ball's mass (m = <unit_number><number>0.8</number><unit>kg</unit></unit_number>),</para>
+                  </item>
+                  <item>
+                    <para>the ball's initial velocity (<latex>\vec{v}_{i}=<unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>) downwards, and</para>
+                  </item>
+                  <item>
+                    <para>the ball's final velocity (<latex>\vec{v}_{f}=<unit_number><number>4</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>) upwards</para>
+                  </item>
+                </list>
+
+
+                <para>We are asked to calculate the change in momentum of the ball,</para>
+
+
+                <latex display='block'>\Delta \vec{p}=m\vec{v}_{f}-m\vec{v}_{i}</latex>
+ </workstep>             
+              <workstep>
+                <title>Do the calculation and quote the answer</title>
+				<para> Let us choose down as the positive direction.</para>
+                <latex display='block'>
+\begin{align}
+ \Delta \vec{p}&amp; = m\vec{v}_{f}-m\vec{v}_{i} \\ 
+&amp; = \left(<number>0.8</number>\right)\left(-4\right)-\left(<number>0.8</number>\right)\left(+6\right) \\ 
+&amp; = \left(<number>-3.2</number>\right)-\left(<number>4.8</number>\right) \\ 
+&amp; = <number>-8</number> \\ 
+&amp; = <unit_number><number>8.0</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{upwards} 
+\end{align}</latex>
+ 
+              </workstep>
+            </answer>
+          </worked_example>
+
+<!-- rework to be squash ball -->
+		  <worked_example>
+		  <title>Change in momentum</title>
+		  <question>
+		  <para>A regulation squash ball weighs 
+          <unit_number><number>24</number><unit>g</unit></unit_number>. In a squash match
+          a ball bounces off the back wall in the direction of the front wall 
+          at <unit_number><number>1</number><unit>m·s<sup>-1</sup></unit></unit_number>
+          before a player hits it with a racquet. After being struck towards the front
+          wall the ball is moving at 
+          <unit_number><number>20</number><unit>m·s<sup>-1</sup></unit></unit_number>. What
+          is the change in momentum? 
+          </para>  
+		</question>
+            <answer>
+              <workstep>
+                <title>Identify the information given and what is asked</title>
+                <para>The question explicitly gives a number of values which we identify and 
+                convert into SI units:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the ball's mass (m = <unit_number><number>24</number><unit>g</unit></unit_number>=<unit_number><number>0.024</number><unit>kg</unit></unit_number>),</para>
+                  </item>
+                  <item>
+                    <para>the ball's initial velocity (<latex>\vec{v}_{i}=<unit_number><number>1</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>) towards the front wall, and</para>
+                  </item>
+                  <item>
+                    <para>the ball's final velocity (<latex>\vec{v}_{f}=<unit_number><number>20</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>) towards the front wall</para>
+                  </item>
+                </list>
+                
+
+                <para>We are asked to calculate the change in momentum of the ball,</para>
+                
+
+                <latex display='block'>\Delta \vec{p}=m\vec{v}_{f}-m\vec{v}_{i}</latex>
+
+<pspicture>
+<code>
+(0,-1.5)(12,5)
+\psline[linecolor=orange]{->}(2,4)(4,4)
+\uput[u](3,4){$\vec{p}_i$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](2,4){9pt}
+
+% Wall
+
+%\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](5,4.75)(5.15,3.25)
+\psframe[fillcolor=gray!50!white,fillstyle=solid,linecolor=gray!70!white](5,2.75)(5.15,1.25)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,3)(11,3)
+\psline[linestyle=dotted,linecolor=gray!30!black](1,1)(11,1)
+
+\psline[]{->}(6,2)(10,2)
+\uput[u](8,2){$\vec{p}_f$}
+\pscircle[fillcolor=yellow!80!black,fillstyle=solid,shadow=true](6,2){9pt}
+
+\rput(1,0){
+\psline[linecolor=orange,linewidth=1.5pt]{->}(3,0)(5,0)
+\psline[linecolor=blue]{->}(5,-0.5)(7,-0.5)
+\psdot(3,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(5,-0.5)(5,0)
+\psline[linecolor=blue,linestyle=dotted]{-}(7,-0.5)(7,0)
+\psline[]{-&gt;}(3,0)(7,0)
+\uput[u](5,0){$\vec{p}_f$}
+\uput[u](4,0){$\vec{p}_i$}
+\uput[d](6,-0.5){$\Delta\vec{p}=\vec{p}_f-\vec{p}_i$}
+}
+
+</code>
+</pspicture>
+                
+
+                <para>We have everything we need to find <latex>\Delta \vec{p}</latex>. 
+                </para>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>Let us choose towards the front wall as the positive direction.</para>
+              </workstep>
+              <workstep>
+                <title>Do the calculation and quote the answer</title>
+                <latex display='block'>
+\begin{align}
+ \Delta \vec{p}&amp; = m\vec{v}_{f}-m\vec{v}_{i} \\ 
+&amp; = \left(<number>0.024</number>\right)\left(20\right)-\left(<number>0.024</number>\right)\left(+1\right) \\ 
+&amp; = \left(<number>0.48</number>\right)-\left(<number>0.024</number>\right) \\ 
+&amp; = <number>0.456</number> \\ 
+&amp; = <unit_number><number>0.46</number><unit>kg·m·s<sup>-1</sup></unit></unit_number>~\text{towards the front wall} 
+\end{align}</latex>
+</workstep>
+</answer>
+</worked_example>
+
+          <exercises><title/>
+            <entry>
+<shortcode>01wx</shortcode>
+<problem>
+              <para>Which expression accurately describes the change of momentum of an object?</para>
+              <list list-type="enumerated">
+                <item>
+                  <para><latex>\frac{\vec{F}}{m}</latex></para>
+                </item>
+                <item>
+                  <para><latex>\frac{\vec{F}}{t}</latex></para>
+                </item>
+                <item>
+                  <para><latex>\vec{F}·m</latex></para>
+                </item>
+                <item>
+                  <para><latex>\vec{F}·t</latex></para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001006/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01wy</shortcode>
+<problem>
+              <para>A child drops a ball of mass <unit_number><number>100</number><unit>g</unit></unit_number>. The ball strikes the ground with a velocity of <unit_number><number>5</number><unit>m·s<sup>-1</sup></unit></unit_number> and rebounds with a velocity of <unit_number><number>4</number><unit>m·s<sup>-1</sup></unit></unit_number>. Calculate the change of momentum of the ball.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001007/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01wz</shortcode>
+<problem>
+              <para>A <unit_number><number>700</number><unit>kg</unit></unit_number> truck is travelling north at a velocity of <unit_number><number>40</number><unit>km·hr<sup>-1</sup></unit></unit_number> when it is approached by a <unit_number><number>500</number><unit>kg</unit></unit_number> car travelling south at a velocity of <unit_number><number>100</number><unit>km·hr<sup>-1</sup></unit></unit_number>. Calculate the total momentum of the system.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001008/view"/>
+		<correct/>
+</entry>
+</exercises>
+        </section>
+      <!--</section>-->
+      <section type="section">
+          <title>Conservation of momentum</title>
+          <shortcode>ESBFK</shortcode>
+          <para>In this section we are going to look at momentum when two objects interact with each
+          other and, specifically, treat both objects as one system. To do this properly we first
+          need to define what we mean we talk about a system, then we need to look
+          at what happens to momentum overall and we will explore the applications of momentum
+          in these interactions.</para>
+
+            
+
+          <section type='subsection'>
+          <title>Systems</title>
+          <definition>
+          <term>System</term>
+          <meaning>
+          <para>A system is a physical configuration of particles and or objects that we study.</para>
+          </meaning>
+          </definition>
+          <para>For example, earlier we looked at what happens when a ball bounces off a wall. The 
+          system that we were studying was just the wall and the ball. The wall must be connected
+          to the Earth and something must have thrown or hit the ball but we ignore those. A 
+          system is a subset of the physical world that we are studying. The system exists in 
+          some larger environment.</para>
+          <para>In the problems that we are solving we actually treat our system as being isolated
+          from the environment. That means that we can completely ignore the environment. In reality,
+          the environment can affect the system but we ignore that for isolated systems. We try to
+          choose isolated systems when it makes sense to ignore the surrounding environment.
+          </para>
+
+          <definition>
+          <term>Isolated system</term>
+          <meaning>
+           An isolated system is a physical configuration of particles and or objects that we study 
+          that doesn't exchange any matter with 
+          its surroundings and is not subject to any force whose source is 
+          external to the system.
+          </meaning>
+          </definition>
+          <para>An external force is a force acting on the pieces of the system that we are studying
+          that is not caused by a component of the system.
+          </para>
+          <para>It is a choice we make to treat objects as an isolated system but we can only
+          do this if we think it really make sense, if the results we are going to get
+          will still be reasonable. In reality, 
+          no system is competely isolated except for the whole universe (we think). When
+          we look at a ball hitting a wall it makes sense to ignore the force of gravity. 
+          The effect isn't exactly zero but it will be so small that it will not
+          make any real difference to our results.</para>
+            </section>
+
+          <section type='subsection'>
+          <title>Conservation of momentum</title>
+          <para>There is a very useful property of isolated systems, total momentum is conserved.</para>
+          <para>Lets use a practical example to show why this is the case, lets consider the Moon 
+          orbiting the Earth. Here is a sketch (not to scale):</para>
+          <pspicture>
+          <code>(-1,-1)(6,6)
+          \pscircle[fillcolor=gray!80!black,fillstyle=solid](0,5){6pt}
+          \pscircle[fillcolor=blue!80!black,fillstyle=solid](5,0){15pt}
+          \psdot(0,5)\psline{-&gt;}(0,5)(1.5,3.5)
+          \rput[l](1.1,4.3){$\vec{F}_{\text{Moon}}$}
+          \rput[l](4.3,1){$\vec{F}_{\text{Earth}}$}
+          \psdot(5,0)\psline{-&gt;}(5,0)(3.5,1.5)
+          </code>
+          </pspicture>
+          <para>The Earth exerts a gravitational force on the Moon, 
+          <latex>\vec{F}_{\text{Moon}}</latex>, and the Moon exerts a 
+          gravitational force on the Earth, <latex>\vec{F}_{\text{Earth}}</latex>. We also know
+          that the force will result in a change in momentum:</para>
+          <latex display='block'>
+          \vec{F}_{net}  =\frac{\Delta \vec{p}}{\Delta t}
+          </latex>
+          <para>We also know from Newton's third law that:</para>
+          <latex display='block'>
+          \begin{align}
+          \vec{F}_{\text{Moon}} &amp; = - \vec{F}_{\text{Earth}}\\ 
+          \frac{\Delta \vec{p}_{\text{Moon}}}{\Delta t} &amp; = - \frac{\Delta \vec{p}_{\text{Earth}}}{\Delta t}\\ 
+          \Delta \vec{p}_{\text{Moon}} &amp; = - \Delta \vec{p}_{\text{Earth}}\\ 
+          \Delta \vec{p}_{\text{Moon}} + \Delta \vec{p}_{\text{Earth}} &amp; = 0 \\ 
+            \end{align}
+          </latex>
+
+
+          <para>In the absence of an external force acting on a system, momentum is
+          conserved. A system is considered to be the small part of the environment being analysed.  </para>
+<activity type='activity'>
+<title>Newton's cradle demonstration</title>
+<section>
+<title>Demo</title>
+
+<image style:width='0.6'>
+<src>photos/NewtonsCrade-by-StockMonkeys.com-on-Flickr-7984171587_8a534f9581_k2.eps</src>
+<attribution>http://www.flickr.com/photos/86530412@N02/7984171587/sizes/o/ - Stockmonkeys.com</attribution>
+</image>
+</section>
+</activity>
+
+
+		              <activity type="i_experiment">
+              <title>Conservation of momentum</title>
+              <section>
+                <title>Aim</title>
+                <para>To investigate the changes in momentum when two bodies are separated by an explosive force.</para>
+              </section>
+              <section>
+                <title>Apparatus</title>
+		<para>Two spring-loaded trolleys, stopwatch, meter-stick, two barriers</para>
+				<image style:width='0.4'>
+				<src>photos/conservationofmomentumaparatus.JPG</src>
+				<attribution> Brink and Jones</attribution>
+				</image>
+				
+              </section>
+              <section>
+                <title>Method</title>
+                <list>
+                  <item><para>Clamp the barriers one metre apart onto a flat surface.</para></item>
+				   <item><para>Find the mass of each trolley and place a known mass on one of the trolleys.</para></item>
+                  <item><para>Place the two trolleys between the barriers end to end so that the spring on the one trolley is in contact with the flat surface of the other trolley</para></item>
+				  
+			   <item><para>Release the spring by hitting the release knob and observe how the trolleys push each other apart.</para></item>
+				  <item><para>Repeat the explosions with the trolleys at a different position until they strike the barriers simultaneously.  Each trolley now has the same time of travel t.</para></item>
+				  <item><para>Measure the distances <latex>{x}_{1}</latex> and <latex>{x}_{2}</latex>.  These can be taken as measures of the respective velocities.</para></item>
+				  
+                  <item><para>Repeat the experiment for a different combination of masses.</para></item>
+                </list>
+              </section>
+              <section>
+                <title>Results</title>
+                <para>Record your results in a table, using the following headings for each trolley.  Total mass in kg, distance travelled in m, momentum in <unit>kg·m·s<sup>-1</sup></unit>.  What is the relationship between the total momentum after the explosion and the total momentum before the explosion?</para>
+              </section>
+            </activity>
+
+          <definition>
+            <term>Conservation of Momentum</term>
+            <meaning>
+              <para>The total momentum of an isolated system is constant. An isolated system has no forces acting on it from the outside.</para>
+            </meaning>
+          </definition>
+          <para>This means that in an isolated system the total momentum before a collision or explosion is equal to the total momentum after the collision or explosion.</para>
+          
+            </section>
+          <section type='subsection'>
+          <title>Collisions</title>
+
+          <para>Consider a simple collision of two billiard balls. The balls are rolling on a frictionless surface and the system is isolated. So, we can apply conservation of momentum. The first ball has a mass <latex>{m}_{1}</latex> and an initial velocity <latex>\vec{v}_{i1}</latex>. The second ball has a mass <latex>{m}_{2}</latex> and moves first ball with an initial velocity <latex>\vec{v}_{i2}</latex>. This
+situation is shown in <link target-id="fig_mom1"/>.</para>
+          <figure id="fig_mom1">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-3,0)(3,1)
+\psline[linewidth=2pt](-3,0)(3,0)
+\pscircle(-2,0.5){0.5}
+\pscircle(2,0.5){0.5}
+\psline{-&gt;}(-1.5,0.5)(-1,0.5)
+\psline{&lt;-}(1,0.5)(1.5,0.5)
+\uput[u](-1,0.5){$v_{i1}$}
+\uput[u](1,0.5){$v_{i2}$}
+\rput(-2,0.5){$m_1$}
+\rput(2,0.5){$m_2$}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>Before the collision.</para>
+            </caption>
+          </figure>
+          <para>The total momentum of the system before the collision, <latex>\vec{p}_{i}</latex> is:</para>
+          
+
+          <latex>\vec{p}_{i}={m}_{1}\vec{v}_{i1}+{m}_{2}\vec{v}_{i2}</latex>
+          
+
+          <para>After the two balls collide and move away they each have a different momentum. If the first ball has a final velocity of <latex>\vec{v}_{f1}</latex> and the second ball has a final velocity of <latex>\vec{v}_{f2}</latex> then we have the situation shown in <link target-id="fig_mom2"/>.</para>
+          <figure id="fig_mom2">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-3,0)(3,1)
+\psline[linewidth=2pt](-3,0)(3,0)
+\rput(0.5,0){\pscircle(-2,0.5){0.5}
+\rput(-2,0.5){$m_1$}}
+\rput(-0.5,0){\pscircle(2,0.5){0.5}
+\rput(2,0.5){$m_2$}}
+\psline{&lt;-}(-2.5,0.5)(-2,0.5)
+\psline{-&gt;}(2,0.5)(2.5,0.5)
+\uput[u](-2.5,0.5){$v_{f1}$}
+\uput[u](2.5,0.5){$v_{f2}$}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>After the collision.</para>
+            </caption>
+          </figure>
+          <para>The total momentum of the system after the collision, <latex>\vec{p}_{f}</latex> is:</para>
+          
+
+          <latex>\vec{p}_{f}={m}_{1}\vec{v}_{f1}+{m}_{2}\vec{v}_{f2}</latex>
+          
+
+
+<worked_example>
+            <title>Calculating the Total Momentum of a System</title>
+            <question>
+              <para>Two billiard balls roll towards each other. They each have a mass of <unit_number><number>0.3</number><unit>kg</unit></unit_number>. Ball 1 is moving at <latex>\vec{v}_{1}=1 \text{m}·{\text{s}}^{-1}</latex> to the right, while ball 2 is moving at <latex>\vec{v}_{2}=<number>0.8</number> \text{m}·{\text{s}}^{-1}</latex> to the left. Calculate the total momentum of the system.</para>
+	    </question>
+		<answer>
+              <workstep>
+                <title>Identify what information is given and what is asked for</title>
+                <para>The question
+explicitly gives</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the mass of each ball,</para>
+                  </item>
+                  <item>
+                    <para>the velocity of ball 1, <latex>{v}_{1}</latex>, and</para>
+                  </item>
+                  <item>
+                    <para>the velocity of ball 2, <latex>{v}_{2}</latex>,</para>
+                  </item>
+                </list>
+                <para>all in the correct units!</para>
+                
+
+                <para>We are asked to calculate the <emphasis effect="bold">total momentum of
+the system</emphasis>. In this example our system consists of two balls. To find
+the total momentum we must determine the momentum of each ball and add them.</para>
+                
+
+                <latex>\vec{p}_{total}=\vec{p}_{1}+\vec{p}_{2}</latex>
+                
+
+                <para>Since ball 1 is moving to the right, its momentum is in this direction,
+while the second ball's momentum is directed towards the left.</para>
+                <pspicture>
+                  <code>
+                    (-3,-1)(3,1)
+		    \psline{-}(-2.8,-0.5)(2.8,-0.5)
+\pscircle[fillstyle=solid,fillcolor=orange](-2,0.){0.5}
+\psline{-&gt;}(-1.5,0.)(-0.5,0.)
+\rput(-1,-0.25){$v_1$}
+\rput(-2,0.){$m_1$}
+\pscircle[fillstyle=solid,fillcolor=red](2,0.){0.5}
+\psline{-&gt;}(1.5,0)(0.7,0.)
+\rput(1.1,-0.25){$v_2$}
+\rput(2,0.){$m_2$}
+
+                  </code>
+                </pspicture>
+                <para>Thus, we are required to find the sum of two vectors acting along the
+same straight line. The algebraic method of vector addition introduced
+in <link url="http://everythingscience.co.za/grade-11/11-vectors/11-vectors-06.cnxmlplus#scESBEG">Chapter 11</link><link target-id="chap:vectors"/> can thus be used.</para>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>Let us choose right as the
+positive direction, then obviously left is negative.</para>
+              </workstep>
+              <workstep>
+                <title>Calculate the momentum</title>
+                <para>The total momentum of the system is then the sum of the two momenta taking the
+directions of the velocities into account. Ball 1 is travelling
+at <unit_number><number>1</number><unit>m·s<sup>-1</sup></unit></unit_number> to the right or <unit_number><number>+1</number><unit>m·s<sup>-1</sup></unit></unit_number>. Ball 2 is travelling at <unit_number><number>0.8</number><unit>m·s<sup>-1</sup></unit></unit_number> to the left or <unit_number><number>-0.8</number><unit>m·s<sup>-1</sup></unit></unit_number>. Thus,</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ \vec{p}_{total}&amp; = {m}_{1}\vec{v}_{1}+{m}_{2}\vec{v}_{2} \\ 
+&amp; = \left(<number>0.3</number> \text{kg}\right)\left(+1 \text{m}·{\text{s}}^{-1}\right)+\left(<number>0.3</number> \text{kg}\right)\left(<number>-0.8</number> \text{m}·{\text{s}}^{-1}\right) \\ 
+&amp; = \left(<number>+0.3</number> \text{kg}·\text{m}·{\text{s}}^{-1}\right)+\left(<number>-0.24</number> \text{kg}·\text{m}·{\text{s}}^{-1}\right) \\ 
+&amp; = <number>+0.06</number> \text{kg}·\text{m}·{\text{s}}^{-1} \\ 
+&amp; = <number>0.06</number> \text{kg}·\text{m}·{\text{s}}^{-1} \text{to the right} 
+\end{align}</latex>
+                
+
+                <para>In the last step the direction was added in words. Since the result
+in the second last line is positive, the total momentum of the system
+is in the positive direction (i.e. to the right).</para>
+              </workstep>
+            </answer>
+          </worked_example>
+
+          <para>This system of two balls is isolated since there are no external forces acting on the balls. Therefore, by the principle of conservation of linear momentum, the total momentum before the collision is equal to the total momentum after the collision. This gives the equation for the conservation of momentum in a collision of two objects,</para>
+          <table frame="none" rowsep="0" colsep="0">
+            <tgroup cols="2">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <tbody>
+                <row>
+                  <!--<entry latex-column-spec="c" nameend="c2" namest="c1">-->
+                  <entry>
+                    <para><latex>\vec{p}_{i}=\vec{p}_{f}</latex></para>
+                  </entry>
+                </row>
+                <row>
+                  <!--<entry latex-column-spec="c" nameend="c2" namest="c1">-->
+                  <entry>
+                    <para><latex>{m}_{1}\vec{v}_{i1}+{m}_{2}\vec{v}_{i2}={m}_{1}\vec{v}_{f1}+{m}_{2}\vec{v}_{f2}</latex></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry/>
+                  <entry/>
+                </row>
+                <row>
+                  <entry>
+                    <para><latex>{m}_{1}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>: mass of object 1 (kg)</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para><latex>{m}_{2}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>: mass of object 2 (kg)</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para><latex>\vec{v}_{i1}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>: initial velocity of object 1 (<unit>m·s<sup>-1</sup></unit> + direction)</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para><latex>\vec{v}_{i2}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>: initial velocity of object 2 (<unit>m·s<sup>-1</sup></unit> - direction)</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para><latex>\vec{v}_{f1}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>: final velocity of object 1 (<unit>m·s<sup>-1</sup></unit> - direction)</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para><latex>\vec{v}_{f2}</latex></para>
+                  </entry>
+                  <entry>
+                    <para>: final velocity of object 2 (<unit>m·s<sup>-1</sup></unit> + direction)</para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <para>This equation is always true - momentum is always conserved in collisions.</para>
+          <worked_example>
+            <title>Conservation of Momentum 1</title>
+            <question>
+              <para>A toy car of mass <unit_number><number>1</number><unit>kg</unit></unit_number> moves westwards with a speed of <unit_number><number>2</number><unit>m·s<sup>-1</sup></unit></unit_number>. It collides head-on with a toy train. The train has a mass of <unit_number><number>1.5</number><unit>kg</unit></unit_number> and is moving at a speed of <unit_number><number>1.5</number><unit>m·s<sup>-1</sup></unit></unit_number> eastwards. If the car rebounds at <unit_number><number>2.05</number><unit>m·s<sup>-1</sup></unit></unit_number>, calculate the velocity of the train.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Draw rough sketch of the situation</title>
+                <figure>
+                  <type>figure</type>
+                  <pspicture>
+                    <code>
+                      (0,-1.8492187)(9.664687,1.8692187)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.8928127,-0.71921873){1 kg}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.68,1.6807812){BEFORE}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.099375,1.6807812){v$_{i1}$ = 1,5 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.069375,-1.4192188){v$_{f1}$ = ? $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.109375,-1.4192188){v$_{f2}$ = 2,05 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.859375,1.6807812){v$_{i2}$ = 2 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.5675,-1.4192188){AFTER}
+\psframe[linewidth=0.04,dimen=outer](4.1971874,0.27078125)(3.2971876,-0.22921875)
+\psline[linewidth=0.04cm](4.3971877,0.67078125)(4.3971877,-0.22921875)
+\psline[linewidth=0.04cm](4.3971877,-0.22921875)(5.6971874,-0.22921875)
+\psline[linewidth=0.04cm](5.6971874,-0.22921875)(5.6971874,0.27078125)
+\psline[linewidth=0.04cm](5.6971874,0.27078125)(5.1971874,0.27078125)
+\psline[linewidth=0.04cm](5.1971874,0.27078125)(5.1971874,0.67078125)
+\psline[linewidth=0.04cm](5.1971874,0.67078125)(4.3971877,0.67078125)
+\pscircle[linewidth=0.04,dimen=outer](3.5971875,-0.22921875){0.1}
+\pscircle[linewidth=0.04,dimen=outer](3.8971875,-0.22921875){0.1}
+\pscircle[linewidth=0.04,dimen=outer](4.7971873,-0.12921876){0.2}
+\pscircle[linewidth=0.04,dimen=outer](5.3971877,-0.22921875){0.1}
+\psframe[linewidth=0.04,dimen=outer](4.3971877,-0.02921875)(4.1971874,-0.12921876)
+\psframe[linewidth=0.04,dimen=outer](3.0971875,0.27078125)(2.1971874,-0.22921875)
+\pscircle[linewidth=0.04,dimen=outer](2.4971876,-0.22921875){0.1}
+\pscircle[linewidth=0.04,dimen=outer](2.7971876,-0.22921875){0.1}
+\psframe[linewidth=0.04,dimen=outer](3.2971876,-0.02921875)(3.0971875,-0.12921876)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.2971876,1.3707813)(5.1971874,1.3707813)
+\psline[linewidth=0.04cm](7.0971875,-0.12921876)(8.797188,-0.12921876)
+\psline[linewidth=0.04cm](8.797188,-0.12921876)(8.797188,0.27078125)
+\psline[linewidth=0.04cm](8.797188,0.27078125)(8.397187,0.27078125)
+\psline[linewidth=0.04cm](8.397187,0.27078125)(8.297188,0.67078125)
+\psline[linewidth=0.04cm](8.297188,0.67078125)(7.6971874,0.67078125)
+\psline[linewidth=0.04cm](7.6971874,0.67078125)(7.4971876,0.27078125)
+\psline[linewidth=0.04cm](7.4971876,0.27078125)(7.0971875,0.27078125)
+\psline[linewidth=0.04cm](7.0971875,0.27078125)(7.0971875,-0.12921876)
+\pscircle[linewidth=0.04,dimen=outer](7.4971876,-0.12921876){0.2}
+\pscircle[linewidth=0.04,dimen=outer](8.397187,-0.12921876){0.2}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(8.597187,1.3707813)(7.1971874,1.3707813)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.7328124,-0.71921873){1,5 kg}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(7.1971874,-1.8292187)(8.797188,-1.8292187)
+
+                    </code>
+                  </pspicture>
+                </figure>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>We will choose to the east as positive.</para>
+              </workstep>
+              <workstep>
+                <title>Apply the Law of Conservation of momentum</title>
+                <latex display='block'>
+\begin{align}
+ {p}_{i}&amp; = {p}_{f} \\ 
+ {m}_{1}{v}_{i1}+{m}_{2}{v}_{i2}&amp; = {m}_{1}{v}_{f1}+{m}_{2}{v}_{f2} \\ 
+ \left(<number>1.5</number> \text{kg}\right)\left(<number>+1.5</number> \text{m}·{\text{s}}^{-1}\right)+\left(2 \text{kg}\right)\left(-2 \text{m}·{\text{s}}^{-1}\right)&amp; = \left(<number>1.5</number> \text{kg}\right)\left({v}_{f1}\right)+\left(2 \text{kg}\right)\left(<number>2.05</number> \text{m}·{\text{s}}^{-1}\right) \\ 
+ <number>2.25</number> \text{kg}·\text{m}·{\text{s}}^{-1}-4 \text{kg}·\text{m}·{\text{s}}^{-1}<number>-4.1</number>\text{kg}·\text{m}·{\text{s}}^{-1}&amp; = \left(<number>1.5</number> \text{kg}\right){v}_{f1} \\ 
+ <number>5.85</number> \text{kg}·\text{m}·{\text{s}}^{-1}&amp; = \left(<number>1.5</number> \text{kg}\right){v}_{f1} \\ 
+ {v}_{f1}&amp; = <number>3.9</number> \text{m}·{\text{s}}^{-1} \text{eastwards} 
+\end{align}</latex>
+               
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Conservation of Momentum 2</title>
+            <question>
+              <para>A jet flies at a speed of <unit_number><number>275</number><unit>m·s<sup>-1</sup></unit></unit_number>. The pilot fires a missile forward out of a gun barrel at a speed of <unit_number><number>700</number><unit>m·s<sup>-1</sup></unit></unit_number>. The respective masses of the jet and the missile are <unit_number><number>5000</number><unit>kg</unit></unit_number> and <unit_number><number>50</number><unit>kg</unit></unit_number>. Calculate the new speed of the jet immediately after the missile had been fired.</para>
+			  <image style:width='0.4'>
+				<src>photos/1280px-F-20_firing_a_missile.jpg</src>
+		
+				</image>
+            </question>
+            <answer>
+              <workstep>
+                <title>Draw rough sketch of the situation</title>
+                <figure>
+                  <type>figure</type>
+                  <pspicture>
+                    <code>
+                      (0,-1.8039062)(11.524688,1.8039062)
+\psellipse[linewidth=0.04,dimen=outer](5.1471877,0.31390625)(1.05,0.6)
+\psframe[linewidth=0.04,dimen=outer](6.2971873,-0.68609375)(4.0971875,-0.7860938)
+\psframe[linewidth=0.04,dimen=outer](5.0971875,0.01390625)(4.9971876,-0.7860938)
+\psframe[linewidth=0.04,dimen=outer](6.3971877,-0.48609376)(4.2971873,-0.5860937)
+\psframe[linewidth=0.04,dimen=outer](5.3971877,-0.18609375)(5.2971873,-0.48609376)
+\psframe[linewidth=0.04,dimen=outer](5.7971873,-0.7860938)(4.5971875,-1.0860938)
+\psellipse[linewidth=0.04,dimen=outer](5.1971874,1.1139063)(1.3,0.1)
+\psellipse[linewidth=0.04,dimen=outer](7.5971875,0.51390624)(0.1,0.5)
+\psline[linewidth=0.04cm](5.8971877,0.41390625)(7.7971873,0.61390626)
+\psline[linewidth=0.04cm](5.8971877,0.21390624)(7.8971877,0.41390625)
+\psellipse[linewidth=0.04,dimen=outer](5.1971874,0.9639062)(0.1,0.25)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.7971873,-0.88609374)(1.7971874,-0.88609374)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.2971873,1.6239063){helicopter}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.2704687,-1.1760937){missile}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.0753126,0.32390624){5000 kg}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.1953125,-1.5760938){50 kg}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.28,1.3239063){BEFORE}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.039375,0.82390624){v$_{i1}$ = 275 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.269375,0.82390624){v$_{f1}$ = ? $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.459375,0.32390624){v$_{f2}$ = 700 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.039375,0.32390624){v$_{i2}$ = 275 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.5675,1.3239063){AFTER}
+
+                    </code>
+                  </pspicture>
+                  <caption>
+                    <para>jet and missile</para>
+                  </caption>
+                </figure>
+              </workstep>
+              <workstep>
+                <title>Analyse the question and list what is given</title>
+                <para><latex>{m}_{1}</latex> = <unit_number><number>5000</number><unit>kg</unit></unit_number></para>
+                
+
+                <para><latex>{m}_{2}</latex> = <unit_number><number>50</number><unit>kg</unit></unit_number></para>
+                
+
+                <para><latex>{v}_{i1}</latex> = <latex>{v}_{i2}</latex> = <unit_number><number>275</number><unit>m·s<sup>-1</sup></unit></unit_number></para>
+                
+
+                <para><latex>{v}_{f1}</latex> = ?</para>
+                
+
+                <para><latex>{v}_{f2}</latex> = <unit_number><number>700</number><unit>m·s<sup>-1</sup></unit></unit_number></para>
+              </workstep>
+              <workstep>
+                <title>Apply the Law of Conservation of momentum</title>
+                <para>The jet and missile are connected initially and move at the same velocity. We will therefore combine their masses and change the momentum equation as follows:</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ {p}_{i}&amp; = {p}_{f} \\  
+ \left({m}_{1}+{m}_{2}\right){v}_{i}&amp; = {m}_{1}{v}_{f1}+{m}_{2}{v}_{f2} \\ 
+ \left(<number>5000</number> \text{kg}+50 \text{kg}\right)\left(275 \text{m}·{\text{s}}^{-1}\right)&amp; = \left(<number>5000</number> \text{kg}\right)\left({v}_{f1}\right)+\left(50 \text{kg}\right)\left(700 \text{m}·{\text{s}}^{-1}\right) \\ 
+ <number>1388750</number> \text{kg}·\text{m}·{\text{s}}^{-1}<number>-35000</number> \text{kg}·\text{m}·{\text{s}}^{-1}&amp; = \left(<number>5000</number> \text{kg}\right)\left({v}_{f1}\right) \\ 
+ {v}_{f1}&amp; = <number>270.75</number> \text{m}·{\text{s}}^{-1} 
+\end{align}</latex>
+                
+
+                <para>Note that speed is asked and not velocity, therefore no direction is included in the answer.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Conservation of Momentum 3</title>
+            <question>
+              <para>A bullet of mass <unit_number><number>50</number><unit>g</unit></unit_number> travelling horizontally at <unit_number><number>500</number><unit>m·s<sup>-1</sup></unit></unit_number> strikes a stationary wooden block of mass <unit_number><number>2</number><unit>kg</unit></unit_number> resting on a smooth horizontal surface. The bullet goes through the block and comes out on the other side at <unit_number><number>200</number><unit>m·s<sup>-1</sup></unit></unit_number>. Calculate the speed of the block after the bullet has come out the other side.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Draw rough sketch of the situation</title>
+                <figure>
+                  <type>figure</type>
+                  <pspicture>
+                    <code>
+                      (0,-2.1907814)(8.664375,2.1907814)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3896875,-0.20296875){2 kg}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9396875,1.9970312){BEFORE}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.4390625,-0.90296876){v$_{i1}$ = 500 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.1590624,-1.4229687){v$_{f1}$ = 200 $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.9290624,-1.9629687){v$_{f2}$ = ? $\text{m}\cdot\text{s}^{-1}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2678127,0.8570312){v$_{i2}$ = 0 $\text{m}\cdot\text{s}^{-1}$ (stationary)}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.5471873,2.0170312){AFTER}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.785,-0.44296876){50 g = 0,05 kg}
+\psframe[linewidth=0.04,dimen=outer](5.436875,0.38703126)(3.336875,-0.81296873)
+\psframe[linewidth=0.04,dimen=outer](1.4081801,0.14703125)(0.996875,-0.03680646)
+\rput{-88.25549}(1.2851367,1.43653){\psarc[linewidth=0.04](1.3830425,0.05582807){0.04964515}{0.0}{180.0}
+\psline[linewidth=0.04](1.4326876,0.05582807)(1.3333974,0.05582807)}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.576875,0.04703125)(2.556875,0.04703125)
+\psframe[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](6.22818,0.14703125)(5.816875,-0.03680646)
+\rput{-88.25549}(5.9584026,6.254296){\psarc[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm](6.2030425,0.05582807){0.04964515}{0.0}{180.0}
+\psline[linewidth=0.04,linestyle=dashed,dash=0.16cm 0.16cm](6.2526875,0.05582807)(6.1533976,0.05582807)}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(6.396875,0.04703125)(7.376875,0.04703125)
+
+                    </code>
+                  </pspicture>
+                </figure>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>We will choose to the right as positive.</para>
+              </workstep>
+              <workstep>
+                <title>Apply the Law of Conservation of momentum</title>
+                <latex display='block'>
+\begin{align}
+ {p}_{i}&amp; = {p}_{f} \\ 
+ {m}_{1}{v}_{i1}+{m}_{2}{v}_{i2}&amp; = {m}_{1}{v}_{f1}+{m}_{2}{v}_{f2} \\ 
+ \left(<number>0.05</number> \text{kg}\right)\left(+500 \text{m}·{\text{s}}^{-1}\right)+\left(2 \text{kg}\right)\left(0 \text{m}·{\text{s}}^{-1}\right)&amp; = \left(<number>0.05</number> \text{kg}\right)\left(+200 \text{m}·{\text{s}}^{-1}\right)+\left(2\text{kg}\right)\left({v}_{f2}\right) \\ 
+ 25+0-10&amp; = 2 {v}_{f2} \\ 
+ {v}_{f2}&amp; = <number>7.5</number>\text{m}·{\text{s}}^{-1} \text{in the same direction as the bullet} 
+\end{align}</latex>
+                
+              </workstep>
+            </answer>
+          </worked_example>
+          </section>
+        </section>
+	
+      <section type="section">
+          <title>Impulse</title>
+          <shortcode>ESBFJ</shortcode>
+          <para>Impulse is the product of the net force and the time interval for which the force acts. Impulse is defined as:</para>
+          
+
+          <latex>\mathrm{Impulse}=F·\Delta t</latex>
+          
+
+          <para>However, from Newton's Second Law, we know that</para>
+          
+
+          <latex display='block'>
+\begin{align}
+ F&amp; = \frac{\Delta p}{\Delta t} \\ 
+ \therefore F·\Delta t&amp; = \Delta p \\ 
+&amp; = \text{Impulse} 
+\end{align}</latex>
+          
+
+          <para>Therefore,</para>
+          
+
+          <latex>\mathrm{Impulse}=\Delta p</latex>
+          
+
+          <para>Impulse is equal to the change in momentum of an object. From this equation we see, that for a given change in momentum, <latex>{F}_{net}\Delta t</latex> is fixed. Thus, if <latex>{F}_{net}</latex> is reduced, <latex>\Delta t</latex> must be increased (i.e. a smaller resultant force must be applied for longer to bring about the same change in momentum). Alternatively if <latex>\Delta t</latex> is reduced (i.e. the resultant force is applied for a shorter period) then the resultant force must be increased to bring about the same change in momentum.</para>
+		  <para> The graph below show how the force acting on a body changes with time.</para>
+		  <image style:width='0.4'>
+				<src>photos/Fvstgraphtofindimpulse.JPG</src>
+				
+				</image>
+				<para> The area under the graph, given by Ft, represents the impulse of the body. </para>
+          <worked_example>
+            <title>Impulse and Change in momentum</title>
+			
+            <question>
+              <para>A <unit_number><number>150</number><unit>N</unit></unit_number> resultant force acts on a <unit_number><number>300</number><unit>kg</unit></unit_number> trailer. Calculate how long it takes this force to change the trailer's velocity from <unit_number><number>2</number><unit>m·s<sup>-1</sup></unit></unit_number> to <unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number> in the same direction. Assume that the forces acts to the right.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Identify what information is given and what is asked for</title>
+                <para>The question explicitly gives</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the trailer's mass as <unit_number><number>300</number><unit>kg</unit></unit_number>,</para>
+                  </item>
+                  <item>
+                    <para>the trailer's initial velocity as <unit_number><number>2</number><unit>m·s<sup>-1</sup></unit></unit_number> to the right,</para>
+                  </item>
+                  <item>
+                    <para>the trailer's final velocity as <unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number> to the right, and</para>
+                  </item>
+                  <item>
+                    <para>the resultant force acting on the object</para>
+                  </item>
+                </list>
+                <para>all in the correct units!</para>
+                
+
+                <para>We are asked to calculate the time taken <latex>\Delta t</latex> to accelerate the trailer from the <number>2</number> to <unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number>. From the Law of Momentum,</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ {F}_{net}\Delta t&amp; = \Delta p \\ 
+&amp; = m{v}_{f}-m{v}_{i} \\ 
+&amp; = m\left({v}_{f}-{v}_{i}\right). 
+\end{align}</latex>
+                
+
+                <para>Thus we have everything we need to find <latex>\Delta t</latex>!</para>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>Choose right as the positive direction.</para>
+              </workstep>
+              <workstep>
+                <title>Do the calculation and quote the final answer</title>
+                <latex display='block'>
+\begin{align}
+ {F}_{net}\Delta t&amp; = m\left({v}_{f}-{v}_{i}\right) \\ 
+ \left(+150 \mathrm{N}\right)\Delta \mathrm{t}&amp; = \left(300 \text{kg}\right)\left(\left(+6 \text{m}·{\text{s}}^{-1}\right)-\left(+2 \text{m}·{\text{s}}^{-1}\right)\right) \\ 
+ \left(+150 \mathrm{N}\right)\Delta \mathrm{t}&amp; = \left(300 \text{kg}\right)\left(+4 \text{m}·{\text{s}}^{-1}\right) \\ 
+ \Delta t&amp; = \frac{\left(300 \text{kg}\right)\left(+4 \text{m}·{\text{s}}^{-1}\right)}{+150 \mathrm{N}} \\ 
+ \Delta t&amp; = 8 \text{s} 
+\end{align}</latex>
+                
+
+                <para>It takes <unit_number><number>8</number><unit>s</unit></unit_number> for the force to change the object's velocity from <unit_number><number>2</number><unit>m·s<sup>-1</sup></unit></unit_number> to the right to <unit_number><number>6</number><unit>m·s<sup>-1</sup></unit></unit_number> to the right.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Impulsive cricketers!</title>
+            <question>
+              <para>A cricket ball weighing <unit_number><number>156</number><unit>g</unit></unit_number> is moving at <unit_number><number>54</number><unit>km·hr<sup>-1</sup></unit></unit_number> towards a batsman. It is hit by the batsman back towards the bowler at <unit_number><number>36</number><unit>km·hr<sup>-1</sup></unit></unit_number>. Calculate</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>the ball's impulse, and</para>
+                </item>
+                <item>
+                  <para>the average force exerted by the bat if the ball is in contact with the bat for <unit_number><number>0.13</number><unit>s</unit></unit_number>.</para>
+                </item>
+              </list>
+            </question>
+            <answer>
+              <workstep>
+                <title>Identify what information is given and what is asked for</title>
+                <para>The question explicitly gives</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>the ball's mass,</para>
+                  </item>
+                  <item>
+                    <para>the ball's initial velocity,</para>
+                  </item>
+                  <item>
+                    <para>the ball's final velocity, and</para>
+                  </item>
+                  <item>
+                    <para>the time of contact between bat and ball</para>
+                  </item>
+                </list>
+                <para>We are asked to calculate the impulse</para>
+                
+
+                <latex>\mathrm{Impulse}=\Delta p={F}_{\mathrm{net}}\Delta t</latex>
+                
+
+                <para>Since we do not have the force exerted by the bat on the ball ( <latex>{F}_{\mathrm{net}}</latex>), we have to calculate the impulse from the change in momentum of the ball. Now, since</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ \Delta p&amp; = {p}_{f}-{p}_{i} \\ 
+&amp; = m{v}_{f}-m{v}_{i}, 
+\end{align}</latex>
+                
+
+                <para>we need the ball's mass, initial velocity and final velocity, which we are given.</para>
+              </workstep>
+              <workstep>
+                <title>Convert to S.I. units</title>
+                <para>Firstly let us change units for the mass</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ <number>1000</number> \mathrm{g}&amp; = 1 \text{kg} \\ 
+ \text{So,} 1 \mathrm{g}&amp; = \frac{1}{<number>1000</number>} \mathrm{kg} \\ 
+ \therefore 156\times 1 \mathrm{g}&amp; = 156\times \frac{1}{<number>1000</number>} \mathrm{kg} \\ 
+&amp; = <number>0.156</number> \text{kg} 
+\end{align}</latex>
+                
+
+                <para>Next we change units for the velocity</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ 1 \mathrm{km}·{\mathrm{h}}^{-1}&amp; = \frac{<number>1000</number> \mathrm{m}}{<number>3600</number> \text{s}} \\ 
+ \therefore 54\times 1 \mathrm{km}·{\mathrm{h}}^{-1}&amp; = 54\times \frac{<number>1000</number> \mathrm{m}}{<number>3600</number> \text{s}} \\ 
+&amp; = 15 \text{m}·{\text{s}}^{-1} 
+\end{align}</latex>
+                
+
+                <para>Similarly, <unit_number><number>36</number><unit>km·hr<sup>-1</sup></unit></unit_number> = <unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+              </workstep>
+              <workstep>
+                <title>Choose a frame of reference</title>
+                <para>Let us choose the direction from the batsman to the bowler as the positive direction. Then the initial velocity of the ball is <latex>{v}_{i}=-15\text{m}·{\text{s}}^{-1}</latex>, while the final velocity of the ball is <latex>{v}_{f}=10\text{m}·{\text{s}}^{-1}</latex>.</para>
+              </workstep>
+              <workstep>
+                <title>Calculate the momentum</title>
+                <para>Now we calculate the change in momentum,</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ p&amp; = {p}_{f}-{p}_{i} \\ 
+&amp; = m{v}_{f}-m{v}_{i} \\ 
+&amp; = m\left({v}_{f}-{v}_{i}\right) \\ 
+&amp; = \left(<number>0.156</number> \text{kg}\right)\left(\left(+10 \text{m}·{\text{s}}^{-1}\right)-\left(-15 \text{m}·{\text{s}}^{-1}\right)\right) \\ 
+&amp; = <number>+3.9</number> \text{kg}·\text{m}·{\text{s}}^{-1} \\ 
+&amp; = <number>3.9</number> \text{kg}·\text{m}·{\text{s}}^{-1}\text{in the direction from the batsman to the bowler} 
+\end{align}</latex>
+    
+              </workstep>
+              <workstep>
+                <title>Determine the impulse</title>
+                <para>Finally since impulse is just the change in momentum of the ball,</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ \mathrm{Impulse}&amp; = \Delta p \\ 
+&amp; = <number>3.9</number> \text{kg}·\text{m}·{\text{s}}^{-1}\text{in the direction from the batsman to the bowler} 
+\end{align}</latex>
+             
+              </workstep>
+              <workstep>
+                <title>Determine the average force exerted by the bat</title>
+                <latex>\mathrm{Impulse}={F}_{net}\Delta t=\Delta p</latex>
+                
+
+                <para>We are given <latex>\Delta t</latex> and we have calculated the impulse of the ball.</para>
+                
+
+                <latex display='block'>
+\begin{align}
+ {F}_{net}\Delta t&amp; = \mathrm{Impulse} \\ 
+ {F}_{net}\left(<number>0.13</number> \text{s}\right)&amp; = <number>+3.9</number> \mathrm{N}·\text{s} \\ 
+ {F}_{net}&amp; = \frac{<number>+3.9</number> \mathrm{N}· \text{s}}{<number>0.13</number> \text{s}} \\ 
+&amp; = +30 \mathrm{N} \\ 
+&amp; = 30 \mathrm{N} \text{in the direction from the batsman to the bowler} 
+\end{align}</latex>
+         
+              </workstep>
+            </answer>
+          </worked_example>
+          <exercises><title/>
+            <entry>
+<shortcode>01x0</shortcode>
+<problem>
+              <para>Which one of the following is <emphasis>not</emphasis> a unit of impulse?</para>
+              <list list-type="enumerated">
+                <item>
+                  <para><unit>N·s</unit></para>
+                </item>
+                <item>
+                  <para><unit>kg·m·s<sup>-1</sup></unit></para>
+                </item>
+                <item>
+                  <para><unit>J·m·s<sup>-1</sup></unit></para>
+                </item>
+                <item>
+                  <para><unit>J·m<sup>-1</sup>·s</unit></para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001009/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x1</shortcode>
+<problem>
+              <para>A toy car of mass <unit_number><number>1</number><unit>kg</unit></unit_number> moves eastwards with a speed of <unit_number><number>2</number><unit>m·s<sup>-1</sup></unit></unit_number>. It collides head-on with a toy train. The train has a mass of <unit_number><number>2</number><unit>kg</unit></unit_number> and is moving at a speed of <unit_number><number>1.5</number><unit>m·s<sup>-1</sup></unit></unit_number> westwards. The car rebounds (bounces back) at <unit_number><number>3.4</number><unit>m·s<sup>-1</sup></unit></unit_number> and the train rebounds at <unit_number><number>1.2</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>Calculate the change in momentum for each toy.</para>
+                </item>
+                <item>
+                  <para>Determine the impulse for each toy.</para>
+                </item>
+                <item>
+                  <para>Determine the duration of the collision if the magnitude of the force exerted by each toy is <unit_number><number>8</number><unit>N</unit></unit_number>.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001010/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x2</shortcode>
+<problem>
+              <para>A bullet of mass <unit_number><number>20</number><unit>g</unit></unit_number> strikes a target at <unit_number><number>300</number><unit>m·s<sup>-1</sup></unit></unit_number> and exits at <unit_number><number>200</number><unit>m·s<sup>-1</sup></unit></unit_number>. The tip of the bullet takes <unit_number><number>0.0001</number><unit>s</unit></unit_number> to pass through the target. Determine:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>the change of momentum of the bullet.</para>
+                </item>
+                <item>
+                  <para>the impulse of the bullet.</para>
+                </item>
+                <item>
+                  <para>the magnitude of the force experienced by the bullet.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001011/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x3</shortcode>
+<problem>
+              <para>A bullet of mass <unit_number><number>20</number><unit>g</unit></unit_number> strikes a target at <unit_number><number>300</number><unit>m·s<sup>-1</sup></unit></unit_number>. Determine under which circumstances the bullet experiences the greatest change in momentum, and hence impulse:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>When the bullet exits the target at <unit_number><number>200</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+                </item>
+                <item>
+                  <para>When the bullet stops in the target.</para>
+                </item>
+                <item>
+                  <para>When the bullet rebounds at <unit_number><number>200</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001012/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x4</shortcode>
+<problem>
+              <para>A ball with a mass of <unit_number><number>200</number><unit>g</unit></unit_number> strikes a wall at right angles at a velocity of <unit_number><number>12</number><unit>m·s<sup>-1</sup></unit></unit_number> and rebounds at a velocity of <unit_number><number>9</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>Calculate the change in the momentum of the ball.</para>
+                </item>
+                <item>
+                  <para>What is the impulse of the wall on the ball?</para>
+                </item>
+                <item>
+                  <para>Calculate the magnitude of the force exerted by the wall on the ball if the collision takes <unit_number><number>0.02</number><unit>s</unit></unit_number>.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001013/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x5</shortcode>
+<problem>
+              <para>If the ball in the previous problem is replaced with a piece of clay of <unit_number><number>200</number><unit>g</unit></unit_number> which is thrown against the wall with the same velocity, but then sticks to the wall, calculate:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>The impulse of the clay on the wall.</para>
+                </item>
+                <item>
+                  <para>The force exerted by the clay on the wall if it is in contact with the wall for <unit_number><number>0.5</number><unit>s</unit></unit_number> before it comes to rest.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001014/view"/>
+		<correct/>
+</entry>
+</exercises>
+        </section>
+        <section type="section">
+          <title>Physics in action: Impulse</title>
+          <shortcode>ESBFL</shortcode>
+          <para>A very important application of impulse is improving safety and reducing injuries. In many cases, an object needs to be brought to rest from a certain initial velocity. This means there is a certain specified change in momentum. If the time during which the momentum changes can be increased then the force that must be applied will be less and so it will cause less damage. This is the principle behind arrestor beds for trucks, airbags, and bending your knees when you jump off a chair and land on the ground.</para>
+          <section type="subsubsection">
+            <title>Air-bags in motor vehicles</title>
+            <para>Air bags are used in motor vehicles because they are able to reduce the effect of the force experienced by a person during an accident. Air bags extend the time required to stop the momentum of the driver and passenger. During a collision, the motion of the driver and passenger carries them towards the windshield. If they are stopped by a collision with the windshield, it would result in a large force exerted over a short time in order to bring them to a stop. If instead of hitting the windshield, the driver and passenger hit an air bag, then the time of the impact is increased. Increasing the time of the impact results in a decrease in the force.</para>
+			 <latex display='block'>
+\begin{align}
+ F&amp; = \frac{\Delta p}{\Delta t}  
+\end{align}</latex>
+<para> Therefore if t is increased, for a constant change in momentum, force on body is reduced </para>
+          </section>
+          <section type="subsubsection">
+            <title>Padding as protection during sports</title>
+            <para>The same principle explains why wicket keepers in cricket use padded gloves or why there are padded mats in gymnastics. In cricket, when the wicket keeper catches the ball, the padding is slightly compressible, thus reducing the effect of the force on the wicket keepers hands. Similarly, if a gymnast falls, the padding compresses and reduces the effect of the force on the gymnast's body.</para>
+          </section>
+          <section type="subsubsection">
+            <title>Arrestor beds for trucks</title>
+            <para>An arrestor bed is a patch of ground that is softer than the road. Trucks use these when they have to make an emergency stop. When a trucks reaches an arrestor bed the time interval over which the momentum is changed is increased. This decreases the force and causes the truck to slow down.</para>
+          </section>
+          <section type="subsubsection">
+            <title>Follow-through in sports</title>
+            <para>In sports where rackets and bats are used, like tennis, cricket, squash, badminton and baseball, the hitter is often encouraged to follow-through when striking the ball. High speed films of the collisions between bats/rackets and balls have shown that following through increases the time over which the collision between the racket/bat and ball occurs. This increase in the time of the collision causes an increase in the velocity change of the ball. This means that a hitter can cause the ball to leave the racket/bat faster by following through. In these sports, returning the ball with a higher velocity often increases the chances of success.</para>
+          </section>
+          <section type="subsubsection">
+            <title>Crumple zones in cars</title>
+            <para>Another safety application of trying to reduce the force experienced is in crumple zones in cars. When two cars have a collision, two things can happen:</para>
+            <list list-type="enumerated">
+              <item>
+                <para>the cars bounce off each other, or</para>
+              </item>
+              <item>
+                <para>the cars crumple together.</para>
+              </item>
+            </list>
+            <para>Which situation is more dangerous for the occupants of the cars? When cars bounce off each other, or rebound, there is a larger change in momentum and therefore a larger impulse. A larger impulse means that a greater force is experienced by the occupants of the cars. When cars crumple together, there is a smaller change in momentum and therefore a smaller impulse. The smaller impulse means that the occupants of the cars experience a smaller force. Car manufacturers use this idea and design crumple zones into cars, such that the car has a greater chance of crumpling than rebounding in a collision. Also, when the car crumples, the change in the car's momentum happens over a longer time. Both these effects result in a smaller force on the occupants of the car, thereby increasing their chances of survival.</para>
+            <activity type="activity">
+              <title>Egg Throw</title>
+              <para>This activity demonstrates the effect of impulse and how it is used to improve safety. Have two learners hold up a bed sheet or large piece of fabric. Then toss an egg at the sheet. The egg should not break, because the collision between the egg and the bed sheet lasts over an extended period of time since the bed sheet has some give in it. By increasing the time of the collision, the force of the impact is minimised. Take care to aim at the sheet, because if you miss the sheet, you will definitely break the egg and have to clean up the mess!</para>
+            </activity>
+            <exercises><title/>
+              <entry>
+<shortcode>01x6</shortcode>
+<problem>
+                <para>A canon, mass <unit_number><number>500</number><unit>kg</unit></unit_number>, fires a shell, mass <unit_number><number>1</number><unit>kg</unit></unit_number>, horizontally to the right at <unit_number><number>500</number><unit>m·s<sup>-1</sup></unit></unit_number>. What is the magnitude and direction of the initial recoil velocity of the canon?</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001058/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x7</shortcode>
+<problem>
+                <para>A trolley of mass <unit_number><number>1</number><unit>kg</unit></unit_number> is moving with a speed of <unit_number><number>3</number><unit>m·s<sup>-1</sup></unit></unit_number>. A block of wood, mass <unit_number><number>0.5</number><unit>kg</unit></unit_number>, is dropped vertically into the trolley. Immediately after the collision, the speed of the trolley and block is <unit_number><number>2</number><unit>m·s<sup>-1</sup></unit></unit_number>. By way of calculation, show whether momentum is conserved in the collision.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001059/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x8</shortcode>
+<problem>
+                <para>A <unit_number><number>7200</number><unit>kg</unit></unit_number> empty railway truck is stationary. A fertiliser firm loads <unit_number><number>10800</number><unit>kg</unit></unit_number> fertiliser into the truck. A second, identical, empty truck is moving at <unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number> when it collides with the loaded truck.</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>If the empty truck stops completely immediately after the collision, use a conservation law to calculate the velocity of the loaded truck immediately after the collision.</para>
+                  </item>
+                  <item>
+                    <para>Calculate the distance that the loaded truck moves after collision, if a constant frictional force of <unit_number><number>24</number><unit>kN</unit></unit_number> acts on the truck.</para>
+                  </item>
+                </list>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001060/00000002/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01x9</shortcode>
+<problem>
+                <para>A child drops a squash ball of mass <unit_number><number>0.05</number><unit>kg</unit></unit_number>. The ball strikes the ground with a velocity of <unit_number><number>4</number><unit>m·s<sup>-1</sup></unit></unit_number> and rebounds with a velocity of <unit_number><number>3</number><unit>m·s<sup>-1</sup></unit></unit_number>. Does the law of conservation of momentum apply to this situation? Explain.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001061/00000002/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01xa</shortcode>
+<problem>
+                <para>A bullet of mass <unit_number><number>50</number><unit>g</unit></unit_number> travelling horizontally at <unit_number><number>600</number><unit>m·s<sup>-1</sup></unit></unit_number> strikes a stationary wooden block of mass <unit_number><number>2</number><unit>kg</unit></unit_number> resting on a smooth horizontal surface. The bullet gets stuck in the block.</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>Name and state the principle which can be applied to find the speed of the block-and-bullet system after the bullet entered the block.</para>
+                  </item>
+                  <item>
+                    <para>Calculate the speed of the bullet-and-block system immediately after impact.</para>
+                  </item>
+                  <item>
+                    <para>If the time of impact was <unit_number><number><coeff>5</coeff><exp>-4</exp></number><unit>s</unit></unit_number>, calculate the force that the bullet exerts on the block during impact.</para>
+                  </item>
+                </list>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/cscheffler/questions/A001062/view"/>
+		<correct/>
+</entry>
+</exercises>
+          <!--</section>-->
+        </section>
+      <section type="section">
+	<title>Chapter summary</title>
+        <presentation>
+          <shortcode>VPkkv</shortcode>
+	  <url>http://www.slideshare.net/slideshow/embed_code/12160261</url>
+        </presentation>
+        <list list-type="bulleted">
+          <item>
+            <para><emphasis effect="bold">Newton's First Law:</emphasis> Every object will remain at rest or in
+	      uniform motion in a straight line unless it is made to change its
+	      state by the action of an <emphasis effect="italics">unbalanced force</emphasis>.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Newton's Second Law:</emphasis> The resultant force acting on a body
+	      will cause the body to accelerate in the direction of the
+	      resultant force The acceleration of the body is directly proportional to the magnitude of
+	      the resultant force and inversely proportional to the mass of the object.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Newton's Third Law:</emphasis> If body A exerts a force on body B then body B
+	      will exert an equal but opposite force on body A.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Newton's Law of Universal Gravitation:</emphasis> Every body in the universe exerts a force on every other body. The force is directly proportional to the product of the masses of the bodies and inversely proportional to the square of the distance between them.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Equilibrium:</emphasis> Objects at rest or moving with constant velocity
+	      are in <emphasis effect="italics">equilibrium</emphasis> and have a <emphasis effect="italics">zero resultant force</emphasis> .</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Equilibrant:</emphasis> The <emphasis effect="italics">equilibrant</emphasis> of any number of forces is
+	      the single force required to produce equilibrium.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Triangle Law for Forces in Equilibrium:</emphasis> Three forces in
+	      equilibrium can be represented in magnitude and direction by the
+	      three sides of a triangle taken in order.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Momentum:</emphasis> The <emphasis effect="italics">momentum</emphasis> of an object is defined as its
+	      mass multiplied by its velocity.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Momentum of a System:</emphasis> The <emphasis effect="italics">total momentum of a system</emphasis> is the sum of the momenta of each of the objects in the system.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Principle of Conservation of Linear Momentum:</emphasis> `The total linear
+	      momentum of an isolated system is constant' or `In an isolated
+	      system the total momentum before a collision (or explosion) is equal
+	      to the total momentum after the collision (or explosion)'.</para>
+          </item>
+          <item>
+            <para><emphasis effect="bold">Law of Momentum:</emphasis> The applied resultant force acting on an
+	      object is equal to the rate of change of the object's momentum and
+	      this force is in the direction of the change in momentum.</para>
+          </item>
+        </list>
+      </section>
+      <exercises><title>Momentum</title>
+        <entry>
+<shortcode>00qq</shortcode>
+<problem>
+          <para>[SC 2003/11]A projectile is fired vertically upwards from the ground. At the highest point of its motion, the projectile explodes and separates into two pieces of equal mass. If one of the pieces is projected vertically upwards after the explosion, the second piece will...</para>
+          <list list-type="enumerated">
+            <item>
+              <para>drop to the ground at zero initial speed.</para>
+            </item>
+            <item>
+              <para>be projected downwards at the same initial speed at the first piece.</para>
+            </item>
+            <item>
+              <para>be projected upwards at the same initial speed as the first piece.</para>
+            </item>
+            <item>
+              <para>be projected downwards at twice the initial speed as the first piece.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001146/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qr</shortcode>
+<problem>
+          <para>[IEB 2004/11 HG1] A ball hits a wall horizontally with a speed of <unit_number><number>15</number><unit>m·s<sup>-1</sup></unit></unit_number>. It rebounds horizontally with a speed of <unit_number><number>8</number><unit>m·s<sup>-1</sup></unit></unit_number>. Which of the following statements about the system of the ball and the wall is <emphasis effect="bold">true</emphasis>?</para>
+          <list list-type="enumerated">
+            <item>
+              <para>The total linear momentum of the system is not conserved during this collision.</para>
+            </item>
+            <item>
+              <para>The law of conservation of energy does not apply to this system.</para>
+            </item>
+            <item>
+              <para>The change in momentum of the wall is equal to the change in momentum of the ball.</para>
+            </item>
+            <item>
+              <para>Energy is transferred from the ball to the wall.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001147/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qs</shortcode>
+<problem>
+          <para>[IEB 2001/11 HG1] A block of mass M collides with a stationary block of mass 2M. The two blocks move off together with a velocity of <latex>\vec{v}</latex><latex>\vec{v}</latex>. What is the velocity of the block of mass M immediately <emphasis effect="bold">before</emphasis> it collides with the block of mass 2M?</para>
+          <list list-type="enumerated">
+            <item>
+              <para><latex>\vec{v}</latex></para>
+            </item>
+            <item>
+              <para>2<latex>\vec{v}</latex></para>
+            </item>
+            <item>
+              <para>3<latex>\vec{v}</latex></para>
+            </item>
+            <item>
+              <para>4<latex>\vec{v}</latex></para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001148/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qt</shortcode>
+<problem>
+          <para>[IEB 2003/11 HG1] A cricket ball and a tennis ball move horizontally towards you with the <emphasis effect="underline">same momentum</emphasis>. A cricket ball has greater mass than a tennis ball. You apply the same force in stopping each ball.</para>
+          
+
+          <para>How does the time taken to stop each ball compare?</para>
+          <list list-type="enumerated">
+            <item>
+              <para>It will take longer to stop the cricket ball.</para>
+            </item>
+            <item>
+              <para>It will take longer to stop the tennis ball.</para>
+            </item>
+            <item>
+              <para>It will take the same time to stop each of the balls.</para>
+            </item>
+            <item>
+              <para>One cannot say how long without knowing the kind of collision the ball has when stopping.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001149/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qu</shortcode>
+<problem>
+          <para>[IEB 2004/11 HG1] Two identical billiard balls collide head-on with each other. The first ball hits the second ball with a speed of V, and the second ball hits the first ball with a speed of 2V. After the collision, the first ball moves off in the opposite direction with a speed of 2V. Which expression correctly gives the speed of the second ball after the collision?</para>
+          <list list-type="enumerated">
+            <item>
+              <para>V</para>
+            </item>
+            <item>
+              <para>2V</para>
+            </item>
+            <item>
+              <para>3V</para>
+            </item>
+            <item>
+              <para>4V</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001150/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qv</shortcode>
+<problem>
+          <para>[SC 2002/11 HG1] Which one of the following physical quantities is the same as the rate of change of momentum?</para>
+          <list list-type="enumerated">
+            <item>
+              <para>resultant force</para>
+            </item>
+            <item>
+              <para>work</para>
+            </item>
+            <item>
+              <para>power</para>
+            </item>
+            <item>
+              <para>impulse</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001151/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qw</shortcode>
+<problem>
+          <para>[IEB 2005/11 HG] Cart X moves along a smooth track with momentum p. A resultant force F applied to the cart stops it in time t. Another cart Y has only half the mass of X, but it has the same momentum p.</para>
+          <pspicture>
+            <code>
+              (0,0)(6,1.6)
+\SpecialCoor
+\def\cart{\psframe(0,0.4)(1,1)\pscircle(0.2,0.2){0.2}\pscircle(0.8,0.2){0.2}}
+\psline[linewidth=2pt](0,0)(6,0) 
+\rput(0,0){\cart}
+\uput[u](0.5,1){X}
+\rput(0.5,0.7){$2m$}
+\psline{-&gt;}(1,1)(1.5,1)
+\uput[r](1.5,1){$p$}
+\psline{&lt;-}(1,0.5)(2,0.5)
+\uput[r](2,0.5){$F$}
+
+\rput(3.5,0){
+\rput(0,0){\cart}
+\uput[u](0.5,1){Y}
+\rput(0.5,0.7){$m$}
+\psline{-&gt;}(1,1)(1.5,1)
+\uput[r](1.5,1){$p$}
+\psline{&lt;-}(1,0.5)(2,0.5)
+\uput[r](2,0.5){$F$}
+}
+
+            </code>
+          </pspicture>
+          <para>In what time will cart Y be brought to rest when the same resultant force F acts on it?</para>
+          <list list-type="enumerated">
+            <item>
+              <para><latex>\frac{1}{2}t</latex></para>
+            </item>
+            <item>
+              <para>t</para>
+            </item>
+            <item>
+              <para><latex>2t</latex></para>
+            </item>
+            <item>
+              <para><latex>4t</latex></para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001152/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qx</shortcode>
+<problem>
+          <para>[SC 2002/03 HG1]
+A ball with mass m strikes a wall perpendicularly with a speed, v. If it rebounds in the opposite direction with the same speed, v, the magnitude of the change in momentum will be ...</para>
+          <list list-type="enumerated">
+            <item>
+              <para><latex>2mv</latex></para>
+            </item>
+            <item>
+              <para><latex>mv</latex></para>
+            </item>
+            <item>
+              <para><latex>\frac{1}{2}mv</latex></para>
+            </item>
+            <item>
+              <para><latex>0mv</latex></para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/nicoladt/questions/A001153/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qy</shortcode>
+<problem>
+          <para>Show that impulse and momentum have the same units.</para>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001154/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00qz</shortcode>
+<problem>
+          <para>A golf club exerts an average force of <unit_number><number>3</number><unit>kN</unit></unit_number> on a ball of mass <unit_number><number>0.06</number><unit>kg</unit></unit_number>. If the golf club is in contact with the golf ball for <unit_number><number><coeff>5</coeff><exp>4</exp></number><unit>seconds</unit></unit_number>, calculate</para>
+          <list list-type="enumerated">
+            <item>
+              <para>the change in the momentum of the golf ball.</para>
+            </item>
+            <item>
+              <para>the velocity of the golf ball as it leaves the club.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001155/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r0</shortcode>
+<problem>
+          <para>During a game of hockey, a player strikes a stationary ball of mass <unit_number><number>150</number><unit>g</unit></unit_number> . The graph below shows how the force of the ball varies with the time.</para>
+          <figure>
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (0,-3.0284376)(8.459063,3.0084374)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.4940625,-2.5115626)(1.4940625,2.9884374)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.4940625,-2.5115626)(8.094063,-2.5115626)
+\psline[linewidth=0.04cm](2.4940624,-2.4115624)(2.4940624,-2.6115625)
+\psline[linewidth=0.04cm](3.4940624,-2.4115624)(3.4940624,-2.6115625)
+\psline[linewidth=0.04cm](4.4940624,-2.4115624)(4.4940624,-2.6115625)
+\psline[linewidth=0.04cm](5.4940624,-2.4115624)(5.4940624,-2.6115625)
+\psline[linewidth=0.04cm](6.4940624,-2.4115624)(6.4940624,-2.6115625)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.4954689,-2.8015625){0,1}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.51,-2.8015625){0,2}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.5025,-2.8015625){0,3}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.51125,-2.8015625){0,4}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.505625,-2.8015625){0,5}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.0590625,-1.5015625){50}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.0365624,-0.5015625){100}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.0365624,0.4984375){150}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.05375,1.4984375){200}
+\psline[linewidth=0.04cm](1.3940625,-1.5115625)(1.5940624,-1.5115625)
+\psline[linewidth=0.04cm](1.3940625,-0.5115625)(1.5940624,-0.5115625)
+\psline[linewidth=0.04cm](1.3940625,0.4884375)(1.5940624,0.4884375)
+\psline[linewidth=0.04cm](1.3940625,1.4884375)(1.5940624,1.4884375)
+\psline[linewidth=0.04cm](1.4940625,-2.5115626)(4.0540624,0.4684375)
+\psline[linewidth=0.04cm](4.0340624,0.4884375)(6.4340625,-2.5115626)
+\psline[linewidth=0.02cm](1.4940625,-0.5115625)(7.0940623,-0.5115625)
+\psline[linewidth=0.02cm](1.4940625,0.4884375)(7.0940623,0.4884375)
+\psline[linewidth=0.02cm](1.3940625,1.4884375)(7.0940623,1.4884375)
+\psline[linewidth=0.02cm](2.4940624,1.4884375)(2.4940624,-2.5115626)
+\psline[linewidth=0.02cm](3.4940624,1.4884375)(3.4940624,-2.4115624)
+\psline[linewidth=0.02cm](4.4940624,1.4884375)(4.4940624,-2.5115626)
+\psline[linewidth=0.02cm](5.4940624,1.4884375)(5.4940624,-2.5115626)
+\psline[linewidth=0.02cm](6.4940624,1.4884375)(6.4940624,-2.5115626)
+\psline[linewidth=0.02cm](1.4940625,-1.5115625)(7.0940623,-1.5115625)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.8010936,-2.8015625){Time (s)}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.69359374,2.3984375){Force (N)}
+
+              </code>
+            </pspicture>
+          </figure>
+          <list list-type="enumerated">
+            <item>
+              <para>What does the area under this graph represent?</para>
+            </item>
+            <item>
+              <para>Calculate the speed at which the ball leaves the hockey stick.</para>
+            </item>
+            <item>
+              <para>The same player hits a practise ball of the same mass, but which is made from a softer material. The hit is such that the ball moves off with the same speed as before. How will the <emphasis effect="bold">area</emphasis>, the <emphasis effect="bold">height</emphasis> and the <emphasis effect="bold">base</emphasis> of the triangle that forms the graph, compare with that of the original ball?</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001156/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r1</shortcode>
+<problem>
+          <para>The fronts of modern cars are deliberately designed in such a way that in case of a head-on collision, the front would crumple. Why is it desirable that the front of the car should crumple?</para>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001157/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r2</shortcode>
+<problem>
+          <para>A ball of mass <unit_number><number>100</number><unit>g</unit></unit_number> strikes a wall horizontally at <unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number> and rebounds at <unit_number><number>8</number> <unit>m·s<sup>-1</sup></unit></unit_number>. It is in contact with the wall for <unit_number><number>0.01</number><unit>s</unit></unit_number>.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Calculate the average force exerted by the wall on the ball.</para>
+            </item>
+            <item>
+              <para>Consider a lump of putty also of mass <unit_number><number>100</number><unit>g</unit></unit_number> which strikes the wall at <unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number> and comes to rest in <unit_number><number>0.01</number><unit>s</unit></unit_number> against the surface. Explain qualitatively (no numbers) whether the force exerted on the putty will be less than, greater than of the same as the force exerted on the ball by the wall. Do not do any calculations.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001158/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r3</shortcode>
+<problem>
+          <para>Shaun swings his cricket bat and hits a stationary cricket ball vertically upwards so that it rises to a height of <unit_number><number>11.25</number><unit>m</unit></unit_number> above the ground. The ball has a mass of <unit_number><number>125</number><unit>g</unit></unit_number>. Determine</para>
+          <list list-type="enumerated">
+            <item>
+              <para>the speed with which the ball left the bat.</para>
+            </item>
+            <item>
+              <para>the impulse exerted by the bat on the ball.</para>
+            </item>
+            <item>
+              <para>the impulse exerted by the ball on the bat.</para>
+            </item>
+            <item>
+              <para>for how long the ball is in the air.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001159/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r4</shortcode>
+<problem>
+          <para>A glass plate is mounted horizontally <unit_number><number>1.05</number><unit>m</unit></unit_number> above the ground. An iron ball of mass <unit_number><number>0.4</number><unit>kg</unit></unit_number> is released from rest and falls a distance of <unit_number><number>1.25</number><unit>m</unit></unit_number> before striking the glass plate and breaking it. The total time taken from release to hitting the ground is recorded as <unit_number><number>0.80</number><unit>s</unit></unit_number>. Assume that the time taken to break the plate is negligible.</para>
+          <figure>
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (0,-2.19)(4.72,2.17)
+\psdiamond[linewidth=0.08,dimen=outer](2.35,-0.18)(2.35,0.39)
+\pscircle[linewidth=0.04,dimen=outer](2.34,1.97){0.2}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{&lt;-&gt;}(2.32,1.77)(2.32,-0.15)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(2.28,-0.51)(2.28,-2.17)
+\psline[linewidth=0.04cm](0.1,-2.13)(4.7,-2.13)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.9,-0.13)(2.7,-0.13)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.988125,1.18){1,25 m}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.988125,-1.12){1,05 m}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.0,1.77)(2.8,1.77)
+
+              </code>
+            </pspicture>
+          </figure>
+          <list list-type="enumerated">
+            <item>
+              <para>Calculate the speed at which the ball strikes the glass plate.</para>
+            </item>
+            <item>
+              <para>Show that the speed of the ball immediately after breaking the plate is <unit_number><number>2.0</number> <unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+            </item>
+            <item>
+              <para>Calculate the magnitude and give the direction of the change of momentum which the ball experiences during its contact with the glass plate.</para>
+            </item>
+            <item>
+              <para>Give the magnitude and direction of the impulse which the glass plate experiences when the ball hits it.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001160/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r5</shortcode>
+<problem>
+          <para>[SC 2004/11 HG1]A cricket ball, mass <unit_number><number>175</number><unit>g</unit></unit_number> is thrown directly towards a player at a velocity of <unit_number><number>12</number><unit>m·s<sup>-1</sup></unit></unit_number>. It is hit back in the opposite direction with a velocity of <unit_number><number>30</number><unit>m·s<sup>-1</sup></unit></unit_number>. The ball is in contact with the bat for a period of <unit_number><number>0.05</number><unit>s</unit></unit_number>.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Calculate the impulse of the ball.</para>
+            </item>
+            <item>
+              <para>Calculate the magnitude of the force exerted by the bat on the ball.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001161/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r6</shortcode>
+<problem>
+          <para>[IEB 2005/11 HG1] A ball bounces to a vertical height of <unit_number><number>0.9</number><unit>m</unit></unit_number> when it is dropped from a height of <unit_number><number>1.8</number><unit>m</unit></unit_number>. It rebounds immediately after it strikes the ground, and the effects of air resistance are negligible.</para>
+          <pspicture>
+            <code>
+              (0,0)(4,4)
+\def\tennisball{\pscircle(0,0){.25}\psarc(-0.2,0){0.15}{-87}{87}\psarc(0.2,0){0.15}{87}{-87}}
+\psline(0,0)(4,0)
+\rput(2,3.6){\tennisball}
+\rput(2,1.8){\psset{dash= 2pt 2pt,linestyle=dashed}\tennisball}
+\psline[linestyle=dashed]{&lt;-&gt;}(1,0)(1,3.6)
+\psline[linestyle=dashed]{&lt;-&gt;}(3,0)(3,1.8)
+\uput[l](1,1.8){1,8~m}
+\uput[r](3,0.9){0,9~m}
+
+            </code>
+          </pspicture>
+          <list list-type="enumerated">
+            <item>
+              <para>How long (in s) does it take for the ball to hit the ground after it has been dropped?</para>
+            </item>
+            <item>
+              <para>At what speed does the ball strike the ground?</para>
+            </item>
+            <item>
+              <para>At what speed does the ball rebound from the ground?</para>
+            </item>
+            <item>
+              <para>How long (in s) does the ball take to reach its maximum height after the bounce?</para>
+            </item>
+            <item>
+              <para>Draw a velocity-time graph for the motion of the ball from the time it is dropped to the time when it rebounds to <unit_number><number>0.9</number><unit>m</unit></unit_number>. Clearly, show the following on the graph:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>the time when the ball hits the ground</para>
+                </item>
+                <item>
+                  <para>the time when it reaches <unit_number><number>0.9</number><unit>m</unit></unit_number></para>
+                </item>
+                <item>
+                  <para>the velocity of the ball when it hits the ground, and</para>
+                </item>
+                <item>
+                  <para>the velocity of the ball when it rebounds from the ground.</para>
+                </item>
+              </list>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001162/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r7</shortcode>
+<problem>
+          <para>[SC 2002/11 HG1] In a railway shunting yard, a locomotive of mass <unit_number><number>4000</number><unit>kg</unit></unit_number>, travelling due east at a velocity of <unit_number><number>1.5</number><unit>m·s<sup>-1</sup></unit></unit_number>, collides with a stationary goods wagon of mass <unit_number><number>3000</number><unit>kg</unit></unit_number> in an attempt to couple with it. The coupling fails and instead the goods wagon moves due east with a velocity of <unit_number><number>2.8</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Calculate the magnitude and direction of the velocity of the locomotive immediately after collision.</para>
+            </item>
+            <item>
+              <para>Name and state in words the law you used to answer the previous question</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001163/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r8</shortcode>
+<problem>
+          <para>[SC 2005/11 SG1] A combination of trolley A (fitted with a spring) of mass <unit_number><number>1</number><unit>kg</unit></unit_number>, and trolley B of mass <unit_number><number>2</number><unit>kg</unit></unit_number>, moves to the right at <unit_number><number>3</number><unit>m·s<sup>-1</sup></unit></unit_number> along a frictionless, horizontal surface. The spring is kept compressed between the two trolleys.</para>
+          <pspicture>
+            <code>
+              (0,-0.6)(8.2,2.6)
+
+\SpecialCoor
+\psline[linewidth=2pt](0,0)(8.2,0) \psframe(2,0.25)(4,1.25)
+\uput[dr](2,1.25){A}
+\rput(3,0.75){1~kg}
+\pscircle[fillcolor=white,fillstyle=solid](2.5,0.25){0.25}
+\pscircle[fillcolor=white,fillstyle=solid](3.5,0.25){0.25}
+\rput(2.2,0){\psframe(2,0.25)(4,1.75)
+\uput[dr](2,1.75){B}
+\rput(3,1){2~kg}
+\pscircle[fillcolor=white,fillstyle=solid](2.5,0.25){0.25}
+\pscircle[fillcolor=white,fillstyle=solid](3.5,0.25){0.25}}
+\pscoil[coilarm=0.01cm,coilwidth=0.2cm,coilheight=0.5](4,1.15)(4.2,1.15)
+\psline{-&gt;}(3.6,2)(4.6,2)
+\uput[u](4.1,2){3 $\text{m}\cdot\text{s}^{-1}$}
+\uput[d](4,0){Before}
+
+            </code>
+          </pspicture>
+          <para>While the combination of the two trolleys is moving at <unit_number><number>3</number><unit>m·s<sup>-1</sup></unit></unit_number>, the spring is released and when it has expanded completely, the <unit_number><number>2</number><unit>kg</unit></unit_number> trolley is then moving to the right at <unit_number><number>4.7</number><unit>m·s<sup>-1</sup></unit></unit_number> as shown below.</para>
+          <pspicture>
+            <code>
+              (0,-0.6)(8.2,2.6)
+\SpecialCoor
+\psline[linewidth=2pt](0,0)(8.2,0) 
+\rput(-1,0){\psframe(2,0.25)(4,1.25)
+\uput[dr](2,1.25){A}
+\rput(3,0.75){1~kg}
+\pscircle[fillcolor=white,fillstyle=solid](2.5,0.25){0.25}
+\pscircle[fillcolor=white,fillstyle=solid](3.5,0.25){0.25}}
+
+\rput(3.2,0){\psframe(2,0.25)(4,1.75)
+\uput[dr](2,1.75){B}
+\rput(3,1){2~kg}
+\pscircle[fillcolor=white,fillstyle=solid](2.5,0.25){0.25}
+\pscircle[fillcolor=white,fillstyle=solid](3.5,0.25){0.25}}
+\pscoil[coilarm=0.01cm,coilwidth=0.2cm,coilheight=1](3,1.15)(3.5,1.15)
+\psline{-&gt;}(5.7,2)(6.7,2)
+\uput[u](6.2,2){4,7 $\text{m}\cdot\text{s}^{-1}$}
+\uput[d](4,0){After}
+
+            </code>
+          </pspicture>
+          <list list-type="enumerated">
+            <item>
+              <para>State, in words, the principle of <emphasis effect="italics">conservation of linear momentum</emphasis>.</para>
+            </item>
+            <item>
+              <para>Calculate the magnitude and direction of the velocity of the <unit_number><number>1</number><unit>kg</unit></unit_number> trolley immediately after the spring has expanded completely.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001164/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00r9</shortcode>
+<problem>
+          <para>[IEB 2002/11 HG1] A ball bounces back from the ground. Which of the following statements is true of this event?</para>
+          <list list-type="enumerated">
+            <item>
+              <para>The magnitude of the change in momentum of the ball is equal to the magnitude of the change in momentum of the Earth.</para>
+            </item>
+            <item>
+              <para>The magnitude of the impulse experienced by the ball is greater than the magnitude of the impulse experienced by the Earth.</para>
+            </item>
+            <item>
+              <para>The speed of the ball before the collision will always be equal to the speed of the ball after the collision.</para>
+            </item>
+            <item>
+              <para>Only the ball experiences a change in momentum during this event.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001165/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00ra</shortcode>
+<problem>
+          <para>[SC 2002/11 SG] A boy is standing in a small stationary boat. He throws his schoolbag, mass <unit_number><number>2</number><unit>kg</unit></unit_number>, horizontally towards the jetty with a velocity of <unit_number><number>5</number><unit>m·s<sup>-1</sup></unit></unit_number>. The <emphasis effect="italics">combined mass</emphasis> of the boy and the boat is <unit_number><number>50</number><unit>kg</unit></unit_number>.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Calculate the magnitude of the horizontal momentum of the bag immediately after the boy has thrown it.</para>
+            </item>
+            <item>
+              <para>Calculate the velocity (magnitude and direction) of the <emphasis effect="italics">boat-and-boy</emphasis> immediately after the bag is thrown.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001166/view"/>
+		<correct/>
+</entry>
+</exercises>
+    </section>
+    </section>
+  </content>
+</document>

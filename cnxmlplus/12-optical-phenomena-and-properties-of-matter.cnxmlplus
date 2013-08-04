@@ -1,0 +1,2043 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml/0.4" xmlns:style="http://siyavula.com/cnxml/style/0.1">
+  <metadata>
+    <cnxml-version>0.1</cnxml-version>
+    <pspicture-generator-version>1.1</pspicture-generator-version>
+  </metadata>
+  <content>
+    <section type="chapter">
+      <title>Optical phenomena and properties of matter</title>
+<section type="section">
+<title>Introduction  </title>
+        <shortcode>ESCHA</shortcode>
+        <para>
+        Many people are using solar power as a source of energy for their homes. Solar power can be used to heat water or to supply electricity. Have you ever noticed solar panels on homes and buildings? Have you  ever wondered how solar energy is converted to electrical energy? In this chapter, we examine the process that is used to achieve this energy conversion.
+        </para> 
+        <figure>
+        <type>figure</type>
+        <image style:width=".4">
+        <src>photos/solar-panels-ell-r-brown-flickr.jpg</src>
+        <attribution>Ell Brown on Flickr.</attribution>
+        </image>
+        <caption>The use of solar cells to supply electricity.</caption>
+        </figure>
+        <video>
+        <shortcode>todo</shortcode>
+        <title>Why light is quantum by MinutePhysics</title>
+        <url>http://www.youtube.com/watch?v=hSgIDgGpRpk</url>
+        </video>
+ <linked-concepts>
+        <concept><text>Units and unit conversions</text><subject>science</subject><grade>10</grade><chapter>science skills</chapter></concept>
+        <concept><text>Equations</text><subject>maths</subject><grade>10</grade><chapter>equations and inequalities</chapter></concept>
+        <concept><text>Electronic configuration</text><subject>science</subject><grade>10</grade><chapter>the atom</chapter></concept>
+        <concept><text>Electromagnetic radiation</text><subject>science</subject><grade>10</grade><chapter>electromagnetic radiation</chapter></concept>
+      </linked-concepts>
+</section>
+<section type="section">
+	<title>The photoelectric effect</title>
+    <para>Around the turn of the twentieth century, it was observed by a number of physicists 
+    (including Hertz, Thomson and Von Lenard) that when light was shone onto a metal plate, 
+    electrons were emitted by the metal. This is called the photoelectric effect. 
+    (<emphasis effect="italics">photo</emphasis> for light, 
+    <emphasis effect="italics">electric</emphasis>  for the electron.)</para> 
+    <para>The characteristics of the photoelectric effect were a surprise and a very important
+    development in modern physics. To understand why it was a surprise we need to look at the 
+    history to understand what physicists were expecting to happen and then understand
+    the implications for physics going forward.</para>
+
+
+    <section type='subsubsection'>
+    <title>History and expectations as to the photoelectric effect</title>
+<para>
+In 1887, Heinrich Hertz (a German physicist) noticed that ultraviolet light incident 
+on a metal plate could cause sparks. Metals were known to be good conductors of electricity, 
+because the electrons are more able to move. They should be able to
+be dislodged if energy were added through the incident light. The problem was that
+different metals requred different minimum frequencies of light.
+</para>
+<para>The expectation at the time was that electrons would be emitted for any 
+frequency of light, after a delay (for low intensities) during which the 
+electrons absorbed sufficient energy to escape from the metal surface. The 
+higher the intensity the shorter the delay was be as they would absorb energy faster. This
+was based on the idea that light was a wave continuously delivering energy to the 
+electrons.
+</para>
+
+<para>It is important to remember that higher frequency light corresponds to higher 
+energy.</para>
+
+<para>The next piece of the puzzle came from Philipp Lenard (a Hungarian physicist) in 1902 when he discovered 
+that the maximum velocity with which electrons are ejected by ultraviolet 
+light is entirely independent of the intensity of light.</para>
+<para>His expectation was that at high intensities the electrons would absorb more energy and so would have a greater velocity.</para>
+
+<para>A <emphasis effect="bold">paradox</emphasis> existed as the expectations and the observations did not match.</para>        
+
+<para>Albert Einstein (a German physicist) solved this paradox by proposing 
+that light is made up of packets 
+of energy called <emphasis effect="italics">quanta</emphasis> (now called photons) 
+which interacted with the electrons in the metal like particles instead of waves. 
+Each incident photon would transfer all its energy to one electron in the metal. </para>
+
+        <definition>
+          <term>The photoelectric effect</term>
+          <meaning>
+            <para>The photoelectric effect is the process whereby an electron 
+            is emitted by a substance when light shines on it.</para>
+          </meaning>
+        </definition>
+
+
+<para>Einstein received the 1921 Nobel Prize for his contribution to understanding the
+photoelectric effect. His explanation wasn't very popular and took a while to be accepted, 
+in fact, some scientists at the time felt that is was a big mistake. 
+</para>
+<para>
+In the motivation letter for Einstein to be accepted into the Prussian Academy of Science
+it was specifically mentioned as a mistake:
+</para>
+<quote>
+In sum, one can say that there is hardly one among
+the great problems in which modern physics is so rich
+to which Einstein has not made a remarkable
+contribution. That he may sometimes have missed the
+targeting his speculations, as, for example, in his
+hypothesis of light-quanta, cannot really be held too
+much against him, for it is not possible to introduce
+really new ideas even in the most exact sciences
+without sometimes taking a risk
+-- A. Pais, “Subtle is the Lord: The Science and the Life of Albert Einstein,” New York: Oxford
+University Press, 1982, p. 382
+</quote>
+
+    </section>
+    <section type='subsubsection'>
+    <title>Implications of Einstein's model</title>
+<teachers-guide>
+<para>
+For a paper on the history of the photoelectric effect and the analysis of its treatment
+in a variety of textbooks see: http://onlinelibrary.wiley.com/doi/10.1002/sce.20389/pdf
+</para>
+</teachers-guide>
+
+<para>Einstein's model is consistent with the observation that the electrons were 
+emitted immediately when light was shone on the metal and that 
+ the <emphasis effect="italics">intensity</emphasis> of the 
+ light made <emphasis effect="italics">no difference</emphasis> to the maximum kinetic energy 
+ of the emitted electrons.
+ </para>         
+
+<para>
+The energy needed to knock an
+electron out of the substance is called the <emphasis effect="bold">work
+function</emphasis> (symbol <latex> W_{0}</latex>) of the substance. This is a characteristic
+of the substance. If the energy of the photon is less than the work function then no
+electron can be emitted, no matter how many photons strike the substance.
+We know that the frequency of light is related to the energy, that
+is why there is a minimum frequency of light that can eject electrons. This minimum frequency
+we call the cut-off frequency, <latex>f_0</latex>. For a specific colour of light (i.e. a certain frequency or wavelength),
+the energy of the photons is given by <latex>E=hf=hc/\lambda </latex>,
+where <latex>h</latex> is Planck's constant. This tells us that the  <latex> W_{0} = hf_0</latex>
+.</para>
+   
+   <definition>
+    <term>Work function</term>
+    <meaning>
+    The minimum energy needed to knock an electron out of a metal is called the 
+    <emphasis effect="bold">work function</emphasis> (symbol <latex> W_{0}</latex>) 
+    of the metal. As it is energy, it measured in joules (J).
+    </meaning>
+    </definition>
+
+
+<para>Energy is conserved so if the photon has a higher energy than <latex> W_{0}</latex>
+then the excess energy goes into the kinetic energy <latex>{E}_{k}</latex> of the electron 
+that was emitted from
+the substance.</para>
+<para>
+The excess over and above the binding energy is actually the 
+<emphasis effect='bold'>maximum</emphasis> kinetic energy the emitted electron can
+have. This is because not all electrons are on
+  the surface of the substance. For electrons below the surface there is additional energy
+    required to eject the electron from the material which then cannot contribute to the
+      kinetic energy of the electron.
+      </para>
+
+<!--        <latex display="block">
+		\begin{align}
+		\text{photon energy} &amp; = \text{Maximum kinetic energy of electron} + \text{work function} \\
+		\text{Maximum kinetic energy of electron} &amp; = \text{photon energy} - \text{work function} \\
+		 {E}_{k\max}&amp; = hf-W_{0}  
+		\end{align}
+		</latex>-->
+
+<latex display="block">
+        \begin{align}
+        E &amp; = W_{0}+{E}_{k\max} \\
+        {E}_{k\max}&amp; = hf-W_{0}  
+        \end{align}
+        </latex>
+
+
+
+  <para>
+  This equation is known as the photoelectric equation. 
+  </para>     
+<para>The last piece of the puzzle is now clear, the question was "why does increasing the intensity 
+intensity of the light not affect the maximum kinetic energy of the emitted photons?". The answer
+is that each emitted electron has absorbed <emphasis effect='bold'>one</emphasis> photon, increasing
+the intensity just increases the number of photons (we expect more electrons but we don't expect
+their maximum kinetic energy to change).
+</para>
+        <para>The discovery and understanding of the photoelectric effect was one of the major breakthroughs in science in the twentieth century as it provided concrete evidence of the particle nature of light. It overturned previously held views that light was composed purely of a continuous transverse wave. On the one hand, the wave nature is a good description of phenomena such as diffraction and interference for light, and on the other hand, the photoelectric effect demonstrates the particle nature of light. This is now known as the 'dual-nature' of light. (dual means two)</para>
+        <para>Einstein won the 1921 Nobel Prize for Physics for this quantum theory and his explanation of the photoelectric effect.</para>
+        <figure id="phot_el">
+          <type>figure</type>
+          <image style:width="0.666" >
+            <src>images/Photoelectric_effect.eps</src>
+          </image>
+          <caption>
+            <para>The photoelectric effect: Incoming photons on the left hit the electrons inside the metal surface. The electrons absorb the energy from the photons, and are ejected from the metal surface.</para>
+          </caption>
+        </figure>
+
+    </section>
+
+<para>
+	We can observe this effect in the following practical demonstration of photoelectric 
+    emission. A zinc plate is charged negatively and placed onto the cap of an electroscope.  
+    In Figure <link target-id='fig:red-electroscope'/>, red light is shone onto 
+    the zinc plate. There is no change observed even if the 
+intensity (brightness) of the red light is increased. In Figure <link target-id='fig:blue-electroscope'/>, ultraviolet 
+light of low intensity is shone onto the zinc and it is observed that the leaf of the 
+electroscope collapse. This allows us to conclude that the negative charge on the plate 
+decreased as electrons were ejected from the metal when the ultraviolet light was incident 
+on the plate.   
+</para>  
+<figure id="fig:red-electroscope">
+<type>figure</type>
+<pspicture> <code>(0,-3.1596875)(6.2559376,3.1796875)
+\definecolor{color2}{rgb}{0.4,0.4,0.4}
+\definecolor{color351b}{rgb}{0.6,0.6,0.6}
+\psellipse[linewidth=0.04,linecolor=color2,dimen=outer](1.62,-2.7196875)(1.52,0.44)
+\psline[linewidth=0.04cm,linecolor=color2](0.1,-0.13968745)(0.12,-2.7396874)
+\psline[linewidth=0.04cm,linecolor=color2](3.1,-0.13968745)(3.12,-2.7396874)
+\psbezier[linewidth=0.04,linecolor=color2](0.1,-0.17968746)(0.2,-0.47968745)(3.12,-0.5796875)(3.1,-0.17968746)(3.08,0.22031255)(1.74,1.1403127)(1.86,1.1803125)(1.98,1.2203125)(1.2,1.2203126)(1.36,1.1803125)(1.52,1.1403126)(0.0,0.12031255)(0.1,-0.17968746)
+\psellipse[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color351b](1.56,1.7703125)(0.94,0.23)
+\psframe[linewidth=0.04,linecolor=color2,dimen=outer,fillstyle=solid](2.5,1.9003125)(0.62,1.7603127)
+\psellipse[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color351b](1.56,1.8703126)(0.94,0.23)
+\psline[linewidth=0.04cm](0.64,1.7603127)(0.64,1.9203125)
+\psline[linewidth=0.04cm](2.48,1.7203126)(2.48,1.8803124)
+\psbezier[linewidth=0.04,fillstyle=solid,fillcolor=black](1.3151261,1.1703125)(1.310084,1.0603125)(1.889916,1.0730048)(1.884874,1.1703125)(1.879832,1.2676202)(1.9,1.2633896)(1.8697479,1.2676202)(1.8394958,1.271851)(1.3907562,1.2676202)(1.3453782,1.2676202)(1.3000002,1.2676202)(1.3201683,1.2803125)(1.3151261,1.1703125)
+\psbezier[linewidth=0.04,linecolor=color2,fillstyle=solid](1.2972177,0.91051257)(1.4038053,0.91051257)(1.700252,0.90031254)(1.870126,0.91391253)(2.04,0.9275125)(2.0233457,1.2403126)(1.8601334,1.1587125)(1.6969211,1.0771126)(1.4256628,1.1103117)(1.3072103,1.1587125)(1.1887578,1.2071134)(1.1906301,0.91051257)(1.2972177,0.91051257)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=black](1.66,1.5603125)(1.52,1.2803125)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=black](1.68,0.9203125)(1.52,-0.09968745)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=black](1.58,-0.09968745)(1.56,-0.6396875)
+\psbezier[linewidth=0.04,linecolor=color2](1.5999999,-0.61593837)(1.5644444,-0.8515772)(1.4311111,-1.0953416)(1.12,-1.2009728)
+\psbezier[linewidth=0.04,linecolor=color2](1.5999999,-0.59968746)(1.5644444,-0.83532625)(1.4311111,-1.0790906)(1.12,-1.1847217)
+\psbezier[linewidth=0.04,linecolor=color2](1.58,-0.6359384)(1.6155556,-0.8715772)(1.748889,-1.1153414)(2.06,-1.2209728)
+\psbezier[linewidth=0.04,linecolor=color2](1.58,-0.61968744)(1.6155556,-0.8553263)(1.748889,-1.0990906)(2.06,-1.2047218)
+
+\rput(0.6709375,2.0903125){-}
+
+\rput(0.9709375,2.1703124){-}
+
+\rput(1.2309375,2.2103126){-}
+
+\rput(1.5709375,2.2103126){-}
+
+\rput(1.9109375,2.1903124){-}
+
+\rput(2.1509376,2.1503124){-}
+
+\rput(2.4109375,2.0703125){-}
+
+\rput(2.5909376,1.9303125){-}
+
+\rput(0.4709375,1.9303125){-}
+
+\rput(0.4509375,1.7503124){-}
+
+\rput(1.7601563,-0.80968744){-}
+
+\rput(1.9001563,-1.0096874){-}
+
+\rput(2.1401563,-1.2096875){-}
+
+\rput(1.8201563,-1.2696874){-}
+
+\rput(1.6201563,-1.0696875){-}
+
+\rput(1.4401563,-1.1096873){-}
+
+\rput(1.2201562,-1.2896874){-}
+
+\rput(0.96015626,-1.1296874){-}
+
+\rput(1.2001562,-0.98968744){-}
+
+\rput(1.3401562,-0.80968744){-}
+\psline[linewidth=0.027999999cm,linecolor=color2](1.68,-0.83968747)(4.02,-0.83968747)
+\psline[linewidth=0.04cm,linecolor=color2](2.22,1.9203125)(4.0,1.1003126)
+
+\rput(5.1468754,-0.80968744){gold foil leaves}
+
+\rput(4.7845316,1.0503125){zinc plate}
+\psline[linewidth=0.04cm,linecolor=color2](3.1,-2.2396874)(4.0,-2.2396874)
+
+\rput(5.061562,-2.2096875){glass container}
+\psline[linewidth=0.04cm,linecolor=red,arrowlength=1.4,arrowinset=0.4]{->}(2.26,3.1196876)(1.8,2.3196874)
+\psline[linewidth=0.04cm,linecolor=red,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.54,3.1596875)(1.08,2.3596876)
+\psline[linewidth=0.04cm,linecolor=red,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.66,3.1196876)(2.2,2.3196874)
+\psline[linewidth=0.04cm,linecolor=red,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.88,3.1196876)(1.42,2.3196874)
+\psline[linewidth=0.04cm,linecolor=color2](2.64,2.7203126)(4.42,1.9003125)
+
+\rput(5.1125,1.8503126){red light}
+</code>
+</pspicture>
+<caption>Red light incident on the zinc plate of an electroscope.</caption>
+</figure>
+
+
+<figure id="fig:blue-electroscope">
+<type>figure</type>
+<pspicture> <code>(0,-3.1596875)(7.185938,3.1796875)
+\definecolor{color2}{rgb}{0.4,0.4,0.4}
+\definecolor{color351b}{rgb}{0.6,0.6,0.6}
+\definecolor{color138}{rgb}{0.2901960784313726,0.0,1.0}
+\psellipse[linewidth=0.04,linecolor=color2,dimen=outer](1.62,-2.7196875)(1.52,0.44)
+\psline[linewidth=0.04cm,linecolor=color2](0.1,-0.13968745)(0.12,-2.7396874)
+\psline[linewidth=0.04cm,linecolor=color2](3.1,-0.13968745)(3.12,-2.7396874)
+\psbezier[linewidth=0.04,linecolor=color2](0.1,-0.17968746)(0.2,-0.47968745)(3.12,-0.5796875)(3.1,-0.17968746)(3.08,0.22031258)(1.74,1.1403127)(1.86,1.1803125)(1.98,1.2203124)(1.2,1.2203126)(1.36,1.1803125)(1.52,1.1403124)(0.0,0.12031253)(0.1,-0.17968746)
+\psellipse[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color351b](1.56,1.7703125)(0.94,0.23)
+\psframe[linewidth=0.04,linecolor=color2,dimen=outer,fillstyle=solid](2.5,1.9003125)(0.62,1.7603127)
+\psellipse[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color351b](1.56,1.8703126)(0.94,0.23)
+\psline[linewidth=0.04cm](0.64,1.7603127)(0.64,1.9203125)
+\psline[linewidth=0.04cm](2.48,1.7203126)(2.48,1.8803124)
+\psbezier[linewidth=0.04,fillstyle=solid,fillcolor=black](1.3151261,1.1703125)(1.310084,1.0603125)(1.889916,1.0730048)(1.884874,1.1703125)(1.879832,1.2676202)(1.9,1.2633896)(1.8697479,1.2676202)(1.8394958,1.2718508)(1.3907562,1.2676202)(1.3453782,1.2676202)(1.3000002,1.2676202)(1.3201683,1.2803125)(1.3151261,1.1703125)
+\psbezier[linewidth=0.04,linecolor=color2,fillstyle=solid](1.2972177,0.91051257)(1.4038053,0.91051257)(1.700252,0.90031254)(1.870126,0.91391253)(2.04,0.9275125)(2.0233457,1.2403126)(1.8601334,1.1587125)(1.6969211,1.0771124)(1.4256628,1.1103117)(1.3072103,1.1587125)(1.1887578,1.2071133)(1.1906301,0.91051257)(1.2972177,0.91051257)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=black](1.66,1.5603125)(1.52,1.2803125)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=black](1.68,0.9203125)(1.52,-0.09968745)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=black](1.58,-0.09968745)(1.56,-0.6396875)
+\psbezier[linewidth=0.04,linecolor=color2](1.5999999,-0.59968746)(1.5644444,-0.83532625)(1.72,-1.3003125)(1.44,-1.4403125)
+\psbezier[linewidth=0.04,linecolor=color2](1.5899236,-0.6359384)(1.6241221,-0.8715772)(1.54,-1.1803125)(1.72,-1.4603125)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.6482813,2.0903125){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.9482812,2.1703124){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.2082813,2.2103126){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.5482812,2.2103126){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.8882812,2.1903124){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1282814,2.1503124){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.3882813,2.0703125){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.5682814,1.9303125){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.44828126,1.9303125){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.42828125,1.7503124){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.5975001,-1.4896874){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7375001,-1.3296875){-}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.4375,-1.2496873){-}
+\psline[linewidth=0.027999999cm,linecolor=color2](1.68,-0.83968747)(4.02,-0.83968747)
+\psline[linewidth=0.04cm,linecolor=color2](2.22,1.9203125)(4.0,1.1003126)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.3818755,-0.78968745){gold foil leaves}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.907813,1.0503125){zinc plate}
+\psline[linewidth=0.04cm,linecolor=color2](3.1,-2.2396874)(4.0,-2.2396874)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.3656244,-2.2096875){glass container}
+\psline[linewidth=0.04cm,linecolor=color138,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.26,3.1196876)(1.8,2.3196874)
+\psline[linewidth=0.04cm,linecolor=color138,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.54,3.1596875)(1.08,2.3596876)
+\psline[linewidth=0.04cm,linecolor=color138,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.66,3.1196876)(2.2,2.3196874)
+\psline[linewidth=0.04cm,linecolor=color138,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.88,3.1196876)(1.42,2.3196874)
+\psline[linewidth=0.04cm,linecolor=color2](2.64,2.7203126)(4.42,1.9003125)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.774375,1.8703126){ultraviolet light} 
+</code>
+</pspicture> 
+<caption>Red light incident on the zinc plate of an electroscope.</caption>
+</figure>
+
+
+
+
+
+
+        
+<video>
+<shortcode>todo</shortcode>
+<title>What is wave/particle duality? Part 1 by MinutePhysics</title>
+<url>http://www.youtube.com/watch?v=Q_h4IoPJXZw</url>
+</video>
+
+<video>
+<shortcode>todo</shortcode>
+<title>What is wave/particle duality? Part 2 by MinutePhysics</title>
+<url>http://www.youtube.com/watch?v=_riIY-v2Ym8</url>
+</video>
+
+
+          <para>The work function is different for different elements. The smaller the work function, the easier it is for electrons to be emitted from the metal. Metals with low work functions make good conductors. This is because the electrons are attached less strongly to their surroundings and can move more easily through these materials. This reduces the resistance of the material to the flow of current i.e. it conducts well. Table <link target-id="tab:work_fun"/> shows the work functions for a range of elements.</para>
+          <figure id="tab:work_fun">
+            <type>table</type>
+            <table>
+              <tgroup cols="2">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <para>Element</para>
+                    </entry>
+                    <entry>
+                      <para>Work Function (J)</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Aluminium</para>
+                    </entry>
+                    <entry>
+                     <para><number><coeff>6.9</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Beryllium</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>8.0</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Calcium</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>4.6</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Copper</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>7.5</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Gold</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>8.2</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Lead</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>6.9</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Silicon</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>1.8</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Silver</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>6.9</coeff><exp>-19</exp></number></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>Sodium</para>
+                    </entry>
+                    <entry>
+                      <para><number><coeff>3.7</coeff><exp>-19</exp></number></para></entry></row>
+                  
+                </tbody>
+              </tgroup>
+            </table>
+            <caption>
+              <para>Work functions of selected elements determined from the photoelectric effect. (From the <emphasis effect="italics">Handbook of Chemistry and Physics.)</emphasis></para>
+            </caption>
+          </figure>
+
+
+
+          <section type='subsubsection'>
+            <title>Units of energy</title>
+              <para>When dealing with calculations at a small scale (like at the level of electrons) it is more convenient to use different units for energy rather than the joule (J). We define a unit called the electron-volt (eV) as the kinetic energy gained by an electron passing through a potential difference of one volt.</para>
+              
+
+              <latex>E=q\times V</latex>
+              
+
+              <para>where q is the charge of the electron and V is the potential difference applied. The charge of 1 electron is <unit_number><number><coeff>1.6</coeff><exp>-19</exp></number><unit>C</unit></unit_number>, so <unit_number><number>1</number><unit>eV</unit></unit_number> is calculated to be:</para>
+              
+
+              <latex>1 \mathrm{eV}=\left(<unit_number><number><coeff>1.6</coeff><exp>-19</exp></number><unit>C</unit></unit_number> \times <unit_number><number><coeff>1</coeff></number><unit>V</unit></unit_number>  \right)=  <unit_number><number><coeff>1.6</coeff><exp>-19</exp></number><unit>J</unit></unit_number></latex>
+              
+
+              <para>You can see that <unit_number><number><coeff>1.6</coeff><exp>-19</exp></number><unit>J</unit></unit_number> is a very small amount of energy and so using electron-volts (eV) at this level is easier.</para>
+              
+
+              <para>Hence, <unit_number><number>1</number><unit>eV</unit></unit_number> = <unit_number><number><coeff>1.6</coeff><exp>-19</exp></number><unit>J</unit></unit_number> which means that <unit_number><number>1</number><unit>J</unit></unit_number> = <unit_number><number><coeff>6.241</coeff><exp>18</exp></number><unit>eV</unit></unit_number></para>
+          </section>
+<activity type='activity'>
+<title>Demonstration of the photoelectric effect</title>
+<para>We can set up an experiment similar to the one used originally to study the photoelectric effect. The experiment allows us to measure the number of electrons emitted and the maximum kinetic energy of the ejected electrons. </para>
+ <figure id="photo_app">
+          <type>figure</type>
+          <image style:width="0.666" >
+            <src>images/photo_electric_apparatus.png</src>
+          </image>
+          <caption>
+            <para>Photoelectric effect apparatus</para>
+          </caption>
+ </figure>
+<para>  In the diagram of the Photoelectric Effect Apparatus, an ammeter allows for a current to be measured. Measuring the current allows us to deduce information about the number of electrons emitted and the kinetic energy of the ejected electrons. </para>
+
+<para>
+In the diagram, notice that the potential difference supplied by the battery is zero and yet a current is still measured on the ammeter. This is due to the incoming photons having sufficient frequency and hence energy greater than the work function to eject electrons. The ejected electrons travel across the evacuated space and allow for a current to be measured in the circuit.
+</para>
+
+<para>
+<emphasis effect='bold'>Remember</emphasis>, photon energy is related to frequency while intensity is related to the number of photons.
+</para>  
+        
+        <simulation>
+          <title>Photoelectric effect</title>
+          <shortcode>VPpyy</shortcode>
+<url>http://phet.colorado.edu/en/simulation/photoelectric</url>
+<embed>
+&lt;div style="position: relative; width: 300px; height: 199px;"&gt;&lt;a href="http://phet.colorado.edu/sims/photoelectric/photoelectric_en.jnlp" style="text-decoration: none;"&gt;&lt;img src="http://phet.colorado.edu/sims/photoelectric/photoelectric-screenshot.png" alt="Photoelectric Effect" style="border: none;" width="300" height="199"/&gt;&lt;div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 59px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);"&gt;&lt;/div&gt;&lt;table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 59px;"&gt;&lt;tr&gt;&lt;td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;"&gt;Click to Run&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/a&gt;&lt;/div&gt;
+</embed>
+        </simulation>
+        </activity>
+
+        <section type="subsection">
+          <title>Using the photoelectric effect equation</title>
+          <shortcode>ESCHG</shortcode>
+          
+    <para>
+It is useful to observe the photoelectric effect equation represented graphically.
+</para>
+              
+          <pspicture> <code>(0,-1.8429166)(6.7459373,1.8429166)
+\rput(2.0409374,-1.1570834){\psaxes[arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticksize=0.10583333cm]{-&gt;}(0,0)(0,0)(4,3)}
+\psline[linecolor=blue,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1209373,-1.1570834)(6.4409375,0.90291667)
+\rput(0.89390624,1.5079167){$E_{k}$ (J)}
+\rput(6.083906,-1.4520833){$f$ (Hz)}
+\rput(4.1023436,-1.4320834){$f_{0}$}
+\psline[linestyle=dashed](4.1409373,1.4829167)(4.1209373,-0.9970833)
+\rput(3.0925,1.2679167){No emission}
+\rput(5.166406,1.2679167){Emission}
+\rput(3.0823438,0.84791666){$f&lt;f_{0}$}
+\rput(5.182344,0.84791666){$f&gt;f_{0}$}
+</code>
+</pspicture> 
+<para>
+It can be seen from the graph that <latex>E_{k}</latex> is plotted on the <latex>y-</latex>axis and <latex>f</latex> is plotted on the <latex>x-</latex>axis. Using the straight line equation, <latex>y=mx+c </latex>, we can identify
+  </para>
+  
+<para> 
+        <latex display="block">
+			\begin{align}
+		 {E}_{k\max}&amp; = hf-W_{0} \\
+         \underbrace{{E}_{k\max}}_{y}&amp; = h\underbrace{f}_x-hf_{0} 
+	\end{align}
+		</latex>
+This allows us to conclude that the slope of the graph <latex>m</latex> is Planck's constant <latex>h</latex>. Also, the <latex>x</latex> intercept is the cut-off frequency <latex>f_{0}</latex>.
+</para>		
+		
+          <worked_example>
+            <title>The photoelectric effect using silver</title>
+            <question>
+              <para>Ultraviolet radiation with a wavelength of 
+              <unit_number><number>250</number><unit>nm</unit></unit_number> is incident on 
+              a silver foil (work function <latex>W_0</latex> = 
+              <unit_number><number><coeff>6.9</coeff>
+              <exp>-19</exp></number><unit>J</unit></unit_number>). What is the maximum 
+              kinetic energy of the emitted electrons?</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Determine what is required and how to approach the problem</title>
+                <para>We need to determine the maximum kinetic energy of an electron 
+                ejected from a silver foil by ultraviolet radiation.</para>
+                
+
+                <para>The photoelectric effect tells us that:</para>
+                <latex display="block">
+		\begin{align}
+		 {E}_{k\max}&amp; = {E}_{\mathrm{photon}}-W_0 \\
+		  {E}_{k\max}&amp; = h\frac{c}{\lambda }-W_0  
+		\end{align}
+		</latex>  
+                <para>We also have:
+                <list>
+                <item>Work function of silver: <latex>W_{0~\text{silver}} =<unit_number><number><coeff>6.9</coeff><exp>-19</exp></number><unit>J</unit></unit_number></latex></item>
+                
+
+                <item>UV radiation wavelength = <unit_number><number>250</number><unit>nm</unit></unit_number> 
+                = <unit_number><number><coeff>250</coeff><exp>-9</exp></number><unit>m</unit></unit_number>
+                = <unit_number><number><coeff>2.50</coeff><exp>-7</exp></number><unit>m</unit></unit_number>
+                </item>
+                
+
+                <item>Planck's constant: <latex>h=<unit_number><number><coeff>6.63</coeff><exp>-34</exp></number><unit>m<sup>2</sup>·kg·s<sup>-1</sup></unit></unit_number></latex></item>
+                
+
+                <item>
+                Speed of light: <latex>c=<unit_number><number><coeff>3</coeff><exp>8</exp></number><unit>m·s<sup>-1</sup></unit></unit_number></latex></item>
+                </list>
+                </para>
+              </workstep>
+              <workstep>
+                <title>Solve the problem</title>
+                <latex display="block">
+		\begin{align}
+		 {E}_{k}&amp; = \frac{hc}{\lambda }-W_{0~\text{silver}} \\
+		 &amp; = \left[ <number><coeff>6.63</coeff><exp>-34</exp></number> \times \frac{<number><coeff>3</coeff><exp>8</exp></number>}{<number><coeff>2.5</coeff><exp>-7</exp></number>}\right]-<number><coeff>6.9</coeff><exp>-19</exp></number>\\
+		 &amp; = <unit_number><number><coeff>1.06</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                <para>The maximum kinetic energy of the emitted electron will be <unit_number><number><coeff>1.06</coeff><exp>-19</exp></number><unit>J</unit></unit_number>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>The photoelectric effect using gold</title>
+            <question>
+              <para>If we were to shine the same ultraviolet radiation 
+              (<latex>f=<unit_number><number><coeff>1.2</coeff><exp>15</exp></number><unit>Hz</unit></unit_number></latex>) 
+              on a gold foil (work function = 
+              <unit_number><number><coeff>8.2</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+              ) would any electrons be emitted from the surface of the gold foil?</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Calculate the energy of the incident photons</title>
+              <para>For the electrons to be emitted from the surface, the energy of each photon needs to be <emphasis effect="italics">greater</emphasis> than the work function of the material.</para>
+                <latex display="block">
+		\begin{align}
+		 {E}_{\mathrm{photon}}&amp; = hf\\
+		 &amp; = <number><coeff>6.63</coeff><exp>-34</exp></number>\times <number><coeff>1.2</coeff><exp>15</exp></number>\\
+		 &amp; = <unit_number><number><coeff>7.96</coeff><exp>-19</exp></number><unit>J</unit></unit_number> 
+		\end{align}
+		</latex>
+                
+
+                <para>Therefore each photon of ultraviolet light has an energy of <unit_number><number><coeff>7.96</coeff><exp>-19</exp></number><unit>J</unit></unit_number>.</para>
+              </workstep>
+              <workstep>
+                <title>Write down the work function for gold.</title>
+                <latex display="block">
+		\begin{align}
+		 W_{0~\mathrm{gold}}&amp; = <unit_number><number><coeff>8.92</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                
+              </workstep>
+              <workstep>
+                <title>Is the energy of the photons greater or smaller than the work function?</title>
+                <latex display="block">
+		\begin{align}
+		 <unit_number><number><coeff>7.96</coeff><exp>-19</exp></number><unit>J</unit></unit_number>&amp; &lt; <unit_number><number><coeff>8.92</coeff><exp>-19</exp></number><unit>J</unit></unit_number>\\
+		  {E}_{\mathrm{photons}}&amp; &lt; W_{0~\mathrm{gold}} 
+		\end{align}
+		</latex>
+                
+
+                <para>Since the energy of each photon is less than the work function of gold, 
+                the photons do not have enough energy to knock electrons out of the gold. 
+                No electrons would be emitted from the gold foil.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+
+<worked_example>
+<title> [NSC 2011 Paper 1]</title>
+<question>
+ <para>
+     A metal surface is illuminated with ultraviolet light of wavelength <unit_number><number>330</number><unit>nm</unit></unit_number>. Electrons are emitted from the metal surface.
+  </para>
+  <para>
+    The minimum amount of energy required to emit an electron from the surface of this metal is <unit_number><number>3.5e-19</number><unit>J</unit></unit_number>.
+  </para>
+  <pspicture style:width=".6">
+<code>
+(0,-1.575)(6.1071873,1.615)
+\psframe[linewidth=0.04,dimen=outer](5.7196875,-0.995)(1.1396875,-1.575)
+\rput(3.394375,-1.285){metal}
+\rput(5.4267187,0.975){electrons}
+\rput(1.0598438,1.435){ultraviolet light}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.0596875,1.225)(2.4196875,-1.035)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.3796875,1.245)(2.6996875,-1.055)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.5996875,1.265)(2.9796875,-1.055)
+\psbezier[linewidth=0.04](3.9396875,-1.015)(3.7196875,-0.715)(3.6996875,-0.595)(4.1196876,-0.695)(4.5396876,-0.795)(3.732163,-0.07923414)(4.3196874,-0.295)(4.9072123,-0.51076585)(4.115632,0.3416033)(4.6596875,0.105)(5.203743,-0.13160332)(4.7196875,0.125)(4.7996874,0.485)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.7796874,0.445)(5.0996876,0.685)
+\psbezier[linewidth=0.04](4.6196876,-1.015)(4.3996873,-0.715)(4.3796873,-0.595)(4.7996874,-0.695)(5.2196875,-0.795)(4.412163,-0.07923414)(4.9996877,-0.295)(5.587212,-0.51076585)(4.795632,0.3416033)(5.3396873,0.105)(5.883743,-0.13160332)(5.3996873,0.125)(5.4796877,0.485)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(5.4596877,0.445)(5.7796874,0.685)
+</code>
+</pspicture>
+  <list mark-prefix="12." list-type="enumerated"  >
+    <item> <!-- 12.1 -->
+      <para>Name the phenomenon illustrated above. </para>
+      <para>(1 mark)</para>
+    </item>
+    <item> <!-- 12.2 -->
+      <para>Give ONE word or term for the underlined sentence in the above paragraph.  </para>
+      <para>(1 mark)</para>
+    </item>
+    <item> <!-- 12.3 -->
+      <para>Calculate the frequency of the ultraviolet light. </para>
+      <para>(4 marks)</para>
+    </item>
+    <item> <!-- 12.4 -->
+      <para>Calculate the kinetic energy of a photoelectron emitted from the surface of the metal when the ultraviolet light shines on it. </para>
+      <para>(4 marks)</para>
+    </item>
+    <item> <!-- 12.5 -->
+      <para>The intensity of the ultraviolet light illuminating the metal is now increased. What effect will this change have on the following:</para>
+      <list mark-prefix="12.5." list-type="enumerated"  >
+        <item><!-- 12.5.1 -->
+          <para>Kinetic energy of the emitted photoelectrons (Write down only INCREASES, DECREASES or REMAINS THE SAME.) </para>
+          <para>(1 mark)</para>
+        </item>
+        <item><!-- 12.5.2 -->
+          <para>Number of photoelectrons emitted per second (Write down only INCREASES, DECREASES or REMAINS THE SAME.)  </para>
+          <para>(1 mark)</para>
+        </item>
+      </list>
+    </item>
+    <item> <!-- 12.6 -->
+      <para>Overexposure to sunlight causes damage to skin cells.</para>
+      <list mark-prefix="12.6." list-type="enumerated"  >
+        <item><!-- 12.6.1 -->
+          <para>Which type of radiation in sunlight is said to be primarily responsible for this damage? </para>
+          <para>(1 mark)</para>
+        </item>
+        <item><!-- 12.6.2 -->
+          <para>Name the property of this radiation responsible for the damage. </para>
+          <para>(1 mark)</para>
+        </item>
+      </list>
+    </item>
+  </list>
+  <para> <emphasis effect="bold">[TOTAL: 14 marks]</emphasis> </para>
+</question>
+<answer>
+    <para><emphasis effect="bold">Question 1</emphasis></para>
+      <para>Photo-electric effect</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 2</emphasis></para>
+      <para>Work function</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 3</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+      c &amp; = f \lambda \\
+      3\times10^8 &amp; = f(330\times10^{-9})\\
+      \therefore f &amp; = \text{9,09}\times10^{14}\text{ Hz}
+    \end{align*}
+      </latex>
+      <para><emphasis effect="bold">OR</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+    E &amp; = \frac{hc}{\lambda} \\
+    &amp; = \frac{(\text{6,63}\times10^{-34})(3\times10^{8})}{(330\times10^{-9})} \\
+    &amp; = \text{6,03}\times10^{-19}\text{ J}
+    \end{align*}
+      </latex>
+      <latex display="block">
+    \begin{align*}
+    E &amp; = hf \\
+    \text{6,03}\times10^{-19} &amp; = (\text{6,63}\times10^{-34})f\\
+    \therefore f &amp; = \text{9,09}\times10^{14}\text{ Hz}
+    \end{align*}
+      </latex>
+      <para>(4 marks)</para>
+     <para><emphasis effect="bold">Question 4</emphasis></para>
+      <para><emphasis effect="bold">Option 1:</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+    E &amp; = W_{o} + K \\
+    \frac{hc}{\lambda} &amp; = W_{o} + K \\
+    \therefore \frac{(\text{6,63}\times10^{-34})(3\times10^8)}{330\times10^{-9}} &amp; = \text{3,5}\times10^{-19} + K\\
+    \therefore K &amp; = \text{2,53}\times10^{-19}\text{ J}
+    \end{align*}
+      </latex>
+      <para><emphasis effect="bold">Option 2:</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+    E &amp; = W_{o} + K \\
+    hf &amp; = W_{o} + K \\
+    \therefore (\text{6,63}\times10^{-34})(\text{9,09}\times10^{14} &amp; = \text{3,5}\times10^{-19} + K\\
+    \therefore K &amp; = \text{2,53}\times10^{-19}\text{ J}
+    \end{align*}
+      </latex>
+      <para>(4 marks)</para>
+
+      <para><emphasis effect="bold">Question 5.1</emphasis></para>
+      <para>Remains the same.</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 5.2</emphasis></para>
+      <para>Increases</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 6.1</emphasis></para>
+      <para>Ultraviolet radiation</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 6.2</emphasis></para>
+      <para>High energy or high frequency</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">[TOTAL: 12 marks]</emphasis></para>
+
+
+</answer>
+</worked_example>
+
+
+
+        </section>
+<!--</section>-->
+        <section type="subsection">
+            <title>Solar cells</title>
+            <shortcode>ESCHH</shortcode>
+
+    <para>The generation of electricity using solar cells isn't due to the photoelectric effect
+    but is similar in nature. Photons in sunlight hit the solar panel and are absorbed 
+    by semiconducting materials, such as silicon. 
+    </para>
+    <para>
+    Electrons (negatively charged) are knocked 
+    loose from their atoms, allowing them to flow through the material to produce electricity. 
+    This is called the photovoltaic effect.
+    The photovoltaic effect was first observed by French physicist Antoine E. Becquerel in 1839.</para>
+    <para>
+    Due to the special composition of solar cells, the electrons are only allowed to move 
+    in a single direction.
+    An array of solar cells converts solar energy into a usable amount of direct 
+    current (DC) electricity.</para>
+
+            <exercises><title>The photoelectric effect</title>
+              <entry>
+<shortcode>01mq</shortcode>
+<problem>
+                <para>Describe the photoelectric effect.</para>
+              </problem>
+              <solution url="TODO">
+           <correct>       <para>
+                  The photoelectric effect its the process whereby an electron is emitted by a metal when light shines on it, on the condition that the energy of the photons (light energy packets) are greater than or equal to the work function of the metal. 
+                  </para></correct>
+                  </solution>
+</entry>
+<entry>
+<shortcode>01mr</shortcode>
+<problem>
+                <para>List two reasons why the observation of the photoelectric effect was significant.</para>
+              </problem>
+              <solution url="TODO">
+               <correct>   <para>
+                    Two reasons why the observation of the photoelectric effect was significant are (1) that it provides evidence for the particle nature of light and (2) that it opened up a new branch for technological advancement e.g. photocathodes (like in old TVs) and night vision devices.
+                  </para></correct>
+                  </solution>
+</entry>
+<entry>
+<shortcode>01ms</shortcode>
+<problem>
+                <para>Refer to <link target-id="tab:work_fun"/>: If I shine ultraviolet light with a wavelength of <unit_number><number>288</number><unit>nm</unit></unit_number> onto some aluminium foil, what would be the kinetic energy of the emitted electrons?</para>
+              </problem>
+              <solution url="TODO">
+                  <para>
+                  <latex display="block">
+            	    \begin{align}
+	                E_k &amp; =  E_{photon} - W_0 \\
+	                    &amp; =  h\frac{c}{\lambda} - W_0 \\
+	                    &amp; =  (<unit_number><number><coeff>6.63</coeff><base>10</base><exp>-34</exp></number><unit>m<sup>2</sup>kg·s<sup>-1</sup></unit></unit_number>)\frac{<unit_number><number><coeff>3</coeff><base>10</base><exp>8</exp></number><unit>m·s<sup>-1</sup></unit></unit_number>}{<unit_number><number><coeff>288</coeff><base>10</base><exp>-9</exp></number><unit>m</unit></unit_number>} - <unit_number><number><coeff>6.9</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number> \\ 
+	                    &amp; =  <unit_number><number><coeff>6.25</coeff><base>10</base><exp>-22</exp></number><unit>J</unit></unit_number> 
+            	    \end{align}
+	                </latex>
+	                </para>
+                    <correct><unit_number><number><coeff>6.25</coeff><base>10</base><exp>-22</exp></number><unit>J</unit></unit_number></correct>
+	                </solution>
+</entry>
+<entry>
+<shortcode>01mt</shortcode>
+<problem>
+                <para>I shine a light of an unknown wavelength onto some silver foil. The light has only enough energy to eject electrons from the silver foil but not enough to give them kinetic energy. (Refer to <link target-id="tab:work_fun"/> when answering the questions below:)</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>If I shine the same light onto some copper foil, would electrons be ejected?</para>
+                  </item>
+                  <item>
+                    <para>If I shine the same light onto some silicon, would electrons be ejected?</para>
+                  </item>
+                  <item>
+                    <para>If I increase the intensity of the light shining on the silver foil, what happens?</para>
+                  </item>
+                  <item>
+                    <para>If I increase the frequency of the light shining on the silver foil, what happens?</para>
+                  </item>
+                </list>
+              </problem>
+              <solution url="TODO">
+                  <list list-type="enumerated">
+                  <item>
+                  <para>
+                  The kinetic energy of the ejected photon is given by
+                  <latex display="block">
+                  \begin{align}
+                  E_k &amp; =  E_{photon} - W_0 
+                  \end{align}
+                  </latex>
+                  and if for silver foil <latex>E_k = 0</latex> then <latex>E_{photon} = W_{0~\text{silver}} </latex>. Therefore, if the same light falls on copper foil we require <latex>E_{photon} &gt; W_{0~\text{copper}} </latex> for electrons to be ejected.
+                  </para>
+                  <para>
+                  The work function for silver is <latex>W_{0~\text{silver}} = <unit_number><number><coeff>6.9</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number></latex> and the work function for copper is <latex>W_{0~\text{copper}} = <unit_number><number><coeff>7.5</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number> </latex>. Now
+                  <latex display="block">
+                  \begin{align}
+                  W_{0~\text{silver}} &amp; &lt;  W_{0~\text{copper}} \\
+                  ∴ E_{photon} &amp;&lt; W_{0~\text{copper}} 
+                  \end{align}
+                  </latex>
+                  and thus no electrons will be ejected.
+                  </para>
+                  </item>
+                  <item>
+                  <para>
+                  Similarly to the previous question we know the kinetic energy of the ejected photon is given by
+                  <latex display="block">
+                  \begin{align}
+                  E_k &amp; =  E_{photon} - W_0 
+                  \end{align}
+                  </latex>
+                  and if for silver foil <latex>E_k = 0</latex> then <latex>E_{photon} = W_{0~\text{silver}} </latex>. Therefore, if the same light falls on copper foil we require <latex>E_{photon} &gt; W_{0~\text{silicon}} </latex> for electrons to be ejected.
+                  </para>
+                  <para>
+                  The work function for silver is <latex>W_{0~\text{silver}} = <unit_number><number><coeff>6.9</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number></latex> and the work function for silicon is <latex>W_{0~\text{silicon}} = <unit_number><number><coeff>1.8</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number> </latex>. Now
+                  <latex display="block">
+                  \begin{align}
+                  W_{0~\text{silver}} &amp; &gt;  W_{0~\text{silicon}} \\
+                  ∴ E_{photon} &amp; &gt; W_{0~\text{silicon}} 
+                  \end{align}
+                  </latex>
+                  and thus electrons will be ejected. 
+                  </para>
+                  </item>
+                  <item>
+                  More electrons will be ejected from the silver.
+                  </item>
+                  <item>
+                  Increasing the frequency of the light would increase <latex>E_{photon}</latex> and therefore <latex>E_{photon} &gt; W_{0~\text{silver}}</latex> which means that the electron will be ejected with a kinetic energy of <latex>E_k = E_{photon} - W_{0~\text{silver}} &gt; 0</latex>.
+                  </item>
+                  </list>
+                  </solution>
+                  <correct />
+</entry>
+
+<entry>
+<shortcode />
+<problem>
+<para>The following results were obtained from a photoelectric effect experiment.</para>
+
+<table>
+  <tgroup cols="2">
+   <colspec colname="c1" colnum="1"/>
+   <colspec colname="c2" colnum="2"/>
+<tbody>
+<row>
+  <entry><latex> f~(\times 10^{15}~\text{Hz})</latex></entry>
+  <entry><latex> E_{k}~(\times 10^{-19}~\text{J})</latex></entry>
+</row>
+<row>
+  <entry>0.60</entry>
+  <!--<entry>0.26</entry> value with no exp error - values shown have errors-->
+  <entry>0.24</entry>
+</row>
+<row>
+  <entry>0.80</entry>
+  <!--<entry>1.58</entry>-->
+  <entry>1.59</entry>
+</row>
+<row>
+  <entry>1.00</entry>
+  <!--<entry>2.90</entry>-->
+  <entry>2.89</entry>
+</row>
+<row>
+  <entry>1.20</entry>
+  <!--<entry>4.22</entry>-->
+  <entry>4.20</entry>
+</row>
+<row>
+  <entry>1.40</entry>
+  <!--<entry>5.54</entry>-->
+  <entry>5.55</entry>
+</row>
+<row>
+  <entry>1.60</entry>
+  <!--<entry>6.86</entry>-->
+  <entry>6.89</entry>
+</row></tbody>
+</tgroup>
+</table>
+
+<list list-type="enumerated">
+<item>Plot a graph of <latex>E_{k}</latex> on the <latex>y</latex> axis and <latex>f</latex> on the x axis  </item>
+<item> Calculate the gradient of the graph. </item>
+<item> The metal used in the experiment is Sodium which has a work function of <latex>3,7 \times 10^{-19}</latex>. Calculate the cut-off frequency for sodium.    </item>
+<item>    
+Determine the <latex>x</latex> intercept. Compare your <latex>x</latex> intercept value with the cut-off frequency you calculated. </item>
+<item>
+If the sodium metal was replaced with another metal with double the work function, sketch on the same graph for sodium, the result you would expect to obtain.</item>
+</list>
+</problem>
+<solution>
+<list list-type="enumerated">
+
+<item> 
+
+<figure>
+          <type>figure</type>
+<pspicture>
+<code>
+(-2,-2)(6,6)
+\def\data{
+.6      .24
+.8      1.59
+1.      2.89
+1.2     4.2
+1.4     5.55
+1.6     6.89
+}
+%\pstScalePoints(1,1){}{}
+\psset{ axesstyle=frame,
+        xAxisLabel={$f~\times 10^{15}~\text{(Hz)}$},
+        yAxisLabel={$E_{k}~\times~10^{-19}\text{(J)}$},
+        xAxisLabelPos={c,-1cm},
+        yAxisLabelPos={-1cm,c}
+    }
+\begin{psgraph}[ticksize=5pt 0,Dx=.4, Dy=1](0,0)(0,0)(2,10){5cm}{5cm}
+
+    \listplot[showpoints=true,plotstyle=colordots, linecolor=blue]{\data}
+
+\end{psgraph}
+</code>
+</pspicture>
+</figure>
+
+
+
+
+</item>
+
+<item> gradient = <latex> 6.6 \times 10^{-34} </latex></item>
+
+<item> <latex display='block'>
+\begin{align}
+W_{0}&amp;=h~f_{0}  \\
+3.7 \times 10^{-19} &amp;= 6.6 \times 10^{-34} f_{0} \\
+f_0 &amp;= 0.56 \times 10^{15} ~\text{Hz}
+\end{align}
+</latex> </item>
+
+<item> Check that your <latex>x</latex> intercept is close to <latex><number><coeff>0.56</coeff><exp>15</exp></number></latex> which is the cut-off frequency</item>
+
+<item> 
+<figure>
+          <type>figure</type>
+<pspicture>
+<code>
+(-1,-1)(12,7)
+\def\data{
+.6      .24
+.8      1.59
+1.      2.89
+1.2     4.2
+1.4     5.55
+1.6     6.89
+}
+%\pstScalePoints(1,1){}{}
+\psset{ axesstyle=frame,
+        llx=-1cm,lly=-1cm,
+        xAxisLabel={$f~\times 10^{15}~\text{(Hz)}$},
+        yAxisLabel={$E_{k}~\times~10^{-19}\text{(J)}$},
+        xAxisLabelPos={c,-1cm},
+        yAxisLabelPos={-1cm,c}
+    }
+\begin{psgraph}[labelFontSize=\footnotesize,subgriddiv=1,griddots=10,linecolor=gray,tickcolor=gray,ticklinestyle=dotted,xticksize=5cm,yticksize=10cm,Dx=.4, Dy=1](0,0)(0,0)(2,10){10cm}{5cm}
+    \listplot[showpoints=true,plotstyle=colordots, dotcolor=blue]{\data}
+    \psplot[linewidth=2pt,linecolor=orange]{1.12}{2}{x 6.63 mul -7.4256 add}
+
+\end{psgraph}
+</code>
+</pspicture>
+
+
+
+</figure>
+
+</item>
+</list>
+<correct />
+</solution>
+
+</entry></exercises>
+          </section>
+        </section>
+      
+      
+      <section type="section">
+        <title>Emission and absorption spectra</title>
+        <shortcode>ESCHI</shortcode>
+        <section type="subsection">
+          <title>Emission spectra</title>
+          <shortcode>ESCHJ</shortcode>
+          <para>You have learnt previously about the structure of an atom. The electrons 
+          surrounding the atomic nucleus are arranged in a series of levels of increasing 
+          energy. Each element has a unique number of electrons in a unique configuration
+           therefore each element has its own distinct set of energy levels. This arrangement 
+          of energy levels serves as the atom's unique fingerprint.</para>
+          
+
+          <para>In the early 1900s, scientists found that a liquid or solid heated to high 
+          temperatures would give off a broad range of colours of light. However, a gas 
+          heated to similar temperatures would emit light only at certain specific wavelengths 
+          (colours). The reason for this observation was not understood at the time.</para>
+          
+
+          <para>Scientists studied this effect using a discharge tube.</para>
+          <figure id="dischargetube">
+            <type>figure</type>
+            <image style:width="0.8">
+              <src>images/discharge_tube.eps</src>
+            </image>
+            <caption>
+              <para>Diagram of a discharge tube. The tube is filled with a gas. When a high 
+              enough voltage is applied across the tube, the gas ionises and acts like a 
+              conductor, allowing a current to flow through the circuit. The current excites 
+              the atoms of the ionised gas. When the atoms fall back to their ground state, 
+              they emit photons to carry off the excess energy.</para>
+            </caption>
+          </figure>
+          <para>A discharge tube (shown in Figure <link target-id="dischargetube"/>) is a 
+          gas-filled, glass tube with a metal plate at both ends. If a large enough voltage difference 
+          is applied between the two metal plates, the gas atoms inside the tube will absorb 
+          enough energy to make some of their electrons come off, i.e. the gas atoms are ionised. 
+          These electrons start moving through the gas and create a current, which raises some 
+          electrons in other atoms to higher energy levels. Then as the electrons in the atoms 
+          fall back down, they emit electromagnetic radiation (light). The amount of light 
+          emitted at different wavelengths, called the <emphasis effect="bold">emission 
+          spectrum</emphasis>, is shown for a discharge tube filled with hydrogen gas in 
+          <link target-id="hydrogenspectrum"/> below. Only certain wavelengths (i.e. colours) 
+          of light are seen, as shown by the lines in the picture.</para>
+          <figure id="hydrogenspectrum">
+            <type>figure</type>
+            <pspicture><code>(-0.2,-.5)(9.5,2)
+            %\psgrid
+            %    \psspectrum[element=H,lwidth=0.1](\linewidth,1)
+            \psline[linecolor=gray]{-&gt;}(0,0)(8.7,0)
+            \rput[t](8,-.1){wavelength (nm)}
+                \psspectrum[lwidth=.15,lines={410,434,486,656}]
+                \rput[b](0.9,1.7){\small{410}}
+                \rput[b](1.7,1.7){\small{434}}
+                \rput[b](3.1,1.7){\small{486}}
+                \rput[b](8.3,1.7){\small{656}}
+                </code>
+            </pspicture>
+
+<!--              <src>images/hydrogen_emission_spectrum.eps</src>-->
+            <caption>
+              <para>Diagram of the emission spectrum of hydrogen in the visible spectrum. Four lines are visible, and are labelled with their wavelengths. The three lines in the <number>400</number>–<unit_number><number>500</number><unit>nm</unit></unit_number> range are in the blue part of the spectrum, while the higher line (<unit_number><number>656</number><unit>nm</unit></unit_number>) is in the red/orange part.</para>
+            </caption>
+          </figure>
+          <para>Eventually, scientists realised that these lines come from photons of 
+          a specific energy, emitted by electrons making transitions between specific 
+          energy levels of the atom. Figure <link target-id="fig:Henergy"/> shows an example 
+          of this happening. When an electron in an atom falls from a higher energy 
+          level to a lower energy level, it emits a photon to carry off the extra energy. 
+          This photon's energy is equal to the energy difference between the two energy 
+          levels
+          (<latex>\Delta E</latex>).</para>
+
+          <latex display='block'>
+                \Delta E_{\text{electron}} =  E_f - E_i
+          </latex>
+
+          <para>As we previously discussed, the frequency of a photon is related to its 
+          energy through the equation <latex>E=hf</latex>. Since a specific photon 
+          frequency (or wavelength) gives us a specific colour, we can see how each 
+          coloured line is associated with a specific transition.</para>
+
+          <figure id="fig:Henergy">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (0,-3.1)(10.66,3.1)
+\psline(0.7,-2.9)(7.48,-2.9)
+\psline(0.7,-0.08)(7.48,-0.08)
+\psline(0.7,0.54)(7.48,0.54)
+\psline(0.68,1.06)(7.46,1.06)
+\psline(0.66,1.54)(7.44,1.54)
+\psline(0.68,1.84)(7.46,1.84)
+\psline(0.68,2.04)(7.46,2.04)
+\psline(0.68,2.16)(7.46,2.16)
+\psline(0.68,2.26)(7.46,2.26)
+\psline(0.68,2.34)(7.46,2.34)
+\rput(0.52,2.925){Energy}
+\rput(0.49,2.605){Level}
+\rput(0.51,-2.855){1}
+\rput(0.51,-0.055){2}
+\rput(0.52,0.545){3}
+\rput(0.53,1.065){4}
+\rput(0.52,1.545){5}
+\rput(0.53,1.865){6}
+\rput(0.51,2.345){\small $\infty$}
+\rput(7.76,-2.915){\small 0 J}
+\rput(8.78,-0.075){\small $16,3 \times 10^{-19}$ J}
+\rput(8.8,0.565){\small $19,4 \times 10^{-19}$ J}
+\rput(8.82,1.065){\small $20,5 \times 10^{-19}$ J}
+\rput(8.82,1.545){\small $21,0 \times 10^{-19}$ J}
+\rput(8.82,2.365){\small $21,8 \times 10^{-19}$ J}
+\rput(8.84,1.825){\small $21,3 \times 10^{-19}$ J}
+\psline{-&gt;}(1.08,-0.08)(1.1,-2.94)
+\psline{-&gt;}(1.38,0.56)(1.4,-2.94)
+\psline{-&gt;}(1.7,1.02)(1.7,-2.92)
+\psline{-&gt;}(1.98,1.54)(2.0,-2.92)
+\psline{-&gt;}(2.3,1.8)(2.32,-2.92)
+\psline{-&gt;}(3.46,0.56)(3.48,-0.12)
+\psline{-&gt;}(3.74,1.06)(3.74,-0.1)
+\psline{-&gt;}(4.06,1.52)(4.06,-0.1)
+\psline{-&gt;}(4.32,1.82)(4.36,-0.1)
+\psline{-&gt;}(5.32,1.08)(5.34,0.46)
+\psline{-&gt;}(5.58,1.5)(5.58,0.5)
+\psline{-&gt;}(5.9,1.8)(5.9,0.5)
+\psline{-&gt;}(6.22,2.0)(6.22,0.52)
+\rput(3.14,-2.095){ultraviolet}
+\rput(3.92,-0.395){visible light}
+\rput(5.75,0.245){infrared}
+\rput(9.01,-2.875){\small ground state}
+\rput(8.06,2.905){Energy}
+
+              </code>
+            </pspicture>
+            <image style:width='.6'>
+                <src>photos/Hydrogen_transitions.png</src>
+            </image>
+            <caption>
+              <para>In the first diagram are shown some of the electron energy levels for the
+              hydrogen atom. The arrows show the electron transitions from higher energy 
+              levels to lower energy levels. The energies of the emitted photons are the 
+              same as the energy difference between two energy levels. You can think of 
+              absorption as the opposite process. The arrows would point upwards and the 
+              electrons would jump up to higher levels when they absorb a photon of the 
+              right energy. The second representation shows the wavelengths of the light
+              that is emitted for the the various transitions. The transistions are 
+              grouped into a series based on the lowest level involved in the transition.</para>
+            </caption>
+          </figure>
+          <para>Visible light is not the only kind of electromagnetic radiation emitted. More energetic or less energetic transitions can produce ultraviolet or infrared radiation. However, because each atom has its own distinct set of energy levels (its fingerprint!), each atom has its own distinct emission spectrum.</para>
+        </section>
+        <section type="subsection">
+          <title>Absorption spectra</title>
+          <shortcode>ESCHK</shortcode>
+          <para>Atoms do not only emit photons; they also absorb photons. If a photon hits an 
+          atom and the energy of the photon is the same as the gap between two electron energy 
+          levels in the atom, then the electron in the lower energy level can absorb the photon 
+          and jump up to the higher energy level. If the photon energy does not correspond
+          to the difference between two energy levels then the photon will not be absorbed (it
+          can still be scattered).</para>
+          
+
+          <para>Using this effect, if we have a source of photons of various energies we can 
+          obtain the <emphasis effect="bold">absorption spectra</emphasis> for different materials. 
+          To get an absorption spectrum, just shine white light on a sample of the material that 
+          you are interested in. White light is made up of all the different wavelengths of 
+          visible light put together. In the absorption spectrum there will be gaps.
+          The gaps correspond to energies (wavelengths) for which there is a corresponding
+          difference in energy levels for the particular element.</para>
+          <para>
+          The absorbed photons show up as black lines because the photons of these wavelengths 
+          have been absorbed and do not show up. Because of this, the absorption spectrum is 
+          the exact <emphasis effect="italics">inverse</emphasis> of the emission spectrum. 
+          Look at the two figures below. In Figure <link target-id="fig:emissionSpec"/> you can see 
+          the line emission spectrum of hydrogen. Figure <link target-id="fig:absorptionSpec"/> shows the 
+          absorption spectrum. It is the exact opposite of the emission spectrum! Both emission 
+          and absorption techniques can be used to get the same information about 
+          the energy levels of an atom.</para>
+          <figure id="fig:emissionSpec">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (\linewidth,1.1)
+                \psspectrum[element=H,lwidth=0.1](\linewidth,1)
+
+              </code>
+            </pspicture>
+            <caption>
+              <para><emphasis effect="italics">Emission</emphasis> spectrum of Hydrogen.</para>
+            </caption>
+          </figure>
+          <figure id="fig:absorptionSpec">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (\linewidth,1.1)
+\psspectrum[absorption,element=H,lwidth=0.1](\linewidth,1)
+
+              </code>
+            </pspicture>
+            <caption>
+              <para><emphasis effect="italics">Absorption</emphasis> spectrum of Hydrogen.</para>
+            </caption>
+          </figure>
+          <para>The dark lines correspond to the frequencies of light that have been
+          absorbed by the gas. As the photons of light are absorbed by electrons, the electrons
+          move into higher energy levels. This is the opposite process of emission.</para>
+          <para>The dark lines, absorption lines, correspond to the frequencies of the emission
+          spectrum of the same element. The amount of energy absorbed by the electron to move 
+          into a higher level is the same as the amount of energy released when returning to the 
+          original energy level.</para>
+          <worked_example>
+            <title>Absorption</title>
+            <question>
+              <para>I have an unknown gas in a glass container. I shine a bright white light 
+              through one side of the container and measure the spectrum of transmitted light. 
+              I notice that there is a black line 
+              (<emphasis effect="italics">absorption</emphasis> line) in the middle of the 
+              visible red band at <unit_number><number>642</number><unit>nm</unit></unit_number>. 
+              I have a hunch that the gas might be hydrogen. If I am correct, between which 
+              2 energy levels does this transition occur? (Hint: look 
+              at Figure <link target-id="fig:Henergy"/> and the transitions which are in the visible 
+              part of the spectrum.)</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>What is given and what needs to be done?</title>
+                <para>We have an absorption line at <unit_number><number>642</number><unit>nm</unit></unit_number>. This means that the substance in the glass container absorbed photons with a wavelength of 642 nm.
+We need to calculate which 2 energy levels of hydrogen this transition would correspond to. Therefore we need to know what energy the absorbed photons had.</para>
+              </workstep>
+              <workstep>
+                <title>Calculate the energy of the absorbed photons</title>
+                <latex display="block">
+		\begin{align}
+		 E&amp; = \frac{hc}{\lambda }\\
+		 &amp; = \frac{\left(<number><coeff>6.63</coeff><exp>-34</exp></number>\right)\times \left(<number><coeff>3</coeff><exp>8</exp></number>\right)}{<number><coeff>642</coeff><exp>-9</exp></number>}\\
+		 &amp; = <unit_number><number><coeff>3.1</coeff><exp>-19</exp></number><unit>J</unit></unit_number> 
+		\end{align}
+		</latex>
+                
+
+                <para>The absorbed photons had an energy of <unit_number><number><coeff>3.1</coeff><exp>-19</exp></number><unit>J</unit></unit_number>.</para>
+              </workstep>
+              <workstep>
+                <title>Find the energy of the transitions resulting in radiation at visible wavelengths</title>
+                <para>Figure <link target-id="fig:Henergy"/> shows various energy level 
+                transitions. The transitions related to visible wavelengths are marked as 
+                the transitions beginning or ending on Energy Level 2.
+                Let us find the energy of those transitions and compare with the energy of 
+                the absorbed photons we have just calculated.</para>
+                
+
+                <para>Energy of transition (absorption) from Energy Level 2 to Energy Level 3:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 \Delta E_{electron} = {E}_{2,3}&amp; = {E}_{2}-{E}_{3}\\
+		 &amp; = <number><coeff>16.3</coeff><exp>-19</exp></number>-  <number><coeff>19.4</coeff><exp>-19</exp></number>\\
+		 &amp; = <unit_number><number><coeff>-3.1</coeff><exp>-19</exp></number><unit>J</unit></unit_number> 
+		\end{align}
+		</latex>
+                
+
+                <para>Therefore the energy of the photon that an electron must absorb to jump from Energy Level 2 to Energy Level 3 is <unit_number><number><coeff>3.1</coeff><exp>-19</exp></number><unit>J</unit></unit_number>.
+(NOTE: The minus sign means that <emphasis effect="italics">absorption</emphasis> is occurring.)</para>
+                
+
+                <para>This is the same energy as the photons which were absorbed by the gas in the container! Therefore, since the transitions of all elements are unique, we can say that the gas in the container is hydrogen. The transition is absorption of a photon between Energy Level 2 and Energy Level 3.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <note type='important'>
+          <para>The energy of the photon does not correspond to the energy of an energy level, it
+          corresponds to the <emphasis effect='bold'>difference</emphasis> in energy between two
+          energy levels.</para>
+          </note>
+        </section>
+
+        <!--
+        <section type="subsection">
+          <title>Colours and energies of electromagnetic radiation</title>
+          <shortcode>ESCHL</shortcode>
+          <para>We saw in the explanation for why the sky is blue that different <emphasis effect="italics">wavelengths</emphasis> or <emphasis effect="italics">frequencies</emphasis> of light correspond to different <emphasis effect="italics">colours</emphasis> of light. The table below gives the wavelengths and colours of light in the visible spectrum:</para>
+          <figure id="t:Optic:Colours">
+            <type>table</type>
+            <table>
+              <tgroup cols="2">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <para><emphasis effect="bold">Colour</emphasis></para>
+                    </entry>
+                    <entry>
+                      <para><emphasis effect="bold">Wavelength range (nm)</emphasis></para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>violet</para>
+                    </entry>
+                    <entry>
+                      <para>390 - 455</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>blue</para>
+                    </entry>
+                    <entry>
+                      <para>455 - 492</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>green</para>
+                    </entry>
+                    <entry>
+                      <para>492 - 577</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>yellow</para>
+                    </entry>
+                    <entry>
+                      <para>577 - 597</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>orange</para>
+                    </entry>
+                    <entry>
+                      <para>597 - 622</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>red</para>
+                    </entry>
+                    <entry>
+                      <para>622 - 780</para>
+                    </entry>
+                  </row>
+                  
+                </tbody>
+              </tgroup>
+            </table>
+            <caption>
+              <para>Colours and wavelengths of light in the visible spectrum.</para>
+            </caption>
+          </figure>
+          <para>We also know that the energy of a photon of light can be found from:</para>
+          
+
+          <latex display="block">
+		\begin{align}
+		 E&amp; = hf=\frac{hc}{\lambda } 
+		\end{align}
+		</latex>
+          
+
+          <para>Therefore if we know the frequency or wavelength of light, we can calculate the photon's energy and vice versa.</para>
+          <activity type="investigation">
+            <title>Frequency, wavelength and energy relation</title>
+            <para>Refer to <link target-id="t:Optic:Colours"/>: Copy the table into your workbook and add two additional columns.</para>
+            <list list-type="enumerated">
+              <item>
+                <para>In the first new column write down the lower and upper frequencies for each colour of light.</para>
+              </item>
+              <item>
+                <para>In the second column write down the energy range (in joules) for each colour of light.</para>
+              </item>
+            </list>
+            <section>
+              <title>Questions</title>
+              <list list-type="enumerated">
+                <item>
+                  <para>Which colour of visible light has the highest energy photons?</para>
+                </item>
+                <item>
+                  <para>Which colour of visible light has the lowest energy photons?</para>
+                </item>
+              </list>
+            </section>
+          </activity>
+          <para>Discharge lamps (sometimes incorrectly called neon lights) use the spectra of various elements to produce light of many colours.</para>
+          <simulation>
+            <title>Discharge lamps</title>
+            <shortcode>VPqea</shortcode>
+<url>http://phet.colorado.edu/en/simulation/discharge-lamps</url>
+<embed>
+&lt;div style="position: relative; width: 300px; height: 225px;"&gt;&lt;a href="http://phet.colorado.edu/sims/discharge-lamps/discharge-lamps_en.jnlp" style="text-decoration: none;"&gt;&lt;img src="http://phet.colorado.edu/sims/discharge-lamps/discharge-lamps-screenshot.png" alt="Neon Lights and Other Discharge Lamps" style="border: none;" width="300" height="225"/&gt;&lt;div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 72px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);"&gt;&lt;/div&gt;&lt;table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 72px;"&gt;&lt;tr&gt;&lt;td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;"&gt;Click to Run&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/a&gt;&lt;/div&gt;
+</embed>
+          </simulation>
+          <worked_example>
+            <title>Colours of light</title>
+            <question>
+              <para>A photon of wavelength <unit_number><number>500</number><unit>nm</unit></unit_number> is emitted by a traffic light.</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>What is the energy of the photon?</para>
+                </item>
+                <item>
+                  <para>What is the frequency of the photon?</para>
+                </item>
+                <item>
+                  <para>Use <link target-id="t:Optic:Colours"/> to determine the colour of the light.</para>
+                </item>
+              </list>
+            </question>
+            <answer>
+              <workstep>
+                <title>What information is given and what do we need to find?</title>
+                <para>We are given <latex>\lambda = <unit_number><number><coeff>500</coeff><exp>-9</exp></number><unit>m</unit></unit_number></latex> and we need to find the photon's <emphasis effect="italics">energy</emphasis>, <emphasis effect="italics">frequency</emphasis> and <emphasis effect="italics">colour</emphasis>.</para>
+              </workstep>
+              <workstep>
+                <title>Use the equation <latex>E=\frac{hc}{\lambda }</latex> to find the photon's energy</title>
+                <latex display="block">
+		\begin{align}
+		 E&amp; = \frac{hc}{\lambda }\\
+		 &amp; = \frac{\left(<number><coeff>6.63</coeff><exp>-34</exp></number>\right)\times \left(<number><coeff>3</coeff><exp>8</exp></number>\right)}{<number><coeff>500</coeff><exp>-9</exp></number>}\\
+		 &amp; = <unit_number><number><coeff>3.98</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                <para>The energy of the photon is <unit_number><number><coeff>3.98</coeff><exp>-19</exp></number><unit>J</unit></unit_number>.</para>
+              </workstep>
+              <workstep>
+                <title>We know the energy of the photon, now we can use <latex>E=hf</latex> to solve for the frequency</title>
+                <latex display="block">
+		\begin{align}
+		 E&amp; = hf\\
+		  f&amp; = \frac{E}{h}\\
+		 &amp; = \frac{<number><coeff>3.98</coeff><exp>-19</exp></number>}{<number><coeff>6.63</coeff><exp>-34</exp></number>}\\
+		 &amp; = <unit_number><number><coeff>6.00</coeff><exp>14</exp></number><unit>Hz</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                <para>The frequency of the photon is <unit_number><number><coeff>6</coeff><exp>14</exp></number><unit>Hz</unit></unit_number>.</para>
+              </workstep>
+              <workstep>
+                <title>Use the table to find the colour of light</title>
+                <para>The wavelength given in the question is <unit_number><number>500</number><unit>nm</unit></unit_number>. We can see in the table that green light has wavelengths between <number>492</number> – <unit_number><number>577</number><unit>nm</unit></unit_number>. Therefore <unit_number><number>500</number><unit>nm</unit></unit_number> is in this range so the colour of the light is <emphasis effect="bold">green</emphasis>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Colours and energies of light</title>
+            <question>
+              <para>I have some sources which emit light of the following wavelengths:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para><unit_number><number>400</number><unit>nm</unit></unit_number>,</para>
+                </item>
+                <item>
+                  <para><unit_number><number>580</number><unit>nm</unit></unit_number>,</para>
+                </item>
+                <item>
+                  <para><unit_number><number>650</number><unit>nm</unit></unit_number>,</para>
+                </item>
+                <item>
+                  <para><unit_number><number>300</number><unit>nm</unit></unit_number>.</para>
+                </item>
+              </list>
+              <para>What are the colours of light emitted by the sources (see <link target-id="t:Optic:Colours"/>)? Which source emits photons with the highest energy and which with the lowest energy?</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>What information is given, and what do we need to do?</title>
+                <para>Four wavelengths of light are given and we need to find their <emphasis effect="italics">colours</emphasis>.</para>
+                
+
+                <para>We also need to find which colour photon has the highest energy and which one has the lowest energy.</para>
+              </workstep>
+              <workstep>
+                <title>To find the colours of light, we can compare the wavelengths to those given in <link target-id="t:Optic:Colours"/></title>
+                <list list-type="enumerated">
+                  <item>
+                    <para><unit_number><number>400</number><unit>nm</unit></unit_number> falls into the range for <emphasis effect="italics">violet</emphasis> light (<number>390</number> – <unit_number><number>455</number><unit>nm</unit></unit_number>).</para>
+                  </item>
+                  <item>
+                    <para><unit_number><number>580</number><unit>nm</unit></unit_number> falls into the range for <emphasis effect="italics">yellow</emphasis> light (<number>577</number> – <unit_number><number>597</number><unit>nm</unit></unit_number>).</para>
+                  </item>
+                  <item>
+                    <para><unit_number><number>650</number><unit>nm</unit></unit_number> falls into the range for <emphasis effect="italics">red</emphasis> light (<number>622</number> – <unit_number><number>780</number><unit>nm</unit></unit_number>).</para>
+                  </item>
+                  <item>
+                    <para><unit_number><number>300</number><unit>nm</unit></unit_number> is not shown in the table. However, this wavelength is just a little shorter than the shortest wavelength in the violet range. Therefore <unit_number><number>300</number><unit>nm</unit></unit_number> is <emphasis effect="italics">ultraviolet</emphasis>.</para>
+                  </item>
+                </list>
+              </workstep>
+              <workstep>
+                <title>To find the colour of the light whose photons have the highest and lowest energies respectively, we need to calculate the energies of all the photons</title>
+                <para>We know <latex>E=\frac{hc}{\lambda }</latex></para>
+                
+
+                <para>For <unit_number><number>400</number><unit>nm</unit></unit_number>:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 E&amp; = \frac{hc}{\lambda }\\
+		 &amp; = \frac{\left(<number><coeff>6.63</coeff><exp>-34</exp></number>\right)\times \left(<number><coeff>3.00</coeff><exp>8</exp></number>\right)}{<number><coeff>400</coeff><exp>-9</exp></number>}\\
+		 &amp; = <unit_number><number><coeff>4.97</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                <para>For <unit_number><number>580</number><unit>nm</unit></unit_number>:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 E&amp; = \frac{hc}{\lambda }\\
+		 &amp; = \frac{\left(<number><coeff>6.63</coeff><exp>-34</exp></number>\right)\times \left(<number><coeff>3.00</coeff><exp>8</exp></number>\right)}{<number><coeff>580</coeff><exp>-9</exp></number>}\\
+		 &amp; = <unit_number><number><coeff>3.43</coeff><exp>-19</exp></number><unit>J</unit></unit_number> 
+		\end{align}
+		</latex>
+                
+
+                <para>For <unit_number><number>650</number><unit>nm</unit></unit_number>:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 E&amp; = \frac{hc}{\lambda }\\
+		 &amp; = \frac{\left(<number><coeff>6.63</coeff><exp>-34</exp></number>\right)\times \left(<number><coeff>3.00</coeff><exp>8</exp></number>\right)}{<number><coeff>650</coeff><exp>-9</exp></number>}\\
+		 &amp; = <unit_number><number><coeff>3.06</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                <para>For <unit_number><number>300</number><unit>nm</unit></unit_number>:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 E&amp; = \frac{hc}{\lambda }\\
+		 &amp; = \frac{\left(<number><coeff>6.63</coeff><exp>-34</exp></number>\right)\times \left(<number><coeff>3.00</coeff><exp>8</exp></number>\right)}{<number><coeff>300</coeff><exp>-9</exp></number>}\\
+		 &amp; =<unit_number><number><coeff>6.63</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+		\end{align}
+		</latex>
+                
+
+                <para>Therefore, the photons with the highest energy are the <emphasis effect="bold">ultraviolet</emphasis> photons.</para>
+                
+
+                <para>The photons with the lowest energy are from light which is <emphasis effect="bold">red</emphasis>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+        </section>
+
+        -->
+        <section type="subsection">
+          <title>Applications of emission and absorption spectra</title>
+          <shortcode>ESCHM</shortcode>
+          <para>The study of spectra from stars and galaxies in astronomy is i
+          called <emphasis effect="italics">spectroscopy</emphasis>. Spectroscopy is a 
+          tool widely used in astronomy to learn different things about astronomical objects.</para>
+          <section type="subsubsection">
+            <title>Identifying elements in astronomical objects using their spectra</title>
+            <para>Measuring the spectrum of light from a star can tell astronomers what the 
+            star is made of. Since each element emits or absorbs light only at particular 
+            wavelengths, astronomers can identify what elements are in the stars from 
+            the lines in their spectra. From studying the spectra of many stars we know 
+            that there are many different types of stars which contain different 
+            elements and in different amounts.</para>
+          </section>
+          <section type="subsubsection">
+            <title>Determining velocities of galaxies using spectroscopy</title>
+            <para>You have already learnt in <link url="http://everythingscience.co.za/grade-12/09-doppler-effect/">Chapter 9</link><link target-id="chap:doppler-effect"/> about the Doppler 
+            effect and how the frequency (and wavelength) of sound waves changes 
+            depending on whether the object emitting the sound is moving 
+            <emphasis effect="italics">towards</emphasis> or 
+            <emphasis effect="italics">away</emphasis> from you. The same thing happens 
+            to electromagnetic radiation (light). If the object emitting the light is 
+            moving <emphasis effect="italics">towards</emphasis> us, then the wavelength 
+            of the light appears shorter (called <emphasis effect="bold">blueshifted</emphasis>). 
+            If the object is moving <emphasis effect="italics">away</emphasis> from us, 
+            then the wavelength of its light appears stretched out 
+            (called <emphasis effect="bold">redshifted</emphasis>).</para>
+            
+
+            <para>The Doppler effect affects the spectra of objects in 
+            space depending on their motion relative to us on the earth. For 
+            example, the light from a distant galaxy that is moving away from us 
+            at some velocity will appear redshifted. This means that the emission 
+            and absorption lines in the galaxy's spectrum will be shifted to a longer 
+            wavelength (lower frequency). Knowing where each line in the spectrum 
+            would normally be if the galaxy was not moving and comparing it to 
+            the redshifted position, allows astronomers to precisely measure the velocity 
+            of the galaxy relative to the Earth.</para>
+          </section>
+          <section type="subsubsection">
+            <title>Global warming and greenhouse gases</title>
+            <para>The sun emits radiation (light) over a range of wavelengths that 
+            are mainly in the visible part of the spectrum. Radiation at these 
+            wavelengths passes through the gases of the atmosphere to warm the 
+            land and the oceans below. The warm earth then radiates this heat 
+            at longer infrared wavelengths. Carbon dioxide (one of the main 
+            greenhouse gases) in the atmosphere has energy levels that correspond 
+            to the infrared wavelengths that allow it to absorb the infrared radiation. 
+            It then also emits at infrared wavelengths in all directions. This 
+            effect stops a large amount of the infrared radiation from getting out of the 
+            atmosphere, which causes the atmosphere and the earth to heat up. More 
+            radiation is coming in than is getting back out.</para>
+            <pspicture>
+              <code>
+                (0,-2.59)(15.975868,2.57)
+\psbezier[linewidth=0.04](3.4958684,2.53)(3.5758684,1.85)(5.2958684,1.75)(5.4158683,2.55)
+\psline[linewidth=0.04cm](3.5158684,2.23)(3.1158683,1.89)
+\psline[linewidth=0.04cm](3.8358684,1.99)(3.5558684,1.59)
+\psline[linewidth=0.04cm](4.1958685,1.93)(4.1358685,1.47)
+\psline[linewidth=0.04cm](4.5758686,1.93)(4.6358685,1.43)
+\psline[linewidth=0.04cm](4.9558682,1.99)(5.1358685,1.57)
+\psline[linewidth=0.04cm](5.3358684,2.21)(5.7158685,1.79)
+\psbezier[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(5.3158684,-1.8245102)(5.4166245,-1.808687)(5.439445,-1.2557855)(5.6350846,-1.3248497)(5.830724,-1.393914)(5.9961104,-1.0932733)(5.831161,-0.9905677)(5.666211,-0.8878622)(5.878371,-0.53134257)(6.0578475,-0.6263778)(6.2373247,-0.7214131)(6.42343,-0.38185132)(6.2439528,-0.28681606)(6.064476,-0.19178078)(6.281192,0.17768885)(6.4606686,0.082653575)(6.640146,-0.012381695)(6.358866,-0.0017902247)(6.759594,0.57)
+\psbezier[linewidth=0.03,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.266691,1.9676449)(4.4793305,1.9886502)(4.4655175,1.7896867)(4.310693,1.7585212)(4.1558685,1.7273557)(4.168905,1.5119989)(4.3296576,1.5552567)(4.4904103,1.5985147)(4.5284834,1.3772986)(4.3832135,1.3371572)(4.237943,1.2970159)(4.2414255,1.090635)(4.4099193,1.1354511)(4.578413,1.1802672)(4.579593,0.9407257)(4.455734,0.9157933)(4.331874,0.89086086)(4.3371696,0.6739458)(4.5015483,0.69613546)(4.665927,0.71832514)(4.6848917,0.5150607)(4.530067,0.4838952)(4.3752427,0.4527297)(4.40969,0.2525818)(4.5740685,0.2747715)(4.738447,0.2969612)(4.72826,0.07692955)(4.579364,0.05785641)(4.4304676,0.03878328)(4.48221,-0.16878216)(4.6311064,-0.14970903)(4.7800026,-0.13063589)(4.8203783,-0.3186914)(4.667367,-0.36039102)(4.514355,-0.4020906)(4.564285,-0.5991219)(4.709555,-0.55898064)(4.8548255,-0.5188393)(4.90064,-0.7384971)(4.7458153,-0.7696626)(4.590991,-0.8008281)(4.6368055,-1.0204859)(4.79163,-0.9893204)(4.9464545,-0.9581549)(4.967232,-
+1.1719534)(4.818336,-1.1910266)(4.6694393,-1.2100997)(4.7307363,-1.426641)(4.8700786,-1.398592)(5.0094204,-1.370543)(5.022457,-1.5858998)(4.883115,-1.6139488)(4.743773,-1.6419978)(4.908641,-1.5761135)(4.955779,-1.85)
+\pscircle[linewidth=0.03,dimen=outer](6.8258686,0.62){0.05}
+\pscircle[linewidth=0.03,dimen=outer](7.0258684,0.42){0.05}
+\pscircle[linewidth=0.03,dimen=outer](6.8458686,0.5){0.05}
+\pscircle[linewidth=0.03,dimen=outer](6.6858683,0.62){0.05}
+\psbezier[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(6.8915195,0.5453803)(6.9068,0.44454044)(7.4595704,0.41874084)(7.389453,0.22347647)(7.3193355,0.028212115)(7.619081,-0.13879196)(7.7226734,0.025601879)(7.8262663,0.18999572)(8.181638,-0.024081578)(8.085637,-0.20304397)(7.989636,-0.38200638)(8.32819,-0.5699386)(8.4241905,-0.39097622)(8.520192,-0.21201381)(8.888489,-0.43071732)(8.792487,-0.6096797)(8.696486,-0.7886421)(8.708593,-0.5074236)(9.278216,-0.91122675)
+\psbezier[linewidth=0.03,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(0.6758684,-2.49)(2.0158684,-1.89)(8.495869,-1.33)(11.615869,-2.45)
+\psbezier[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(2.3639035,0.53901273)(2.3501835,0.64007664)(1.7978777,0.67441475)(1.8710039,0.8685723)(1.9441302,1.0627298)(1.6470013,1.2343458)(1.5408807,1.0715723)(1.43476,0.9087988)(1.082739,1.1283418)(1.1814939,1.3057994)(1.2802488,1.483257)(0.9446391,1.6763983)(0.8458842,1.4989406)(0.7471294,1.321483)(0.38225624,1.5458515)(0.4810111,1.723309)(0.579766,1.9007666)(0.56331503,1.6197687)(0.0,2.0323257)
+\psbezier[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.6348133,-1.9369571)(3.671527,-1.8418032)(3.204232,-1.5453975)(3.3619184,-1.4105656)(3.5196047,-1.2757337)(3.3420558,-0.9821116)(3.1705978,-1.0735391)(2.99914,-1.1649667)(2.796613,-0.8028884)(2.9686987,-0.6950449)(3.1407845,-0.58720136)(2.9399037,-0.25616616)(2.767818,-0.3640097)(2.5957322,-0.47185323)(2.3842728,-0.09935028)(2.5563583,0.008493258)(2.728444,0.1163368)(2.5785341,-0.121901385)(2.2839727,0.5111552)
+\psbezier[linewidth=0.03,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.0897393,2.0019855)(4.2958684,1.958283)(4.2253532,1.7663379)(4.0706806,1.7825129)(3.9160075,1.7986879)(3.866014,1.5824502)(4.02976,1.5763997)(4.1935062,1.5703491)(4.165374,1.340752)(4.017095,1.345185)(3.8688161,1.3496181)(3.8124285,1.1451223)(3.9839082,1.138263)(4.155388,1.1314037)(4.087248,0.89491713)(3.9635096,0.9078571)(3.8397713,0.9207971)(3.7820442,0.70536816)(3.9431107,0.67745125)(4.1041775,0.6495343)(4.063257,0.44342107)(3.9085844,0.45959604)(3.7539117,0.47577104)(3.7284586,0.2680403)(3.8895254,0.24012335)(4.050592,0.21220641)(3.9773977,-0.0016050348)(3.831798,0.024694402)(3.6861987,0.050993837)(3.674873,-0.1692876)(3.8204727,-0.19558704)(3.966072,-0.22188649)(3.9496922,-0.41949278)(3.79368,-0.414251)(3.6376677,-0.4090092)(3.6276817,-0.6183574)(3.7759604,-0.6227905)(3.9242392,-0.62722355)(3.9038405,-0.8576294)(3.749168,-0.84145445)(3.594495,-0.8252794)(3.5740964,-1.0556853)(3.728769,-1.0718603)(3.883442,-1.
+0880353)(3.8411818,-1.3050817)(3.6955824,-1.2787824)(3.5499828,-1.2524829)(3.5450516,-1.4845062)(3.684257,-1.4990637)(3.8234625,-1.5136212)(3.7734687,-1.729859)(3.6342633,-1.7153015)(3.4950578,-1.700744)(3.6692169,-1.6857369)(3.6343863,-1.97)
+\pscircle[linewidth=0.03,dimen=outer](2.3658683,0.56){0.05}
+\pscircle[linewidth=0.03,dimen=outer](2.2258685,0.56){0.05}
+\rput(5.9658685,-2.365){earth radiates long wavelength infrared radiation}
+\rput[tl](6,2.275){\small the sun emits short wavelength radiation}
+\rput[tl](6,1.975){\small that penetrates the atmosphere}
+\rput[tl](7.5,1.135){\small CO$_{2}$ molecules absorb and re-emit}
+\rput[tl](7.5,0.835){\small the infrared radiation in all directions,}
+\rput[tl](7.5,0.535){\small heating the atmosphere}
+
+              </code>
+            </pspicture>
+            <para>So increasing the amount of greenhouse gases in the atmosphere increases the amount of trapped infrared radiation and therefore the overall temperature of the earth. The earth is a very sensitive and complicated system upon which life depends and changing the delicate balances of temperature and atmospheric gas content may have disastrous consequences if we are not careful.</para>
+<!--            <activity type="investigation">
+              <title>The greenhouse effect</title>
+              <para>In pairs try to find the following information (e.g. in books, on the Internet) and report back to the class in a 5 minute presentation which includes the following:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>What other gases besides carbon dioxide are responsible for the greenhouse effect?</para>
+                </item>
+                <item>
+                  <para>Where do greenhouse gases come from? (are they human-made or natural?)</para>
+                </item>
+                <item>
+                  <para>Investigate one serious side-effect which could arise if the earth's temperature were to go up significantly. Present some ways in which this effect could be avoided.</para>
+                </item>
+              </list>
+            </activity>-->
+            <exercises><title>Emission and absorption spectra</title>
+              <entry>
+<shortcode>01mu</shortcode>
+<problem>
+                <para>Explain how atomic emission spectra arise and how they relate to each element on the periodic table.</para>
+              </problem>
+              <solution url="TODO">
+                  <para>
+                  Atomic emission spectra arise from electrons dropping from higher energy levels to lower energy levels within the atom, photons (light packets) with specific wavelengths are released. The energy levels in an atom are specific/unique to each element on the periodic table therefore the wavelength of light emitted can be used to determine which element the light came from.
+                  </para>
+                  </solution>
+                  <correct />
+</entry>
+<entry>
+<shortcode>01mv</shortcode>
+<problem>
+                <para>How do the lines on the atomic spectrum relate to electron transitions between energy levels?</para>
+              </problem>
+              <solution url="TODO">
+                  <para> 
+                  The lines on the atomic spectrum relate to electron transitions between energy levels, if the electron drops an energy level a photon is released resulting in an emission line and if the electron absorbs a photon and rises an energy level an absorption line is observed on the spectrum.
+                  </para>
+                  </solution><correct />
+</entry>
+<entry>
+<shortcode>01mw</shortcode>
+<problem>
+                <para>Explain the difference between atomic absorption and emission spectra.</para>
+              </problem>
+              <solution url="TODO">
+                  <para>
+                  The difference between absorption and emission spectra are that absorption lines are where light has been absorbed by the atom thus you see a dip in the spectrum whereas emission spectra have spikes in the spectra due to atoms releasing photons at those wavelengths.
+                  
+                  </para>
+                  </solution>
+                  <correct/>
+</entry>
+<entry>
+<shortcode>01mx</shortcode>
+<problem>
+                <para>Describe how the absorption and emission spectra of the gases in the atmosphere give rise to the Greenhouse Effect.</para>
+              </problem>
+              <solution url="TODO">
+                  <para>The following needs to be in your answer: in what wavelength range the sunlight reaches the earth, the absorption of the sunlight and the re-radiation as infrared light, and finally the scattering of the infrared light by the carbon-dioxide and how this scattering contributes to the Greenhouse Effect.
+                  
+                  </para>
+                  </solution>
+                  <correct/>
+</entry>
+<entry>
+<shortcode>01my</shortcode>
+<problem>
+                <para>Using <link target-id="t:Optic:Colours"/> calculate the frequency range for yellow light.</para>
+              </problem>
+              <solution url="TODO">
+                  <para>
+                  <latex display="block">
+                  \begin{align}
+                  f &amp; =  \frac{c}{\lambda}
+                  \end{align}
+                   </latex>
+                   The frequency range of yellow light is <latex><unit_number><number>502</number><unit>THz</unit></unit_number> - <unit_number><number>520</number><unit>THz</unit></unit_number></latex>. (<unit_number><number>1</number><unit>THz</unit></unit_number> = <unit_number><number><base>10</base><exp>12</exp></number><unit>Hz</unit></unit_number>)
+                  
+                  </para>
+                  </solution>
+                  <correct/>
+</entry>
+<entry>
+<shortcode>01mz</shortcode>
+<problem>
+                <para>What colour is the light emitted by hydrogen when an electron makes the transition from energy level 5 down to energy level 2? (Use <link target-id="fig:Henergy"/> to find the energy of the released photon.)</para>
+              </problem>
+              <solution url="TODO">
+                  <para>
+                  <latex display="block">
+                  \begin{align}
+                  \Delta E &amp; =  E_5 - E_2 \\
+                           &amp; =  <unit_number><number><coeff>21.0</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number> - <unit_number><number><coeff>16.3</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number> \\
+                           &amp; =  <unit_number><number><coeff>4.7</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number>
+                  \end{align}
+                  </latex>
+                  </para>
+                  <para>
+                  <latex display="block">
+                  \begin{align}
+                  \lambda &amp; =  \frac{hc}{\Delta E} \\
+                          &amp; =  \frac{(<unit_number><number><coeff>6.63</coeff><base>10</base><exp>-34</exp></number><unit>m<sup>2</sup>kg·s<sup>-1</sup></unit></unit_number>)(<unit_number><number><coeff>3</coeff><base>10</base><exp>8</exp></number><unit>m·s<sup>-1</sup></unit></unit_number>)}{<unit_number><number><coeff>4.7</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number>} \\ 
+                          &amp; =  <unit_number><number>423</number><unit>nm</unit></unit_number>
+                  \end{align}
+                  </latex>
+                  The colour of light emitted at <unit_number><number>423</number><unit>nm</unit></unit_number> is violet.
+                  </para>
+                  </solution>
+                  <correct />
+</entry>
+<entry>
+<shortcode>01n0</shortcode>
+<problem>
+                <para>I have a glass tube filled with hydrogen gas. I shine white light onto the tube. The spectrum I then measure has an absorption line at a wavelength of 474 nm. Between which two energy levels did the transition occur? (Use <link target-id="fig:Henergy"/> in solving the problem.)</para>
+              </problem>
+              <solution url="TODO">
+                  <para>
+                  <latex display="block">
+                  \begin{align}
+                  \Delta E &amp; =  \frac{hc}{\lambda} \\
+                            &amp; =  \frac{(<unit_number><number><coeff>6.63</coeff><base>10</base><exp>-34</exp></number><unit>m<sup>2</sup>kg·s<sup>-1</sup></unit></unit_number>)(<unit_number><number><coeff>3</coeff><base>10</base><exp>8</exp></number><unit>m·s<sup>-1</sup></unit></unit_number>)}{<unit_number><number><coeff>474</coeff><base>10</base><exp>-9</exp></number><unit>nm</unit></unit_number>}\\ 
+                           &amp; =  <unit_number><number><coeff>4.20</coeff><base>10</base><exp>-19</exp></number><unit>J</unit></unit_number>
+                  \end{align}
+                  </latex>
+                  This energy interval corresponds to a transition from energy level 4 to energy level 2.
+                  </para>
+                  </solution>
+                  <correct />
+</entry>
+</exercises>
+          </section>
+        </section>
+      </section>
+      <section type="section">
+	<title>Chapter summary</title>
+        <presentation>
+          <shortcode>VPqph</shortcode>
+	  <url>TODO</url>
+        </presentation>
+        <list list-type="bulleted">
+          <item>
+            <para>Light of a minimum frequency can eject electrons from a substance. This is called the photoelectric effect.</para>
+          </item>
+          <item>
+            <para>A substance has a work function which is the minimum energy needed to 
+            emit an electron from the metal. The frequency of light whose photons correspond
+            exactly to the work function is known as the cut-off frequency.</para>
+<latex display="block">
+        \begin{align}
+        E &amp; = W_{0}+{E}_{k\max} \\
+        {E}_{k\max}&amp; = hf-W_{0}
+        \end{align}
+        </latex>
+          </item>
+          <item><para>The number of electrons ejected increases with the intensity of the 
+          incident light.</para>
+          </item>
+          <item>
+            <para>The photoelectric effect illustrates the particle nature of light and 
+            establishes the quantum theory.</para>
+          </item>
+          <item>
+            <para>Emission spectra are formed when certain frquencies of light are emitted by a 
+            gas, as a result of electrons in the atmoms dropping from higher to lower 
+            energy levels. The pattern of the spectra is charactersistic of the specific gas.</para>
+          </item>
+          <item>
+            <para>Absorption spectra are formed when certain frequencies of light are absorbed 
+            by a material. These photons are absorbed when their energy is exactly the correct 
+            amount to raise an electron from one energy level to another.</para>
+          </item>
+        </list>
+
+ <figure id="table:opticalphenomena:units">
+          <type>table</type>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <tbody>
+                <row>
+                  <entry nameend="c3" namest="c1" align="center"><emphasis effect="bold">Physical Quantities</emphasis></entry>
+                </row>
+                <row>
+                  <entry nameend="c1" namest="c1"><emphasis effect="bold">Quantity</emphasis></entry>
+                  <entry><emphasis effect="bold">Unit name</emphasis></entry>
+                  <entry><emphasis effect="bold">Unit symbol</emphasis></entry>
+                </row>
+                <row>
+                  <entry>Energy (<latex>E</latex>)</entry>
+                  <entry>Joules</entry>
+                  <entry><unit>J</unit></entry>
+                </row>
+                <row>
+                  <entry>Work function (<latex>W_0</latex>)</entry>
+                  <entry>Joules</entry>
+                  <entry><unit>J</unit></entry>
+                </row>
+                <row>
+                  <entry>Frequency (<latex>f</latex>)</entry>
+                  <entry>Hertz</entry>
+                  <entry><unit>Hz</unit></entry>
+                </row>
+                <row>
+                  <entry>Wavelength (<latex>\lambda</latex>)</entry>
+                  <entry>Metre</entry>
+                  <entry><unit>m</unit></entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <caption>
+            <para>Units used in <emphasis effect="bold">optical phenomena and properties of matter</emphasis>.</para>
+          </caption>
+        </figure>
+
+      </section>
+      <exercises><title/><entry>
+<shortcode>01n9</shortcode>
+<problem>
+          <para>What is the photoelectric effect?</para>
+        </problem>
+        <solution url="TODO">
+			  <para>The photoelectric effect is the process whereby an electron is emitted by a metal when light shines on it.</para>
+			</solution>
+            <correct />
+</entry>
+<entry>
+<shortcode>01na</shortcode>
+<problem>
+          <para>Calculate the energy of a photon of red light with a wavelength of <unit_number><number>400</number><unit>nm</unit></unit_number>.</para>
+        </problem>
+        <solution url="TODO">
+			  <latex display="block">
+				\begin{align}
+				E &amp; =  \frac{hc}{\lambda}\\
+				  &amp; =  \frac{(<number><coeff>3</coeff><exp>8</exp></number>)(<number><coeff>6.63</coeff><exp>-34</exp></number>)}{<number><coeff>990</coeff><exp>-9</exp></number>}\\
+					&amp; =  <unit_number><number><coeff>4.97</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+				\end{align}
+			  </latex>
+			</solution>
+            <correct />
+</entry>
+<entry>
+<shortcode>01nb</shortcode>
+<problem>
+          <para>Will ultraviolet light with a wavelength of <unit_number><number>990</number><unit>nm</unit></unit_number> be able to emit electrons from a sheet of calcium with a work function of <unit_number><number>2.9</number><unit>eV</unit></unit_number>?</para>
+        </problem>
+        <solution url="TODO">
+			  <para>We first calculate the energy of the photons:</para>
+			  <latex display="block">
+				\begin{align}
+				E &amp; =  \frac{hc}{\lambda}\\
+				  &amp; =  \frac{(<number><coeff>3</coeff><exp>8</exp></number>)(<number><coeff>6.63</coeff><exp>-34</exp></number>)}{<number><coeff>400</coeff><exp>-9</exp></number>}\\
+					&amp; =  <unit_number><number><coeff>2.01</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+				\end{align}
+			  </latex>
+			  <para>Next convert the work function energy into J:</para>
+			  <latex display="block">
+				\begin{align}
+				  <number>2.9</number> \times <number><coeff>1.6</coeff><exp>-19</exp></number> = <unit_number><number><coeff>4.64</coeff><exp>-19</exp></number><unit>J</unit></unit_number>
+				\end{align}
+			  </latex>
+			  <para>The energy of the photons is less than the work function of calcium and so no electrons will be emitted.</para>
+			</solution>
+            <correct />
+</entry>
+
+
+
+</exercises>
+    </section>
+  </content>
+</document>

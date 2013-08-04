@@ -1,0 +1,2893 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml/0.4" xmlns:style="http://siyavula.com/cnxml/style/0.1">
+  <metadata>
+    <cnxml-version>0.1</cnxml-version>
+    <pspicture-generator-version>1.1</pspicture-generator-version>
+  </metadata>
+  <content>
+    <section type="chapter">
+      <title>Electric circuits</title>
+      <section type="section">
+        <title>Introduction</title>
+        <shortcode>ESBIE</shortcode>
+        <para>The study of electrical circuits is essential to understanding the technology that 
+        uses electricity in the real-world. In this chapter we will focus on revising content 
+        from Grade 11 and extending our understanding of the internal structure of a battery/cell 
+        and how this influences what you already know about circuits.</para>
+        <video>
+          <title>Chapter introduction</title>
+          <shortcode>VPmbu</shortcode>
+	  <url>TODO</url>
+        </video>
+      </section>
+    <linked-concepts>
+        <concept><text>Units and unit conversions</text><subject>science</subject><grade>10</grade><chapter>science skills</chapter></concept>
+        <concept><text>Circuit components</text><subject>science</subject><grade>10</grade><chapter>electric circuits</chapter></concept>
+        <concept><text>Ohm's law</text><subject>science</subject><grade>11</grade><chapter>electric circuits</chapter></concept>
+        <concept><text>Series and parallel components</text><subject>science</subject><grade>11</grade><chapter>electric circuits</chapter></concept>
+        <concept><text>Equations</text><subject>maths</subject><grade>10</grade><chapter>equations and inequalities</chapter></concept>
+      </linked-concepts>
+
+      <section type="section">
+        <title>Series and parallel resistor networks (Revision)</title>
+        <shortcode>ESBIN</shortcode>
+        <para>In Grade 10 and Grade 11 you learnt about electric circuits and we introduced 
+        three quantities which are fundamental to dealing with electric circuits. These quantities
+        are closely related and are <emphasis effect="bold">current, voltage 
+        (potential difference)</emphasis> and <emphasis effect="bold">resistance</emphasis>. 
+        To recap: </para>
+<list list-type="enumerated">
+<item><para>Electrical current, <latex>I</latex>, is defined as the rate of flow of charge through a circuit.</para></item>
+<item><para>Potential difference or voltage, <latex>V</latex>, is related to the energy gained or lost per unit charge moving between two points in a circuit. Charge moving through a battery gains energy which is then lost moving through the circuit.</para></item>
+<item><para>Resistance, <latex>R</latex>, is an internal property of a circuit element that opposes the flow of charge. Work must be done for a charge to move through a resistor.</para></item>
+</list>
+<para>These quantities can be related, in circuit elements whose resistance remains constant, by Ohm's law.</para>
+ <note type='note'>
+            <para><emphasis effect='bold'>Ohm's Law</emphasis></para>
+              <para>For a resistor at constant temperature the ratio <latex>\frac{V}{I}</latex> is 
+              constant. This ratio we call resistance.</para>
+              <para>This is equivalent to saying that the amount of electric current through a metal 
+              conductor, at a constant 
+              temperature, in a circuit is proportional to the voltage across the conductor and 
+              can be described by</para>
+
+          <latex display='block'>I = \frac{V}{R} </latex>
+<!--          <para>where <latex>I</latex> is the current through the conductor, <latex>V</latex> is the voltage across the conductor and <latex>R</latex> is the resistance of the conductor. -->
+            <para>In other words, at constant temperature, the resistance of the conductor is 
+            constant, independent of the voltage applied across it or current passed through it.</para>
+          </note>
+          <para>We have focused on the properties of a single component. Now we need to look at a
+          collection of components in a circuit.</para>
+          <note type='important'>
+          <para>You will often hear people switch between using the terms 
+          <emphasis effect='italics'>voltage</emphasis> and 
+          <emphasis effect='italics'>potential difference</emphasis> to
+          describe the same quantity. This is correct but very important to note.</para>
+          </note>
+        <para>Circuits don't consist of a single element and we've learnt about how voltage, current and resistance are affected in circuits with multiple resistors. 
+            There are two basic layouts we consider for a network of resistors, series and parallel. Resistors in series and resistors in parallel have different features when talking about current, voltage and equivalent resistance.</para>
+
+<worked_example>
+<title>Ohm's Law [NSC 2011 Paper 1]</title>
+<question>
+ <para>
+    Learners conduct an investigation to verify Ohm's law. They measure the current through a conducting wire for different potential differences across its ends. The results obtained are shown in the graph below.
+  </para>
+  <tikzpicture style:width="1">
+    <code>
+[xscale=1,yscale=8]
+\draw[xstep=0.5,ystep=0.02] (0,0) grid (7,0.9);
+\foreach \x/\lbl in {0/0, 1/{1,0}, 2/{2,0}, 3/{3,0}, 4/{4,0}, 5/{5,0}, 6/{6,0}, 7/{7,0}} {
+  \draw (\x,0) -- (\x,-0.01) node[anchor=north] {\small \lbl};
+}
+\foreach \y/\lbl in {0/0, 0.1/{0,1},, 0.2/{0,2}, 0.3/{0,3}, 0.4/{0,4}, 0.5/{0,5}, 0.6/{0,6}, 0.7/{0,7}, 0.8/{0,8}, 0.9/{0,9}} {
+  \draw (0,\y) -- (-0.08,\y) node[anchor=east] {\small \lbl};
+}
+\draw[thick,->] (0,0) -- (7.2,0);
+\draw[thick,->] (0,0) -- (0,0.925);
+
+\draw[thick,black] plot coordinates{(0, 0) (1, 0.16) (2, 0.32) (3, 0.48) (4, 0.64) (5, 0.74) (6, 0.82)};
+\foreach \x/\y in {1/0.16, 2/0.32, 3/0.48, 4/0.64, 5/0.74, 6/0.82} {
+  \draw (\x,\y) node[anchor=center] {$\bullet$};
+}
+\draw (3.5,-0.1) node[anchor=center] {potential difference (V)};
+\draw (-1,0.45) node[anchor=center,rotate=90] {current (A)};
+    </code>
+  </tikzpicture>
+  <list mark-prefix="9." list-type="enumerated"  >
+    <item> <!-- 9.1 -->
+      <para>Which ONE of the measured quantities is the dependent variable?</para>
+      <para>(1 mark)</para>
+    </item>
+    <item> <!-- 9.2 -->
+      <para>The graph deviates from Ohm's law at some point.</para>
+      <list mark-prefix="9.2." list-type="enumerated"  >
+        <item><!-- 9.2.1 -->
+          <para>Write down the coordinates of the plotted point on the graph beyond which Ohm's law is not obeyed. </para>
+          <para>(2 marks)</para>
+        </item>
+        <item><!-- 9.2.2 -->
+          <para>Give a possible reason for the deviation from Ohm's law as shown in the graph. Assume that all measurements are correct. </para>
+          <para>(2 marks)</para>
+        </item>
+      </list>
+    </item>
+<item> <!-- 9.3 -->
+      <para>Calculate the gradient of the graph for the section where Ohm's law is obeyed.</para>
+      <para>Use this to calculate the resistance of the conducting wire.</para>
+      <para>(4 marks)</para>
+    </item>
+  </list>
+</question>
+<answer>
+<para><emphasis effect="bold">Question 1</emphasis></para>
+      <para>Current <emphasis effect="bold">OR</emphasis> I</para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 2</emphasis></para>
+      <para>The graph deviates from Ohm's law at some point.</para>
+      <list mark-prefix="9.2." list-type="enumerated"  >
+        <item><!-- 9.2.1 -->
+          <para>(<number>4.0</number> ; <number>0.64</number>)</para>
+          <para>(2 marks)</para>
+        </item>
+        <item><!-- 9.2.2 -->
+          <para>Temperature was not kept constant.</para>
+          <para>(2 marks)</para>
+        </item>
+      </list>
+
+      <para><emphasis effect="bold">Question 3</emphasis></para>
+      <latex display="block">
+        \begin{align*}
+          \text{Gradient:} \quad m &amp; =  \frac{\Delta y}{\Delta x} \\
+                                     &amp; =  \frac{<number>0.64</number>-<number>0</number>}{<number>4</number>-<number>0</number>} \\
+                                     &amp; =  <number>0.16</number>
+        \end{align*}
+      </latex>
+      <latex display="block">
+        \begin{align*}
+          R &amp; =  \frac{1}{<number>0.16</number>} \\
+            &amp; =  \text{6,25}\ \Omega
+        \end{align*}
+      </latex>
+      <para>(4 marks)</para>
+      <para><emphasis effect="bold">[TOTAL: 9 marks]</emphasis></para>
+
+</answer>
+</worked_example>
+
+
+  <note type='important'>
+    <para>A circuit may consist of a combination of parallel and series networks that can in turn
+    be in parallel or series. We can treat parts of the total circuit independently applying the
+    relevant approach.</para>
+  </note>
+ <note type='note'>
+            <para><emphasis effect='bold'>
+  Resistors connected in series</emphasis></para>
+    <para>Resistors are in series if they are consecutive elements in the sequence of the 
+    circuit and there are no branches between them.
+    For <latex>n</latex> resistors in series the equivalent resistance is:</para>
+    <latex display="block">
+        R_{s} = R_{1} + R_{2} + R_{3} + \ldots + R_{n}
+    </latex>
+    <para>For <latex>n</latex> resistors in series the potential difference is split across the resistors:</para>
+    <latex display="block">
+        V_{Total} = V_{1} + V_{2} + V_{3} + \ldots + V_{n}
+    </latex>
+    <para>The current is constant through the resistors.</para>
+    <latex display="block">
+        I_{Total} = I_{1} = I_{2} = I_{3} = \ldots = I_{n}
+    </latex>
+
+    <pspicture>
+    <code>
+    (-1,-.5)(9,3)
+    \pnode(0,.5){A}
+    \pnode(2,.5){B}
+    \pnode(4,.5){C}
+    \pnode(6,.5){D}
+    \pnode(8,.5){E}
+    \pnode(2,2){TB}
+    \pnode(4,2){TC}
+    \pnode(6,.5){TD}
+    \pnode(8,.5){TE}
+    \circledipole[labeloffset=0](A)(B){$A$}
+    \circledipole[labeloffset=0](TB)(TC){$V$}
+    \psline(C)(TC)
+    \psline(B)(TB)
+    \resistor[dipolestyle=rectangle,labeloffset=0](B)(C){$R_1$}
+    \resistor[dipolestyle=rectangle,labeloffset=0](C)(D){$R_2$}
+    \resistor[dipolestyle=rectangle,labeloffset=0](D)(E){$R_3$}
+    </code>
+    </pspicture>
+
+</note>
+<para>
+It makes sense to remind ourselves of why these are consistent with other topics we 
+have covered previously:
+<list>
+<item><emphasis effect='bold'>Conservation of charge:</emphasis> we have learnt that charges are 
+not created or destroyed. This is consistent with the current being the same throughout a 
+resistor network that is in series. Charges aren't being added or lost or bunching up and, therefore, the rate at which charge moves past each point should be the same.</item>
+<item><emphasis effect='bold'>Conservation of energy:</emphasis> we have learnt that energy isn't
+created or destroyed but transferred through work. The voltage across a resistor is the energy per 
+unit charge (work) required to move through the resistor. The total work done to move through a network
+of resistors in series should be the sum of the work done to move through each individual resistor.
+</item>
+</list>
+</para>
+          <worked_example>
+            <title>Ohm's Law, all components in series</title>
+            <question>
+                <para>Two ohmic resistors (<latex>R_{1}</latex> and <latex>R_{2}</latex>) are 
+                connected in series with a cell with negligible internal resistance. Find 
+                the resistance of <latex>R_{2}</latex>, given that the current flowing 
+                through <latex>R_{1}</latex> and <latex>R_{2}</latex> is 
+                <unit_number><number>0.25</number><unit>A</unit></unit_number> and that 
+                the potential difference across the cell is 
+                <unit_number><number>1.50</number><unit>V</unit></unit_number>. 
+                <latex>R_{1}</latex> =<unit_number><number>1.00</number><unit>Ω</unit></unit_number>.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Draw the circuit and fill in all known values.</title>
+                <pspicture>
+                  <code>
+                    (-.5,0)(5,5)
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\battery(A)(B){$V$=1,50~V}
+\psline(B)(C)
+\psline{-&gt;}(C)(4,2.5)
+\rput{-90}(4.3,2.5){$I$=0,25~A}
+\resistor[dipolestyle=rectangle](C)(D){$R_1$=<number>1.00</number>~\ensuremath{\Omega}}
+\resistor[labeloffset=-0.9cm](D)(A){$R_2$=?}
+
+                  </code>
+                </pspicture>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem.</title>
+                <para>We can use Ohm's Law to find the total resistance R in the circuit, and then calculate the unknown resistance using:</para>
+                <latex display="block">
+                    R = R_{1} + R_{2}
+                </latex>
+
+                <para>because <latex>R_{1}</latex> and <latex>R_{2}</latex> are connected
+                in series.</para>
+              </workstep>
+              <workstep>
+                <title>Find the total resistance</title>
+                <latex display="block">
+                    \begin{align*}
+                    R &amp; = \frac{V}{I} \\
+                    &amp; = \frac{<number>1.5</number>}{<number>0.25</number>} \\
+                    &amp; = <unit_number><number>6</number><unit>Ω</unit></unit_number>
+                    \end{align*}
+                </latex>
+              </workstep>
+              <workstep>
+                <title>Find the unknown resistance</title>
+                <para>We know that:</para>
+                <latex display="block">
+                    R = <unit_number><number>6.00</number><unit>Ω</unit></unit_number>
+                </latex>
+                <para>and that</para>
+                <latex display="block">
+                    R_{1} = <unit_number><number>1.00</number><unit>Ω</unit></unit_number>
+                </latex>
+                <para>Since</para>
+                <latex display="block">
+                    R = R_{1} + R_{2}
+                </latex>
+                    <latex display="block">
+                        R_{2} = R - R_{1}
+                    </latex>
+                <para>Therefore,</para>
+                <latex display="block">
+                    R_{1} = <unit_number><number>5.00</number><unit>Ω</unit></unit_number>
+                </latex>
+              </workstep>
+            </answer>
+          </worked_example>
+
+<worked_example>
+  <title>Ohm's Law, series circuit</title>
+  <question>
+    <para>In the case of the circuit shown, calculate:
+    </para>
+    <list list-type="enumerated">
+      <item><para>the potential difference of <latex>V_1</latex>, <latex>V_2</latex> and <latex>V_3</latex> across the resistors <latex>R_1</latex>, <latex>R_2</latex>, and <latex>R_3</latex></para></item>
+      <item><para>the resistance of <latex>R_3</latex>. </para></item>
+    </list>
+    <pspicture>
+      <code>
+        (-.5,0)(5,5)
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\battery(A)(B){$V$=36,00~V}
+\resistor[dipolestyle=rectangle](C)(D){$R_2$=6,00~\ensuremath{\Omega}}
+\resistor[labeloffset=-1.3cm](D)(A){$R_1$=2,00~\ensuremath{\Omega}}
+\resistor[](B)(C){$R_3$}
+\pcline{&lt;-}(1,1)(2,1)
+\bput{:U}{$I$=2,00~A}
+      </code>
+    </pspicture>
+  </question>
+  <answer>
+<workstep>
+  <title>Determine how to approach the problem </title>
+  <para>We are given the potential difference across the cell and the current in the circuit, as well as the resistances of two of the three resistors. We can use Ohm's Law to calculate the potential difference across the known resistors. Since the resistors are in a series circuit the potential difference is <latex>V = V_1 + V_2 + V_3</latex>  and we can calculate <latex>V_3</latex>. Now we can use this information to find the potential difference across the unknown resistor <latex>R_3</latex>. </para>
+</workstep>
+<workstep>
+  <title>Calculate potential difference across <latex>R_1</latex> </title>
+  <para>Using Ohm's Law:
+<latex display="block">
+  \begin{align}
+  R_1 &amp;= \frac{V_1}{I} \\
+  I \cdot R_1 &amp;= I \cdot \frac{V_1}{I}  \\
+  V_1 &amp;= {I}\cdot{R_1}\\
+  &amp;=  <number>2 </number> \cdot  <number>2 </number> \\
+  V_1 &amp;= <unit_number><number>4.00</number> <unit>V</unit></unit_number>
+  \end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+  <title>Calculate potential difference across <latex>R_2</latex> </title>
+  <para> Use Ohm's Law:
+<latex display="block">
+  \begin{align}
+  R_2 &amp;= \frac{V_2}{I} \\
+  I \cdot R_2 &amp;= I \cdot \frac{V_2}{I}  \\
+  V_2 &amp;= {I}\cdot{R_2}\\
+  &amp;=  <number>2 </number> \cdot  <number>6 </number> \\
+  V_2 &amp;= <unit_number><number>12.00</number> <unit>V</unit></unit_number>
+  \end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+  <title>Calculate potential difference across <latex>R_3</latex> </title>
+  <para>Since the potential difference across all the resistors combined must be the same as the potential difference across the cell in a series circuit, we can find <latex>V_3</latex> using:
+<latex display="block">
+  \begin{align}
+  V &amp;= V_1 + V_2 + V_3\\
+  V_3 &amp;= V - V_1 - V_2  \\
+  &amp;= <number>36 </number> -  <number>4 </number> -  <number>12 </number> \\
+  V_3&amp;= <unit_number><number>20.00</number> <unit>V</unit></unit_number>
+  \end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+  <title>Find the resistance of <latex>R_3</latex> </title>
+  <para>We know the potential difference across <latex>R_3</latex> and the current through it, so we can use Ohm's Law to calculate the value for the resistance:
+<latex display="block">
+  \begin{align}
+  R_3 &amp;= \frac{V_3}{I}\\
+  &amp;= \frac{ <number>20 </number>}{ <number>2 </number>}  \\
+R_3&amp;= <number>10.00</number>~\Omega
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+  <title>Write the final answer</title>
+  <list>
+  <item><latex>V_1 = <unit_number><number>4.00</number> <unit>V</unit></unit_number></latex></item>
+  <item><latex>V_2 = <unit_number><number>12.00</number> <unit>V</unit></unit_number></latex></item>
+  <item><latex>V_3 = <unit_number><number>20.00</number> <unit>V</unit></unit_number></latex></item>
+  <item><latex>R_3 = <number>10.00</number>~\Omega</latex></item>
+  </list>
+</workstep>
+</answer>
+</worked_example>
+
+ <note type='note'>
+            <para><emphasis effect='bold'>Equivalent resistance in a parallel network</emphasis></para>
+    <para>A parallel configuration is when the current splits into a number of branches which contain
+    components (resistors in our case). A branch may contain multiple resistors in series and still be part of the parallel
+    configuration. For <latex>n</latex> branches of resistors in parallel, the equivalent resistance can be calculated from the total resistance of each branch and is:</para>
+    <latex display="block">
+        \frac{1}{R_{p}} = \frac{1}{R_{B1}} + \frac{1}{R_{B2}} + \frac{1}{R_{B3}} + \ldots + \frac{1}{R_{Bn}}
+    </latex>
+    <para>For <latex>n</latex> branches of resistors in parallel the potential difference is the same across each of the branches:</para>
+    <latex display="block">
+        V_{Total} = V_{B1} = V_{B2} = V_{B3} = \ldots = V_{Bn}
+    </latex>
+    <para>The current is split through the branches.</para>
+    <latex display="block">
+        I_{Total} = I_{1} + I_{2} + I_{3} + \ldots + I_{n}
+    </latex>
+    <pspicture>
+    <code>
+    (-1,-2.5)(9,4)
+    \pnode(0,.5){A}
+    \pnode(2,.5){B}
+    \pnode(4,.5){C}
+    \pnode(6,.5){D}
+    \pnode(8,.5){E}
+    \pnode(8.5,.5){F}
+    \pnode(8,2){TE}
+    \pnode(2,2){TB}
+    \pnode(2,-1){BB}
+    \pnode(4,2){TC}
+    \pnode(6,2){TD}
+    \pnode(8,-1){BD}
+    \psdot(B)
+    \psdot(E)
+    \psframe[linestyle=dashed](2.2,1.15)(5.8,2.75)
+    \rput[b](4,2.95){$R_{B2}$}
+    \circledipole[labeloffset=0](A)(B){$A$}
+    \circledipole[labeloffset=0](BB)(BD){$V$}
+    \psline(B)(TB)
+    \psline(B)(BB)
+    \circledipole[labeloffset=0](TE)(TD){$A$}
+    \psline(E)(TE)
+    \psline(E)(F)
+    \psline(E)(BD)
+    \psline(D)(E)
+    \resistor[dipolestyle=rectangle,labeloffset=0](B)(C){$R_{B1}$}
+    \circledipole[labeloffset=0](C)(D){$A$}
+    \resistor[dipolestyle=rectangle,labeloffset=0](TB)(TC){$R_2$}
+    \resistor[dipolestyle=rectangle,labeloffset=0](TD)(TC){$R_3$}
+    </code>
+    </pspicture>
+</note>
+
+<para>Let's take a moment to see if our conservation laws still make sense:
+<list>
+<item><emphasis effect='bold'>Conservation of charge:</emphasis> we have learnt that charges are
+not created or destroyed. This is consistent with the current splitting between the branches.
+Charges aren't being added or lost or bunching up and, therefore, the total number of charges 
+going through the branches must be the same as the number entering the point where the 
+circuit branches.</item>
+<item><emphasis effect='bold'>Conservation of energy:</emphasis> we have learnt that energy isn't
+created or destroyed but transferred through work. Energy per unit charge doesn't change unless 
+work is done therefore it makes sense that the energy per unit charge in each branch should be
+the same.
+</item>
+</list>
+</para>
+
+     <worked_example>
+        <title>Ohm's Law, resistors connected in parallel</title>
+        <question>
+          <para>Calculate the current (<latex>I</latex>) in this circuit if the resistors are both ohmic in nature.</para>
+          <pspicture>
+            <code>
+              (0,0)(5,5)
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.5){E}
+\pnode(4,2.5){F}
+\battery(A)(B){$V$=12.00~V}
+\psline{&lt;-}(B)(C)
+\resistor[dipolestyle=rectangle](D)(C){$R_1$=<number>2.00</number>~\ensuremath{\Omega}}
+\resistor[dipolestyle=rectangle](E)(F){$R_2$=<number>4.00</number>~\ensuremath{\Omega}}
+\psline(D)(E)
+\psline{&lt;-}(E)(A)
+\psline{-&gt;}(E)(1.5,2.5)
+\psline{-&gt;}(D)(1.5,4)
+
+            </code>
+          </pspicture>
+        </question>
+        <answer>
+          <workstep>
+            <title>Determine what is required</title>
+            <para>We are required to calculate the total current flowing in the circuit.</para>
+          </workstep>
+          <workstep>
+            <title>Determine how to approach the problem</title>
+            <para>Since the resistors are ohmic in nature, we can use Ohm's Law. However, there 
+            are two resistors in the circuit and we need to find the total resistance.</para>
+          </workstep>
+          <workstep>
+            <title>Find the equivalent resistance in the circuit</title>
+            <para>Since the resistors are connected in parallel, the total (equivalent) resistance R is:</para>
+            <latex display="block">
+                \frac{1}{R} = \frac{1}{R_{1}} + \frac{1}{R_{2}}.
+            </latex>
+
+            <!--<equation><m:math mode="display"><m:mrow><m:mfrac><m:mn>1</m:mn> <m:mi>R</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn> <m:msub><m:mi>R</m:mi> <m:mn>1</m:mn> </m:msub></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn> <m:msub><m:mi>R</m:mi> <m:mn>2</m:mn> </m:msub></m:mfrac></m:mrow><m:mo>.</m:mo></m:math></equation>-->
+
+
+<!--<para>Therefore,</para>-->
+
+<latex display="block">
+  \begin{align}
+  \frac{1}{R} &amp;= \frac{<number>1</number>}{R_1} + \frac{<number>1</number>}{R_2} \\
+              &amp;= \frac{<number>1</number>}{<number>2</number>} + \frac{<number>1</number>}{<number>4</number>} \\
+              &amp;= \frac{<number>2</number>+<number>1</number>}{<number>4</number>}  \\
+              &amp;= \frac{<number>3</number>}{<number>4</number>}  \\
+ \textrm{Therefore, } R &amp;= \frac{<number>4</number>}{<number>3</number>} = <number>1.33</number>~\Omega
+\end{align}
+</latex>
+            
+          </workstep>
+   <workstep>
+            <title>Apply Ohm's Law</title>
+            <latex display="block">
+  \begin{align}
+                     R&amp;= \frac{V}{I} \\
+  R \cdot \frac{I}{R} &amp;= \frac{V}{I} \cdot \frac{I}{R} \\
+                    I &amp;= \frac{V}{R}\\
+                    I &amp;= V \cdot \frac{<number>1</number>}{R}\\
+                      &amp;=  (<number>12</number>) \left(\frac{<number>3</number>}{<number>4</number>}\right) \\
+                      &amp;=  <unit_number><number>9.00</number><unit>A</unit></unit_number>
+\end{align}
+</latex>
+
+          </workstep>
+          <workstep>
+            <title>Write the final answer</title>
+            <para>The total current flowing in the circuit is <unit_number><number><coeff>9.00</coeff></number><unit>A</unit></unit_number>.</para>
+          </workstep>
+        </answer>
+      </worked_example>
+
+
+
+<worked_example>
+<title>Ohm's Law, parallel network of resistors </title>
+<question><para>An <unit_number><number>18.00</number><unit>V</unit></unit_number> cell is connected to two parallel resistors of <number>2.00</number> <latex>\Omega</latex> and <number>6.00</number> <latex>\Omega</latex> respectively. Calculate the current through each of the ammeters when the switch is closed and when it is open.
+</para>
+<!--<pspicture>
+<code>
+  (0,0)(5,5)
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.5){E}
+\pnode(4,2.5){F}
+\battery(A)(B){$V$=18~V}
+\psline(B)(C)
+\resistor[dipolestyle=rectangle](D)(C){$R_1$=4~\ensuremath{\Omega}}
+\resistor[dipolestyle=rectangle](E)(F){$R_2$=12~\ensuremath{\Omega}}
+\psline(D)(A)
+</code>
+</pspicture>-->
+<pspicture>
+<code>
+  (0,0)(7,5)
+\pnode(1,1){A}
+\pnode(6,1){FA}
+\pnode(6,2.5){FB}
+\pnode(6,4){FC}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.5){E}
+\pnode(4,2.5){F}
+\circledipole[labeloffset=0](C)(FC){$A (I_1)$}
+\circledipole[labeloffset=0](F)(FB){$A (I_2)$}
+\circledipole[labeloffset=0](FB)(FA){$A (I)$}
+\switch(FC)(FB){$S$}
+\battery[intensity,directconvention=false](A)(B){$V$=<number>18.00</number>~V}
+%\psline(B)(C)
+\resistor[dipolestyle=rectangle,intensity,directconvention=true](D)(C){$R_1$=<number>2.00</number>~\ensuremath{\Omega}}
+\resistor[dipolestyle=rectangle,intensity,directconvention=true](E)(F){$R_2$=<number>6.00</number>~\ensuremath{\Omega}}
+\psline(D)(A)
+\psline(B)(FA)
+</code>
+</pspicture>
+</question>
+<answer>
+<workstep>
+<title>Determine how to approach the problem</title>
+<para>We need to determine the current through the cell and each of the parallel resistors. We have been given the potential difference across the cell and the resistances of the resistors, so we can use Ohm's Law to calculate the current. </para>
+<para>There are two alternative approaches we could adopt:
+<list>
+<item>
+we could use the fact that the potential difference across each of the resistors is the same as the
+potential difference across the battery because they are in a parallel configuration and then use
+Ohm's Law; or
+</item><item>
+we could determine the equivalent 
+resistance of the circuit and the total current and then use that to determine the current 
+through each of the resistors.</item>
+</list>
+</para>
+<note type='important'>
+<para>Both methods will result in the correct answer if you don't make any calculation errors
+but one is shorter.</para>
+</note>
+</workstep>
+
+<workstep>
+<title>Now determine the current through one of the parallel resistors</title>
+<para>We know that for a configuration with just two resistors in parallel and a cell as in this case, the potential difference across the cell is the same as the potential difference across each of the resistors in parallel. For this circuit:
+<latex display="block">
+\begin{align}
+V &amp;= V_1 = V_2 = <unit_number><number>18.00</number> <unit>V</unit></unit_number>
+\end{align}
+</latex>
+Let's start with calculating the current through <latex>R_1</latex> using Ohm's Law:
+<latex display="block">
+\begin{align}
+R_1 &amp;= \frac{V_1}{I_1} \\
+I_1 &amp;= \frac{V_1}{R_1} \\
+&amp;= \frac{<number>18.00</number>}{<number>2.00</number>} \\
+I_1 &amp;= <unit_number><number>9.00</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Calculate the current through the other parallel resistor</title>
+<para>We can use Ohm's Law again to find the current in <latex>R_2</latex>:
+<latex display="block">
+\begin{align}
+R_2 &amp;= \frac{V_2}{I_2} \\
+I_2 &amp;= \frac{V_2}{R_2} \\
+&amp;= \frac{<number>18.00</number>}{<number>6.00</number>} \\
+I_2 &amp;= <unit_number><number>3.00</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Calculate the total current</title>
+<para>
+The current through each of the parallel resistors must add up to the total current through the cell:
+
+<latex display="block">
+\begin{align}
+I &amp;= I_1 + I_2 \\
+&amp;= <number>9.00</number> + <number>3.00</number> \\
+I_2 &amp;= <unit_number><number>12.00</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>When the switch is open</title>
+<para>The branch through <latex>R_1</latex> is not complete so no current can flow through it. 
+This means we can ignore it completely and consider a simple circuit with a battery and a 
+single resistor, <latex>R_2</latex>, in it.</para>
+
+<para>We can use Ohm's Law again to find the current in <latex>R_2</latex>:
+<latex display="block">
+\begin{align}
+R_2 &amp;= \frac{V_2}{I_2} \\
+I_2 &amp;= \frac{V_2}{R_2} \\
+&amp;= \frac{<number>18.00</number>}{<number>6.00</number>} \\
+I_2 &amp;= <unit_number><number>3.00</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Write the final answer </title>
+<para>When the switch is closed:</para>
+<list>
+<item>The current through the cell is <unit_number><number>12.00</number> <unit>A</unit></unit_number>. </item>
+<item>The current through the <number>2.00</number> <latex>\Omega</latex> resistor is <unit_number><number>9.00</number> <unit>A</unit></unit_number>.</item>
+<item>The current through the <number>6.00</number> <latex>\Omega</latex> resistor is <unit_number><number>3.00</number> <unit>A</unit></unit_number>.
+</item>
+</list>
+<para>When the switch is open:</para>
+<list>
+<item>The current through the <number>6.00</number> <latex>\Omega</latex> resistor is <unit_number><number>3.00</number> <unit>A</unit></unit_number>.</item>
+</list>
+
+</workstep>
+</answer>
+</worked_example>
+
+<activity type="i_experiment">
+<title>Series and parallel networks</title>
+            <section>
+          <title>Aim</title>
+              <para>To investigate the changes in current and voltage when branches 
+            of circuits are open or closed..</para>
+            </section>
+              <section>
+                  <title>Apparatus</title>
+              <para>You will need the following items for this investigation:</para>
+              <list list-type="bulleted">
+                <item>
+                  <para>batterys / cells</para>
+                </item>
+                <item>
+                  <para>electric leads</para>
+                </item>
+                <item>
+                  <para>a set of resistors and/or light bulbs</para>
+                </item>
+                <item>
+                  <para>ammeters</para>
+                </item>
+                <item>
+                  <para>voltmeters</para>
+                </item>
+              </list>
+            </section>
+            <section>
+            <title>Method</title>
+            <para>For this investigation, configure a circuit with resistors in both series and
+            in parallel. For example, try:
+            <list>
+            <item>including parallel branches with different numbers of light bulbs in each branch</item>
+            <item>changing the numbers of light bulbs or resistors in each branch</item>
+            <item>try adding a resistor in series with the parallel network</item>
+            </list>
+            In each branch include an ammeter and a switch. Make notes about what happens
+            when you remove a branch by opening the switch in the branch. What happens to the
+            current in the other branches. Try to predict what will happen before opening or
+            closing a switch and before adding or removing any light bulbs or resistors.
+            </para>
+
+<image style:width='0.6'>
+<src>photos/ParOrSer1-AReynolds.jpg</src>
+<attribution>Adam Reynolds (Pinelands High School)</attribution>
+</image>
+<image style:width='0.6'>
+<src>photos/ParOrSer2-AReynolds.jpg</src>
+<attribution>Adam Reynolds (Pinelands High School)</attribution>
+</image>
+<image style:width='0.6'>
+<src>photos/ParOrSer3-AReynolds.jpg</src>
+<attribution>Adam Reynolds (Pinelands High School)</attribution>
+</image>
+<image style:width='0.6'>
+<src>photos/ParOrSer4-AReynolds.jpg</src>
+<attribution>Adam Reynolds (Pinelands High School)</attribution>
+</image>
+</section>
+<section>
+<title>Discussion</title>
+<para>Be sure to note and discuss:
+<list>
+<item>whether adding a new branch increases or decreases the total current in the circuit,</item>
+<item>whether adding a new branch increases or decreases the current in the original branches,</item>
+<item>whether adding a resistor in series with a parallel network increases or decreases the current, and</item>
+<item>compare what happens when you add a resistor in series with a adding another branch to the parallel network.</item>
+</list>
+</para>
+</section>
+</activity>
+        <exercises><title>Series and parallel networks</title>
+       <multi-part>
+    <shortcode>243G</shortcode>
+<header><para>For the following circuit, calculate:</para>
+    <pspicture>
+<code>
+(-1,-1)(5,4)
+\psset{unit=0.5}
+\pnode(0,0){A}
+\pnode(3,0){B}
+\pnode(3,1.5){E}
+\pnode(3,-1.5){C}
+\pnode(6,-1.5){D}
+\pnode(6,0){J}
+\pnode(6,1.5){F}
+\pnode(9,0){G}
+\pnode(9,6){H}
+\pnode(0,6){I}
+\resistor[dipolestyle=rectangle,labelangle=90](I)(A){$R_1=2 \, \Omega$}
+\psline(A)(B)
+\psline(C)(E)
+\resistor[dipolestyle=rectangle](E)(F){$R_2=1 \, \Omega$}
+\resistor[dipolestyle=rectangle](C)(D){$R_3=1 \, \Omega$}
+\psline(D)(F)
+\psline(J)(G)
+\resistor[dipolestyle=rectangle,labelangle=90](G)(H){$R_4=1,5 \,  \Omega$}
+\battery(I)(H){$V=10$ V}
+</code>
+</pspicture>
+    </header>
+<entry>
+<problem>
+    <para>the current through the cell</para>
+</problem>
+<solution>
+    <para>To find the current we first need to find the equivalent resistance. We start by calculating the equivalent resistance of the parallel combination:</para>
+    <latex display="block">
+        \begin{align*}
+        \frac{1}{R_{p}} &amp; = \frac{1}{R_{2}} + \frac{1}{R_{3}} \\
+        &amp; = \frac{1}{1} + \frac{1}{1} \\
+        &amp; = 2\\
+        R_{p} &amp; = <unit_number><number>0.5</number><unit>Ω</unit></unit_number>
+        \end{align*}
+    </latex>
+    <para>Now we have a circuit with two resistors in series so we can calculate the equivalent resistance:</para>
+    <latex display="block">
+        \begin{align*}
+        R_{s} &amp; = R_{1} + R_{4} + R_{p} \\
+        &amp; = <number>2</number> + <number>1.5</number> + <number>0.5</number> \\
+        &amp; = <unit_number><number>4</number><unit>Ω</unit></unit_number>
+        \end{align*}
+    </latex>
+    <para>So the current through the cell is:</para>
+    <latex display="block">
+        \begin{align*}
+        I &amp; = \frac{V}{R} \\
+        &amp; = \frac{<number>10</number>}{<number>4</number>} \\
+        &amp; = <correct><unit_number><number>2.5</number><unit>A</unit></unit_number></correct>
+        \end{align*}
+    </latex>
+</solution>
+</entry>
+<entry>
+    <problem>
+    <para>the potential difference across <latex>R_4</latex> </para>
+</problem>
+<solution>
+    <para>The current through all the resistors is <unit_number><number>2.5</number><unit>A</unit></unit_number>. (The current is the same through series combinations of resistors and we can consider the entire parallel set of resistors as one series resistor.)</para>
+    <para>Using this we can find the potential difference through <latex>R_{4}</latex>:</para>
+    <latex display="block">
+        \begin{align*}
+        V &amp; = I \cdot R \\
+        &amp; = (<number>2.5</number>)(<number>1.5</number>) \\
+        &amp; = <correct><unit_number><number>3.75</number><unit>V</unit></unit_number></correct>
+        \end{align*}
+    </latex>
+</solution>
+</entry>
+<entry>
+    <problem>
+    <para>the current through <latex>R_2</latex> </para>
+</problem>
+<solution>
+    <para>The current through all the resistors is <unit_number><number>2.5</number><unit>A</unit></unit_number>. (The current is the same through series combinations of resistors and we can consider the entire parallel set of resistors as one series resistor.)</para>
+    <para>Using this we can find the current through <latex>R_{2}</latex>.</para>
+    <para>We first need to find the potential difference across the parallel combination:</para>
+    <latex display="block">
+        \begin{align*}
+        V &amp; = I \cdot R \\
+        &amp; = (<number>2.5</number>)(<number>0.5</number>) \\
+        &amp; = <unit_number><number>1.25</number><unit>V</unit></unit_number>
+        \end{align*}
+    </latex>
+    <para>Now we can find the current through <latex>R_{2}</latex> using the fact that the potential difference is the same across each resistor in the parallel combination:</para>
+    <latex display="block">
+        \begin{align*}
+        I &amp; = \frac{V}{R} \\
+        &amp; = \frac{<number>1.25</number>}{<number>1</number>} \\
+        &amp; = <correct><unit_number><number>1.25</number><unit>A</unit></unit_number></correct>
+        \end{align*}
+    </latex>
+</solution></entry>
+</multi-part>
+
+ 
+        
+
+            <entry>
+<shortcode>00us</shortcode>
+<problem>
+              <para>Calculate the equivalent resistance of:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>three <unit_number><number>2</number><unit>Ω</unit></unit_number> resistors in series;</para>
+                </item>
+                <item>
+                  <para>two <unit_number><number>4</number><unit>Ω</unit></unit_number> resistors in parallel;</para>
+                </item>
+                <item>
+                  <para>a <unit_number><number>4</number><unit>Ω</unit></unit_number> resistor in series with a <unit_number><number>8</number><unit>Ω</unit></unit_number> resistor;</para>
+                </item>
+                <item>
+                  <para>a <unit_number><number>6</number><unit>Ω</unit></unit_number> resistor in series with two resistors (<unit_number><number>4</number><unit>Ω</unit></unit_number> and <unit_number><number>2</number><unit>Ω</unit></unit_number>) in parallel.</para>
+                </item>
+              </list>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001419/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00ut</shortcode>
+<problem>
+              <para>Calculate the total current in this circuit if both resistors are ohmic.</para>
+              <pspicture>
+                <code>
+                  (0,0)(5,5)
+                  %\psgrid
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.5){E}
+\pnode(4,2.5){F}
+\battery(A)(B){$V$=9~V}
+\psline(B)(C)
+\resistor[dipolestyle=rectangle](D)(C){$R_<number>1</number>$=<number>3</number>~\ensuremath{\Omega}}
+\resistor[dipolestyle=rectangle](E)(F){$R_<number>2</number>$=<number>6</number>~\ensuremath{\Omega}}
+\psline(D)(A)
+\pcline{&lt;-}(1,0.5)(2,0.5)
+\bput{:U}{I}
+
+                </code>
+              </pspicture>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001420/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00uu</shortcode>
+<problem>
+              <para>Two ohmic resistors are connected in series. The resistance of the one resistor is <unit_number><number>4</number><unit>Ω</unit></unit_number>. What is the resistance of the other resistor if a current of <unit_number><number>0.5</number><unit>A</unit></unit_number> flows through the resistors when they are connected to a voltage supply of <unit_number><number>6</number><unit>V</unit></unit_number></para></problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001421/view"/>
+		<correct/>
+</entry>
+
+
+
+
+
+          <entry>
+<shortcode>01hq</shortcode>
+<problem>
+            <para>Determine the equivalent resistance of the following circuits:</para>
+            <pspicture>
+              <code>
+(0,-2.0289063)(5.62,2.0089064)
+%\psgrid
+\psline[linewidth=0.04cm](2.5,1.9889063)(2.5,0.5889062)
+\psline[linewidth=0.12cm](2.7,1.5889063)(2.7,0.98890626)
+\psline[linewidth=0.04cm](2.5,1.2889062)(0.0,1.2889062)
+\psline[linewidth=0.04cm](0.0,1.2889062)(0.0,-0.7110937)
+\psline[linewidth=0.04cm](0.0,-0.7110937)(0.8,-0.7110937)
+\psframe[linewidth=0.04,dimen=outer](2.0,-0.51109374)(0.8,-0.9110938)
+\psline[linewidth=0.04cm](2.0,-0.7110937)(2.7,-0.7110937)
+\psline[linewidth=0.04cm](4.9,0.7889063)(4.9,0.7889063)
+\psline[linewidth=0.04cm](2.7,-1.3110938)(2.7,-0.11109375)
+\psline[linewidth=0.04cm](2.7,1.2889062)(5.6,1.2889062)
+\psline[linewidth=0.04cm](5.6,1.2889062)(5.6,-0.7110937)
+\psline[linewidth=0.04cm](2.7,-0.11109375)(3.2,-0.11109375)
+\psline[linewidth=0.04cm](2.7,-1.3110938)(3.2,-1.3110938)
+\psframe[linewidth=0.04,dimen=outer](4.4,0.08890625)(3.2,-0.31109375)
+\psframe[linewidth=0.04,dimen=outer](4.4,-1.1110938)(3.2,-1.5110937)
+\psline[linewidth=0.04cm](5.6,-0.7110937)(4.9,-0.7110937)
+\psline[linewidth=0.04cm](4.9,-1.3110938)(4.9,-0.11109375)
+\psline[linewidth=0.04cm](4.9,-0.11109375)(4.4,-0.11109375)
+\psline[linewidth=0.04cm](4.9,-1.3110938)(4.4,-1.3110938)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.4670312,-1.2010938){2 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8670313,-1.8010937){2 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.868125,0.29890624){<number>4</number> $\Omega$}
+              </code>
+            </pspicture>
+	  </problem>
+	  <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001425/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01hr</shortcode>
+<problem>
+            <pspicture>
+              <code>
+(0,-1.9789063)(8.439688,1.9589063)
+%\psgrid
+\psline[linewidth=0.04cm](3.8578124,1.9389062)(3.8578124,0.5389063)
+\psline[linewidth=0.12cm](4.0578127,1.5389062)(4.0578127,0.93890625)
+\psline[linewidth=0.04cm](3.8578124,1.2389063)(1.3578125,1.2389063)
+\psline[linewidth=0.04cm](1.3578125,1.2389063)(1.3578125,0.5389063)
+\psline[linewidth=0.04cm](1.3578125,-0.6610938)(1.3578125,-1.2610937)
+\rput{-90.0}(7.018906,6.896719){\psframe[linewidth=0.04,dimen=outer](7.5578127,0.13890626)(6.3578124,-0.26109374)}
+\psline[linewidth=0.04cm](1.3578125,-1.2610937)(4.6578126,-1.2610937)
+\psline[linewidth=0.04cm](6.2578125,0.73890626)(6.2578125,0.73890626)
+\psline[linewidth=0.04cm](4.0578127,1.2389063)(6.9578123,1.2389063)
+\psline[linewidth=0.04cm](6.9578123,1.2389063)(6.9578123,0.5389063)
+\psframe[linewidth=0.04,dimen=outer](5.8578124,-1.0610938)(4.6578126,-1.4610938)
+\rput{-90.0}(1.4189062,1.2967187){\psframe[linewidth=0.04,dimen=outer](1.9578125,0.13890626)(0.7578125,-0.26109374)}
+\psline[linewidth=0.04cm](6.9578123,-1.2610937)(5.8578124,-1.2610937)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.8076562,0.24890625){1 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9248438,-0.25109375){2 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.2259374,-1.7510937){4 $\Omega$}
+\psline[linewidth=0.04cm](2.3578124,1.2389063)(2.3578124,0.5389063)
+\psline[linewidth=0.04cm](2.3578124,-0.6610938)(2.3578124,-1.2610937)
+\rput{-90.0}(2.4189062,2.2967188){\psframe[linewidth=0.04,dimen=outer](2.9578125,0.13890626)(1.7578125,-0.26109374)}
+\psline[linewidth=0.04cm](6.9578123,-0.6610938)(6.9578123,-1.2610937)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.5209374,0.04890625){6 $\Omega$}
+              </code>
+            </pspicture>
+	  </problem>
+	  <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001426/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01hs</shortcode>
+<problem>
+            <pspicture>
+              <code>
+(0,-1.9889063)(11.014063,1.9489063)
+%\psgrid
+\psline[linewidth=0.04cm](5.9321876,1.9289062)(5.9321876,0.5289062)
+\psline[linewidth=0.12cm](6.1321874,1.5289062)(6.1321874,0.92890626)
+\psline[linewidth=0.04cm](5.9321876,1.2289063)(1.4321876,1.2289063)
+\psline[linewidth=0.04cm](1.4321876,1.2289063)(1.4321876,0.5289062)
+\psline[linewidth=0.04cm](1.4321876,-0.67109376)(1.4321876,-1.2710937)
+\rput{-90.0}(8.103281,7.961094){\psframe[linewidth=0.04,dimen=outer](8.632188,0.12890625)(7.4321876,-0.27109376)}
+\psline[linewidth=0.04cm](1.4321876,-1.2710937)(5.7321873,-1.2710937)
+\psline[linewidth=0.04cm](7.3321877,0.7289063)(7.3321877,0.7289063)
+\psline[linewidth=0.04cm](6.1321874,1.2289063)(9.532187,1.2289063)
+\psline[linewidth=0.04cm](8.032187,1.2289063)(8.032187,0.5289062)
+\psframe[linewidth=0.04,dimen=outer](6.9321876,-1.0710938)(5.7321873,-1.4710938)
+\rput{-90.0}(1.5032812,1.3610938){\psframe[linewidth=0.04,dimen=outer](2.0321875,0.12890625)(0.8321875,-0.27109376)}
+\psline[linewidth=0.04cm](9.532187,-1.2710937)(6.9321876,-1.2710937)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.8592188,0.23890625){2 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.3792188,-0.12109375){2 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.3003125,-1.7610937){4 $\Omega$}
+\psline[linewidth=0.04cm](2.9321876,1.2289063)(2.9321876,0.5289062)
+\psline[linewidth=0.04cm](2.9321876,-0.67109376)(2.9321876,-1.2710937)
+\rput{-90.0}(3.0032814,2.8610938){\psframe[linewidth=0.04,dimen=outer](3.5321875,0.12890625)(2.3321874,-0.27109376)}
+\psline[linewidth=0.04cm](8.032187,-0.67109376)(8.032187,-1.2710937)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.4603124,0.15890625){4 $\Omega$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.999219,-0.36109376){2 $\Omega$}
+\psline[linewidth=0.04cm](4.4321876,1.2289063)(4.4321876,0.5289062)
+\rput{-90.0}(4.503281,4.3610935){\psframe[linewidth=0.04,dimen=outer](5.0321875,0.12890625)(3.8321874,-0.27109376)}
+\psline[linewidth=0.04cm](4.4321876,-0.67109376)(4.4321876,-1.2710937)
+\rput{-90.0}(9.603281,9.461094){\psframe[linewidth=0.04,dimen=outer](10.132188,0.12890625)(8.932187,-0.27109376)}
+\psline[linewidth=0.04cm](8.332188,0.7289063)(8.332188,0.7289063)
+\psline[linewidth=0.04cm](9.532187,1.2289063)(9.532187,0.5289062)
+\psline[linewidth=0.04cm](9.532187,-0.67109376)(9.532187,-1.2710937)
+\usefont{T1}{ptm}{m}{n}
+\rput(10.099218,-0.06109375){2 $\Omega$}
+              </code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001427/view"/>
+		<correct/>
+</entry>
+</exercises>
+      </section>
+
+
+
+<!--- Internal Resistance -->
+<section type="section">
+          <title>Batteries and internal resistance</title>
+          <shortcode>ESBIM</shortcode>
+          <para>Up until now we have been dealing with ideal batteries in that they aren't affected
+          by the circuit or current in any way and provide a precise voltage until they go flat.</para>
+          <para>If you measure the potential difference across the terminals of a 
+          battery on its own you will 
+          get a different value to what you measure when it is in a complete circuit. The value
+          will be less when the battery is included in a complete circuit. Sometimes the difference
+          is called the <emphasis effect='italics'>lost volts</emphasis>. Nothing has 
+          actually been lost but energy has been transferred. </para>
+          <para>Real batteries are made from materials which have resistance. This means that 
+          real batteries are not just sources of potential difference (voltage), but they 
+          also possess internal resistance. If the total potential difference source is 
+          referred to as the emf, <latex>\mathcal{E}</latex>, then a real battery can be 
+          represented as an emf connected in series with a resistor <latex>r</latex>. The internal 
+          resistance of the battery is represented by the symbol <latex>r</latex>.</para>
+          <pspicture>
+            <code>
+              (0,0)(5,5)
+              %\psgrid
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(2.5,1){E}
+\battery(E)(B){$\mathcal{E}$}
+\resistor[unit=0.5,dipolestyle=rectangle](A)(E){$r$}
+\psline(B)(C)
+\resistor[dipolestyle=rectangle](C)(D){$R$}
+\psline(D)(A)
+\psframe[linestyle=dashed](1.4,0.4)(3.8,2)
+\uput[d](2.5,0.4){$V$}
+
+            </code>
+          </pspicture>
+
+
+
+
+          <definition>
+            <term>Load</term>
+            <meaning>
+              <para>The external resistance in the circuit is referred to as the load.</para>
+            </meaning>
+          </definition>
+          <para>Suppose that the battery with emf <latex>\mathcal{E}</latex> and internal resistance <latex>r</latex> supplies a current <latex>I</latex> through an external load resistor <latex>R</latex>. Then the potential difference across the load resistor is that supplied by the battery:</para>
+          
+
+          <latex display='block'>V_{\text{load}}=I\cdot R</latex>
+          
+
+          <para>Similarly, from Ohm's Law, the potential difference across the internal resistance is:</para>
+          
+
+          <latex display='block'>{V}_{\text{internal resistance}}=I\cdot r</latex>
+          
+
+      <para>The potential difference <latex>V</latex> of the battery is related to its emf <latex>\mathcal{E}</latex> and internal resistance <latex>r</latex> by:</para>
+          
+
+          <latex display="block">
+		\begin{align}
+		 \mathcal{E}&amp; = V+Ir\\
+         &amp;\text{or}\\
+		  V&amp; = \mathcal{E}-Ir 
+		\end{align}
+		</latex>
+         <para>The battery is the source of energy and the energy provided per unit charge (emf) passing
+         through the battery is equal to the total work done (potential difference) across the 
+         components in the circuit. This can be illustrated by showing the energy per unit charge
+         as as function of the position in the circuit. The charge gains energy when moving through
+         the battery and loses energy when moving through resistors.
+            </para>
+          <pspicture>
+            <code>
+              (0,-3.5)(7,3.5)
+       %       \psgrid
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(6,1){C}
+\pnode(6,2.8){F}
+\pnode(1,2.8){D}
+\pnode(2.5,1){E}
+
+\pnode(1,-3){GO}
+\pnode(1.6,-3){GBS}
+\pnode(1.9,0){GBE}
+\pnode(3,0){GIRS}
+\pnode(3.5,-.5){GIRE}
+\pnode(4.5,-.5){GRS}
+\pnode(5.5,-3){GRE}
+
+
+\psline[linecolor=gray]{-&gt;}(GO)(1,.3)
+\psline[linecolor=gray]{-&gt;}(GO)(6.5,-3)
+\psline[linestyle=dotted,linecolor=gray](1,0)(4.5,0)
+\psline{&lt;-&gt;}(4,-.5)(4,0)\rput[l](4.1,-.25){$Ir$}
+\psline[linestyle=dotted,linecolor=gray](1,-.5)(GIRE)
+\psdot(1,0)\rput[r](.9,0){$\mathcal{E}$} % max value - emf
+
+\psdot(1,-.5)\rput[r](.9,-.5){$V$} % voltage
+\psdot(GO)\rput[r](.9,-3){0} 
+
+\psline[linestyle=dotted,linecolor=gray](GBS)(1.6,1)
+\psline[linestyle=dotted,linecolor=gray](GBE)(1.9,1)
+\psline[linestyle=dotted,linecolor=gray](GIRS)(3,1)
+\psline[linestyle=dotted,linecolor=gray](GIRE)(3.5,1)
+\psline[linestyle=dotted,linecolor=gray](GRS)(4.5,1)
+\psline[linestyle=dotted,linecolor=gray](GRE)(5.5,1)
+
+
+\psline(GO)(GBS)
+\psline(GBS)(GBE)
+\psline(GBE)(GIRS)
+\psline(GIRS)(GIRE)
+\psline(GIRE)(GRS)
+\psline(GRS)(GRE)
+\psline(GRE)(6.,-3)
+
+\battery[labeloffset=-.75](E)(A){$\mathcal{E}$}
+\resistor[unit=0.5,dipolestyle=rectangle](E)(B){$r$}
+%\psline(B)(C)
+\resistor[dipolestyle=rectangle](B)(C){$R$}
+\psline(D)(A)
+\psline(F)(D)
+\psline(F)(C)
+\psframe[linestyle=dashed](1.4,0.4)(3.8,2)
+\uput[u](2.5,2){$V$}
+
+\psline{-&gt;}(6,2.8)(3,2.8)
+
+            </code>
+          </pspicture>
+          <para>The emf of a battery is essentially constant because it only depends on the 
+          chemical reaction (that converts chemical energy into electrical energy) going on 
+          inside the battery. Therefore, we can see that the potential difference across 
+          the terminals of the battery is dependent on the current drawn by the load. The 
+          higher the current, the lower the potential difference across the terminals, 
+          because the emf is constant. For the same reason, the potential difference 
+          only equals the emf when the current is very small.</para>
+          
+
+          <para>The current that can be drawn from a battery is limited by a critical, maximum value <latex>{I}_{c}</latex>. The more resistance in the circuit the less the current will be. Imagine that you have a wire with no resistance that you use to connect the terminals of the battery. The circuit is complete, current will flow and adding any resistance to the circuit would decrease the current. This will be <latex>{I}_{c}</latex>. At a current of <latex>{I}_{c}</latex>, <latex>V=<unit_number><number>0</number><unit>V</unit></unit_number></latex> because there is no load in the circuit. Then, the equation becomes:</para>
+          
+
+          <latex display="block">
+		\begin{align}
+		 <number>0</number>&amp; = \mathcal{E}-{I}_{c}r\\
+		  {I}_{c}r&amp; = \mathcal{E}\\
+		  {I}_{c}&amp; = \frac{\mathcal{E}}{r} 
+		\end{align}
+		</latex>
+          
+
+          <para>The maximum current that can be drawn from a battery is less than <latex>\frac{\mathcal{E}}{r}</latex>.</para>
+          <worked_example>
+            <title>Internal resistance</title>
+            <question>
+              <para>Determine the internal resistance of a battery that has an emf of 
+              <unit_number><number>12.00</number><unit>V</unit></unit_number> and has a
+              potential difference across its terminals of 
+              <unit_number><number>10.00</number><unit>V</unit></unit_number> when a 
+              current of <unit_number><number>4.00</number><unit>A</unit></unit_number> 
+              is flowing through the battery when connected in a circuit.</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <para>It is an internal resistance problem. So we use the equation:</para>
+                
+
+                <latex display="block">
+		\begin{align}
+		 \mathcal{E}&amp; = V+Ir 
+		\end{align}
+		</latex>
+                
+              </workstep>
+              <workstep>
+                <title>Solve the problem</title>
+                <latex display="block">
+		\begin{align}
+		 \mathcal{E}&amp; = V+Ir\\
+		  <number>12</number>&amp; = <number>10</number>+<number>4</number>\left(r\right)\\
+		 r &amp; = <unit_number><number>0.5</number><unit>Ω</unit></unit_number> 
+		\end{align}
+		</latex>
+                
+              </workstep>
+              <workstep>
+                <title>Write the final answer</title>
+                <para>The internal resistance of the battery is <unit_number><number>0.50</number><unit>Ω</unit></unit_number>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+
+
+
+
+          <activity type="f_experiment">
+            <title>Finding the internal resistance of a battery</title>
+            <section>
+              <title>Aim</title>
+              <para>To determine the internal resistance of a battery.</para>
+            </section>
+              <section>
+                  <title>Apparatus</title>
+              <para>You will need the following items for this experiment:</para>
+              <list list-type="bulleted">
+                <item>
+                  <para>battery / cell to be studied</para>
+                </item>
+                <item>
+                  <para>electric leads</para>
+                </item>
+                <item>
+                  <para>a set of resistors or a rheostat</para>
+                </item>
+                <item>
+                  <para>ammeter</para>
+                </item>
+                <item>
+                  <para>voltmeter</para>
+                </item>
+              </list>
+            </section>
+            <section>
+            <title>Method</title>
+            <para>
+                We will set up a circuit that contains the battery we want to study in series 
+                with a resistor. Then we will measure the potential difference across the load 
+                as well as the current for a number of different resistors/rheostat in the 
+                circuit. It doesn't matter if it is a different resistor each time or more 
+                resistors in series or parallel. What matters is that the overall resistance of 
+                the circuit changes so that the current is different each time. The reason 
+                that doing this can tell us about the internal resistance of the battery 
+                is because the potential difference across the internal resistance is 
+                <latex>I\cdot r</latex> and we can vary I by changing the resistance of the 
+                circuit. If the potential difference across the internal resistance is 
+                changing and we add up all the potential differences, 
+                <latex>\mathcal{E} = V_{\text{load}}+V_{\text{internal resistance}}</latex> 
+                we can determine the internal resistance.
+
+            </para>
+<image style:width='0.6'>
+<src>photos/InternalResistance-AReynolds.jpg</src>
+<attribution>Adam Reynolds (Pinelands High School)</attribution>
+</image>
+
+  <pspicture>
+            <code>
+              (0,0)(5,5)
+              %\psgrid
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.75){VA}
+\pnode(4,2.75){VB}
+\psdot(VA)
+\psdot(VB)
+\pnode(2.5,1){E}
+\battery(A)(E){$\mathcal{E}$}
+\resistor[unit=0.5,dipolestyle=rectangle](E)(B){$r$}
+\psline(B)(C)
+\resistor[dipolestyle=rectangle,labeloffset=0](C)(D){$R$}
+\psline(A)(VA)
+\circledipole[labeloffset=0](VA)(D){$A$}
+\psframe[linestyle=dashed](1.4,0.4)(3.8,2)
+\uput[d](2.5,0.4){$V_{\text{battery}}$}
+\circledipole[labeloffset=0](VA)(VB){$V_{\text{load}}$}
+            </code>
+          </pspicture>
+
+
+            <para>
+                To do this we will actually plot a graph of <latex>V_{\text{load}}</latex> versus <latex>I</latex> and then use the features of the graph to determine <latex>\mathcal{E}</latex> and <latex>r</latex>. To understand why plotting the graph will help us we start with the equation for the magnitude of the <latex>\mathcal{E}</latex> and substitute Ohm's Law and re-arrange as follows:
+                <latex display="block">
+                    \begin{align}
+                    \mathcal{E} &amp; = V_{\text{load}} + V_{\text{internal resistance}} \\
+                    \mathcal{E} &amp; = V_{\text{load}} + I\cdot r \\
+                     V_{\text{load}}&amp; = \mathcal{E} -I\cdot r \\
+                     V_{\text{load}}&amp; = -r\cdot I + \mathcal{E} \\
+                     \underbrace{V_{\text{load}}}_{y}&amp; = \underbrace{-r}_{m}\cdot\underbrace{I}_x +  \underbrace{\mathcal{E}}_{c}
+                    \end{align}
+                </latex>
+                If we plot <latex>V_{\text{load}}</latex> versus <latex>I</latex> we will be plotting data that are governed by this relationship. This allows us to conclude that the slope of the graph, <latex>m</latex>, will be <latex>-r</latex> and the intercept vertical axis, <latex>c</latex>, will be the emf <latex>\mathcal{E}</latex>. 
+            </para>
+            </section>
+<section>
+              <title>Results</title>
+              <para>Record your results in a table like the one below. You can take more readings if you like. 
+                </para>
+             <table>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" style:latex-alignment="l"/>
+              <colspec colname="c2" colnum="2" style:latex-alignment="c"/>
+              <colspec colname="c3" colnum="3" style:latex-alignment="c"/>
+                    <tbody>
+                        <row>
+                        <entry><emphasis effect="bold">Setup</emphasis></entry>
+                        <entry> <latex>V_{\text{load}}</latex> (<unit>V</unit>)</entry>
+                        <entry><latex>I</latex> (<unit>A</unit>)</entry>
+                        </row>
+                    <row><entry>Resistance 1</entry><entry/><entry/></row>
+                    <row><entry>Resistance 2</entry><entry/><entry/></row>
+                    <row><entry>Resistance 3</entry><entry/><entry/></row>
+                    <row><entry>Resistance 4</entry><entry/><entry/></row>
+                    <row><entry>Resistance 5</entry><entry/><entry/></row>
+                  </tbody></tgroup>
+              </table>
+            </section>
+            <section>
+                <title>Discussion and conclusion</title>
+                <para>Plot your data on a set of axes similar to this example. The blue
+                crosses represent the measured data points, the gray, dashed line is the 
+                drawn straight line through the data 
+                points. The best fit line you draw doesn't need to go through all the data points, it
+                should, in general, have as many points above and below the line.
+                The slope of the line can be measured and equated to <latex>-r</latex> and the 
+                intercept with the vertical axis will give you <latex>\mathcal{E}</latex>. The
+                intercept with the horizontal axis would give you the maximum possible current 
+                the battery could deliver.
+</para>
+                <para>
+</para>
+<figure>
+          <type>figure</type>
+<pspicture>
+<code>
+(-2,-2)(6,6)
+%\psgrid
+\def\mdata{
+0.5 1.455
+1   1.41
+2   1.32
+3   1.23
+4   1.14
+}
+%\pstScalePoints(1,1){}{}
+\psset{ axesstyle=frame,
+        xAxisLabel={$I~\text{(A)}$},
+        yAxisLabel={$V_{\text{load}}~\text{(V)}$},
+        xAxisLabelPos={c,-1cm},
+        yAxisLabelPos={-1cm,c}
+    }
+\begin{psgraph}[ticksize=5pt 0,Dx=1, Dy=.2, Ox=0, Oy=1.0](0,0.8)(5,1.7){5cm}{5cm}
+    \listplot[linewidth=2pt,showpoints=true,plotstyle=dots,dotstyle=x,linecolor=blue]{\mdata}
+    \psplot[xMaxValue=4,xMinValue=0,linestyle=dashed,linecolor=gray]{0}{4.5}{ -0.09 x mul 1.5 add }
+    \psdot[linecolor=purple](0,1.5)
+    \rput[r](-.05,1.5){\textcolor{purple}{$\mathcal{E}$}}
+\end{psgraph}
+</code>
+</pspicture>
+</figure>
+<list>
+<item>Do your data form a perfectly straight line? </item>
+<item>What errors were introduced?</item>
+</list>
+
+            </section>
+        </activity>
+
+      </section>
+<exercises>
+
+<entry>
+<shortcode>00uv</shortcode>
+<problem>
+              <para>Describe what is meant by the <emphasis effect="italics">internal resistance</emphasis> of a real battery.</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001422/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00uw</shortcode>
+<problem>
+              <para>Explain why there is a difference between the emf and terminal voltage of a battery if the load (external resistance in the circuit) is comparable in size to the battery's internal resistance</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001423/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00ux</shortcode>
+<problem>
+              <para>What is the internal resistance of a battery if its emf is <unit_number><number>6</number><unit>V</unit></unit_number> and the potential difference across its terminals is <unit_number><number>5.8</number><unit>V</unit></unit_number> when a current of <unit_number><number>0.5</number><unit>A</unit></unit_number> flows in the circuit when it is connected across a load?</para>
+            </problem>
+            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001424/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>todo</shortcode>
+<problem>
+<para>A 12.0 V battery has an internal resistance of 7.0 <latex>\Omega</latex>.</para>
+<list list-type="enumerated">
+<item>What is the maximum current this battery could supply?</item>
+<item>What is the potential difference across its terminals when it is supplying a current of 150.0 mA?</item>
+<item>Draw a sketch graph to show how the terminal potential difference varies with the current supplied if the internal resistance remains constant. How could the internal resistance be obtained from the graph?</item>
+</list>
+</problem>
+<solution/><correct/>
+</entry>
+<entry>
+<shortcode>todo</shortcode>
+<problem>
+<para>
+In a hearing aid a battery supplies a current of 25.0 mA through a resistance of 400 <latex>\Omega</latex>. When the volume is increased, the resistance is changed to 100 <latex>\Omega</latex>and the current rises to 60 mA. What is the emf and internal resistance of the cell?
+</para>
+</problem>
+<solution/><correct/>
+</entry>
+<entry>
+<shortcode>todo</shortcode>
+<problem>
+<para>
+A battery is connected in series with a rheostat and an ammeter. When the resistance of the resistor is 10 <latex>\Omega</latex> the current is 2.0 A. When the resistance is 5 <latex>\Omega</latex> the current is 3.8 A. Find the emf and the internal resistance of the battery.
+</para>
+</problem>
+<solution/><correct/>
+</entry>
+
+<entry>
+<shortcode>todo</shortcode>
+<problem>
+<para>
+When a cell is connected directly across a high resistance voltmeter the reading is 
+1.50 V. When the cell is shorted through a low resistance ammeter the current is 2.5 A. What is the emf and internal resistance of the cell?
+</para>
+</problem>
+<solution/><correct/>
+</entry>
+</exercises>
+    <section type="section">
+        <title>Internal resistance in circuits</title>
+        <section type="subsection">
+        <title>Approach</title>
+        <para>The approach to solving problems that involve the internal resistance of batteries is straightforward, you just need to understand that each battery in previous examples was a source of emf, <latex>\mathcal{E}</latex>, and a small resistor, <latex>r</latex>, and then solve as before but include <latex>r</latex> in your calculations.</para>
+        <para>An important thing to realise is that the potential difference you calculated or were given in previous examples is not the emf, it is the emf less that potential difference across the internal resistance.</para>
+        <para>To emphasise that internal resistance is an extension to what you have already done we are going to take previous worked examples and consider the internal resistance of the battery. If the internal resistance did not behave like an ohmic resistor this wouldn't be possible but we won't deal with cases like that.</para> 
+        </section>
+        <section type="subsection">
+        <title>Applications</title>
+        <!-- worked examples from above repeated -->
+
+        <!-- worked examples with batteries in series -->
+
+<worked_example>
+  <title>Internal resistance in circuit with resistors in series</title>
+  <question>
+    <para>For the following circuit, calculate:
+    </para>
+    <list list-type="enumerated">
+      <item><para>the potential differences <latex>V_<number>1</number></latex>, <latex>V_<number>2</number></latex> and <latex>V_<number>3</number></latex> across the resistors <latex>R_<number>1</number></latex>, <latex>R_<number>2</number></latex>, and <latex>R_<number>3</number></latex></para>.</item>
+      <item><para>the resistance of <latex>R_<number>3</number></latex>. </para></item>
+      <item><para>the resistance of <latex>R_<number>3</number></latex>. </para></item>
+    </list>
+    <para>If the internal resistance is  <unit_number><number>0.1</number> <unit>Ω</unit></unit_number>, what is the emf of the battery and what power is dissipated by the internal resistance of the battery?</para>
+    <pspicture>
+      <code>
+        (-1.,-2)(5,5)
+        %\psgrid
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(4,-.5){E}
+\pnode(1,-.5){F}
+% this next bit draws a battery with the coloured box etc.
+{
+\pspolygon[fillcolor=yellow,fillstyle=solid,linecolor=orange](1.2,.4)(1.2,1.6)(3.9,1.6)(3.9,.4)
+\circledipole[labeloffset=0](E)(F){$V$}
+\circledipole[](E)(F){$V$=<number>23.0</number> V}
+\multidipole(A)(B)
+    \battery{}
+    \resistor[labeloffset=0]{$r$}.
+}
+
+\pcline{-&gt;}(3,4.)(3.75,4.)
+\rput[b](3.8,4.1){$I$=<number>2.0</number>~A}
+\psline(E)(B)
+\psline(F)(A)
+\psdot(A)\psdot(B)
+%\battery(A)(B){$V$=18~V}
+\resistor[dipolestyle=rectangle](C)(D){$R_2$=<number>3.0</number>~\ensuremath{\Omega}}
+\resistor[labeloffset=-1.1cm](D)(A){$R_1$=<number>1.0</number>~\ensuremath{\Omega}}
+\resistor[](B)(C){$R_3$}
+      </code>
+    </pspicture>
+  </question>
+  <answer>
+<workstep>
+  <title>Note</title>
+  <para>This is a very similar question to what you have seen earlier. This is to highlight the
+  fact that the approach when dealing with internal resistance is built on all the same
+  principles you have already been working with.</para>
+</workstep>
+<workstep>
+  <title>Determine how to approach the problem </title>
+  <para>We are given the potential difference across the cell and the current in the circuit, as well as the resistances of two of the three resistors. We can use Ohm's Law to calculate the potential difference across the known resistors. Since the resistors are in a series circuit the potential difference is <latex>V = V_<number>1</number> + V_<number>2</number> + V_<number>3</number></latex>  and we can calculate <latex>V_<number>3</number></latex>. Now we can use this information to find the potential difference across the unknown resistor <latex>R_<number>3</number></latex>. </para>
+</workstep>
+<workstep>
+  <title>Calculate potential difference across <latex>R_<number>1</number></latex> </title>
+  <para>Using Ohm's Law:
+<latex display="block">
+  \begin{align}
+  R_<number>1</number> &amp;= \frac{V_<number>1</number>}{I} \\
+  I \cdot R_<number>1</number> &amp;= I \cdot \frac{V_<number>1</number>}{I}  \\
+  V_<number>1</number> &amp;= {I}\cdot{R_<number>1</number>}\\
+  &amp;= 2 \cdot 1 \\
+  V_<number>1</number> &amp;= <unit_number><number>2</number> <unit>V</unit></unit_number>
+  \end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+  <title>Calculate potential difference across <latex>R_<number>2</number></latex> </title>
+  <para> Again using Ohm's Law:
+<latex display="block">
+  \begin{align}
+  R_<number>2</number> &amp;= \frac{V_<number>2</number>}{I} \\
+  I \cdot R_<number>2</number> &amp;= I \cdot \frac{V_<number>2</number>}{I}  \\
+  V_<number>2</number> &amp;= {I}\cdot{R_<number>2</number>}\\
+  &amp;= 2 \cdot 3 \\
+  V_<number>2</number> &amp;= <unit_number><number>6</number> <unit>V</unit></unit_number>
+  \end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+  <title>Calculate potential difference across <latex>R_<number>3</number></latex> </title>
+  <para>Since the potential difference across all the resistors combined must be the same as the potential difference across the cell in a series circuit, we can find <latex>V_<number>3</number></latex> using:
+<latex display="block">
+  \begin{align}
+  V &amp;= V_<number>1</number> + V_<number>2</number> + V_<number>3</number>\\
+  V_<number>3</number> &amp;= V - V_<number>1</number> - V_<number>2</number>  \\
+  &amp;= 23 - 2 - 6 \\
+  V_<number>3</number>&amp;= <unit_number><number>15</number> <unit>V</unit></unit_number>
+  \end{align}
+</latex>
+</para>
+</workstep>
+<!--<workstep>
+  <title> </title>
+  <para> </para>
+</workstep>-->
+<workstep>
+  <title>Find the resistance of <latex>R_<number>3</number></latex> </title>
+  <para>We know the potential difference across <latex>R_<number>3</number></latex> and the current through it, so we can use Ohm's Law to calculate the value for the resistance:
+<latex display="block">
+  \begin{align}
+  R_<number>3</number> &amp;= \frac{V_<number>3</number>}{I}\\
+  &amp;= \frac{<number>15</number>}{<number>2</number>}  \\
+R_<number>3</number>&amp;= <number>7.5</number>~\Omega
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Potential difference across the internal resistance of the battery
+</title>
+<para>The value of the emf can be calculated from the potential difference of the load and the potential difference across the internal resistance.</para>
+ <latex display="block">
+        \begin{align}
+         \mathcal{E}&amp; = V+Ir\\
+         &amp; = <number>23</number>+(<number>2</number>)(<number>0.1</number>)\\
+         &amp; = <unit_number><number>23.2</number><unit>V</unit></unit_number>
+        \end{align}
+        </latex>
+</workstep>
+<workstep>
+<title>Power dissipated in the battery</title>
+<para>We know that the power dissipated in a resistor is given by <latex>P=VI=I^2R=\dfrac{V^2}{R}</latex> and we know the current in the circuit, the internal resistance and the potential difference across it so we can use any form of the equation for power:</para>
+<latex display="block">
+        \begin{align}
+         P_r &amp;= V_rI_r\\
+         &amp; = (<number>0.2</number>)(<number>2</number>)\\
+         &amp; = <unit_number><number>0.4</number><unit>W</unit></unit_number>
+        \end{align}
+        </latex>
+</workstep>
+<workstep>
+  <title>Write the final answer</title>
+  <list>
+  <item><latex>V_<number>1</number> = <unit_number><number>2.0</number> <unit>V</unit></unit_number></latex></item>
+  <item><latex>V_<number>2</number> = <unit_number><number>6.0</number> <unit>V</unit></unit_number></latex></item>
+  <item><latex>V_<number>3</number> = <unit_number><number>10.0</number> <unit>V</unit></unit_number></latex></item>
+  <item><latex>R_<number>3</number> = <number>7.5</number> \Omega</latex></item>
+  <item><latex>\mathcal{E} = <unit_number><number>23.2</number><unit>V</unit></unit_number></latex></item>
+  <item><latex>P_r = <unit_number><number>0.4</number> <unit>W</unit></unit_number></latex></item>
+  </list>
+</workstep>
+</answer>
+</worked_example>
+
+
+        <!-- worked examples with batteries in parallel -->
+
+<worked_example>
+<title>Internal resistance and resistors in parallel</title>
+<question><para>The potential difference across a battery measures 18 V when it is connected to two parallel resistors of <number>4.00</number> <latex>\Omega</latex> and <number>12.00</number> <latex>\Omega</latex> respectively. Calculate the current through the cell and through each of the resistors. If the internal resistance of the battery is <unit_number><number>0.375</number><unit>Omega</unit></unit_number> what is the emf of the battery?
+</para>
+</question>
+<answer>
+<workstep>
+<title>First draw the circuit before doing any calculations</title>
+<!--<pspicture>
+<code>
+  (0,0)(5,5)
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.5){E}
+\pnode(4,2.5){F}
+\battery(A)(B){$V$=18~V}
+\psline(B)(C)
+\resistor[dipolestyle=rectangle](D)(C){$R_<number>1</number>$=4~\ensuremath{\Omega}}
+\resistor[dipolestyle=rectangle](E)(F){$R_<number>2</number>$=12~\ensuremath{\Omega}}
+\psline(D)(A)
+</code>
+</pspicture>-->
+<pspicture>
+<code>
+  (0,-2)(5,5)
+  %\psgrid
+\pnode(1,1){A}
+\pnode(4,1){B}
+\pnode(4,4){C}
+\pnode(1,4){D}
+\pnode(1,2.5){E}
+\pnode(4,2.5){F}
+\pnode(4,-.5){BE}
+\pnode(1,-.5){BF}
+
+% this next bit draws a battery with the coloured box etc.
+{
+\pspolygon[fillcolor=yellow,fillstyle=solid,linecolor=orange](1.2,.4)(1.2,1.6)(3.9,1.6)(3.9,.4)
+\circledipole[labeloffset=0](BE)(BF){$V$}
+\circledipole[](BE)(BF){$V$=18 V}
+\multidipole(A)(B)
+    \battery{}
+    \resistor[labeloffset=0]{$r$}.
+}
+%\battery[intensity,directconvention=false](A)(B){$V$=18~V}
+\psline(A)(BF)
+\psline(B)(BE)\psdot(A)\psdot(B)
+\psline(B)(C)
+\resistor[dipolestyle=rectangle,intensity,directconvention=false](D)(C){$R_1$=4~\ensuremath{\Omega}}
+\resistor[dipolestyle=rectangle,intensity,directconvention=false](E)(F){$R_2$=12~\ensuremath{\Omega}}
+\psline(D)(A)
+</code>
+</pspicture>
+</workstep>
+<workstep>
+<title>Determine how to approach the problem</title>
+<para>We need to determine the current through the cell and each of the parallel resistors. We have been given the potential difference across the cell and the resistances of the resistors, so we can use Ohm's Law to calculate the current. </para>
+</workstep>
+<workstep>
+<title>Calculate the current through the cell</title>
+<para>To calculate the current through the cell we first need to determine the equivalent resistance of the rest of the circuit. The resistors are in parallel and therefore:
+<latex display="block">
+\begin{align}
+\frac{<number>1</number>}{R} &amp;= \frac{<number>1</number>}{R_<number>1</number>} + \frac{<number>1</number>}{R_<number>2</number>} \\
+&amp;= \frac{<number>1</number>}{<number>4</number>} + \frac{<number>1</number>}{<number>12</number>} \\
+&amp;= \frac{3+1}{<number>12</number>} \\
+&amp;= \frac{<number>4</number>}{<number>12</number>} \\
+R &amp;= \frac{<number>12</number>}{<number>4</number>} = <number>3.00</number> \ \Omega
+\end{align}
+</latex>
+Now using Ohm's Law to find the current through the cell:
+<latex display="block">
+\begin{align}
+R &amp;= \frac{V}{I} \\
+I &amp;= \frac{V}{R} \\
+&amp;= \frac{<number>18</number>}{<number>3</number>} \\
+I &amp;= <unit_number><number>6.00</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Now determine the current through one of the parallel resistors</title>
+<para>We know that for a purely parallel resistor configuration, the potential difference across the cell is the same as the potential difference across each of the parallel resistors. For this circuit:
+<latex display="block">
+\begin{align}
+V &amp;= V_<number>1</number> = V_<number>2</number> = <unit_number><number>18</number> <unit>V</unit></unit_number>
+\end{align}
+</latex>
+Let's start with calculating the current through <latex>R_<number>1</number></latex> using Ohm's Law:
+<latex display="block">
+\begin{align}
+R_<number>1</number> &amp;= \frac{V_<number>1</number>}{I_<number>1</number>} \\
+I_<number>1</number> &amp;= \frac{V_<number>1</number>}{R_<number>1</number>} \\
+&amp;= \frac{<number>18</number>}{<number>4</number>} \\
+I_<number>1</number> &amp;= <unit_number><number>4.50</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Calculate the current through the other parallel resistor</title>
+<para>We can use Ohm's Law again to find the current in <latex>R_<number>2</number></latex>:
+<latex display="block">
+\begin{align}
+R_<number>2</number> &amp;= \frac{V_<number>2</number>}{I_<number>2</number>} \\
+I_<number>2</number> &amp;= \frac{V_<number>2</number>}{R_<number>2</number>} \\
+&amp;= \frac{<number>18</number>}{<number>12</number>} \\
+I_<number>2</number> &amp;= <unit_number><number>1.50</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+
+An alternative method of calculating <latex>I_<number>2</number></latex> would have been to use the fact that the currents through each of the parallel resistors must add up to the total current through the cell:
+
+<latex display="block">
+\begin{align}
+I &amp;= I_<number>1</number> + I_<number>2</number> \\
+I_<number>2</number> &amp;= I - I_<number>1</number> \\
+&amp;= 6 - 4.5 \\
+I_<number>2</number> &amp;= <unit_number><number>1.5</number> <unit>A</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+
+<workstep>
+<title>Determine the emf</title>
+<para>This total current through the battery is the current through the internal resistance of the battery. Knowing the current and resistance allows us to use Ohm's law to determine the potential difference across the internal resistance and therefore the emf of the battery.</para>
+<para>Using Ohm's law we can determine the potential difference across the internal resistance:</para>
+<latex display='block'>
+\begin{align}
+V &amp;=I \cdot r \\
+ &amp;=<number>6</number> \cdot <number>0.375</number> \\
+ &amp;= <unit_number><number>2.25</number> <unit>V</unit></unit_number>
+\end{align}
+</latex>
+<para>We know that the emf of the battery is the potential difference across the terminal summed with the potential difference across the internal resistance so:</para>
+                <latex display="block">
+		\begin{align}
+		 \mathcal{E}&amp; = V+Ir \\
+		 &amp; = <number>18</number>+<number>2.25</number> \\ 
+		 &amp; = <unit_number><number>20.25</number><unit>V</unit></unit_number>
+		\end{align}
+		</latex>
+</workstep>
+<workstep>
+<title>Write the final answer </title>
+<para>The current through the cell is <unit_number><number>6.00</number> <unit>A</unit></unit_number>. </para>
+<para>The current through the <number>4.00</number> <latex>\Omega</latex> resistor is <unit_number><number>4.50</number> <unit>A</unit></unit_number>.</para>
+<para>The current through the <number>12.00</number> <latex>\Omega</latex> resistor is <unit_number><number>1.50</number> <unit>A</unit></unit_number>.</para>
+<para>The emf of the battery is <unit_number><number>20.25</number> <unit>V</unit></unit_number>.
+</para>
+</workstep>
+</answer>
+</worked_example>
+
+<worked_example>
+<title>Power in series and parallel networks of resistors</title>
+<question>
+<para>Given the following circuit:</para>
+      <pspicture>
+        <code>
+          (-3.6,-1.2)(6.6,4.5)
+\psset{unit=0.75}
+          %\psgrid
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(2,4){C}
+\pnode(3,4.75){D}
+\pnode(3,3.25){E}
+\pnode(5,4.75){F}
+\pnode(6,4){G}
+\pnode(5,3.25){H}
+\pnode(8,4){I}
+\pnode(8,0){J}
+\pnode(5,0.75){K}
+\pnode(6,0){L}
+\pnode(5,-0.75){M}
+\pnode(2,0){O}
+\pnode(3,0.75){P}
+\pnode(3,-0.75){N}
+
+\pnode(0,1){BA}
+\pnode(0,3){BB}
+\pnode(-2,1){BE}
+\pnode(-2,3.3){BF}
+
+% this next bit draws a battery with the coloured box etc.
+{
+\pspolygon[fillcolor=yellow,fillstyle=solid,linecolor=orange](-.6,1.2)(.6,1.2)(.6,3.2)(-.6,3.2)
+\circledipole[labeloffset=0](BE)(BF){$V$}
+\circledipole[labelangle=:U,labeloffset=1](BE)(BF){$V$}
+\multidipole(BA)(BB)
+    \battery{}
+    \resistor[labeloffset=0]{$r$}.
+}
+\psline(BA)(BE)
+\psline(0,3.3)(BF)\psdot(0,3.3)\psdot(BA)
+
+\psline(A)(BA)
+\psline(B)(BB)
+
+\psline(B)(C)
+\psline(I)(J)
+\psline(C)(D)\resistor[unit=0.7,dipolestyle=rectangle](D)(F){$R_{\text{1}}$}\psline(F)(G)
+%\resistor[unit=0.5,dipolestyle=rectangle](C)(G){$R_{\text{2}}$}
+\psline(C)(E)\resistor[unit=0.7,dipolestyle=rectangle](E)(H){$R_{\text{2}}$}\psline(H)(G)
+\psline(G)(I)
+%\resistor[unit=0.5,dipolestyle=rectangle](I)(J){$R_4$}
+\psline(J)(L)
+\psline(L)(K)\resistor[unit=0.7,dipolestyle=rectangle](K)(P){$R_{\text{3}}$}\psline(P)(O)
+%\resistor[unit=0.5,dipolestyle=rectangle](L)(O){$R_{\text{6}}$}
+\psline(L)(M)\resistor[unit=0.7,dipolestyle=rectangle](M)(N){$R_{\text{4}}$}\psline(N)(O)
+\psline(O)(A)
+\psframe[linestyle=dashed,linecolor=gray](1.8,-1)(6.2,1)
+\uput[u](4,1){Parallel circuit 2 $R_{\text{P2}}$}
+\psframe[linestyle=dashed,linecolor=gray](1.8,3)(6.2,5)
+\uput[d](4,3){Parallel circuit 1 $R_{\text{P1}}$}
+
+        </code>
+      </pspicture>
+      <para>The current leaving the battery is <unit_number><number>1.07</number><unit>A</unit></unit_number>, the total power dissipated in the external circuit is <unit_number><number>6.42</number><unit>W</unit></unit_number>, the ratio of the total resistances of the two parallel networks <latex>R_{P<number>1</number>} : R_{P<number>2</number>}</latex> is 1:2, the ratio <latex>R_<number>1</number> : R_<number>2</number></latex> is 3:5 and <latex>R_<number>3</number>=<unit_number><number>7.00</number><unit>Ω</unit></unit_number></latex>. </para>
+<para>Determine the:
+<list list-type="enumerated">
+<item>potential difference of the battery,</item>
+<item>the power dissipated in <latex>R_{P<number>1</number>}</latex> and <latex>R_{P<number>2</number>}</latex>, and</item>
+<item>if the battery is labelled as having an emf of <unit_number><number>6.50</number><unit>V</unit></unit_number> what is the value of the resistance of each resistor and the power dissipated in each of them.</item>
+</list>
+</para>
+</question>
+<answer>
+<workstep>
+<title>What is required</title>
+<para>In this question you are given various pieces of information and asked to determine the power dissipated in each resistor and each combination of resistors. Notice that the information given is mostly for the overall circuit. This is a clue that you should start with the overall circuit and work downwards to more specific circuit elements.</para>
+</workstep>
+<workstep>
+<title>Calculating the potential difference of the battery</title>
+<para>Firstly we focus on the battery. We are given the power for the overall circuit as well as the current leaving the battery. We know that the potential difference across the terminals of the battery is the potential difference across the circuit as a whole.
+</para>
+<para>We can use the relationship <latex>P=VI</latex> for the entire circuit because the potential difference is the same as the potential difference across the terminals of the battery:
+<latex display="block">
+\begin{align}
+P &amp;=VI \\
+V &amp;= \frac{P}{I} \\
+&amp;=\frac{<number>6.42</number>}{<number>1.07</number>} \\
+&amp;= <unit_number><number>6.00</number><unit>V</unit></unit_number>
+\end{align}
+</latex>
+</para>
+<para>The potential difference across the battery is  <unit_number><number>6.00</number><unit>V</unit></unit_number>.</para>
+</workstep>
+<workstep>
+<title>Power dissipated in <latex>R_{P<number>1</number>}</latex> and <latex>R_{P<number>2</number>}</latex></title>
+<para>Remember that we are working from the overall circuit details down towards those for individual elements, this is opposite to how you treated this circuit earlier.</para>
+<para>We can treat the parallel networks like the equivalent resistors so the circuit we are currently dealing with looks like:
+</para>
+<pspicture>
+<code>
+  (-0.6,-0.8)(6.6,4)
+  %\psgrid
+  \psset{unit=0.75}
+  \pnode(0,0){A}
+  \pnode(0,4){B}
+  \pnode(2,4){C}
+  \pnode(3,4.75){D}
+  \pnode(3,3.25){E}
+  \pnode(5,4.75){F}
+  \pnode(6,4){G}
+  \pnode(5,3.25){H}
+  \pnode(8,4){I}
+  \pnode(8,0){J}
+  \pnode(5,0.75){K}
+  \pnode(6,0){L}
+  \pnode(5,-0.75){M}
+  \pnode(2,0){O}
+  \pnode(3,0.75){P}
+  \pnode(3,-0.75){N}
+  \battery(A)(B){}
+  \psline(B)(C)
+  \resistor[unit=0.7,dipolestyle=rectangle](C)(G){$R_{P1}$}
+  \psline(G)(I)
+  \psline(I)(J)
+  %\resistor[unit=0.5,dipolestyle=rectangle](I)(J){$R_4$}
+  \psline(J)(L)
+  \resistor[unit=0.7,dipolestyle=rectangle](L)(O){$R_{P2}$}
+  \psline(O)(A)
+    </code>
+    </pspicture>
+<para>
+We know that the current through the two circuit elements will be the same because it is a series circuit and that the resistance for the total circuit must be: <latex>R_{Ext}=R_{P<number>1</number>}+R_{P<number>2</number>}</latex>. We can determine the total resistance from Ohm's Law for the circuit as a whole:
+<latex display="block">
+\begin{align}
+V_{battery}&amp;=IR_{Ext} \\
+R_{Ext} &amp;=\frac{V_{battery}}{I} \\
+&amp;=\frac{<number>6.00</number>}{<number>1.07</number>}\\
+&amp;=<unit_number><number>5.61</number><unit>Ω</unit></unit_number>
+\end{align}
+</latex>
+</para>
+<para>We know that the ratio between <latex>R_{P<number>1</number>} : R_{P<number>2</number>}</latex> is 1:2 which means that we know:
+<latex display="block">
+\begin{align}
+R_{P<number>1</number>} &amp;= \frac{<number>1</number>}{<number>2</number>}R_{P<number>2</number>} \ \ \text{and} \\
+R_T &amp;= R_{P<number>1</number>} + R_{P<number>2</number>} \\
+&amp; = \frac{<number>1</number>}{<number>2</number>}R_{P<number>2</number>} + R_{P<number>2</number>} \\
+&amp;=\frac{<number>3</number>}{<number>2</number>}R_{P<number>2</number>} \\
+(<number>5.61</number>) &amp;=\frac{<number>3</number>}{<number>2</number>}R_{P<number>2</number>} \\
+R_{P<number>2</number>} &amp;= \frac{<number>2</number>}{<number>3</number>}(<number>5.61</number>) \\
+R_{P<number>2</number>} &amp;= <unit_number><number>3.74</number><unit>Ω</unit></unit_number>
+\end{align}
+</latex>
+and therefore:
+<latex display="block">
+\begin{align}
+R_{P<number>1</number>} &amp;= \frac{<number>1</number>}{<number>2</number>}R_{P<number>2</number>} \\
+&amp;=\frac{<number>1</number>}{<number>2</number>}(3.74) \\
+&amp;= <unit_number><number>1.87</number><unit>Ω</unit></unit_number>
+\end{align}
+</latex>
+</para>
+<para>Now that we know the total resistance of each of the parallel networks we can calculate the power dissipated in each:
+<latex display="block">
+\begin{align}
+P_{P<number>1</number>} &amp;= I^2R_{P<number>1</number>} \\
+ &amp;= (<number>1.07</number>)^2(<number>1.87</number>) \\
+ &amp;= <unit_number><number>2.14</number><unit>W</unit></unit_number>
+\end{align}
+</latex>
+and
+<latex display="block">
+\begin{align}
+P_{P<number>2</number>} &amp;= I^2R_{P<number>2</number>} \\
+ &amp;= (<number>1.07</number>)^2(<number>3.74</number>) \\
+  &amp;= <unit_number><number>4.28</number><unit>W</unit></unit_number>
+  \end{align}
+  </latex>
+  These values will add up to the original power value we had for the external circuit. If they didn't
+  we would have made a calculation error.
+</para>
+</workstep>
+<workstep>
+<title>Parallel network 1 calculations</title>
+<para>Now we can begin to do the detailed calculation for the first set of parallel resistors.</para>
+      <pspicture>
+        <code>
+          (-0.6,-1.2)(6.6,4.5)
+          %\psgrid
+\psset{unit=0.75}
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(2,4){C}
+\pnode(3,4.75){D}
+\pnode(3,3.25){E}
+\pnode(5,4.75){F}
+\pnode(6,4){G}
+\pnode(5,3.25){H}
+\pnode(8,4){I}
+\pnode(8,0){J}
+\pnode(5,0.75){K}
+\pnode(6,0){L}
+\pnode(5,-0.75){M}
+\pnode(2,0){O}
+\pnode(3,0.75){P}
+\pnode(3,-0.75){N}
+
+\battery(A)(B){}
+\psline(B)(C)
+\psline(I)(J)
+\psline(C)(D)\resistor[unit=0.7,dipolestyle=rectangle](D)(F){$R_1$}\psline(F)(G)
+%\resistor[unit=0.5,dipolestyle=rectangle](C)(G){$R_2$}
+\psline(C)(E)\resistor[unit=0.7,dipolestyle=rectangle](E)(H){$R_2$}\psline(H)(G)
+\psline(G)(I)
+%\resistor[unit=0.5,dipolestyle=rectangle](I)(J){$R_4$}
+\psline(J)(L)
+\psline(L)(K)\resistor[unit=0.7,dipolestyle=rectangle](K)(P){$R_3$}\psline(P)(O)
+%\resistor[unit=0.5,dipolestyle=rectangle](L)(O){$R_6$}
+\psline(L)(M)\resistor[unit=0.7,dipolestyle=rectangle](M)(N){$R_4$}\psline(N)(O)
+\psline(O)(A)
+\psframe[linestyle=dashed,linecolor=gray](1.8,-1)(6.2,1)
+\uput[u](4,1){Parallel circuit 2 $R_{P2}$}
+\psframe[linestyle=dashed,linecolor=gray](1.8,3)(6.2,5)
+\uput[d](4,3){Parallel circuit 1 $R_{P1}$}
+
+        </code>
+      </pspicture>
+<para>We know that the ratio between <latex>R_{<number>1</number>} : R_{<number>2</number>}</latex> is 3:5 which means that we know <latex>
+R_{<number>1</number>}= \frac{<number>3</number>}{<number>5</number>}R_{<number>2</number>}</latex>. 
+We also know the total resistance for the two parallel resistors in this network 
+is <unit_number><number>1.87</number><unit>Ω</unit></unit_number>. We can use the 
+relationship between the values of the two resistors as well as the formula for the total 
+resistance (<latex>\frac{<number>1</number>}{R_PT}=\frac{<number>1</number>}{R_<number>1</number>}+\frac{<number>1</number>}{R_<number>2</number>}</latex>) 
+to find the resistor values:
+<latex display="block">
+\begin{align}
+\frac{<number>1</number>}{R_{P<number>1</number>}}&amp;=\frac{<number>1</number>}{R_<number>1</number>}+\frac{<number>1</number>}{R_<number>2</number>} \\
+\frac{<number>1</number>}{R_{P<number>1</number>}}&amp;=\frac{<number>5</number>}{3R_<number>2</number>}+\frac{<number>1</number>}{R_<number>2</number>} \\
+\frac{<number>1</number>}{R_{P<number>1</number>}}&amp;=\frac{<number>1</number>}{R_<number>2</number>}(\frac{<number>5</number>}{<number>3</number>}+1) \\
+\frac{<number>1</number>}{R_{P<number>1</number>}}&amp;=\frac{<number>1</number>}{R_<number>2</number>}(\frac{<number>5</number>}{<number>3</number>}+\frac{<number>3</number>}{<number>3</number>}) \\
+\frac{<number>1</number>}{R_{P<number>1</number>}}&amp;=\frac{<number>1</number>}{R_<number>2</number>}\frac{<number>8</number>}{<number>3</number>} \\
+R_<number>2</number>&amp;=R_{P<number>1</number>}\frac{<number>8</number>}{<number>3</number>} \\
+&amp;=(<number>1.87</number>)\frac{<number>8</number>}{<number>3</number>} \\
+&amp;=<unit_number><number>4.99</number><unit>Ω</unit></unit_number>
+\end{align}
+</latex>
+We can also calculate <latex>R_{<number>1</number>}</latex>:
+<latex display="block">
+\begin{align}
+R_{<number>1</number>}&amp;= \frac{<number>3</number>}{<number>5</number>}R_{<number>2</number>} \\
+&amp;= \frac{<number>3</number>}{<number>5</number>}(<number>4.99</number>) \\
+&amp;= <unit_number><number>2.99</number><unit>Ω</unit></unit_number>
+\end{align}
+</latex>
+</para>
+<para>To determine the power we need the resistance which we have calculated and either the potential difference or current. The two resistors are in parallel so the potential difference across them is the same as well as the same as the potential difference across the parallel network. We can use Ohm's Law to determine the potential difference across the network of parallel resistors as we know the total resistance and we know the current:
+<latex display="block">
+\begin{align}
+V &amp;= I R \\
+&amp;=(<number>1.07</number>)(<number>1.87</number>) \\
+&amp;=<unit_number><number>2.00</number><unit>V</unit></unit_number>
+\end{align}
+</latex>
+</para>
+<para>We now have the information we need to determine the power through each resistor:
+<latex display="block">
+\begin{align}
+P_<number>1</number>&amp;=\frac{V^2}{R_<number>1</number>} \\
+&amp;=\frac{(<number>2.00</number>)^2}{<number>2.99</number>} \\
+&amp;=<unit_number><number>1.34</number><unit>W</unit></unit_number>
+\end{align}
+</latex>
+
+<latex display="block">
+\begin{align}
+P_<number>2</number>&amp;=\frac{V^2}{R_<number>2</number>} \\
+&amp;=\frac{(<number>2.00</number>)^2}{<number>4.99</number>} \\
+&amp;=<unit_number><number>0.80</number><unit>W</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Parallel network 2 calculations</title>
+<para>Now we can begin to do the detailed calculation for the second set of parallel resistors.</para>
+<para>We are given <latex>R_<number>3</number>=<unit_number><number>7.00</number><unit>Ω</unit></unit_number></latex> and we know <latex>R_{P<number>2</number>}</latex> so we can calculate <latex>R_<number>4</number></latex> from:
+<latex display="block">
+\begin{align}
+\frac{<number>1</number>}{R_{P<number>2</number>}} &amp;= \frac{<number>1</number>}{R_<number>3</number>}+\frac{<number>1</number>}{R_<number>4</number>} \\
+\frac{<number>1</number>}{<number>3.74</number>} &amp;= \frac{<number>1</number>}{<number>7.00</number>}+\frac{<number>1</number>}{R_<number>4</number>} \\
+R_<number>4</number>&amp;=<unit_number><number>8.03</number><unit>Ω</unit></unit_number>
+\end{align}
+</latex>
+</para>
+<para>We can calculate the potential difference across the second parallel network by subtracting the potential difference of the first parallel network from the battery potential difference, <latex>V_{P<number>2</number>} = <number>6.00</number>-<number>2.00</number>=<unit_number><number>4.00</number><unit>V</unit></unit_number></latex>.</para>
+<para>We can now determine the power dissipated in each resistor:
+<latex display="block">
+\begin{align}
+P_<number>3</number>&amp;=\frac{V^2}{R_<number>3</number>} \\
+&amp;=\frac{(<number>4.00</number>)^2}{<number>7.00</number>} \\
+&amp;=<unit_number><number>2.29</number><unit>W</unit></unit_number>
+\end{align}
+</latex>
+
+<latex display="block">
+\begin{align}
+P_<number>4</number>&amp;=\frac{V^2}{R_<number>2</number>} \\
+&amp;=\frac{(<number>4.00</number>)^2}{<number>8.03</number>} \\
+&amp;=<unit_number><number>1.99</number><unit>W</unit></unit_number>
+\end{align}
+</latex>
+</para>
+</workstep>
+<workstep>
+<title>Internal resistance</title>
+<para>We know that the emf of the battery is <unit_number><number>6.5</number><unit>V</unit></unit_number> but that the potential difference measured across the terminals is only <unit_number><number>6</number><unit>V</unit></unit_number>. The difference is the potential difference across the internal resistance of the battery and we can use the known current and Ohm's law to determine the internal resistance:</para>
+<latex display="block">
+\begin{align}
+V&amp;=I \cdot R \\
+R&amp;=\frac{V}{I} \\
+&amp; = \frac{<number>0.5</number>}{<number>1.07</number>} \\
+&amp; = <number>0.4672897</number>\\
+&amp; = <unit_number><number>0.47</number><unit>Ω</unit></unit_number>\\
+\end{align}
+</latex>
+<para>The power dissipated by the internal resistance of the battery is:</para>
+<latex display="block">
+\begin{align}
+P &amp;=VI \\
+  &amp; = <number>0.5</number>\cdot<number>1.07</number> \\
+  &amp;=<unit_number><number>0.535</number><unit>W</unit></unit_number>
+\end{align}
+</latex>
+</workstep>
+</answer>
+</worked_example>
+
+<worked_example>
+<title>Internal resistance and headlamps [NSC 2011 Paper 1]</title>
+<question>
+ <para>
+    The headlamp and two IDENTICAL tail lamps of a scooter are connected in parallel to a battery with unknown internal resistance as shown in the simplified circuit diagram below. The headlamp has a resistance of <unit_number><number>2.4</number><unit>&#0937;</unit></unit_number> and is controlled by switch <latex>\textbf{S}_1</latex>. The tail lamps are controlled by switch <latex>\textbf{S}_2</latex>. The resistance of the connecting wires may be ignored.
+  </para>
+  <para>
+    The graph alongside shows the potential difference across the terminals of the battery before and after switch <latex>\textbf{S}_1</latex> is closed (whilst switch <latex>\textbf{S}_2</latex> is open). Switch <latex>\textbf{S}_1</latex> is closed at time <latex>\textbf{t}_1</latex>.
+  </para>
+  <pspicture style:width=".5">
+<code>
+(-1,-2.5)(5,3.5)
+\psset{yunit=1.2}
+\pnode(0,2){A}
+\pnode(4,2){B}
+\pnode(4,0){C}
+\pnode(4,-1){D}
+\pnode(2.5,2){E}
+\pnode(0,-1){F}
+\pnode(0,0){G}
+\pnode(2,-1){H}
+\pnode(1.5,0){I}
+\pnode(2.5,0){J}
+\pnode(1,1){K}
+\pnode(3.5,1){L}
+\pnode(1,2){M}
+\pnode(3.5,2){N}
+\battery(M)(E){}
+\resistor[unit=0.5,dipolestyle=rectangle](E)(N){$r$}
+\scalebox{0.6}{\circledipole[labeloffset=0](K)(L){V}}
+\scalebox{0.6}{\lamp(F)(H){}}
+\scalebox{0.6}{\lamp(H)(D){}}
+\scalebox{0.6}{\lamp(J)(I){}}
+\scalebox{0.6}{\switch(J)(C){}}
+\scalebox{0.6}{\switch(C)(D){}}
+\psline(A)(F)
+\psline(C)(B)
+\psline(G)(I)
+\psline(K)(M)
+\psline(L)(N)
+\psline(A)(M)
+\psline(N)(B)
+\psframe[linestyle=dashed](0.8,1.3)(2.8,2.6)
+\rput(1.5,-0.5){\small{2,4 $\Omega$}}
+\rput(0.5,-1.6){\small{tail lamp 1}}
+\rput(2.5,-1.6){\small{tail lamp 2}}
+\rput(2.5,0.5){\small{S$_1$}}
+\rput(4,-0.5){\small{S$_2$}}
+</code>
+</pspicture>
+<pspicture style:width=".5">
+<code>
+(-.3,-2.8429167)(10,3)
+\rput(1.7292187,-2.1570833){\psaxes[labels=none,ticks=none,ticksize=0.10583333cm]{-&gt;}(0,0)(0,0)(8,5)}
+\rput{-270.0}(0.15291667,-0.17395833){\rput(0.1646875,0.0129166655){\Large potential difference}}
+\rput{-270.0}(0.8385417,-0.33958334){\rput(0.574375,0.27291667){(\Large volts)}}
+\rput(9.15,-2.4870834){\Large time (s)}
+\rput(4.8,-2.4670835){\Large $\textbf{t}_{1}$}
+\rput(1.50625,-2.3470833){\Large 0}
+\rput(1.2251563,0.31291667){\Large 9,6}
+\rput(1.300625,1.6929166){\Large 12}
+\psline[linewidth=0.04cm](1.7492187,1.7429167)(4.729219,1.7429167)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](4.749219,1.7429167)(4.749219,0.26291665)
+\psline[linewidth=0.04cm](4.749219,0.26291665)(7.749219,0.24291666)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](4.729219,0.26291665)(1.7092187,0.28291667)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](4.749219,0.28291667)(4.749219,-2.1570833)
+</code>
+</pspicture>
+  <list mark-prefix="10." list-type="enumerated"  >
+    <item> <!-- 10.1 -->
+      <para>Use the graph to determine the emf of the battery.</para>
+      <para>(1 mark)</para>
+    </item>
+    <item> <!-- 10.2 -->
+      <para>WITH ONLY SWITCH <latex>\textbf{S}_1</latex> CLOSED, calculate the following:</para>
+      <list mark-prefix="10.2." list-type="enumerated"  >
+        <item><!-- 10.2.1 -->
+          <para>Current through the headlamp </para>
+          <para>(3 marks)</para>
+        </item>
+        <item><!-- 10.2.2 -->
+        <para>Internal resistance, <latex>r</latex>, of the battery </para>
+          <para>(3 marks)</para>
+        </item>
+      </list>
+    </item>
+    <item> <!-- 10.3 -->
+      <para>BOTH SWITCHES <latex>\textbf{S}_1</latex> AND <latex>\textbf{S}_2</latex> ARE NOW CLOSED. The battery delivers a current of <unit_number><number>6</number><unit>A</unit></unit_number> during this period. </para>
+      <para>Calculate the resistance of each tail lamp. </para>
+      <para>(5 marks)</para>
+    </item>
+    <item> <!-- 10.4 -->
+      <para>How will the reading on the voltmeter be affected if the headlamp burns out? (Both switches <latex>\textbf{S}_1</latex> and <latex>\textbf{S}_2</latex> are still closed.) </para>
+      <para>Write down only INCREASES, DECREASES or REMAINS THE SAME. </para>
+      <para>Give an explanation. </para>
+      <para>(3 marks)</para>
+    </item>
+  </list>
+
+</question>
+<answer>
+      <para><emphasis effect="bold">Question 1</emphasis></para>
+      <para><unit_number><number>12</number><unit>V</unit></unit_number></para>
+      <para>(1 mark)</para>
+
+      <para><emphasis effect="bold">Question 2.1</emphasis></para>
+      <para><emphasis effect="bold">Option 1:</emphasis></para>
+      <latex display="block">
+            \begin{align*}
+              I &amp; = \frac{V}{R} \\
+                &amp; = \frac{<number>9.6</number>}{<number>2.4</number>} \\
+                &amp; = \text{4 A}
+            \end{align*}
+      </latex>
+      <para><emphasis effect="bold">Option 2:</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+      \text{emf} &amp; = IR + Ir \\
+      12 &amp; = I(<number>2.4</number>) + <number>2.4</number> \\
+      \therefore I &amp; = \text{4 A}
+    \end{align*}
+      </latex>
+      <para>(3 marks)</para>
+
+      <para><emphasis effect="bold">Question 2.2</emphasis></para>
+      <para><emphasis effect="bold">Option 1:</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+    \text{emf} &amp; =  IR +Ir \\
+      12 &amp; = <number>9.4</number> + 4r \\
+      r &amp; = <number>0.6</number>\ \Omega
+    \end{align*}
+      </latex>
+      <para><emphasis effect="bold">Option 2:</emphasis></para>
+      <latex display="block">
+            \begin{align*}
+                          V_{lost} &amp; =  Ir \\
+              <number>2.4</number> &amp; = <number>4</number>r \\
+              \therefore         r &amp; = <number>0.6</number>\ \Omega
+            \end{align*}
+      </latex>
+      <para><emphasis effect="bold">Option 3:</emphasis></para>
+      <latex display="block">
+            \begin{align*}
+                       \text{emf} &amp; = I(R + r) \\
+                <number>12</number> &amp; = <number>4</number>(<number>2.4</number> + r)\\
+                       \therefore r &amp; = <number>0.6</number>\ \Omega
+            \end{align*}
+      </latex>
+      <para>(3 marks)</para>
+
+      <para><emphasis effect="bold">Question 3</emphasis></para>
+      <para><emphasis effect="bold">Option 1:</emphasis></para>
+      <latex display="block">
+            \begin{align*}
+                     \text{emf} &amp; =  IR +Ir \\
+              <number>12</number> &amp; = <number>6</number>(R + <number>0.6</number>) \\
+                                R_{\text{ext}} &amp; = <number>1.4</number>\ \Omega
+            \end{align*}
+      </latex>
+      <latex display="block">
+            \begin{align*}
+                     \frac{1}{R} &amp; =  \frac{1}{R_{1}} + \frac{1}{R_{2}} \\
+              \frac{1}{<number>1.4</number>} &amp; = \frac{1}{<number>2.4</number>} + \frac{1}{R} \\
+                      R &amp; = <number>3.36</number>\ \Omega
+            \end{align*}
+      </latex>
+      <para>Each tail lamp: <latex>R = <number>1.68</number>\ \Omega</latex></para>
+      <para><emphasis effect="bold">Option 2:</emphasis></para>
+      <latex display="block">
+    \begin{align*}
+      \text{Emf} &amp; = V_{\text{terminal}} + Ir \\
+      12 &amp; = V_{\text{terminal}} + 6(<number>0.6</number>) \\
+      \therefore V_{\text{terminal}} &amp; = <number>8.4</number>\text{ V}
+    \end{align*}
+      </latex>
+      <latex display="block">
+\begin{align*}
+  I_{<number>2.4</number>\ \Omega} &amp;= \frac{V}{R} \\
+  &amp;= \frac{<number>8.4</number>}{<number>2.4</number>} \\
+  &amp;= \text{3,5 A}
+\end{align*}
+      </latex>
+      <latex display="block">
+            \begin{align*}
+          I_{\text{tail lamps}} &amp; = 6 - <number>3.5</number> \\
+          &amp; = <number>2.5</number>\text{ A} \\
+          R_{\text{tail lamps}} &amp; = \frac{V}{I} \\
+          &amp; = \frac{<number>8.4</number>}{<number>2.5</number>} \\
+          &amp; = <number>3.36</number>\ \Omega \\
+          R_{\text{tail lamp}} &amp; = <number>1.68</number>\ \Omega
+            \end{align*}
+      </latex>
+   <para><emphasis effect="bold">Option 3:</emphasis></para>
+      <latex display="block">
+            \begin{align*}
+                      V &amp; = IR \\
+                <number>12</number> &amp; = <number>6</number>(R)\\
+                      R_{\text{ext}} &amp; = 2\ \Omega
+            \end{align*}
+      </latex>
+      <latex display="block">
+            \begin{align*}
+        R_{\text{parallel}} &amp; = 2 - <number>0.6</number> \\
+        &amp; = <number>1.4</number>\ \Omega \\
+        \frac{1}{R} &amp; =  \frac{1}{R_{1}} + \frac{1}{R_{2}} \\
+        \frac{1}{<number>1.4</number>} &amp; = \frac{1}{<number>2.4</number>} + \frac{1}{R} \\
+        R &amp; = <number>3.36</number>\ \Omega
+            \end{align*}
+      </latex>
+      <para>Each tail lamp: <latex>R = <number>1.68</number>\ \Omega</latex></para>
+      <para><emphasis effect="bold">Option 4:</emphasis></para>
+      <para>For parallel combination: <latex>I_{1} + I_{2} = 6\text{ A}</latex></para>
+      <latex display="block">
+            \begin{align*}
+        \therefore   \frac{V}{<number>2.4</number>} + \frac{V}{R_{\text{tail lamps}}} &amp; = <number>6</number> \\
+        <number>8.4</number>\left(\frac{1}{<number>2.4</number>} + \frac{1}{R_{\text{tail lamps}}} \right) &amp; = <number>6</number>\\
+        \therefore R_{\text{tail lamps}} &amp; = <number>3.36</number>\ \Omega \\
+        R_{\text{tail lamp}} &amp; = <number>1.68</number>\ \Omega
+            \end{align*}
+      </latex>
+      <para>(5 marks)</para>
+
+      <para><emphasis effect="bold">Question 4</emphasis></para>
+      <para>Increases</para>
+      <para>The resistance increases and the current decreases. So <latex>Ir</latex> (lost volts) must decrease which leads to an increase in the voltage.</para>
+      <para>(3 marks)</para>
+
+      <para><emphasis effect="bold">[TOTAL: 15 marks]</emphasis></para>
+
+</answer>
+</worked_example>
+
+        </section>
+    </section>
+
+
+
+      <section type="section">
+        <title>Extension: Wheatstone bridge [Not examinable]</title>
+        <shortcode>ESBIO</shortcode>
+        <para>Using what we know about parallel networks of resistors we can devise another method of finding an unknown resistance, the <emphasis effect="italics">Wheatstone bridge</emphasis>. A Wheatstone bridge is a measuring instrument that is used to measure an unknown electrical resistance by balancing two legs of a bridge circuit, one leg of which includes the unknown component. Its operation is similar to the original potentiometer except that in potentiometer circuits the meter used is a sensitive galvanometer.</para>
+        <note type="aside">
+          <para>The Wheatstone bridge was invented by Samuel Hunter Christie in 1833 and improved and popularised by Sir Charles Wheatstone in 1843.</para>
+        </note>
+        <para>Despite the fact that we have given this circuit a special name, it is just a circuit containing a parallel configuration of four resistors. This is not actually a new concept, this particular configuration is just particularly useful.</para>
+        <pspicture>
+          <code>
+            (-0.6,-0.6)(6.6,4.6)
+            %\psgrid
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(4,4){C}
+\pnode(6,2){D}
+\pnode(2,2){E}
+\pnode(4,0){F}
+\battery(A)(B){}
+\psline(B)(C)
+\psline(A)(F)
+\resistor[dipolestyle=rectangle](E)(C){$R_{3}$}
+\resistor[dipolestyle=rectangle](C)(D){$R_{1}$}
+\resistor[variable,labeloffset=-0.7](E)(F){$R_{2}$}
+\resistor[dipolestyle=rectangle,labeloffset=-0.7](F)(D){$R_x$}
+\Ucc[labeloffset=0](E)(D){V}
+\psdots(C)(E)(D)(F)
+\uput[u](C){A}
+\uput[r](D){B}
+\uput[d](F){C}
+\uput[l](E){D}
+
+          </code>
+        </pspicture>
+        <para>In the circuit of the Wheatstone bridge, <latex>{R}_{x}</latex> is the unknown resistance. <latex>{R}_{<number>1</number>}</latex>, <latex>{R}_{<number>2</number>}</latex> and <latex>{R}_{<number>3</number>}</latex> are resistors of known resistance and the resistance of <latex>{R}_{<number>2</number>}</latex> is adjustable. If the ratio of <latex>{R}_{<number>2</number>}</latex>: <latex>{R}_{<number>1</number>}</latex> is equal to the ratio of <latex>{R}_{x}</latex>: <latex>{R}_{<number>3</number>}</latex>, then the potential difference between the two midpoints will be zero and no current will flow between the midpoints. In order to determine the unknown resistance, <latex>{R}_{<number>2</number>}</latex> is varied until this condition is reached. That is when the voltmeter reads 0 V.</para>
+        <worked_example>
+          <title>Wheatstone bridge</title>
+          <question>
+            <para>What is the resistance of the unknown resistor <latex>{R}_{x}</latex> in the diagram below if <latex>{R}_{<number>1</number>}</latex> =<unit_number><number>4</number><unit>Ω</unit></unit_number> <latex>{R}_{<number>2</number>}</latex> =<unit_number><number>8</number><unit>Ω</unit></unit_number> and <latex>{R}_{<number>3</number>}</latex> =<unit_number><number>6</number><unit>Ω</unit></unit_number>.</para>
+            <pspicture>
+              <code>
+                (-0.6,-0.6)(6.6,4.6)
+                %\psgrid
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(4,4){C}
+\pnode(6,2){D}
+\pnode(2,2){E}
+\pnode(4,0){F}
+\battery(A)(B){}
+\psline(B)(C)
+\psline(A)(F)
+\resistor[dipolestyle=rectangle](E)(C){$R_{3}$}
+\resistor[dipolestyle=rectangle](C)(D){$R_1$}
+\resistor[variable,labeloffset=-0.7](E)(F){$R_2$}
+\resistor[[dipolestyle=rectangle,labeloffset=-0.7](F)(D){$R_x$}
+\Ucc[labeloffset=0](E)(D){V}
+\psdots(C)(E)(D)(F)
+\uput[u](C){A}
+\uput[r](D){B}
+\uput[d](F){C}
+\uput[l](E){D}
+
+              </code>
+            </pspicture>
+          </question>
+          <answer>
+            <workstep>
+              <title>Determine how to approach the problem</title>
+              <para>The arrangement is a Wheatstone bridge. So we use the equation:</para>
+              
+
+              <latex display="block">
+		\begin{align}
+		 {R}_{x}:{R}_{<number>3</number>}&amp; = {R}_{<number>2</number>}:{R}_{<number>1</number>} 
+		\end{align}
+		</latex>
+              
+            </workstep>
+            <workstep>
+              <title>Solve the problem</title>
+              <latex display="block">
+		\begin{align}
+		 {R}_{x}:{R}_{<number>3</number>}&amp; = {R}_{<number>2</number>}:{R}_{<number>1</number>}\\
+		  {R}_{x}:6&amp; = 8:4\\
+		  {R}_{x}&amp; = 12\phantom{\rule{3.33333pt}{0ex}}\Omega \phantom{\rule{4pt}{0ex}} 
+		\end{align}
+		</latex>
+              
+            </workstep>
+            <workstep>
+              <title>Write the final answer</title>
+              <para>The resistance of the unknown resistor is <unit_number><number>12</number><unit>Ω</unit></unit_number>.</para>
+            </workstep>
+          </answer>
+        </worked_example>
+      </section>
+
+      <section type="section">
+	<title>Chapter summary</title>
+        <presentation>
+          <shortcode>VPmmk</shortcode>
+	  <url>TODO</url>
+        </presentation>
+        <list list-type="enumerated">
+          <item>
+            <para>Ohm's Law governs the relationship between current and potential difference for a circuit element at constant temperature. Mathematically we write <latex>I=\frac{V}{R}</latex>.</para>
+          </item>
+          <item>
+            <para>Conductors that obey Ohm's Law are called ohmic conductors; those that do not are called non-ohmic conductors.</para>
+          </item>
+          <item>
+            <para>Ohm's Law can be applied to a single circuit element or the circuit as a whole (if
+            the components are ohmic).</para>
+          </item>
+          <item>
+            <para>The equivalent resistance of resistors in series (<latex>{R}_{s}</latex>) can be calculated as follows: <latex>{R}_{s}={R}_{<number>1</number>}+{R}_{<number>2</number>}+{R}_{<number>3</number>}+...+{R}_{n}</latex></para>
+          </item>
+          <item>
+            <para>The equivalent resistance of resistors in parallel (<latex>{R}_{p}</latex>) can be calculated as follows: <latex>\frac{<number>1</number>}{{R}_{p}}=\frac{<number>1</number>}{{R}_{<number>1</number>}}+\frac{<number>1</number>}{{R}_{<number>2</number>}}+\frac{<number>1</number>}{{R}_{<number>3</number>}}+...+\frac{<number>1</number>}{{R}_{n}}</latex></para>
+          </item>
+          <item>
+            <para>Real batteries have an internal resistance.</para>
+          </item>
+          <item>
+            <para>The potential difference <latex>V</latex> of the battery is related to its emf <latex>\mathcal{E}</latex> and internal resistance <latex>r</latex> by:</para>
+            <latex display="block">
+                 \begin{align}
+                 \mathcal{E}&amp; = V_{\text{load}} +  V_{\text{internal resistance}}\\
+                 &amp;\text{or} \\
+                 \mathcal{E}&amp; = IR_{Ext} + Ir
+                 \end{align}
+            </latex>
+          </item>
+          <item>
+            <para>The external resistance in the circuit is referred to as the load.</para>
+          </item>
+        </list>
+ <figure id="table:waves::units">
+          <type>table</type>
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <tbody>
+                <row>
+                  <entry nameend="c3" namest="c1" align="center"><emphasis effect="bold">Physical Quantities</emphasis></entry>
+                </row>
+                <row>
+                  <entry nameend="c1" namest="c1"><emphasis effect="bold">Quantity</emphasis></entry>
+                  <entry><emphasis effect="bold">Unit name</emphasis></entry>
+                  <entry><emphasis effect="bold">Unit symbol</emphasis></entry>
+                </row>
+                <row>
+                  <entry>Current (<latex>I</latex>)</entry>
+                  <entry>Amperes</entry>
+                  <entry><unit>A</unit></entry>
+                </row>
+                <row>
+                  <entry>Electrical energy (<latex>E</latex>)</entry>
+                  <entry>Joules</entry>
+                  <entry><unit>J</unit></entry>
+                </row>
+                <row>
+                  <entry>Power (<latex>P</latex>)</entry>
+                  <entry>Watts</entry>
+                  <entry><unit>W</unit></entry>
+                </row>
+                <row>
+                  <entry>Resistance (<latex>R</latex>)</entry>
+                  <entry>Ohms</entry>
+                  <entry><unit>Ω</unit></entry>
+                </row>
+                <row>
+                  <entry>Voltage / Potential difference (<latex>V</latex>)</entry>
+                  <entry>Volts</entry>
+                  <entry><unit>V</unit></entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <caption>
+            <para>Units used in <emphasis effect="bold">electric circuits</emphasis></para>
+          </caption>
+        </figure>
+
+      </section>
+      <exercises><title/>
+      <!--<entry>
+<shortcode>00uy</shortcode>
+<problem>
+          <para>Calculate the current in the following circuit and then use the current to calculate the potential differences across each resistor.</para>
+          <pspicture>
+            <code>
+              (5,5)
+              %\psgrid
+\pnode(1,4){A}
+\pnode(4,4){B}
+\pnode(4,1){C}
+\pnode(1,1){D}
+\resistor[dipolestyle=rectangle](A)(B){R$_{1}$}
+\resistor[dipolestyle=rectangle](B)(C){R$_{2}$}
+\resistor[dipolestyle=rectangle](C)(D){R$_{3}$}
+\battery(A)(D){9V}
+\rput(2.5,3.5){3$\Omega$}
+\rput(3.25,2.5){10$\Omega$}
+\rput(2.5,1.5){5$\Omega$}
+
+            </code>
+          </pspicture>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001428/view"/>
+		<correct/>
+</entry>-->
+<entry>
+<shortcode>00v1</shortcode>
+<problem>
+          <para>[IEB 2001/11 HG1] - <emphasis effect="bold">Emf</emphasis></para>
+          <list list-type="enumerated">
+            <item>
+              <para>Explain the meaning of each of these two statements:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>“The current through the battery is <unit_number><number>50</number><unit>mA</unit></unit_number>.”</para>
+                </item>
+                <item>
+                  <para>“The emf of the battery is <unit_number><number>6</number><unit>V</unit></unit_number>.”</para>
+                </item>
+              </list>
+            </item>
+            <item>
+              <para>A battery tester measures the current supplied when the battery is connected to a resistor of <unit_number><number>100</number><unit>Ω</unit></unit_number>. If the current is less than <unit_number><number>50</number><unit>mA</unit></unit_number>, the battery is “flat” (it needs to be replaced). Calculate the maximum internal resistance of a <unit_number><number>6</number><unit>V</unit></unit_number> battery that will pass the test.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001431/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00v2</shortcode>
+<problem>
+          <para>[IEB 2005/11 HG] The electric circuit of a torch consists of a cell, a switch and a small light bulb, as shown in the diagram below.</para>
+          <pspicture>
+            <code>
+              (-0.6,0)(5.5,4.6)
+              %\psgrid
+\SpecialCoor
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(5,4){C}
+\pnode(5,0){D}
+\battery(A)(B){}
+\psline(B)(C)
+\psdots(3.6,4)(4.4,4)
+\uput[u](4,4){S}
+\lamp(C)(D){}
+\psline(D)(A)
+
+            </code>
+          </pspicture>
+          <para>The electric torch is designed to use a D-type cell, but the only cell that is available for use is an AA-type cell. The specifications of these two types of cells are shown in the table below:</para>
+          <!--<table latex-column-spec="|c|c|p{3.5cm}|p{6cm}|">-->
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <para><emphasis effect="bold">Cell</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">emf</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">\begin{tabular}{c}Appliance for which\\ it is 
+                    designed\end{tabular}</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">
+                    \begin{tabular}{c}
+                    Current drawn from cell\\ 
+                    when connected to the\\ 
+                    appliance for which it\\ 
+                    is designed\end{tabular}</emphasis></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>D</para>
+                  </entry>
+                  <entry>
+                    <para><unit_number><number>1.5</number><unit>V</unit></unit_number></para>
+                  </entry>
+                  <entry>
+                    <para>torch</para>
+                  </entry>
+                  <entry>
+                    <para><unit_number><number>300</number><unit>mA</unit></unit_number></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>AA</para>
+                  </entry>
+                  <entry>
+                    <para><unit_number><number>1.5</number><unit>V</unit></unit_number></para>
+                  </entry>
+                  <entry>
+                    <para>TV remote control</para>
+                  </entry>
+                  <entry>
+                    <para><unit_number><number>30</number><unit>mA</unit></unit_number></para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <para>What is likely to happen and why does it happen when the AA-type cell replaces the D-type cell in the electric torch circuit?</para>
+          <!--<table latex-column-spec="|c|l|p{5.5cm}|">-->
+          <table>
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <tbody>
+                <row>
+                  <entry/>
+                  <entry>
+                    <para><emphasis effect="bold">What happens</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Why it happens</emphasis></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>(a)</para>
+                  </entry>
+                  <entry>
+                    <para>the bulb is dimmer</para>
+                  </entry>
+                  <entry>
+                    <para>\begin{tabular}{c}
+                    the AA-type cell has \\ 
+                    greater internal resistance
+                    \end{tabular}</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>(b)</para>
+                  </entry>
+                  <entry>
+                    <para>the bulb is dimmer</para>
+                  </entry>
+                  <entry>
+                    <para>\begin{tabular}{c}
+                    the AA-type cell has\\
+                    less internal resistance
+                    \end{tabular}</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>(c)</para>
+                  </entry>
+                  <entry>
+                    <para>\begin{tabular}{c}
+                    the brightness of the\\
+                    bulb is the same
+                    \end{tabular}</para>
+                  </entry>
+                  <entry>
+                    <para>\begin{tabular}{c}
+                    the AA-type cell has the \\
+                    same internal resistance
+                    \end{tabular}</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>(d)</para>
+                  </entry>
+                  <entry>
+                    <para>the bulb is brighter</para>
+                  </entry>
+                  <entry>
+                    <para>\begin{tabular}{c}
+                    the AA-type cell has \\
+                    less internal resistance
+                    \end{tabular}</para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001432/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00v3</shortcode>
+<problem>
+          <para>[IEB 2005/11 HG1]
+A battery of emf ε and internal resistance r = <unit_number><number>25</number><unit>Ω</unit></unit_number> is connected to this arrangement of resistors.</para>
+          <pspicture>
+            <code>
+              (-1,0)(8,5)
+              %\psgrid
+\pnode(0,0){A}
+\pnode(0,4){B}
+\pnode(2,0){C}
+\pnode(2,4){D}
+\pnode(4,0){E}
+\pnode(4,4){F}
+\pnode(6,0){G}
+\pnode(6,4){H}
+\pnode(7,0){I}
+\pnode(7,4){J}
+\battery(A)(B){$\mathcal{E},~r$}
+\Ucc[labeloffset=0](C)(D){V$_1$}
+\resistor(D)(F){100~$\Omega$}
+\resistor(E)(F){50~$\Omega$}
+\resistor(G)(H){50~$\Omega$}
+\Ucc[labeloffset=0](I)(J){V$_2$}
+\psline(B)(D)
+\psline(F)(J)
+\psline(A)(I)
+
+            </code>
+          </pspicture>
+          <para>The resistances of voltmeters <latex>{V}_{<number>1</number>}</latex> and <latex>{V}_{<number>2</number>}</latex> are so high that they do not affect the current in the circuit.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Explain what is meant by “the emf of a battery”.</para>
+              
+
+              <para>The power dissipated in the <unit_number><number>100</number><unit>Ω</unit></unit_number> resistor is <unit_number><number>0.81</number><unit>W</unit></unit_number>.</para>
+            </item>
+            <item>
+              <para>Calculate the current in the <unit_number><number>100</number><unit>Ω</unit></unit_number> resistor.</para>
+            </item>
+            <item>
+              <para>Calculate the reading on voltmeter <latex>{V}_{<number>2</number>}</latex>.</para>
+            </item>
+            <item>
+              <para>Calculate the reading on voltmeter <latex>{V}_{<number>1</number>}</latex>.</para>
+            </item>
+            <item>
+              <para>Calculate the emf of the battery.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001433/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00v4</shortcode>
+<problem>
+          <para>[SC 2003/11] A kettle is marked <unit_number><number>240</number><unit>V</unit></unit_number>; <unit_number><number>1500</number><unit>W</unit></unit_number>.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>Calculate the resistance of the kettle when operating according to the above specifications.</para>
+            </item>
+            <item>
+              <para>If the kettle takes <unit_number><number>3</number><unit>minutes</unit></unit_number> to boil some water, calculate the amount of electrical energy transferred to the kettle.</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001434/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>00v5</shortcode>
+<problem>
+          <para>[IEB 2001/11 HG1] - <emphasis effect="bold">Electric Eels</emphasis></para>
+          
+
+          <para>Electric eels have a series of cells from head to tail. When the cells are activated by a nerve impulse, a potential difference is created from head to tail. A healthy electric eel can produce a potential difference of <unit_number><number>600</number><unit>V</unit></unit_number>.</para>
+          <list list-type="enumerated">
+            <item>
+              <para>What is meant by “a potential difference of <unit_number><number>600</number><unit>V</unit></unit_number>”?</para>
+            </item>
+            <item>
+              <para>How much energy is transferred when an electron is moved through a potential difference of <unit_number><number>600</number><unit>V</unit></unit_number>?</para>
+            </item>
+          </list>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001435/view"/>
+		<correct/>
+</entry>
+</exercises>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,1053 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml/0.4" xmlns:style="http://siyavula.com/cnxml/style/0.1">
+  <metadata>
+    <cnxml-version>0.1</cnxml-version>
+    <pspicture-generator-version>1.1</pspicture-generator-version>
+  </metadata>
+  <content>
+    <section type="chapter">
+      <title>Electrodynamics</title>
+      <section type="section">
+        <title>Introduction</title>
+        <shortcode>ESCFO</shortcode>
+        <para>In Grade 11 you learnt how a magnetic field is generated around a current carrying conductor. You also learnt how a current is generated in a conductor that moves in a magnetic field. This chapter describes how conductors moving in a magnetic field are applied in the real-world.</para>
+        <video>
+          <title>Chapter introduction</title>
+          <shortcode>VPpjl</shortcode>
+	  <url>TODO</url>
+        </video>
+      </section>
+      <section type="section">
+        <title>Electrical machines - generators and motors</title>
+        <shortcode>ESCFP</shortcode>
+        <para>We have seen that when a conductor is moved in a magnetic field or when a magnet is moved near a conductor, a current flows in the conductor. The amount of current depends on the speed at which the conductor experiences a changing magnetic field, the number of turns of the conductor and the position of the plane of the conductor with respect to the magnetic field. The effect of the orientation of the conductor with respect to the magnetic field is illustrated in <link target-id="fig:conductor"/>.</para>
+        <figure id="fig:conductor">
+          <type>figure</type>
+          <pspicture>
+            <code>
+              (-2,-.5)(11.5,5.5)
+              %\psgrid
+\def\magfieldF{\multirput(0,0)(0.25,0){9}{\psline{&lt;-}(0,0)(0,2)}}
+\def\magfieldT{\multirput(0,0)(0,0.25){9}{\multirput(0,0)(0.25,0){9}{\psdot[dotstyle=x](0,0)}}}
+\def\frontview{\rput{0}{\psline[linewidth=0.1cm](1;180)(1;0)\psarc{-&gt;}{1}{0}{30}}}
+\rput(0,3){\magfieldF\rput{0}(1,1){\frontview}}
+\rput(0,0){\magfieldT\pscircle[linewidth=0.1cm](1,1){1}}
+
+\rput(3,0)
+{
+\rput(0,3){\magfieldF\rput{45}(1,1){\frontview}}
+\rput(0,0){\magfieldT\psellipse[linewidth=0.1cm](1,1)(0.5,1)}
+}
+
+\rput(6,0)
+{
+\rput(0,3){\magfieldF\rput{90}(1,1){\frontview}}
+\rput(0,0){\magfieldT\rput(1,1){\psline[linewidth=0.1cm](1;270)(1;90)}}
+}
+
+\rput(9,0)
+{
+\rput(0,3){\magfieldF\rput{135}(1,1){\frontview}}
+\rput(0,0){\magfieldT\psellipse[linewidth=0.1cm](1,1)(0.5,1)}
+}
+
+\uput[l](0,1){top view}
+\uput[l](0,4){front view}
+\rput(1,2.5){(a)}
+\rput(4,2.5){(b)}
+\rput(7,2.5){(c)}
+\rput(10,2.5){(d)}
+
+            </code>
+          </pspicture>
+          <caption>
+            <para>Series of figures showing that the magnetic flux through a conductor is dependent on the angle that the plane of the conductor makes with the magnetic field. The greatest flux passes through the conductor when the plane of the conductor is perpendicular to the magnetic field lines as in (a). The number of field lines passing through the conductor decreases, as the conductor rotates until it is parallel to the magnetic field (c).</para>
+          </caption>
+        </figure>
+        <para>If the current flowing in the conductor were plotted as a function of the angle between the plane of the conductor and the magnetic field, then the current would vary as shown in <link target-id="fig:ac"/>. The current alternates about zero and is known as an <emphasis effect="italics">alternating current</emphasis> (abbreviated AC).</para>
+        <figure id="fig:ac">
+          <type>figure</type>
+          <pspicture>
+            <code>
+              (-2.5,-2)(5.5,2.2)
+             % \psgrid
+\psset{xunit=0.00556}
+\psaxes[labels=none,ticks=none,dx=180,Dx=180]{-&gt;}(0,0)(0,-1.5)(780,1.5)
+\psplot{0}{720}{x sin}
+\uput[r](780,0){time}
+\uput[u](0,1.5){current (arbitrary units)}
+
+            </code>
+          </pspicture>
+          <caption>
+            <para>Variation of current as the angle of the plane of a conductor with the magnetic field changes.</para>
+          </caption>
+        </figure>
+        <para>Recall Faraday's Law which you learnt about in Grade 11:</para>
+        <definition>
+          <term>Faraday's Law</term>
+          <meaning>
+            <para>The emf (electromotive force),
+ϵ, produced around a loop of conductor is proportional to
+the rate of change of the magnetic flux, φ, through the area,
+<latex>A</latex>, of the loop. This can be stated mathematically as:</para>
+            
+
+            <latex>ϵ=-N\frac{\Delta \phi }{\Delta t}</latex>
+            
+
+            <para>where <latex>\phi =B·A</latex> and <latex>B</latex> is the strength of the magnetic field.</para>
+          </meaning>
+        </definition>
+        <para>Faraday's Law relates induced emf (electromotive force) to the rate of change of flux,
+which is the product of the magnetic field and the cross-sectional
+area the field lines pass through.
+As the closed loop conductor changes orientation with respect to the magnetic field, the amount of magnetic flux through the area of the loop changes, and an emf is induced in the conducting loop.</para>
+        <section type="subsection">
+          <title>Electrical generators</title>
+        <shortcode>ESCFQ</shortcode>
+        </section>
+        <section type="subsection">
+          <title>AC generator</title>
+          <shortcode>ESCFR</shortcode>
+          <para>The principle of rotating a conductor in a magnetic field is used in electrical generators. A generator converts mechanical energy (motion) into electrical energy.</para>
+          <definition>
+            <term>Generator</term>
+            <meaning>
+              <para>A generator converts mechanical energy into electrical energy.</para>
+            </meaning>
+          </definition>
+          <para>The layout of a simple AC generator is shown in <link target-id="fig:ACgen"/>. The conductor in the shape of a coil is connected to a slip ring. The conductor is then manually rotated in the magnetic field generating an alternating emf. The slip rings are connected to the load via brushes.</para>
+          <figure id="fig:ACgen">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-0.2,-3.2)(9,3.2)
+                %\psgrid
+\definecolor{color1802b}{rgb}{0.8,0.8,0.8}
+\psframe[linewidth=0.042,dimen=outer](2.92,2.72)(0.04,0.86)
+\psframe[linewidth=0.042,dimen=outer](8.8,2.7)(5.92,0.84)
+\psbezier[linewidth=0.042](4.184828,-1.34)(4.0865517,0.88)(4.342069,0.8)(3.8310344,0.86)(3.32,0.92)(3.3396552,1.46)(3.3789656,2.14)(3.4182758,2.82)(4.08,2.68)(4.8727584,2.68)(5.6655173,2.68)(5.5,1.96)(5.5,1.48)(5.5,1.0)(5.4284515,1.0245473)(5.4,0.96)(5.371548,0.8954527)(5.0489655,0.86)(4.88,0.82)(4.7110343,0.78)(4.8334484,0.46)(4.7744827,-1.34)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=black](5.06,-1.26)(3.78,-1.86)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=color1802b](5.28,-1.18)(5.02,-1.92)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=black](5.04,-2.36)(3.76,-2.96)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=color1802b](5.26,-2.28)(5.0,-3.02)
+\pscircle[linewidth=0.06,dimen=outer](1.41,-0.91){0.57}
+\rput(2.5,1.765){N}
+\rput(6.36,1.765){S}
+\rput(5.34,-0.955){brush}
+\rput(3.04,-1.595){slip ring}
+\rput(3.06,-2.675){slip ring}
+\rput(1.52,-0.135){slip ring (front view)}
+\psline[linewidth=0.042cm,fillcolor=black](4.2,-1.82)(4.2,-2.4)
+\psline[linewidth=0.042cm,fillcolor=black](5.26,-1.54)(6.04,-1.54)
+\psline[linewidth=0.042cm,fillcolor=black](6.04,-1.54)(6.02,-0.84)
+\psline[linewidth=0.042cm,fillcolor=black](6.02,-0.84)(7.84,-0.84)
+\psline[linewidth=0.042cm,fillcolor=black](7.84,-0.84)(7.84,-1.5)
+\psline[linewidth=0.042cm,fillcolor=black](7.84,-1.5)(8.08,-1.64)
+\psline[linewidth=0.042cm,fillcolor=black](8.08,-1.64)(7.64,-1.8)
+\psline[linewidth=0.042cm,fillcolor=black](7.64,-1.8)(8.08,-1.96)
+\psline[linewidth=0.042cm,fillcolor=black](8.08,-1.96)(7.66,-2.16)
+\psline[linewidth=0.042cm,fillcolor=black](7.66,-2.16)(8.08,-2.26)
+\psline[linewidth=0.042cm,fillcolor=black](8.08,-2.26)(7.66,-2.46)
+\psline[linewidth=0.042cm,fillcolor=black](7.66,-2.46)(7.86,-2.52)
+\psline[linewidth=0.042cm,fillcolor=black](7.86,-2.52)(7.86,-3.02)
+\psline[linewidth=0.042cm,fillcolor=black](7.86,-3.02)(5.96,-3.02)
+\psline[linewidth=0.042cm,fillcolor=black](5.96,-3.02)(5.98,-2.64)
+\psline[linewidth=0.042cm,fillcolor=black](5.98,-2.64)(5.26,-2.64)
+\rput(8.57,-2.055){load}
+\rput(5.11,0.545){coil}
+\rput(1.47,2.905){magnet}
+\rput(7.39,2.905){magnet}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>Layout of an alternating current generator.</para>
+            </caption>
+          </figure>
+          <para>If a machine is constructed to rotate a magnetic field around a set of stationary wire coils with the turning of a shaft, AC voltage will be produced across the wire coils as that shaft is rotated, in accordance with Faraday's Law of electromagnetic induction. This is the basic operating principle of an AC generator.</para>
+          
+
+          <para>In an AC generator the two ends of the coil are each attached to a slip ring that makes contact with brushes as the coil turns. The direction of the current changes with every half turn of the coil. As one side of the loop moves to the other pole of the magnetic field, the current in the loop changes direction. The two slip rings of the AC generator allow the coil to turn without breaking the connections to the load circuit. This type of current which changes direction is known as alternating current.</para>
+          <note type="aside">
+            <para>AC generators are also known as alternators. They are found in motor cars to charge the car battery.</para>
+          </note>
+        </section>
+        <section type="subsection">
+          <title>DC generator</title>
+          <shortcode>ESCFS</shortcode>
+          <para>A simple DC generator is constructed the same way as an AC generator except that there is one slip ring which is split into two pieces, called a commutator, so the current in the external circuit does not change direction. The layout of a DC generator is shown in <link target-id="fig:DCgen"/>. The split-ring commutator accommodates for the change in direction of the current in the loop, thus creating direct current (DC) current going through the brushes and out to the circuit.</para>
+          <figure id="fig:DCgen">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-0.2,-2.4)(9.2,4.2)
+                %\psgrid
+\psframe(0,2)(3,4)\uput[l](3,3){N}
+\psframe(6,2)(9,4)\uput[r](6,3){S}
+\psline[linearc=0.4cm](4.2,-0.4)(4.2,2)(3.4,2)(3.4,4)(5.6,4)(5.6,2)(4.8,2)(4.8,-0.4)
+\psframe*(4,-1)(5,-0.4)\psline(5,-0.4)(5,-1)
+\uput[d](4.4,-1){split ring}
+\uput[ul](4,-0.4){brush}
+\uput[ur](5,-0.4){brush}
+
+\psframe[fillstyle=solid,fillcolor=lightgray](5,-1)(5.2,-0.4)\psline(5.2,-0.7)(6,-0.7)(6,0)(8,0)
+
+\psframe[fillstyle=solid,fillcolor=lightgray](3.8,-1)(4,-0.4)\psline(3.8,-0.7)(3,-0.7)(3,-2.2)(8,-2.2)
+\resistor[dipolestyle=zigzag](8,0)(8,-2.2){load}
+\rput(0,-1){\psarc[linewidth=2pt](2,1){0.5}{0}{180}\psarc[linewidth=2pt](2,0.8){0.5}{180}{0}\uput[u](2,1.5){split ring commutator}}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>Layout of a direct current generator.</para>
+            </caption>
+          </figure>
+          <para>The shape of the emf from a DC generator is shown in <link target-id="fig:DCsignal"/>. The emf is not steady but is the absolute value of a sine/cosine wave.</para>
+          <figure id="fig:DCsignal">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-1,-2)(6.4,2)
+               % \psgrid
+\psset{xunit=0.00556}
+\psaxes[labels=none,ticks=none,dx=180,Dx=180]{-&gt;}(0,0)(0,-1.5)(780,1.5)
+\def\sine{\psplot{0}{180}{x sin}}
+\rput(0,0){\sine}
+\rput(180,0){\sine}
+\rput(360,0){\sine}
+\rput(540,0){\sine}
+\uput[r](780,0){$\theta$ or time}
+\uput[u](0,1.5){current}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>Variation of emf in a DC generator.</para>
+            </caption>
+          </figure>
+        </section>
+        <section type="subsection">
+          <title>AC versus DC generators</title>
+          <shortcode>ESCFT</shortcode>
+          <para>The problems involved with making and breaking electrical contact with a moving coil are sparking and heat, especially if the generator is turning at high speed. If the atmosphere surrounding the machine contains flammable or explosive vapours, the practical problems of spark-producing brush contacts are even greater.</para>
+          
+
+          <para>If the magnetic field, rather than the coil/conductor is rotated, then brushes are not needed in an AC generator (alternator), so an alternator will not have the same problems as DC generators.
+The same benefits of AC over DC for generator design also apply to electric motors.
+While DC motors need brushes to make electrical contact with moving coils of wire, AC motors do not. In fact, AC and DC motor designs are very similar to their generator counterparts.
+The AC motor is depends on the reversing magnetic field produced by alternating current through its stationary coils of wire to make the magnet rotate. The DC motor depends on the brush contacts making and breaking
+connections to reverse current through the rotating coil every 1/2 rotation (180 degrees).</para>
+        </section>
+        <section type="subsection">
+          <title>Electric motors</title>
+          <shortcode>ESCFU</shortcode>
+          <para>The basic principles of operation for a motor are the same as that of a generator, except that a motor converts electrical energy into mechanical energy (motion).</para>
+          <definition>
+            <term>Motor</term>
+            <meaning>
+              <para>An electric motor converts electrical energy into mechanical energy.</para>
+            </meaning>
+          </definition>
+          <para>If one were to place a moving charged particle in a magnetic field, it would feel a force called the <emphasis effect="bold">Lorentz force</emphasis>.</para>
+          <definition>
+            <term>The Lorentz Force</term>
+            <meaning>
+              <para>The Lorentz force is the force experienced by a moving charged particle in a magnetic field and can be described by:</para>
+              
+
+              <latex display='block'>F=qvB</latex>
+              
+
+              <para>where <latex>F</latex> is the force (in newtons, N), <latex>q</latex> is the electric charge (in coulombs, C), <latex>v</latex> is the velocity of the charged particle (in <unit>m·s<sup>-1</sup></unit>) and <latex>B</latex> is the magnetic field strength (in teslas, T).</para>
+            </meaning>
+          </definition>
+          <para>Current in a conductor consists of moving charges. Therefore, a current carrying coil in a magnetic field will also feel the Lorentz force. For a straight current carrying wire which is not moving:</para>
+          <latex display='block'>F=ILB</latex>
+          <para>where <latex>F</latex> is the force (in newtons, N), <latex>I</latex> is the current in the wire (in amperes, A), <latex>L</latex> is the length of the wire which is in the magnetic field (in m) and <latex>B</latex> is the magnetic field strength (in teslas, T).</para>
+          
+
+          <para>The direction of the Lorentz force is perpendicular to both the direction of the flow of current and the magnetic field and can be found using the <emphasis effect="bold">Right Hand Rule</emphasis> as shown in the picture below. Use your <emphasis effect="italics">right hand</emphasis>; your thumb points in the direction of the current, your first finger in the direction of the magnetic field and your third finger will then point in the direction of the force.</para>
+          <pspicture>
+            <code>
+              (-0.2,-2.8)(7.5,2.8)
+              %\psgrid
+\psline[linewidth=0.04cm](0.02,1.14)(1.42,1.14)
+\psline[linewidth=0.04cm](1.42,1.14)(1.42,-0.84)
+\psline[linewidth=0.04cm](1.42,-0.84)(0.0,-0.84)
+\psline[linewidth=0.04cm](7.2182946,-0.8211864)(5.818297,-0.8187762)
+\psline[linewidth=0.04cm](5.818297,-0.8187762)(5.8217053,1.1612209)
+\psline[linewidth=0.04cm](5.8217053,1.1612209)(7.2417035,1.1587762)
+\rput(1.14,0.125){S}
+\rput(6.14,0.165){N}
+\pscircle[linewidth=0.04,dimen=outer](4.07,0.13){0.21}
+\pscircle[linewidth=0.04,dimen=outer](4.21,0.05){0.01}
+\rput(4.08,0.105){+}
+\psline[linewidth=0.054cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.96,-0.02)(2.26,-2.24)
+\psline[linewidth=0.054cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.9,0.18)(1.5,0.18)
+\psline[linewidth=0.054cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.06,0.32)(4.06,2.7)
+\rput(0.63,1.345){magnet}
+\rput(6.53,1.365){magnet}
+\rput(5.65,2.625){\small Direction of current }
+\rput(4.98,2.305){\small in the wire}
+\rput(4.89,1.94){\footnotesize [THUMB]}
+\rput(3.41,-2.58){\footnotesize [2nd FINGER]}
+\rput(4.63,-2.195){\small Direction of the Lorentz force}
+\rput(2.65,0.765){\small Direction of the }
+\rput(2.58,0.445){\small magnetic field}
+\rput(2.43,-0.18){\footnotesize [1st FINGER]}
+
+            </code>
+          </pspicture>
+          <para>Both motors and generators can be explained in terms of a coil that rotates in a magnetic field. In a generator the coil is attached to an external circuit that is turned, resulting in a changing flux that induces an emf. In a motor, a current-carrying coil in a magnetic field experiences a force on both sides of the coil, creating a twisting force (called a <emphasis effect="italics">torque</emphasis>, pronounce like 'talk') which makes it turn.</para>
+          
+
+          <para>Any coil carrying current can feel a force in a magnetic field. The force is the Lorentz force on the moving charges in the conductor. The force on opposite sides of the coil will be in opposite directions because the charges are moving in opposite directions. This means the coil will rotate, see the picture below:</para>
+          <pspicture>
+            <code>
+              (0,-2.32)(7.96,2.32)
+              %\psgrid
+\definecolor{color0}{rgb}{0.6,0.6,0.6}
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(0.9,1.94)(0.9,-1.74)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.5,1.94)(1.5,-1.74)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(2.12,1.92)(2.12,-1.76)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(2.72,1.94)(2.72,-1.74)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.32,1.92)(3.32,-1.76)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.92,1.92)(3.92,-1.76)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.5,1.92)(4.5,-1.76)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(5.12,1.94)(5.12,-1.74)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(5.72,1.94)(5.72,-1.74)
+\psline[linewidth=0.04cm,linecolor=color0,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(6.32,1.94)(6.32,-1.74)
+\psline[linewidth=0.04](0.34,0.22)(1.88,0.22)(2.26,1.16)(6.16,1.16)(5.64,-1.1)(1.42,-1.08)(1.76,0.0)(0.24,0.0)
+\psellipse[linewidth=0.04,linecolor=color0,dimen=outer](6.99,0.16)(0.39,1.0)
+\psbezier[linewidth=0.04,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(7.34,0.04)(7.36,0.06)(7.3,-0.86)(7.0142856,-0.82)(6.7285714,-0.78)(6.614286,-0.33518797)(6.6714287,0.46)(6.7285714,1.255188)(7.16,1.32)(7.36,0.54)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 3.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.46,1.16)(4.66,1.16)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 3.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.7,-1.1)(3.5,-1.1)
+\psframe[linewidth=0.02,linecolor=color0,dimen=outer](2.96,0.38)(2.74,0.14)
+\psline[linewidth=0.12cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(4.02,1.14)(4.76,1.62)
+\psline[linewidth=0.12cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(3.32,-1.08)(2.68,-1.62)
+\psline[linewidth=0.12cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(2.1,0.66)(1.56,0.66)
+\psline[linewidth=0.12cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(1.6,-0.62)(1.06,-0.62)
+\psline[linewidth=0.12cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(6.02,0.66)(6.56,0.66)
+\psline[linewidth=0.12cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&gt;}(5.7,-0.64)(6.24,-0.64)
+\rput(5.12,2.125){resultant force is \textit{into} the page}
+\rput(2.95,-2.095){resultant force is \textit{out of} the page}
+\psline[linewidth=0.02cm](0.04,0.14)(7.72,0.14)
+
+            </code>
+          </pspicture>
+          <para>Instead of rotating the loops through a magnetic field to create electricity, a current is sent through the wires, creating electromagnets. The outer magnets will then repel the electromagnets and rotate the shaft as an electric motor. If the current is AC, the two slip rings are required to create an AC motor. An AC motor is shown in <link target-id="fig:ACmotor"/></para>
+          <figure id="fig:ACmotor">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-0.2,-3.2)(9,3.2)
+               % \psgrid
+\definecolor{color1802b}{rgb}{0.8,0.8,0.8}
+\psframe[linewidth=0.042,dimen=outer](2.92,2.72)(0.04,0.86)
+\psframe[linewidth=0.042,dimen=outer](8.8,2.7)(5.92,0.84)
+\psbezier[linewidth=0.042](4.184828,-1.34)(4.0865517,0.88)(4.342069,0.8)(3.8310344,0.86)(3.32,0.92)(3.3396552,1.46)(3.3789656,2.14)(3.4182758,2.82)(4.08,2.68)(4.8727584,2.68)(5.6655173,2.68)(5.5,1.96)(5.5,1.48)(5.5,1.0)(5.4284515,1.0245473)(5.4,0.96)(5.371548,0.8954527)(5.0489655,0.86)(4.88,0.82)(4.7110343,0.78)(4.8334484,0.46)(4.7744827,-1.34)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=black](5.06,-1.26)(3.78,-1.86)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=color1802b](5.28,-1.18)(5.02,-1.92)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=black](5.04,-2.36)(3.76,-2.96)
+\psframe[linewidth=0.042,dimen=outer,fillstyle=solid,fillcolor=color1802b](5.26,-2.28)(5.0,-3.02)
+\pscircle[linewidth=0.06,dimen=outer](1.41,-0.91){0.57}
+\rput(2.5,1.765){N}
+\rput(6.36,1.765){S}
+\rput(5.34,-0.955){brush}
+\rput(3.04,-1.595){slip ring}
+\rput(3.06,-2.675){slip ring}
+\rput(1.52,-0.135){slip ring (front view)}
+\psline[linewidth=0.042cm,fillcolor=black](4.2,-1.82)(4.2,-2.4)
+\psline[linewidth=0.042cm,fillcolor=black](5.26,-1.54)(6.04,-1.54)
+\psline[linewidth=0.042cm,fillcolor=black](6.04,-1.54)(6.02,-0.84)
+\psline[linewidth=0.042cm,fillcolor=black](6.02,-0.84)(7.84,-0.84)
+\psline[linewidth=0.042cm,fillcolor=black](7.84,-0.84)(7.84,-1.5)
+\psline[linewidth=0.042cm,fillcolor=black](7.86,-2.52)(7.86,-3.02)
+\psline[linewidth=0.042cm,fillcolor=black](7.86,-3.02)(5.96,-3.02)
+\psline[linewidth=0.042cm,fillcolor=black](5.96,-3.02)(5.98,-2.64)
+\psline[linewidth=0.042cm,fillcolor=black](5.98,-2.64)(5.26,-2.64)
+\rput(5.11,0.545){coil}
+\rput(1.47,2.905){magnet}
+\rput(7.39,2.905){magnet}
+\psframe[linewidth=0.042,dimen=outer](8.68,-1.52)(7.62,-2.54)
+\rput(8.11,-1.855){\scriptsize AC}
+\rput(8.16,-2.095){\scriptsize source}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>Layout of an alternating current motor.</para>
+            </caption>
+          </figure>
+          <para>If the current is DC, split-ring commutators are required to create a DC motor. This is shown in <link target-id="fig:DCmotor"/>.</para>
+          <figure id="fig:DCmotor">
+            <type>figure</type>
+            <pspicture>
+              <code>
+                (-0.2,-2.4)(9.2,4.2)
+                %\psgrid
+\psframe(0,2)(3,4)\uput[l](3,3){N}
+\psframe(6,2)(9,4)\uput[r](6,3){S}
+\psline[linearc=0.4cm](4.2,-0.4)(4.2,2)(3.4,2)(3.4,4)(5.6,4)(5.6,2)(4.8,2)(4.8,-0.4)
+\psframe*(4,-1)(5,-0.4)\psline(5,-0.4)(5,-1)
+\uput[d](4.4,-1){split ring}
+\uput[ul](4,-0.4){brush}
+\uput[ur](5,-0.4){brush}
+
+\psframe[fillstyle=solid,fillcolor=lightgray](5,-1)(5.2,-0.4)\psline(5.2,-0.7)(6,-0.7)(6,0)(8,0)
+
+\psframe[fillstyle=solid,fillcolor=lightgray](3.8,-1)(4,-0.4)\psline(3.8,-0.7)(3,-0.7)(3,-2.2)(8,-2.2)
+\battery(8,0)(8,-2.2){}
+\rput(0,-1){\psarc[linewidth=2pt](2,1){0.5}{0}{180}\psarc[linewidth=2pt](2,0.8){0.5}{180}{0}\uput[u](2,1.5){split ring commutator}}
+
+              </code>
+            </pspicture>
+            <caption>
+              <para>Layout of a direct current motor.</para>
+            </caption>
+          </figure>
+        </section>
+        <section type="subsection">
+          <title>Real-life applications</title>
+          <shortcode>ESCFV</shortcode>
+          <section type="subsubsection">
+            <title>Cars</title>
+            <para>A car contains an alternator that charges its battery and powers the car's electric system when its engine is running. Alternators have the great advantage over direct-current generators of not using a commutator, which makes them simpler, lighter, less costly, and more rugged than a DC generator.</para>
+            <activity type="project">
+              <title>Alternators</title>
+              <para>Try to find out the different ampere values produced by alternators for different types of machines. Compare these to understand what numbers make sense in the real world. You will find different numbers for cars, trucks, buses, boats etc. Try to find out what other machines might have alternators.</para>
+            </activity>
+            <para>A car also contains a DC electric motor, the starter motor, to turn over the engine to start it.
+A starter motor consists of the very powerful DC electric motor and starter solenoid that is attached to the motor.
+A starter motor requires a very high current to crank the engine, that's why it's connected to the battery with large cables.</para>
+          </section>
+          <section type="subsubsection">
+            <title>Electricity generation</title>
+            <para>AC generators are mainly used in the real-world to generate electricity.</para>
+            <figure>
+              <type>figure</type>
+              <pspicture>
+                <code>
+(-6,-3)(6,3)
+%\psgrid
+\rput(0,0){\includegraphics{images/02007.eps}}
+                </code>
+              </pspicture>
+              <caption>
+                <para>AC generators are used at the power plant to generate electricity.</para>
+              </caption>
+            </figure>
+            <exercises><title>Generators and motors</title>
+              <entry>
+<shortcode>01yd</shortcode>
+<problem>
+                <para>State the difference between a generator and a motor.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001246/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01ye</shortcode>
+<problem>
+                <para>Use Faraday's Law to explain why a current is induced in a coil that is rotated in a magnetic field.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001247/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01yf</shortcode>
+<problem>
+                <para>Explain the basic principle of an AC generator in which a coil is mechanically rotated in a magnetic field. Draw a diagram to support your answer.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001248/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01yg</shortcode>
+<problem>
+                <para>Explain how a DC generator works. Draw a diagram to support your answer. Also, describe how a DC generator differs from an AC generator.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001249/00000002/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01yh</shortcode>
+<problem>
+                <para>Explain why a current-carrying coil placed in a magnetic field (but not parallel to the field) will turn. Refer to the force exerted on moving charges by a magnetic field and the torque on the coil.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001250/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01yi</shortcode>
+<problem>
+                <para>Explain the basic principle of an electric motor. Draw a diagram to support your answer.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001251/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01yj</shortcode>
+<problem>
+                <para>Give examples of the use of AC and DC generators.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001252/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01yk</shortcode>
+<problem>
+                <para>Give examples of the uses of motors.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001253/view"/>
+		<correct/>
+</entry>
+</exercises>
+          </section>
+        </section>
+      </section>
+      <section type="section">
+        <title>Alternating current</title>
+        <shortcode>ESCFW</shortcode>
+        <para>Most students learning about electricity begin with what is known as <emphasis effect="italics">direct current</emphasis> (DC), which is electricity flowing in a constant direction. DC is the kind of electricity made by a battery, with definite positive and negative terminals.</para>
+        
+
+        <para>However, we have seen that the electricity produced by some generators alternates and is therefore known as <emphasis effect="italics">alternating current</emphasis> (AC). The main advantage to AC is that the voltage can be changed using transformers. That means that the voltage can be stepped up at power stations to a very high voltage so that electrical energy can be transmitted along power lines at low current and therefore experience low energy loss due to heating. The voltage can then be stepped down for use in buildings and street lights.</para>
+        <note type="aside">
+          <para>In South Africa alternating current is generated at a frequency of <unit_number><number>50</number><unit>Hz</unit></unit_number>.</para>
+        </note>
+        <para>The circuit symbol for alternating current is:</para>
+        <pspicture>
+          <code>
+            (0,0)(2,2)
+           % \psgrid
+\Ucc[labeloffset=0](0,1)(2,1){\Huge $\sim$}
+
+          </code>
+        </pspicture>
+        <para>Graphs of voltage against time and current against time for an AC circuit are shown in <link target-id="fig:ACgraphs"/></para>
+        <figure id="fig:ACgraphs">
+          <type>figure</type>
+          <pspicture>
+            <code>
+              (-2,-2)(5.5,2.2)
+              %\psgrid
+\psset{xunit=0.00556}
+\psaxes[labels=none,ticks=none,dx=180,Dx=180]{&lt;-&gt;}(0,0)(0,-1.5)(780,1.5)
+\psplot{0}{720}{x sin}
+\uput[r](780,0){time}
+\uput[u](0,1.5){current OR voltage}
+
+            </code>
+          </pspicture>
+          <caption>
+            <para>Graph of current or voltage in an AC circuit.</para>
+          </caption>
+        </figure>
+        <section type="subsection">
+        <title>Current and voltage</title>
+        <para>In an ideal DC circuit the current and voltage are constant. In an AC circuit the current and voltage vary with time. The value of the current or voltage at any specific time is called the <emphasis effect="italics">instantaneous current or voltage</emphasis> and is calculated as follows:</para>
+        
+
+        <latex display="block">
+		\begin{align}
+		 i&amp; = {I}_{\max}\sin\left(<number>2</number>\pi ft+\phi \right)\\
+		  v&amp; = {V}_{\max}\sin\left(<number>2</number>\pi ft\right) 
+		\end{align}
+		</latex>
+        
+
+        <para><latex>i</latex> is the instantaneous current. <latex>{I}_{\max}</latex> is the maximum current. <latex>v</latex> is the instantaneous voltage. <latex>{V}_{\max}</latex> is the maximum voltage. <latex>f</latex> is the frequency of the AC and t is the time at which the instantaneous current or voltage is being calculated.</para>
+        
+
+        <para>The average value we use for AC is known as the root mean square (rms) average. This is defined as:</para>
+        
+
+        <latex display="block">
+		\begin{align}
+		 {I}_{rms}&amp; = \frac{{I}_{\max}}{\sqrt{<number>2</number>}}\\
+		  {V}_{rms}&amp; = \frac{{V}_{\max}}{\sqrt{<number>2</number>}} 
+		\end{align}
+		</latex>
+        
+
+        <para>Since AC varies sinusoidally, with as much positive as negative, doing a straight average would get you zero for the average voltage. The rms value by-passes this problem.</para>
+        <worked_example>
+        <title>Laptop transformer</title>
+        <question>
+        <para>The transformer for the laptop on which this book was written has the following information: 
+            <list>
+                <item>INPUT: <number>100</number>-<unit_number><number>240</number><unit>V</unit></unit_number>; <unit_number><number>1.5</number><unit>A</unit></unit_number>; <number>50</number>/<unit_number><number>60</number><unit>Hz</unit></unit_number></item>
+                <item>OUTPUT:<unit_number><number>20</number><unit>V</unit></unit_number>; <unit_number><number>3.25</number><unit>A</unit></unit_number></item>
+            </list> 
+            </para>
+        <para>
+        What changes from input to output, apart from the voltage and current values, and what does that imply? In addition, calculate the rms (root mean square) current and voltage values for the input and/or output as appropriate.
+        </para>
+        </question>
+        <answer>
+        <workstep>
+        <title>Comparing input and output</title>
+        <para>The input description includes a frequency because it is designed for regular household use where we use alternating current. The output doesn't include a frequency. This implies that the output is not alternating current. This means that the output voltage and current will be constant with time.</para>
+        </workstep>
+        <workstep>
+        <title>RMS values</title>
+        <para>Root mean square values are only applicable when dealing with alternating current. The transformer takes alternating current input and produces direct current output, this means that we only need to determine the rms values for the input.</para>
+        <latex display="block">
+         \begin{align}
+         V_{\textrm{rms}} &amp; =  \frac{V_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         V_{\textrm{rms}} &amp; =  \frac{<unit_number><number>240</number><unit>V</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>169.71</number><unit>V</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>V_{\textrm{rms}}=<unit_number><number>169.71</number><unit>V</unit></unit_number></latex></para>
+
+        <latex display="block">
+         \begin{align}
+         I_{\textrm{rms}} &amp; =  \frac{I_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         I_{\textrm{rms}} &amp; =  \frac{<unit_number><number>1.5</number><unit>A</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>1.06</number><unit>A</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>I_{\textrm{rms}}=<unit_number><number>1.06</number><unit>A</unit></unit_number></latex></para>
+        </workstep>
+        </answer>
+        </worked_example>
+
+
+        <worked_example>
+        <title>Camera battery charger</title>
+        <question>
+        <para>The transformer for the laptop on which this book was written has the following information: 
+            <list>
+                <item>INPUT: <number>100</number>-<unit_number><number>240</number><unit>V</unit></unit_number>; <unit_number><number>0.085</number><unit>A</unit></unit_number> (<unit_number><number>100</number><unit>V</unit></unit_number>) - <unit_number><number>0.05</number><unit>A</unit></unit_number> (<unit_number><number>240</number><unit>V</unit></unit_number>) ; <number>50</number>/<unit_number><number>60</number><unit>Hz</unit></unit_number></item>
+                <item>OUTPUT:<unit_number><number>4.2</number><unit>V</unit></unit_number>; <unit_number><number>0.7</number><unit>A</unit></unit_number></item>
+            </list> 
+            </para>
+        <para>
+        Calculate the rms (root mean square) current and voltage values for both <unit_number><number>100</number><unit>V</unit></unit_number> and <unit_number><number>240</number><unit>V</unit></unit_number> input.
+        </para>
+        </question>
+        <answer>
+        <workstep>
+        <title>Understanding the two cases</title>
+        <para>
+        The reason the transformer has the different input voltages listed is because it may be used internationally and not all countries use the same household voltage. The transformers purpose is to ensure that the output is consistent regardless of the input voltage. The different input voltages of <unit_number><number>100</number><unit>V</unit></unit_number> and <unit_number><number>240</number><unit>V</unit></unit_number> result in different input current values. This is why two different current values are listed under input but the voltage in parentheses tells you which case they are applicable to.
+        </para>
+        <para>The cases are:
+        </para>
+        <list>
+            <item><emphasis effect='bold'><unit_number><number>100</number><unit>V</unit></unit_number>:</emphasis> <unit_number><number>0.085</number><unit>A</unit></unit_number></item>
+            <item><emphasis effect='bold'><unit_number><number>240</number><unit>V</unit></unit_number>:</emphasis> <unit_number><number>0.05</number><unit>A</unit></unit_number></item>
+        </list>
+        </workstep>
+        <workstep>
+        <title>Input voltage of <unit_number><number>100</number><unit>V</unit></unit_number></title>
+        <latex display="block">
+         \begin{align}
+         V_{\textrm{rms}} &amp; =  \frac{V_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         V_{\textrm{rms}} &amp; =  \frac{<unit_number><number>100</number><unit>V</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>70.71</number><unit>V</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>V_{\textrm{rms}}=<unit_number><number>70.71</number><unit>V</unit></unit_number></latex></para>
+
+        <latex display="block">
+         \begin{align}
+         I_{\textrm{rms}} &amp; =  \frac{I_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         I_{\textrm{rms}} &amp; =  \frac{<unit_number><number>0.085</number><unit>A</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>0.06</number><unit>A</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>I_{\textrm{rms}}=<unit_number><number>0.06</number><unit>A</unit></unit_number></latex></para>
+        </workstep>
+        <workstep>
+        <title>Input voltage of <unit_number><number>240</number><unit>V</unit></unit_number></title>
+        <latex display="block">
+         \begin{align}
+         V_{\textrm{rms}} &amp; =  \frac{V_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         V_{\textrm{rms}} &amp; =  \frac{<unit_number><number>240</number><unit>V</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>169.71</number><unit>V</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>V_{\textrm{rms}}=<unit_number><number>169.71</number><unit>V</unit></unit_number></latex></para>
+
+        <latex display="block">
+         \begin{align}
+         I_{\textrm{rms}} &amp; =  \frac{I_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         I_{\textrm{rms}} &amp; =  \frac{<unit_number><number>0.5</number><unit>A</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>0.35</number><unit>A</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>I_{\textrm{rms}}=<unit_number><number>0.35</number><unit>A</unit></unit_number></latex></para>
+        </workstep>
+
+        </answer>
+        </worked_example>
+
+
+
+        </section>
+        <exercises><title>Alternating current</title>
+          <entry>
+<shortcode>01ym</shortcode>
+<problem>
+            <para>Explain the advantages of alternating current.</para>
+          </problem>
+          <solution url="TODO">
+				<correct><para>The main advantage is that AC current can be passed through transformers which makes power generation and transmission much easier and less wasteful.</para></correct>
+			  </solution>
+</entry>
+<entry>
+<problem>
+<para>
+      Which of the following graphs correctly shows the current vs. time graph for an AC generator?
+    </para>
+        <table>
+        <tgroup cols="2">
+        <colspec colname="c1" colnum="1"/>
+        <colspec colname="c2" colnum="2"/>
+        <tbody>
+        <row>
+            <!--<entry><figure><type>figure</type><image><src>templates/Electrodynamics/generators1-1/media/c8f79c7b6dff39a37d49f43717dc5bd4.pdf</src></image></figure></entry>
+            <entry><figure><type>figure</type><image><src>templates/Electrodynamics/generators1-1/media/0922dbab371e6ce18c76237a9ca1c934.pdf</src></image></figure></entry>-->
+            <entry><image style:width='0.3'><src>templates/Electrodynamics/generators1-1/media/c8f79c7b6dff39a37d49f43717dc5bd4.pdf</src></image></entry>
+            <entry><image style:width='0.3'><src>templates/Electrodynamics/generators1-1/media/0922dbab371e6ce18c76237a9ca1c934.pdf</src></image></entry>
+        </row>
+        <row>
+            <entry><emphasis effect="bold">A</emphasis></entry>
+            <entry><emphasis effect="bold">B</emphasis></entry>
+        </row>
+        <row>
+            <entry><image style:width='0.3'><src>templates/Electrodynamics/generators1-1/media/f8a5cb9557516a7fdeaefb5cbdcab961.pdf</src></image></entry>
+            <entry><image style:width='0.3'><src>templates/Electrodynamics/generators1-1/media/4831c4f45703fca98c1223b4ed6f08a0.pdf</src></image></entry>
+        </row>
+        <row>
+            <entry><emphasis effect="bold">C</emphasis></entry>
+            <entry><emphasis effect="bold">D</emphasis></entry>
+        </row>
+        </tbody>
+        </tgroup>
+        </table>
+</problem>
+<solution>
+        <para>For an alternating current generator, the current vs. time graph is a sine wave and alternates between positive and negative values.</para><para>For a direct current generator, the current vs. time graph is the absolute value of a sine wave and does not alternate between positive and negative values.</para><correct><para>The correct answer is C.</para></correct>
+</solution>
+</entry>
+
+
+<entry>
+<shortcode>01yn</shortcode>
+<problem>
+            <para>Write expressions for the current and voltage in an AC circuit.</para>
+          </problem>
+          <solution url="TODO">
+		<correct>		<latex display="block">
+				  \begin{align}
+				   i &amp; = I_{\max}\sin(<number>2</number>πft+φ)\\
+				   v &amp; = V_{\max}\sin(<number>2</number>πft) 
+				   \end{align}
+				</latex></correct>
+			  </solution>
+</entry>
+<entry>
+<shortcode>01yp</shortcode>
+<problem>
+            <para>Define the rms (root mean square) values for current and voltage for AC.</para>
+          </problem>
+          <solution url="TODO"><correct>
+				<para>The root mean square is the average value that we use for AC.</para>
+				<latex display="block">
+				  \begin{align}
+				  I_{rms} &amp; =\frac{I_{\max}}{\sqrt{<number>2</number>}}\\
+				  V_{rms} &amp; =\frac{V_{\max}}{\sqrt{<number>2</number>}}
+				  \end{align}
+				</latex></correct>
+				</solution>
+</entry>
+<entry>
+<shortcode>01yq</shortcode>
+<problem>
+            <para>What is the frequency of the AC generated in South Africa?</para>
+          </problem>
+          <solution url="TODO">
+			<correct>  <para>In South Africa the frequency is <unit_number><number>50</number><unit>Hz</unit></unit_number></para></correct>
+			</solution>
+</entry>
+
+
+<entry>
+<shortcode>01yr</shortcode>
+<problem>
+            <para>If <latex>{V}_{\mathrm{\max}}</latex> at a power station generator is <unit_number><number>340</number><unit>V</unit></unit_number> AC, what is the mains supply (rms voltage) in our household?</para>
+          </problem>
+          <solution url="TODO">
+		<correct>		<latex display="block">
+				  \begin{align}
+				  V_{rms} &amp; = \frac{V_{\max}}{\sqrt{<number>2</number>}} \\
+				  &amp; =  \frac{<number>340</number>}{\sqrt{<number>2</number>}}\\
+					&amp; =  <unit_number><number>240.42</number><unit>V</unit></unit_number>
+				  \end{align}
+				</latex></correct>
+			  </solution>
+</entry>
+<entry>
+<problem>
+    <para>Given: <latex>I_{\textrm{max}}</latex> is <unit_number><number>10</number><unit>A</unit></unit_number>
+    </para>
+    <para>
+      Calculate the rms (root mean square) current to two decimal places.
+    </para>
+</problem>
+<solution>
+        <latex display="block">
+         \begin{align}
+         I_{\textrm{rms}} &amp; = \frac{I_{\textrm{max}}}{\sqrt{<number>2</number>}}
+         \end{align}
+         </latex><latex display="block">
+         \begin{align}
+         I_{\textrm{rms}} &amp; =  \frac{<unit_number><number>10</number><unit>A</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; =  <unit_number><number>7.07</number><unit>A</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>I_{\textrm{rms}}=<unit_number><number>7.07</number><unit>A</unit></unit_number></latex></para>
+        <correct>
+        <latex>7.07</latex></correct>
+</solution>
+</entry>
+<entry>
+<problem>
+    <para>
+    Given: <latex>V_{\textrm{max}}</latex> is <unit_number><number>266</number><unit>V</unit></unit_number>
+    </para>
+    <para>
+      Calculate the rms (root mean square) voltage to two decimal places.
+    </para>
+    </problem>
+    <solution>
+        <latex display="block">
+         \begin{align}
+         V_{\textrm{rms}} &amp; =  \frac{V_{\textrm{max}}}{\sqrt{<number>2</number>}}
+         \end{align}
+         </latex><latex display="block">
+         \begin{align}
+         V_{\textrm{rms}} &amp; =  \frac{<unit_number><number>266</number><unit>V</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; =  <unit_number><number>188.09</number><unit>V</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>V_{\textrm{rms}}=<unit_number><number>188.09</number><unit>V</unit></unit_number></latex></para>
+        <correct>
+        <unit_number><number>188.09</number><unit>V</unit></unit_number></correct></solution>
+</entry>
+<entry>
+<shortcode>01ys</shortcode>
+<problem>
+            <para>Draw a graph of voltage vs time and current vs time for an AC circuit.</para>
+          </problem>
+          <solution url="TODO">
+          <correct>
+				<para>The graph is the same for both voltage and for current:</para>
+				 <pspicture>
+            <code>
+              (0,-2)(4.6,2)
+             % \psgrid
+\psset{xunit=0.00556}
+\psaxes[labels=none,ticks=none,dx=180,Dx=180]{&lt;-&gt;}(0,0)(0,-1.5)(780,1.5)
+\psplot{0}{720}{x sin}
+\uput[r](780,0){time}
+\uput[u](0,1.5){current OR voltage}
+
+            </code>
+          </pspicture></correct>
+			  </solution>
+</entry>
+
+
+
+</exercises>
+        <section type="subsection">
+        <title>Power</title>
+<para>If the current and voltage are functions of time, so they are always changing, then so will the power that is dissipated in any circuit element. In circuits which contain only ohmic resistors the <emphasis effect='bold'>average</emphasis> power dissipated in any component can be calculated in terms of the rms values. </para>
+        <latex display='block'>
+            \begin{align}
+                P_{av} &amp;=I_{rms}V_{rms} \\
+                        &amp;=\frac{I_{\max}}{\sqrt{<number>2</number>}}\frac{V_{\max}}{\sqrt{<number>2</number>}}\\
+                        &amp;=\frac{<number>1</number>}{<number>2</number>}I_{\max}V_{\max}
+            \end{align}
+        </latex>
+        <para>You might ask why we don't need to use an rms value for power. In an AC circuit both the current and voltage have the same sign so they are both either positive or negative. This means that power, the product of the two is always positive. If power is always positive then the average value won't be zero as in the case of current or voltage in AC circuits.</para>
+
+        <worked_example>
+        <title>Laptop transformer power</title>
+        <question>
+        <para>The transformer for a laptop has the following information: 
+            <list>
+                <item>INPUT: <number>100</number>-<unit_number><number>240</number><unit>V</unit></unit_number>; <unit_number><number>1.5</number><unit>A</unit></unit_number>; <number>50</number>/<unit_number><number>60</number><unit>Hz</unit></unit_number></item>
+                <item>OUTPUT:<unit_number><number>20</number><unit>V</unit></unit_number>; <unit_number><number>3.25</number><unit>A</unit></unit_number></item>
+            </list> 
+            </para>
+        <para>
+        Using the input values and assuming <unit_number><number>240</number><unit>V</unit></unit_number>, what is the average power dissipated in the transformer?
+        </para>
+        </question>
+        <answer>
+        <workstep>
+        <title>RMS values</title>
+        <para>As calculated previously:</para>
+        <latex display="block">
+         \begin{align}
+         V_{\textrm{rms}} &amp; =  \frac{V_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         V_{\textrm{rms}} &amp; =  \frac{<unit_number><number>240</number><unit>V</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>169.71</number><unit>V</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>V_{\textrm{rms}}=<unit_number><number>169.71</number><unit>V</unit></unit_number></latex></para>
+
+        <latex display="block">
+         \begin{align}
+         I_{\textrm{rms}} &amp; =  \frac{I_{\textrm{max}}}{\sqrt{<number>2</number>}} \\
+         I_{\textrm{rms}} &amp; =  \frac{<unit_number><number>1.5</number><unit>A</unit></unit_number>}{\sqrt{<number>2</number>}} \\
+         &amp; = <unit_number><number>1.06</number><unit>A</unit></unit_number>
+         \end{align}
+         </latex><para>Therefore <latex>I_{\textrm{rms}}=<unit_number><number>1.06</number><unit>A</unit></unit_number></latex></para>
+        </workstep>
+        <workstep>
+            <title>Average power</title>
+        <latex display='block'>
+            \begin{align}
+                P_{av} &amp;=I_{rms}V_{rms} \\
+                        &amp;= <unit_number><number>1.06</number><unit>A</unit></unit_number> \cdot  <unit_number><number>169.71</number><unit>V</unit></unit_number>\\
+                        &amp; = <unit_number><number>179.89</number><unit>W</unit></unit_number>
+            \end{align}
+        </latex>
+        </workstep>
+        </answer>
+        </worked_example>
+        </section>
+      </section>
+
+      <section type="section">
+	<title>Chapter summary</title>
+        <presentation>
+          <shortcode>VPpkc</shortcode>
+	  <url>TODO</url>
+        </presentation>
+        <list list-type="bulleted">
+          <item>
+            <para>Electrical generators convert mechanical energy into electrical energy.</para>
+          </item>
+          <item>
+            <para>Electric motors convert electrical energy into mechanical energy.</para>
+          </item>
+          <item>
+            <para>There are two types of generators - AC and DC. An AC generator is also called an alternator.</para>
+          </item>
+          <item>
+            <para>There are two types of motors - AC and DC.</para>
+          </item>
+          <item>
+            <para>Alternating current (AC) has many advantages over direct current (DC).</para>
+          </item>
+          <item>
+            <para>The root mean square (rms) value of a quantity is the maximum value the quantity can have divided by <latex>\sqrt{<number>2</number>}</latex>.</para>
+          </item>
+          <item>
+            <para>RMS values are used for voltage and current when dealing with alternating current, <latex>I_{\textrm{rms}}  =  \dfrac{I_{\textrm{max}}}{\sqrt{<number>2</number>}}</latex> and <latex>V_{\textrm{rms}}  =  \dfrac{V_{\textrm{max}}}{\sqrt{<number>2</number>}}</latex>.</para>
+          </item>
+          <item>
+            <para>The average power dissipated in a purely resistive circuit with alternating current is <latex>P_{av}=I_{rms}V_{rms}</latex>.</para>
+          </item>
+        </list>
+      </section>
+      <exercises><title/><entry>
+<shortcode>01iy</shortcode>
+<problem>
+          <para>[SC 2003/11] Explain the difference between alternating current (AC) and direct current (DC).</para>
+        </problem>
+        <solution url="TODO">
+	     <correct> <para>Direct current (DC), which is electricity flowing in a constant direction. DC is the kind of electricity made by a battery, with definite positive and negative terminals. However, we have seen that the electricity produced by some generators alternates and is therefore known as alternating current (AC). So the main difference is that in AC the movement of electric charge periodically reverses direction while in DC the flow of electric charge is only in one direction.</para></correct>
+	    </solution>
+</entry>
+<entry>
+<shortcode>01iz</shortcode>
+<problem>
+          <para>Explain how an AC generator works. You may use sketches to support your answer.</para>
+        </problem>
+        <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001248/view"/>
+		<correct/>
+</entry>
+<entry>
+<shortcode>01j0</shortcode>
+<problem>
+          <para>What are the advantages of using an AC motor rather than a DC motor.</para>
+        </problem>
+        <solution url="TODO">
+	      <correct><para>While DC motors need brushes to make electrical contact with moving coils of wire, AC motors do not. The problems involved with making and breaking electrical contact with a moving coil are sparking and heat, especially if the motor is turning at high speed. If the atmosphere surrounding the machine contains flammable or explosive vapours, the practical problems of spark-producing brush contacts are even greater.</para></correct>
+	    </solution>
+</entry>
+<entry>
+<shortcode>01j1</shortcode>
+<problem>
+          <para>Explain how a DC motor works.</para>
+        </problem>
+        <solution url="TODO">
+	      <correct><para>
+Instead of rotating the loops through a magnetic field to create electricity, as is done in a generator, a current is sent through the wires, creating electromagnets.
+The outer magnets will then repel the electromagnets and rotate the shaft as an electric motor.
+If the current is DC, split-ring commutators are required to create a DC motor.
+	      </para></correct>
+	    </solution>
+</entry>
+<entry>
+<shortcode>01j2</shortcode>
+<problem>
+          <para>At what frequency is AC generated by Eskom in South Africa?</para>
+        </problem>
+        <solution url="TODO">
+			  <correct><para>In South Africa the frequency is <unit_number><number>50</number><unit>Hz</unit></unit_number></para></correct>
+			</solution>
+</entry>
+<entry>
+<shortcode>01j3</shortcode>
+<problem>
+          <para>(IEB 2001/11 HG1) - <emphasis effect="bold">Work, Energy and Power in Electric Circuits</emphasis></para>
+          
+
+          <para>Mr. Smith read through the agreement with Eskom (the electricity provider). He found out that alternating current is supplied to his house at a frequency of <unit_number><number>50</number><unit>Hz</unit></unit_number>. He then consulted a book on electric current, and discovered that alternating current moves to and fro in the conductor. So he refused to pay his Eskom bill on the grounds that every electron that entered his house would leave his house again, so therefore Eskom had supplied him with nothing!</para>
+          
+
+          <para>Was Mr. Smith correct? Or has he misunderstood something about what he is paying for? Explain your answer briefly.</para>
+        </problem>
+        <solution url="TODO"><correct>
+	  <para>Mr Smith is not correct. He has misunderstood what power is and what Eskom is charging him for.</para>
+	  <para>
+	    AC voltage and current can be described as:
+	    <latex display="block">
+	      \begin{align}
+	        i &amp;= I_{\max} \sin(2\pi ft + \phi)\\
+	        v &amp;= V_{\max} \sin(2\pi ft)
+	      \end{align}
+	    </latex>
+	    This means that for <latex>\phi = 0</latex>, i.e. if resistances have no complex component or if a student uses a standard resistor, the voltage and current waveforms are in-sync.
+	  </para>
+	  <para>
+	    Power can be calculated as <latex>P = VI</latex>.
+	    If there is no phase shift, i.e. if resistances have no complex component or if a student uses a standard resistor then power is always positive since:
+	    <list list-type="bulleted">
+	      <item>when the voltage is negative (−), the current is negative (−), resulting in positive (+) power.</item>
+	      <item>when the voltage is positive (+), the current is positive (+), resulting in positive (+) power.</item>
+	    </list>
+	  </para></correct>
+	</solution>
+</entry>
+
+
+<entry>
+<shortcode>todo</shortcode>
+<problem>
+            <para>You are building a laser that takes alternating current and it requires a very high peak voltage of <unit_number><number>180</number><unit>kV</unit></unit_number>. By your calculations the entire laser setup can be treated at a single resistor with an equivalent resistance of <unit_number><number>795</number><unit>ohms</unit></unit_number>. What is the rms value for the voltage and the current and what is the average power that your laser is dissipating?
+       </para>
+          </problem>
+          <solution url="TODO">
+		<correct>
+				</correct>
+			  </solution>
+</entry>
+
+</exercises>
+    </section>
+  </content>
+</document>

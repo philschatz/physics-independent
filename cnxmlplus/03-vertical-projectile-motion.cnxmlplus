@@ -1,0 +1,4178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml/0.4"
+xmlns:style="http://siyavula.com/cnxml/style/0.1">
+  <metadata>
+    <cnxml-version>0.1</cnxml-version>
+    <pspicture-generator-version>1.1</pspicture-generator-version>
+  </metadata>
+  <content>
+    <!-- new convention for this chapter and the other mechanics chapters, black axes, blue dots and coloured vectors
+         g - orange
+         v - purple
+         -->
+    <section type="chapter">
+      <title>Vertical projectile motion in one dimension</title>
+      <section type="section">
+        <title>Introduction</title>
+        <shortcode>ESCCW</shortcode>
+          <para> In this chapter we are going to look at the motion of objects that are either projected, thrown, or shot directly into the air, be it vertically upwards, downwards or when objects are dropped.
+          This is something that everyone has experienced while playing games and we all have a strong intuition that "what goes up, must come down", but 
+          now we'll study why that is the case.</para>
+        <video>
+          <title>Chapter introduction</title>
+          <shortcode>VPnio</shortcode>
+          <url>http://www.youtube.com/embed/0kSb2aWpnwM</url>
+          <width>300</width>
+          <height>245</height>
+          <url>http://www.youtube.com/watch?v=0kSb2aWpnwM&amp;feature=youtu.be</url>
+        </video>
+      </section>
+        <linked-concepts>
+        <concept><text>Units and unit conversions</text><subject>science</subject><grade>10</grade><chapter>science skills</chapter></concept>
+        <concept><text>Rectilinear motion</text><subject>science</subject><grade>10</grade><chapter>TODO</chapter></concept>
+        <concept><text>Linear equations</text><subject>maths</subject><grade>10</grade><chapter>TODO</chapter></concept>
+        <concept><text>Quadratic equations</text><subject>maths</subject><grade>10</grade><chapter>TODO</chapter></concept>
+      </linked-concepts>
+      <section type="section">
+        <title>Vertical projectile motion</title>
+        <shortcode>ESCCX</shortcode>
+        <para>
+        In Grade 11, we studied the motion of objects in free fall and saw that such an object has a constant gravitational acceleration of <latex>\vec{g}</latex>. We now study the motion of objects that are moving upwards or downwards while experiencing a force due to gravity. We call this projectile motion. We will only consider the case where objects move straight upwards and/or downwards -- meaning that there is no horizontal displacement of the object, only vertical displacement.
+        </para>
+
+        <section type="subsection">
+          <title>Motion in a gravitational field</title>
+          <shortcode>ESCCY</shortcode>
+          <para>We know from Newton's Law of Universal Gravitation that an object in the Earth's gravitational field feels
+          a force pulling it towards the centre of the Earth. If this is the only force acting on the object then the object
+          will accelerate towards the centre of the Earth.</para>
+          <para>A person standing on the Earth's surface will interpret this acceleration as objects always falling downwards. </para>
+          <para>In Grade 11, we showed that the value of the acceleration due to gravity can be treated as a having a constant magnitude of 
+          <latex>g=<unit_number><number>9.8</number><unit>m·s<sup>-2</sup></unit></unit_number></latex>.</para>
+
+          <note type="important">
+            <para>In reality, if you go very far away from the Earth's surface, the magnitude of 
+            <latex>\vec{g}</latex> would change, but, for everyday problems, we can safely treat it as constant. We also ignore
+            any effects that air resistance (drag) might have.</para>
+          </note>
+          <para>For the rest of this chapter we will deal only with the case where the force due to gravity is the only force acting.</para>
+          <para>The initial velocity, <latex>\vec{v}_i</latex>, that an object has and the acceleration that it experiences are two different quantities. It is very important to
+          remember that the gravitational acceleration is always towards the centre of the Earth and constant, regardless of the direction or magnitude
+          of the velocity.</para>
+          <note type="tip">
+            <para>Projectiles moving upwards or downwards in the Earth's gravitational field always accelerate
+            downwards with a constant acceleration 
+            <latex>\vec{g}</latex>. Note: acceleration means that the velocity is 
+            <emphasis effect="italics">changing</emphasis>.</para>
+          </note>
+          <figure id="fig:p:m:m2d12:projectile">
+            <type>figure</type>
+            <pspicture>
+              <code>(-5.25,.75)(7.75,3.35) 
+              \SpecialCoor 
+              \psline[linecolor=purple]{-&gt;}(0,2)(0,3)
+              \uput[l](0.,2.5){$\vec{v}$} 
+              \psdots[dotsize=6pt](0,2) 
+              \uput[l](-1,2){object moving upwards}
+              \psline[linecolor=orange]{-&gt;}(0.2,2.2)(0.2,1.8) 
+              \uput[r](0.2,2){$\vec{g}$}
+              \rput(2,0){
+                \psline[linecolor=purple]{-&gt;}(0,2)(0,1) 
+                \uput[r](0,1.5){$\vec{v}$}
+                \psdots[dotsize=6pt](0,2) 
+                \uput[r](1,2){object moving downwards}
+                }
+              \rput(1.6,0){
+                \psline[linecolor=orange]{-&gt;}(0.2,2.2)(0.2,1.8) 
+                \uput[l](0.2,2){$\vec{g}$}
+                }</code>
+            </pspicture>
+            <caption>
+              <para>Objects moving upwards or downwards in the Earth's gravitational field always accelerate towards the centre of the Earth. This looks like a downwards 
+              acceleration to someone standing on the Earth's surface. We don't draw both vectors on the object because we would be mixing velocity and acceleration 
+              which are two <emphasis effect='italics'>different</emphasis> physical quantities.</para>
+            </caption>
+          </figure>
+          <video>
+            <title>Strobe video of a ball falling from rest</title>
+            <shortcode></shortcode>
+            <url>http://www.youtube.com/watch?v=xQ4znShlK5A</url>
+            <width>300</width>
+            <height>245</height>
+          </video>
+          <para>This means that if an object is moving upwards with some initial velocity in the vertical direction, the magnitude of the velocity in the vertical direction
+          decreases until it stops (<latex>\vec{v}=0</latex> 
+          <unit>m·s
+          <sup>-1</sup></unit>) for an instant. The point at which the velocity is reduced to zero corresponds with the maximum height, <latex>h_m</latex>, that the object reaches. After this, the object
+          starts to fall. It is very important to remember that the acceleration is constant but the velocity vector has changed magnitude and direction. At the maximum height where the velocity is zero the acceleration is still <latex>\vec{g}</latex>.</para>
+          <note type="tip">
+            <para>Projectiles that have an initial velocity upwards will have zero velocity at their greatest height, <latex>h_m</latex>. The acceleration is still <latex>\vec{g}</latex>.</para>
+          </note>
+          <figure id="fig:p:m:m2d12:maxheighttime">
+            <type>figure</type>
+
+            <pspicture>
+              <code>(-5,0)(12,5) 
+
+\psline[linestyle=dashed,linecolor=lightgray](6.5,2)(7.8,2)
+\psline[linestyle=dashed,linecolor=lightgray](3.9,4)(7.8,4) 
+
+\psline[linecolor=blue!40!white]{->}(-1,2.)(1.23,2.)
+\psline[linecolor=blue!40!white]{->}(-1,2.)(6.43,2.)
+\psline[linecolor=blue!40!white]{->}(-1,2.942)(1.93,2.942)
+\psline[linecolor=blue!40!white]{->}(-1,3.659)(4.93,3.659)
+\psline[linecolor=blue!40!white]{->}(-1,4)(3.83,4)
+\psline[linecolor=blue!40!white]{->}(-1,2.703)(5.93,2.703)
+
+\psdots[dotsize=6pt,linecolor=black!20!white](-1,2)
+\psdots[dotsize=6pt,linecolor=black!35!white](-1,2.942)
+\psdots[dotsize=6pt,linecolor=black!50!white](-1,4)
+\psdots[dotsize=6pt,linecolor=black!65!white](-1,3.659)
+\psdots[dotsize=6pt,linecolor=black!80!white](-1,2.703)
+\psdots[dotsize=6pt,linecolor=black](-1,2)
+
+\rput(-3,3){
+\small 
+\begin{tabular}{c}
+A ball is thrown \\ 
+vertically upwards.\\
+Each dot corresponds\\ 
+to a different point\\ 
+during the motion of\\
+the ball. The sequence\\
+from light to dark\\
+shows the time ordering.
+\end{tabular}
+}
+
+\psline[linecolor=purple]{-&gt;}(1.3,2)(1.3,3) 
+\uput[l](1.3,2.5){$
+\vec{v}$} 
+\psdots[dotsize=6pt,linecolor=black!20!white](1.3,2)
+
+\rput(2,2.942){\psline[linecolor=purple]{-&gt;}(0,0)(0,.45) 
+    \uput[l](0,.25){$
+    \vec{v}$}} 
+\psdots[dotsize=6pt,linecolor=black!35!white](2,2.942) 
+
+\psdots[dotsize=6pt,linecolor=black!50!white](3.9,4)
+
+
+\rput(5,3.659){\psline[linecolor=purple]{-&gt;}(0,0)(0,-.25) 
+    \uput[r](0,-.125){$
+    \vec{v}$}} 
+\psdots[dotsize=6pt,linecolor=black!65!white](5,3.659)
+\rput(6,2.703){\psline[linecolor=purple]{-&gt;}(0,0)(0,-.85) 
+    \uput[r](-.15,-.37){$
+    \vec{v}$}} 
+\psdots[dotsize=6pt,linecolor=black!80!white](6,2.703)
+
+
+\uput[r](8,2){initial height $h_0$}
+\uput[r](8,4){maximum height} 
+\rput(7,2.5){ 
+\psframe[linecolor=gray](-.4,1.6)(.4,2.4)
+\psline[linecolor=orange]{-&gt;}(0.2,2.2)(0.2,1.8) 
+\uput[l](0.2,2){$
+\vec{g}$} } 
+
+%initial dot
+
+%\psdots[dotsize=6pt](1.3,2)
+\rput[t](1.3,1.8){$t=\text{0~s}$} 
+\rput(1.3,0.5){
+    \small (a) time = 0~s} % middle dot       
+ %   \psdots[dotsize=6pt](3.9,4) 
+    \rput[b](3.9,4.2){$\vec{v}=\text{0~m·s}$} 
+%    \rput[t](3.9,3.8){$t=t_m$}
+              
+\rput(3.9,0.5){
+\small (b) time = $t_m$} %final dot 
+\psline[linecolor=purple]{-&gt;}(6.5,2)(6.5,1)
+              
+\uput[r](6.5,1.5){$
+\vec{v}$} 
+\psdots[dotsize=6pt](6.5,2) 
+\rput[b](7.3,2.2){$t=2t_m$}
+              
+\rput(6.5,0.5){
+\small (c) time = $2t_m$}</code>
+            </pspicture>
+
+            <caption>
+              <para>(a) An object is thrown upwards from height 
+              <latex>{h}_{i}</latex>. (b) After time 
+              <latex>{t}_{m}</latex>, the object reaches its maximum height, and starts to fall. (c) After a time 
+              <latex>2{t}_{m}</latex> the object returns to height 
+              <latex>{h}_{i}</latex>.</para>
+            </caption>
+          </figure>
+
+          <para>Consider an object thrown upwards from a vertical height 
+          <latex>{h}_{i}</latex>. We have said that the object will travel upwards with decreasing vertical velocity
+          until it stops, at which point it starts falling. The time that it takes for the object to fall back down to
+          height 
+          <latex>{h}_{i}</latex> is the same as the time taken for the object to reach its maximum height from height 
+          <latex>{h}_{i}</latex>. This is known as <emphasis effect="italics">time symmetry</emphasis>.</para>
+          <activity type="f_experiment">
+            <title>Investigate the motion of a falling body</title>
+            <section>
+              <title>Aim</title>
+              <para>To measure the position and time during motion and to 
+              use that data to plot a“Position vs Time” and “Velocity 
+                vs Time” graph from which 
+              we can calculate the magnitude for gravitational acceleration,              <latex>\vec{g}</latex>.</para>
+            </section>
+            <section>
+              <title>Apparatus</title>
+              <list list-type='bulleted'>
+              <item>ticker tape apparatus</item>
+              <item>ticker timer</item> 
+              <item>tape</item> 
+              <item>graph paper</item>
+              <item>ruler</item>
+              </list>
+              <para><emphasis effect='bold'>PHOTOGRAPH PENDING!!</emphasis></para>
+              <figure>
+                <type>figure</type>
+                <pspicture>
+                  <code>(0,0)(5,2) 
+                    \pspolygon(0,0)(0,1)(5,1)(5,0)(0,0) \psdot(.5,.5) \psdot(1,.5) \psdot(1.5,.5)
+                    \psdot(2,.5) \psdot(2.5,.5) \psdot(3,.5) \psdot(3.5,.5) \psdot(4,.5) \psdot(4.5,.5)</code>
+                </pspicture>
+                <caption>Motion at constant velocity</caption>
+              </figure>
+              <figure>
+                <type>figure</type>
+                <pspicture>
+                  <code>(0,0)(5,2) 
+\pspolygon(0,0)(0,1)(3.5,1)(3.5,0)(0,0) 
+\psdot(.5,.5) 
+\psdot(1,.5) 
+\psdot(1.45,.5)
+                  
+\psdot(1.85,.5) 
+\psdot(2.2,.5) 
+\psdot(2.5,.5) 
+\psdot(2.75,.5) 
+\psdot(2.95,.5) 
+\psdot(3.1,.5)
+                  
+\psdot(3.2,.5)</code>
+                </pspicture>
+                <caption>Motion with increasing velocity</caption>
+              </figure>
+            </section>
+            <section>
+              <title>Method</title>
+              <list list-type="enumerated">
+                <item>
+                  <para>Work with a friend. Copy the table below into your workbook.</para>
+                </item>
+                <item>
+                  <para>Attach a length of tape to a mass.</para>
+                </item>
+                <item>
+                  <para>Run the other end of the tape through the ticker timer.</para>
+                </item>
+                <item>
+                  <para>Start the ticker timer going and allow the mass to fall freely.</para>
+                </item>
+                <item>
+                  <para>Repeat steps 1–3.</para>
+                </item>
+                <item>
+                  <para>On each piece of tape, measure the distance between successive dots. Note these distances in
+                  the table below.</para>
+                </item>
+                <item>
+                  <para>Use the frequency of the ticker timer to work out the time intervals between successive dots.
+                  Note these times in the table below,</para>
+                </item>
+                <item>
+                  <para>Work out the average values for distance and time.</para>
+                </item>
+                <item>
+                  <para>Use the average distance and average time values to plot a graph of “Distance vs Time” 
+                  <emphasis effect="italics">onto graph paper</emphasis>. Stick the graph paper into your workbook.
+                  (Remember that “A vs B” always means “y vs x”).</para>
+                </item>
+
+                <item>
+                  <para>Insert all axis labels and units onto your graph.</para>
+                </item>
+                <item>Use your averaged distance values to determine the distance between two consecutive dots.</item>
+                <item>Determine the magnitude of the velocity by dividing the distance between dots by the time. 
+                </item>
+                <item>
+                  <para>Use the magnitude of the velocity and time values to plot a graph of “Velocity vs Time” 
+                  <emphasis effect="italics">onto graph paper</emphasis>. Stick the graph paper into your workbook.</para>
+                </item>
+                <item>
+                  <para>Draw the best straight line through your data points.</para>
+                </item>
+                <item>Determine the slope of the straight line. This is the magnitude of the acceleration.</item>
+              </list>
+            </section>
+            <section>
+              <title>Results</title>
+              <figure>
+                <type>table</type>
+
+
+                <table>
+                  <tgroup cols="6">
+                    <colspec colname="c1" colnum="1" />
+                    <colspec colname="c2" colnum="2" />
+                    <colspec colname="c3" colnum="3" />
+                    <colspec colname="c4" colnum="4" />
+                    <colspec colname="c5" colnum="5" />
+                    <colspec colname="c6" colnum="6" />
+                    <tbody>
+                      <row>
+                        <entry nameend="c3" namest="c1">
+                          <para>Distance (m)</para>
+                        </entry>
+                        <entry nameend="c6" namest="c4">
+                          <para>Time (s)</para>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry>
+                          <para>1</para>
+                        </entry>
+                        <entry>
+                          <para>2</para>
+                        </entry>
+                        <entry>
+                          <para>Ave.</para>
+                        </entry>
+                        <entry>
+                          <para>1</para>
+                        </entry>
+                        <entry>
+                          <para>2</para>
+                        </entry>
+                        <entry>
+                          <para>Ave.</para>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </table>
+
+                <table>
+                  <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" />
+                    <colspec colname="c2" colnum="2" />
+                    <colspec colname="c3" colnum="3" />
+                    <tbody>
+                      <row>
+                        <entry>
+                          <para>Change in distance (m)</para>
+                        </entry>
+                        <entry>
+                          <para>Change in time (s)</para>
+                        </entry>
+                        <entry>
+                          <para>Magnitude of velocity (<unit>m·s<sup>-1</sup></unit>)</para>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                      <row>
+                        <entry />
+                        <entry />
+                        <entry />
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </table>
+              </figure>
+            </section>
+            <section>
+              <title>Discussion</title>
+              <para>Describe the motion of the trolley down the ramp.</para>
+            </section>
+          </activity>
+
+        </section>
+        <section type="subsection">
+          <title>Equations of motion</title>
+          <shortcode>ESCCZ</shortcode>
+          <para>The equations of rectilinear motion that you learnt about in Grade 10 can be used for vertical projectile
+          motion, with acceleration from gravity: 
+          <latex>\vec{a}=\vec{g}</latex>. Why, because the equations of rectilinear motion can be applied to any motion
+          in a straight line with constant acceleration. If we are only considering vertical motion (up and down) it is
+          motion in a straight line and the acceleration, 
+          <latex>\vec{g}</latex>, is constant and along the same line. We use the magnitude of 
+          <latex>g=
+          <unit_number>
+            <number>9.8</number>
+            <unit>m·s
+            <sup>-2</sup></unit>
+          </unit_number></latex> for our calculations.</para>
+          <note type="important">
+            <para>Now would be a good time to revise both rectilinear motion and quadratic equations
+            from Grade 10.</para>
+          </note>
+          <para>Remember that when you use these equations, you are dealing with vectors which have magnitude 
+          <emphasis effect="italics">and</emphasis> direction. Therefore, you need to decide which direction will be the
+          positive direction so that your vectors have the correct signs. The equations of motion that you learnt about 
+          in Grade 10 are:</para>
+          <latex display='block'>
+          \begin{align} 
+                \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{a}t \\
+                \Delta \vec{x}&amp; = \frac{\left(\vec{v}_{i}+\vec{v}_{f}\right)}{2}t \\
+                \Delta \vec{x}&amp; = \vec{v}_{i}t+\frac{1}{2}\vec{a}{t}^{2} \\
+                \vec{v}_{f}^{2}&amp; = \vec{v}_{i}^{2}+2\vec{a}\Delta\vec{ x }
+          \end{align}
+          </latex>
+          <para>In the case of vertical projectile motion, we know that the only force we will consider is gravity and therefore the acceleration will be <latex>\vec{a}=\vec{g}</latex>.</para>
+          <latex display='block'>
+          \begin{align} 
+                \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{g}t \\
+                \Delta \vec{x}&amp; = \frac{\left(\vec{v}_{i}+\vec{v}_{f}\right)}{2}t \\
+                \Delta \vec{x}&amp; = \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2} \\
+                \vec{v}_{f}^{2}&amp; = \vec{v}_{i}^{2}+2\vec{g}\Delta x 
+          \end{align}
+          </latex>
+          <latex display='block'>
+          \begin{align}
+                &amp;\text{where}\\
+                \vec{v}_{i}&amp; = \text{initial velocity} \text{(}\text{m}·{\text{s}}^{-1}\text{)} \text{at start, usually} t=0 \text{s} \\
+                \vec{v}_{f}&amp; =
+                \text{final velocity} \text{(}\text{m}·{\text{s}}^{-1}\text{)} \text{at time} t \\
+                \Delta \vec{x}&amp; = \text{change in vertical displacement} \text{(m)} \\
+                t&amp; = \text{time} \text{(s)} \\
+                \Delta t&amp; = \text{time interval} \text{(s)} \\
+                \vec{a}&amp;=\vec{g} = \text{acceleration due to gravity} \text{(}\text{m}·{\text{s}}^{-2}\text{)} 
+          \end{align}
+          </latex>
+          <note type='important'>
+          <para><latex>\Delta \vec{x}</latex> is the change in displacement. If the coordinate system you choose isn't centred at the point from which the motion starts (i.e. you don't have <latex>\vec{x}_i=0</latex>) then you must remember that the change in displacement and displacement are not the same. The displacement is given by <latex>\vec{x}_f=\vec{x}_i+\Delta \vec{x}</latex>. If <latex>\vec{x}_i=0</latex> then <latex>\vec{x}_f=(0)+\Delta \vec{x}</latex>.</para>
+          </note>
+          <simulation>
+            <title>PhET simulation on motion</title>
+            <shortcode>VPnlc</shortcode>
+            <url>http://phet.colorado.edu/en/simulation/projectile-motion</url>
+            <embed>&lt;div style="position: relative; width: 300px; height: 198px;"&gt;&lt;a
+            href="http://phet.colorado.edu/sims/projectile-motion/projectile-motion_en.html" style="text-decoration:
+            none;" rel="external"&gt;&lt;img
+            src="http://phet.colorado.edu/sims/projectile-motion/projectile-motion-screenshot.png" alt="Projectile
+            Motion" style="border: none;" width="300" height="198"/&gt;&lt;div style="position: absolute; width: 200px;
+            height: 80px; left: 50px; top: 59px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity =
+            60);"&gt;&lt;/div&gt;&lt;table style="position: absolute; width: 200px; height: 80px; left: 50px; top:
+            59px;"&gt;&lt;tr&gt;&lt;td style="text-align: center; color: #000; font-size: 24px; font-family:
+            Arial,sans-serif;"&gt;Click to Run&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/a&gt;&lt;/div&gt;</embed>
+          </simulation>
+          <para>Now we can apply this mathematical description of vertical motion to solving problems.</para>
+          <worked_example>
+            <title>Projectile motion</title>
+            <question>
+              <para>A ball is thrown vertically upwards with an initial velocity of 
+              <unit_number>
+                <number>
+                  <coeff>10</coeff>
+                </number>
+                <unit>m·s
+                <sup>-1</sup></unit>
+              </unit_number>. A photograph (shown) is taken when the ball is 
+              <unit_number>
+                <number>1.5</number>
+                <unit>m</unit>
+              </unit_number> above the point of release.</para>
+              <image style:width='.4'>
+                <src>photos/RedBall-by-chubstock-on-Flickr-3066889476_c9ae0edd33_o.jpg</src>
+                <attribution>http://www.flickr.com/photos/patrick_gallo/3066889476/sizes/o/</attribution>
+              </image>
+              <list list-type="enumerated">
+                <item>
+                  <para>Determine the maximum height above the thrower's hand reached by the ball.</para>
+                </item>
+                <item>
+                  <para>Determine the time it takes the ball to reach its maximum height.</para>
+                </item>
+                <item>
+                  <para>Determine the time(s) when the ball will be at the position shown in the photograph.</para>
+                </item>
+              </list>
+            </question>
+            <answer>
+              <workstep>
+                <title>Identify what is required and what is given</title>
+                <para>We are required to determine the maximum height reached by the ball and how long it takes to
+                reach this height. We are given the initial velocity 
+                <latex>\vec{v}_{i}=<unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number></latex> upwards and the acceleration due to gravity 
+                <latex>\vec{g}=
+                <unit_number>
+                  <number>9.8</number>
+                  <unit>m·s
+                  <sup>-2</sup></unit>
+                </unit_number></latex> downwards. We also need to determine when the ball is at the position shown in the
+                photograph.</para>
+                <para>The ball is thrown straight up and will reach a maximum height, at which point its velocity will be zero, before beginning to fall downwards. The height of the ball in the photograph is given 
+                as <unit_number><number>1.5</number><unit>m</unit></unit_number> above the initial point. Adding the information to the picture helps us 
+                understand what is going on more effectively:</para>
+                <tikzpicture>
+                  <code>[&gt;=stealth] 
+                  \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=.4\textwidth]{photos/RedBall-by-chubstock-on-Flickr-3066889476_c9ae0edd33_o.jpg}};
+                  \begin{scope}[x={(image.south east)},y={(image.north west)}] % draw the lines showing the 1.5m 
+                  \draw [dashed, gray] (0.2,0.4) -- (.8,.4) ; \draw [dashed, gray] (0.2,0.914) -- (.8,.914) ; 
+                  \draw [dashed, gray, &lt;-&gt;] (0.35,0.4) -- (.35,.914) ; 
+                  \draw [gray, right] (.37,.65) node {
+                  <unit_number>
+                    <number>1.5</number>
+                    <unit>m</unit>
+                  </unit_number>}; % draw the initial dot and velocity vector 
+                  \draw[gray,-&gt;, ultra thick] (0.646,0.4) -- (0.646,0.6); \draw[line width=5pt,gray] (0.646,0.4) circle [radius=0.05cm] ; 
+                  \draw (0.646,0.5) node [gray, right=6pt,fill=white] {$\vec{v}_i$}; %= 
+                  %<unit_number><number>10</number><unit>m·s<sup>-1</sup></unit></unit_number>}; % draw the dot and velocity vector 
+                  \draw[purple!80!white,-&gt;, ultra thick] (0.646,0.914) -- (0.646,0.98); 
+                  \draw[line width=5pt] (0.646,0.914) circle [radius=0.05cm] ; 
+                  \draw (0.646,0.95) node [right=6pt,fill=white] {$\vec{v}$}; % draw the gravity vector 
+                  \draw[fill=white] (.03,.8) rectangle (.17,.97) ; \draw[-&gt;, orange , ultra thick] (.14,.94) -- (.14,.83); 
+                  \draw (.08,.88) node {$\vec{g}$}; 
+                  \end{scope}</code>
+                </tikzpicture>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <para>Even though there are a number of questions to answer, the best approach is to work through them
+                one at a time.</para>
+                <para>First, as with rectilinear motion in Grade 10, select a positive direction. We choose down as positive and
+                remember to <emphasis effect='bold'>keep this convention</emphasis> for the whole problem. This will allow us to analyse the information
+                given and determine directions and signs. We know that at the maximum height the velocity of the ball
+                is 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>. We therefore have the following:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>
+                    <latex>\vec{v}_{i}=
+                    <unit_number>
+                      <number>-10</number>
+                      <unit>m·s
+                      <sup>-1</sup></unit>
+                    </unit_number></latex>(it is negative because we chose downwards as positive)</para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{v}_{f}=
+                      <unit_number>
+                        <number>0</number>
+                        <unit>m·s
+                        <sup>-1</sup></unit>
+                      </unit_number></latex>
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{g}=
+                      <unit_number>
+                        <number>9.8</number>
+                        <unit>m·s
+                        <sup>-2</sup></unit>
+                      </unit_number></latex>
+                    </para>
+                  </item>
+                </list>
+                <para>We know that the position shown (<unit_number>
+                  <number>1.5</number>
+                  <unit>m</unit>
+                </unit_number> above the point of release) will be passed as the ball rises to its maximum height and
+                then again as the ball falls downwards. 
+                <!--For this part we know that 
+                <latex>\Delta \vec{x}=
+                <unit_number>
+                  <number>1.5</number>
+                  <unit>m</unit>
+                </unit_number></latex> above the point of release.-->
+                </para>
+              </workstep>
+              <workstep>
+                <title>Identify the appropriate equation to determine the height</title>
+                <para>We can use 
+                <latex>\vec{v}_{f}^{2}=\vec{v}_{i}^{2}+2\vec{g}\Delta \vec{x}</latex> to solve for the height.</para>
+              </workstep>
+              <workstep>
+                <title>Substitute the values into the equation and find the height</title>
+                <latex display='block'>\begin{align} \vec{v}_{f}^{2}&amp; = \vec{v}_{i}^{2}+2\vec{g}\Delta \vec{x} \\
+                {\left(0\right)}^{2}&amp; = {\left(
+                <number>-10</number>\right)}^{2}+\left(2\right)\left(
+                <number>9.8</number>\right)\left(\Delta x\right) \\ 
+                <number>-100</number>&amp; = 
+                <number>19.6</number>\Delta x \\
+ \Delta x&amp; = 
+                <unit_number>
+                  <number>-5.102</number>
+                  <unit>m</unit>
+                </unit_number>\end{align}</latex>
+                <para>The value for the displacement will be negative because the displacement is upwards and we have
+                chosen downward as positive (and upward as negative). The maximum height will be a positive number, 
+                <latex>h_m=
+                <unit_number>
+                  <number>5.10</number>
+                  <unit>m</unit>
+                </unit_number></latex>.</para>
+              </workstep>
+              <workstep>
+                <title>Identify the appropriate equation to determine the time</title>
+                <para>We can use 
+                <latex>\vec{v}_{f}=\vec{v}_{i}+\vec{g}t</latex> to solve for the time.</para>
+              </workstep>
+              <workstep>
+                <title>Substitute the values in and find the time</title>
+                <latex display='block'>\begin{align} \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{g}t \\ 
+                <number>0</number>&amp; = 
+                <number>-10</number>+
+                <number>9.8</number>t \\ 
+                <number>10</number>&amp; = 
+                <number>9.8</number>t \\
+ t&amp; = 
+                <unit_number>
+                  <number>1.02</number>
+                  <unit>s</unit>
+                </unit_number>\end{align}</latex>
+              </workstep>
+              <workstep>
+                <title>Determine the times at which the ball is in the position in the photograph</title>
+                <para>We know the displacement, initial velocity and the acceleration of the ball. We also expect to get
+                two values as we know the ball will pass through the point twice.</para>
+                <para>We substitute our values into the equation 
+                <latex>\Delta \vec{x} = \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2}</latex>, which is a quadratic equation in time, so we expect to find
+                two different solutions if we solve for time.</para>
+                <para>It is important to notice that we can use the value 
+                <unit_number>
+                  <number>-1.5</number>
+                  <unit>m</unit>
+                </unit_number> as the displacement above the initial position.</para>
+                <latex display='block'>\begin{align} \Delta \vec{x} &amp; = {v}_{i}t+\frac{1}{2}\vec{g}{t}^{2} \\
+ %&amp; \text{We will solve for time using the quadratic formula} \\
+ \frac{1}{2}\vec{g}{t}^{2} + \vec{v}_{i}t - \Delta \vec{x} &amp; = 
+                <number>0</number>\\
+ \frac{1}{2}(
+                <number>9.8</number>)t^2 + (
+                <number>-10</number>)t - (
+                <number>-1.5</number>) &amp; = 
+                <number>0</number>\\
+ \underbrace{(
+                <number>4.9</number>)}_{a}\underbrace{t^2}_{x^2} + \underbrace{(
+                <number>-10</number>)}_{b}\underbrace{t}_{x}+\underbrace{(<number>1.5</number>)}_{c} &amp; = 0 \\
+ t &amp;=
+                \frac{-b\pm\sqrt{b^2-
+                <number>4</number>ac}}{
+                <number>2</number>a} \\
+ t &amp;= \frac{-(
+                <number>-10</number>)\pm\sqrt{(
+                <number>-10</number>)^2-
+                <number>4</number>(
+                <number>4.9</number>)(
+                <number>1.5</number>)}}{
+                <number>2</number>(
+                <number>4.9</number>)} \\
+ t &amp;= \frac{
+                <number>10</number>\pm\sqrt{
+                <number>70.6</number>}}{
+                <number>9.8</number>} \\
+ t &amp;= \frac{
+                <number>10</number>\pm
+                <number>8.40238</number>}{
+                <number>9.8</number>} \\
+ t &amp;= 
+                <number>1.02041</number>\pm 
+                <number>0.857386</number>\\
+ t = 
+                <unit_number>
+                  <number>0.16</number>
+                  <unit>s</unit>
+                </unit_number>\ &amp; \text{or}\ t = 
+                <unit_number>
+                  <number>1.88</number>
+                  <unit>s</unit>
+                </unit_number>\end{align}</latex>
+              </workstep>
+              <workstep>
+                <title>Write the final answer</title>
+                <para>The ball:</para>
+                <list list-type='enumerated'>
+                  <item>reaches a maximum height of 
+                  <unit_number>
+                    <number>
+                      <coeff>5.10</coeff>
+                    </number>
+                    <unit>m</unit>
+                  </unit_number>;</item>
+                  <item>takes 
+                  <unit_number>
+                    <number>
+                      <coeff>1.02</coeff>
+                    </number>
+                    <unit>s</unit>
+                  </unit_number> to reach the top; and</item>
+                  <item>passes through the point in the photograph at 
+                  <latex>t</latex>= 
+                  <unit_number>
+                    <number>0.16</number>
+                    <unit>s</unit>
+                  </unit_number> on the way up and t = 
+                  <unit_number>
+                    <number>1.88</number>
+                    <unit>s</unit>
+                  </unit_number> on the way down.</item>
+                </list>
+              </workstep>
+            </answer>
+          </worked_example>
+
+<para>The use of a sign convention should not affect your result. As an exercise, repeat the previous worked example using the opposite 
+sign convention to verify that you do get the same result.</para>
+
+
+          <worked_example>
+            <title>Height of a projectile</title>
+            <question>
+              <para>A cricketer hits a cricket ball so that it goes vertically upwards. If the ball
+              takes 
+              <unit_number>
+                <number>
+                  <coeff>10</coeff>
+                </number>
+                <unit>s</unit>
+              </unit_number> to return to the initial height, determine its maximum height.</para>
+              <image style:width='0.6'>
+                <src>photos/Cricketer-by-TTGE-on-Flickr-4758998578_20584b5685_o.jpg</src>
+                <attribution>http://www.flickr.com/photos/juddy666/4758998578/sizes/o/</attribution>
+              </image>
+            </question>
+            <answer>
+              <workstep>
+                <title>Identify what is required and what is given</title>
+                <para>We need to find how high the ball goes. We know that it takes 
+                <unit_number>
+                  <number>
+                    <coeff>10</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> to go up and down. We do not know what the initial velocity (<latex>\vec{v}_{i}</latex>) of the ball is.</para>
+                <para>After the batsman strikes the ball it goes directly upwards and the only force that will be
+                acting on the ball will be the gravitational force. This information is represented in the photograph below:</para>
+                <tikzpicture>
+                  <code>[&gt;=stealth] 
+                  \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=.6\textwidth]{photos/Cricketer-by-TTGE-on-Flickr-cropped-4758998578_20584b5685_o.jpg}};
+                  %\draw [orange, line width=5pt] (1.61,4.52) circle [radius=0.05cm]; 
+                  \begin{scope}[x={(image.south  east)},y={(image.north west)}] 
+                  \draw[purple!80!white,-&gt;, ultra thick] (0.192,0.754) -- (0.192,0.98); \draw[line width=5pt] (0.192,0.754) circle [radius=0.05cm] ; 
+                  \draw (0.192,0.85) node [right=2pt,fill=white] {$\vec{v}_i$}; 
+                  \draw[fill=white] (.83,.8) rectangle (.97,.97) ; 
+                  \draw[-&gt;, orange , ultra thick] (.94,.94) -- (.94,.83); 
+                  \draw (.88,.88) node {$\vec{g}$}; 
+                  \end{scope}</code>
+                </tikzpicture>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <para>For a problem like this it is useful to divide the motion into two parts. The first part of the
+                motion consists of the upward motion of the ball with an initial velocity (<latex>\vec{v}_{i}</latex>) and 
+                a final velocity (<latex>\vec{v}_{f}=0</latex>) at the maximum height. The second part of the motion consists of
+                the downward motion of the ball with an initial velocity (<latex>\vec{v}_{i}=0</latex>) and final velocity (<latex>\vec{v}_{f}</latex>) which is not yet known.</para>
+                <pspicture>
+                  <code>(-3,0)(8,5) 
+\psline[linestyle=dashed,linecolor=gray](0,2)(7.8,2)
+                  
+\psline[linestyle=dashed,linecolor=gray](0,4)(7.8,4) 
+\uput[l](0,2){initial height $h_0$}
+                  
+\uput[l](0,4){maximum height} 
+\rput(7,2.5){ 
+\psframe[linecolor=gray](-.4,1.6)(.4,2.4)
+                  
+\psline[linecolor=orange]{-&gt;}(0.2,2.2)(0.2,1.8) 
+\uput[l](0.2,2){$
+\vec{g}$} } 
+%initial dot
+                  
+\psline[linecolor=purple]{-&gt;}(1.3,2)(1.3,3) 
+\uput[l](1.3,2.5){$
+\vec{v}$}
+                  
+\psdots[dotsize=6pt](1.3,2) 
+\rput[t](1.3,1.8){$t=
+\text{0~s}$} 
+\rput(1.3,0.5){
+\small time = 0~s} 
+% middle dot 
+\psdots[dotsize=6pt](3.9,4) 
+\rput[b](3.9,4.2){$
+\vec{v}=
+\text{0~m·s}$}
+                  
+\rput[t](3.9,3.8){$t=t_m$} 
+\rput(3.9,0.5){
+\small time = $t_m$} %final dot
+                  
+\psline[linecolor=purple]{-&gt;}(6.5,2)(6.5,1) 
+\uput[r](6.5,1.5){$
+\vec{v}$}
+                  
+\psdots[dotsize=6pt](6.5,2) 
+\rput[b](6.5,2.2){$t=2t_m$} 
+\rput(6.5,0.5){
+\small time = $2t_m$}</code>
+                </pspicture>
+                <para>Choose down as positive. We know that at the maximum height, the velocity of the ball is 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>. We also know that the ball takes the same time to reach its maximum height as it takes
+                to travel from its maximum height to the initial position, due to time symmetry. The time taken is half the total time. 
+                Therefore, we have the following information for the second (downward) part of the motion of the ball:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>
+                    <latex>t=<unit_number><number>5</number><unit>s</unit></unit_number></latex> (half of the total time)</para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{v}_{\mathrm{top}}=<unit_number><number>0</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{g}=
+                      <unit_number>
+                        <number>9.8</number>
+                        <unit>m·s
+                        <sup>-2</sup></unit>
+                      </unit_number></latex> downwards
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\Delta \vec{x}=~?</latex>
+                    </para>
+                  </item>
+                </list>
+              </workstep>
+              <workstep>
+                <title>Find an appropriate equation to use</title>
+                <para>We do not know the final velocity of the ball coming down. We need to choose an equation that
+                does not have 
+                <latex>\vec{v}_{f}</latex> in it. We can use the following equation to solve for 
+                <latex>\Delta \vec{x}</latex>:</para>
+                <latex display='block'>\Delta \vec{x}=\vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2}</latex>
+              </workstep>
+              <workstep>
+                <title>Substitute values and find the height</title>
+                <latex display='block'>\begin{align} \Delta \vec{x}&amp; = \left(
+                <number>0</number>\right)\left(
+                <number>5</number>\right)+\frac{
+                <number>1</number>}{
+                <number>2</number>}\left(
+                <number>9.8</number>\right){\left(
+                <number>5</number>\right)}^{2} \\
+ \Delta \vec{x}&amp; = 
+                <unit_number>
+                  <number>122.5</number>
+                  <unit>m</unit>
+                </unit_number>~\text{downwards}\end{align}</latex>
+                <para>In the second motion, the displacement of the ball is 
+                <unit_number>
+                  <number>
+                    <coeff>122.5</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number> downwards. This means that the height was 
+                <latex>h = 
+                <unit_number>
+                  <number>
+                    <coeff>122.5</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number></latex>.</para>
+              </workstep>
+              <workstep>
+                <title>Write the final answer</title>
+                <para>The ball reaches a maximum height of 
+                <unit_number>
+                  <number>
+                    <coeff>122.5</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Equal displacements [attribution: Sunil Kumar Singh]</title>
+            <question>
+              <para>A sequence of balls are successively dropped from the top of a tower. The time interval between
+              the release of consecutive balls is equal. At the precise instant that the ninth ball (ball 9) is released, the
+              first ball hits the ground. Which of the balls in the sequence is at <latex>\frac{3}{4}</latex> of the height, 
+              <latex>h</latex>, of the tower when the first ball hits the ground?</para>
+            </question>
+            <answer>
+              <workstep>
+                <title>Understand what is happening</title>
+                <para>A ball is dropped from a tower. After a time, <latex>t_i</latex>, a second ball is dropped. After another time interval, 
+                <latex>t_i</latex>, a third ball is dropped. This means that when ball 3 is dropped the total time that
+                has passed is <latex>2t_i</latex>.</para>
+                <para>After a third time interval, 
+                <latex>t_i</latex>, a fourth ball is dropped. This means that at the instant that ball 4 is dropped the total time that has passed is <latex>3t_i</latex>.
+                This process continues until the ninth ball is dropped. At the same instant that the ninth ball is dropped, the first ball that was dropped strikes the ground. 
+                The ninth ball would have been
+                released after 8 time intervals, therefore it took the first ball a time interval of <latex>8t_i</latex> to hit the ground.</para>
+              </workstep>
+              <workstep>
+                <title>Describe the events mathematically</title>
+                <para>As this is a vertical motion problem where everything is falling towards the ground, it is
+                simplest to choose downwards as the positive direction.</para>
+                <para>The first ball hits the ground when 
+                the ninth ball is dropped. This means that the first ball has fallen for a total time of 
+                <latex>(
+                <number>9</number>-
+                <number>1</number>)t_i = 
+                <number>8</number>t_i</latex>.
+                The displacement of the first ball is also described by the equation <latex>\Delta \vec{x}=\vec{v}_{i}t+\frac{1}{2}\vec{g}t^2</latex>. The balls are dropped so 
+                their initial velocity is zero, <latex>\vec{v}_{i}=0</latex> and the we know the time for the first ball to fall the height of the tower therefore, in the case 
+                of the first ball, we have:</para>
+                <latex display='block'>
+                  \begin{align}
+                    \Delta \vec{x} &amp;=\vec{v}_{i}t+\frac{1}{2}\vec{g}t^2 \\
+                    h &amp;=\frac{1}{2}(<number>9.8</number>)(<number>8</number>t_i)^2 
+                  \end{align}
+                </latex>
+                <para>
+                Let the <latex>n</latex>th ball be the ball that is at <latex>\frac{3}{4}</latex> of the height, <latex>h</latex>, of the tower when the first ball strikes the ground. The
+                <latex>n</latex>th ball will have fall for a time of <latex>(n-1)t_i</latex>. If it is <latex>\frac{3}{4}</latex> of the way up the tower it will have fall a distance of
+                <latex>\frac{1}{4}h</latex>. This motion is also described by <latex>\Delta \vec{x}=\vec{v}_{i}t+\frac{1}{2}\vec{g}t^2</latex>, and therefore we know, in the case of the
+                <latex>n</latex>th ball, we have:</para>
+                <latex display='block'>
+                \begin{align}
+                  \Delta \vec{x} &amp;=\vec{v}_{i}t+\frac{1}{2}\vec{g}t^2 \\
+                  \frac{1}{4}h &amp;=\frac{1}{2}(<number>9.8</number>)((n-<number>1</number>)t_i)^2 \\
+                  h &amp;=2(<number>9.8</number>)((n-<number>1</number>)t_i)^2 
+                  \end{align}
+                </latex>
+                <para>We can't solve for <latex>n</latex> from this final equation because it will contain <latex>h</latex> and <latex>t_i</latex>. We can use the two equations 
+                we have to eliminate <latex>h</latex>. Both equations are written in the form <latex>h=...</latex> therefore we can equate them eliminating <latex>h</latex>:</para>
+                <latex display='block'>
+                    \begin{align}
+                    \frac{1}{2}(<number>9.8</number>)(<number>8</number>t_i)^2 &amp; = 2(<number>9.8</number>)((n-<number>1</number>)t_i)^2 \\
+                    \frac{1}{2}(<number>9.8</number>)<number>8</number>^2t_i^2 &amp; = 2(<number>9.8</number>)(n-<number>1</number>)^2t_i^2 \\
+                    \left(\frac{2}{(<number>9.8</number>)t_i^2}\right)\times\frac{1}{2}(<number>9.8</number>)<number>8</number>^2t_i^2 &amp; = \left(\frac{2}{(<number>9.8</number>)t_i^2}\right)\times 2(<number>9.8</number>)(n-<number>1</number>)^2t_i^2 \\
+                    <number>8</number>^2 &amp; = 4(n-<number>1</number>)^2 \\
+                    <number>8</number> &amp; = 2(n-<number>1</number>) \\
+                    <number>4</number> &amp; = (n-<number>1</number>) \\
+                    n &amp; = 5  
+                  \end{align}
+                </latex>
+                <note type="important">
+                <para>We know that <latex>n</latex> must be a positive integer which is why we use the positive roots when we take the square root above.</para>
+                </note>
+              </workstep>
+              <workstep>
+                <title>Write the final answer</title>
+                <para>The fifth ball is at 
+                <latex>\frac{3}{4}</latex> of the height of the tower when the first ball strikes the ground.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <exercises>
+            <title>Equations of motion</title>
+            <entry>
+              <shortcode>01rz</shortcode>
+              <problem>
+                <para>A cricketer hits a cricket ball straight up into the air. The cricket ball has an initial
+                velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>20</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>.</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>What height does the ball reach before it stops to fall back to the ground.</para>
+                  </item>
+                  <item>
+                    <para>How long has the ball been in the air for?</para>
+                  </item>
+                </list>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000955/00000002/view" />
+              <correct />
+            </entry>
+            <entry>
+              <shortcode>01s0</shortcode>
+              <problem>
+                <para>Zingi throws a tennis ball straight up into the air. It reaches a height of 
+                <unit_number>
+                  <number>
+                    <coeff>80</coeff>
+                  </number>
+                  <unit>cm</unit>
+                </unit_number>.</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>Determine the initial velocity of the tennis ball.</para>
+                  </item>
+                  <item>
+                    <para>How long does the ball take to reach its maximum height?</para>
+                  </item>
+                </list>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000956/view" />
+              <correct />
+            </entry>
+            <entry>
+              <shortcode>01s1</shortcode>
+              <problem>
+                <para>A tourist takes a trip in a hot air balloon. The hot air balloon is ascending (moving up) at a
+                velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>. He accidentally drops his camera over the side of the balloon's basket, at a height of 
+                <unit_number>
+                  <number>
+                    <coeff>20</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number>. Calculate the velocity with which the camera hits the ground.</para>
+                <image style:width='0.6'>
+                  <src>photos/HotAirBalloon-by-CarolynConner-on-Flickr-4267826080_5a0d73b3b7_o-cropped.jpg</src>
+                  <attribution>http://www.flickr.com/photos/carolynconner/4267826080/sizes/o/</attribution>
+                </image>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000957/view">
+                <pspicture>
+                  <code>(0,-3.36)(9.702812,3.36) \definecolor{color597b}{rgb}{0.8,0.8,0.8}
+                  \psbezier[](5.075483,1.6850274)(5.3500285,0.9347714)(5.8591995,-0.17347302)(6.3209376,-0.2)(6.7826757,-0.22652698)(7.6056128,1.1356267)(7.703275,1.8485246)(7.8009377,2.5614226)(7.261549,3.32)(6.3587193,3.32)(5.4558897,3.32)(4.8009377,2.4352832)(5.075483,1.6850274)
+                  \psline[](5.0209374,1.82)(7.6809373,1.82)
+                  \psframe[dimen=outer,fillstyle=solid,fillcolor=color597b](6.8609376,0.14)(5.8009377,-0.92)
+                  \pscircle[linewidth=0.02,dimen=outer](5.9609375,0.58){0.12}
+                  \psline[linewidth=0.02cm](5.9409375,0.48)(5.9409375,0.12)
+                  \psline[linewidth=0.02cm](5.9409375,0.34)(5.5809374,0.2)
+                  \pscircle[linewidth=0.02,dimen=outer](5.9109373,0.61){0.03}
+                  \psline[linewidth=0.02cm](5.9609375,0.56)(5.8809376,0.54)
+                  \psframe[linewidth=0.02,dimen=outer](5.6009374,0.28)(5.3409376,0.02)
+                  \pscircle[linewidth=0.02,dimen=outer](5.4709377,0.17){0.05}
+                  \psline[linestyle=dotted,dotsep=0.16cm](5.8209376,0.04)(1.3409375,0.04)
+                  \psline[]{&lt;-&gt;}(1.4409375,0.06)(1.4409375,-3.34) \psline[](1.4409375,-3.28)(8.820937,-3.28)
+                  \psline[linewidth=0.024cm,arrowsize=0.05291667cm
+                  3.0,arrowlength=2.4,arrowinset=0.4]{-&gt;}(5.4409375,0.04)(5.4409375,-0.56)
+                  \psline[arrowsize=0.05291667cm
+                  4.0,arrowlength=2.0,arrowinset=0.4]{-&gt;}(7.8809376,1.72)(7.8809376,3.34) \rput(9.002344,2.73){$4
+                  \,\text{m} \cdot \text{s}^{-1}$} \rput(0.51234376,-1.69){20 m}</code>
+                </pspicture>
+                <correct />
+              </solution>
+            </entry>
+            <entry>
+              <shortcode />
+              <problem>
+                <para>A ball is dropped vertically from a tower. If the vertical distance covered in the last second is
+                equal to the distance covered in first three seconds, find the height of the tower.</para>
+              </problem>
+              <solution>
+                <para id="element-68">Let us consider that the ball covers the height 
+                <m:math>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                </m:math>in 
+                <m:math>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mi>th</m:mi>
+                  </m:msup>
+                </m:math>second. Then, the distance covered in the 
+                <m:math>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mi>th</m:mi>
+                  </m:msup>
+                </m:math>second is given as :</para>
+                <para id="element-69">
+                  <m:math display="block">
+                    <m:mtable columnalign="left">
+                      <m:mtr>
+                        <m:mtd>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mi>n</m:mi>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mi>u</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mi>g</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mspace width="2pt" />
+                          <m:mo>x</m:mo>
+                          <m:mspace width="2pt" />
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mi>n</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mo>)</m:mo>
+                          <m:mo>=</m:mo>
+                          <m:mn>0</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>10</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mspace width="2pt" />
+                          <m:mo>x</m:mo>
+                          <m:mspace width="2pt" />
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mi>n</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mo>)</m:mo>
+                          <m:mo>=</m:mo>
+                          <m:mn>10</m:mn>
+                          <m:mi>n</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>5</m:mn>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </para>
+                <para id="element-70">On the other hand, the distance covered in first 3 seconds is :</para>
+                <para id="element-71">
+                  <m:math display="block">
+                    <m:mtable columnalign="left">
+                      <m:mtr>
+                        <m:mtd>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mn>3</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mi>u</m:mi>
+                          <m:mi>t</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>g</m:mi>
+                          <m:msup>
+                            <m:mi>t</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:mn>0</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mspace width="2pt" />
+                          <m:mo>x</m:mo>
+                          <m:mspace width="2pt" />
+                          <m:mn>10</m:mn>
+                          <m:mspace width="2pt" />
+                          <m:mo>x</m:mo>
+                          <m:mspace width="2pt" />
+                          <m:msup>
+                            <m:mn>3</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:mn>45</m:mn>
+                          <m:mspace width="2pt" />
+                          <m:mi>m</m:mi>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </para>
+                <para id="element-72">According to question,</para>
+                <para id="element-73">
+                  <m:math display="block">
+                    <m:mtable columnalign="left">
+                      <m:mtr>
+                        <m:mtd>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mi>n</m:mi>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mn>3</m:mn>
+                          </m:msub>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </para>
+                <para id="element-74">
+                  <m:math display="block">
+                    <m:mtable columnalign="left">
+                      <m:mtr>
+                        <m:mtd>
+                          <m:mn>10</m:mn>
+                          <m:mi>n</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>5</m:mn>
+                          <m:mo>=</m:mo>
+                          <m:mn>45</m:mn>
+                        </m:mtd>
+                      </m:mtr>
+                      <m:mtr>
+                        <m:mtd>
+                          <m:mi>n</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>5</m:mn>
+                          <m:mspace width="2pt" />
+                          <m:mi>s</m:mi>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </para>
+                <para id="element-75">Therefore, the height of the tower is :</para>
+                <para id="element-76">
+                  <m:math display="block">
+                    <m:mtable columnalign="left">
+                      <m:mtr>
+                        <m:mtd>
+                          <m:mo></m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mspace width="2pt" />
+                          <m:mo>x</m:mo>
+                          <m:mspace width="2pt" />
+                          <m:mn>10</m:mn>
+                          <m:mspace width="2pt" />
+                          <m:mo>x</m:mo>
+                          <m:mspace width="2pt" />
+                          <m:msup>
+                            <m:mn>5</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:mn>125</m:mn>
+                          <m:mspace width="2pt" />
+                          <m:mi>m</m:mi>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </para>
+              </solution>
+              <correct />
+            </entry>
+          </exercises>
+        </section>
+        <section type="subsection">
+          <title>Graphs of vertical projectile motion</title>
+          <shortcode>ESCDA</shortcode>
+          <para>We can describe vertical projectile motion through a series of graphs: displacement, velocity and acceleration versus time graphs. This isn't new, in Grade 10 you learnt about
+          the graphs for describing rectilinear motion with constant acceleration. In the previous 
+          section we motivated 
+          for using the same equations of motion as in rectilinear motion. Therefore, everything you 
+          learnt about the graphs describing rectilinear motion is applicable when describing vertical 
+          projectile motion.</para>
+          <note type="important">
+            <para>Now would be a good time to revise the section on graphs in rectilinear motion
+            from Grade 10.</para>
+            <para>Remember that:
+            <latex display='block'>
+            \vec{a}=\frac{\Delta \vec{v}}{\Delta t}
+            </latex>
+            <latex display='block'>
+            \vec{v}=\frac{\Delta \vec{x}}{\Delta t}
+            </latex>For the graphs of these quantities the slope and the area under a graph can 
+            tell us about changes in other quantities. As a reminder, here is a summary table, from 
+            Grade 10 rectilinear motion,
+            about which information we can derive from the slope and the area of various graphs:</para>
+ <figure id="fig:slopeandarea">
+            <type>figure</type>
+            <table>
+              <tgroup cols="3">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <colspec colname="c3" colnum="3"/>
+                <tbody>
+                  <row>
+                    <entry>Graph
+                    </entry>
+                    <entry>Slope
+                    </entry>
+                    <entry>
+                    Area
+                    </entry>
+                </row>
+                  <row>
+                    <entry>Displacement vs time
+                    </entry>
+                    <entry><latex>\vec{v}</latex>
+                    </entry>
+                    <entry>-
+                    </entry>
+                </row>
+                  <row>
+                    <entry>Velocity vs time
+                    </entry>
+                    <entry><latex>\vec{a}</latex>
+                    </entry>
+                    <entry><latex>\Delta \vec{x}</latex>
+                    </entry>
+                </row>
+                  <row>
+                    <entry>Acceleration vs time
+                    </entry>
+                    <entry>-
+                    </entry>
+                    <entry><latex>\vec{v}</latex>
+                    </entry>
+                </row>
+            </tbody>
+            </tgroup>
+            </table>
+            </figure>
+
+
+
+
+        <figure id="fig:relation">
+            <type>figure</type>
+            <table>
+              <tgroup cols="4">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <colspec colname="c3" colnum="3"/>
+                <colspec colname="c4" colnum="4"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <para>
+                      \begin{tabular}{c}
+                      Stationary\\
+                      object
+                      \end{tabular}
+                      </para>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+(-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[](0,1.5)(2.5,1.5)
+\uput[u](0,3){$x$ (m)}
+\rput[t](2.5,-.3){$t$ (s)}
+                        </code>
+                      </pspicture>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[linecolor=purple](0,0)(2.5,0)
+\uput[u](0,3){$v$ ($\text{m}\cdot\text{s}^{-1}$)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[linecolor=orange](0,0)(2.5,0)
+\uput[u](0,3){$a$ (m$\cdot$s$^{-2}$)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                  </row>
+         <row>
+                    <entry>
+                      <para>
+                      \begin{tabular}{c}
+                      Uniform\\
+                      motion
+                       \end{tabular}</para>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[](0,0)(2.5,2.5)
+\uput[u](0,3){$x$ (m)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[linecolor=purple](0,1)(2.5,1)
+\uput[u](0,3){$v$ ($\text{m}\cdot\text{s}^{-1}$)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[linecolor=orange](0,0)(2.5,0)
+\uput[u](0,3){$a$ (m$\cdot$s$^{-2}$)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                  </row>
+            <row>
+                    <entry>
+                      <para>
+                      \begin{tabular}{c}
+                      Constant\\
+                      acceleration
+                      \end{tabular}</para>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psplot[plotstyle=curve,]{0}{1.7}{x x mul}
+\uput[u](0,3){$x$ (m)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[linecolor=purple](0,0)(2.5,2.5)
+\uput[u](0,3){$v$ ($\text{m}\cdot\text{s}^{-1}$)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                    <entry>
+                      <pspicture>
+                        <code>
+                          (-1.1,-0.75)(3.1,3.8) \psset{unit=0.75}\psaxes[labels=none,linecolor=gray]{-&gt;}(3,3)
+\psline[linecolor=orange](0,1)(2.5,1)
+\uput[u](0,3){$a$ (m$\cdot$s$^{-2}$)}
+\rput[t](2.5,-.3){$t$ (s)}
+
+                        </code>
+                      </pspicture>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+            <caption>
+              <para>Position vs time, velocity vs time and acceleration vs time graphs.</para>
+            </caption>
+          </figure>
+          </note>
+          <para>The graphs are the graphical representations of the equations of motion. This means that
+          if you have the graph for one of displacement, velocity or acceleration you should be able
+          to write down the corresponding equation and vice versa.</para>
+          <para>The type of graphs is related to the equation of motion: displacement is a parabola, 
+          velocity is a straight line and acceleration is a constant. The characteristic features 
+          then depend on the sign convention and the specific values of the problem.</para>
+
+
+
+
+          <para>To illustrate the variation, we consider three separate cases: (1) the object has an 
+          initial velocity in the upward direction (opposite direction to <latex>\vec{g}</latex>), (2) the object falls from rest (no initial velocity), and (3) the object 
+          has an initial velocity in the downward direction (same direction as <latex>\vec{g}</latex>).</para>
+
+          <para>
+          <emphasis effect='bold'>Important:</emphasis> the horizontal axis in these graphs is time, not space.</para>
+          <section type="subsubsection">
+            <title>Case 1: Initial velocity upwards</title>
+            <para>Consider an object undergoing the following motion:</para>
+            <list list-type='enumerated'>
+            <item>at time <latex>t=<unit_number><number>0</number><unit>s</unit></unit_number></latex> the object has an initial position, <latex>\vec{x}_i=0</latex>, and an 
+            initial upward velocity of magnitude <latex>v_i</latex>, </item>
+            <item>the object reaches a maximum height, <latex>h_m</latex>, above the ground,</item>
+            <item>the object then falls down to a final position, <latex>\vec{x}_f</latex>, with a final velocity <latex>v_f</latex> downward at time = <latex>t_f</latex>. </item>
+            </list>
+            <para>The equation for displacement is given by:
+            <latex>\vec{x} = \vec{x}_i + \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2}</latex>. We 
+            have to choose a positive direction as before. We choose upwards as positive.
+            The displacement versus time graph for the motion described is shown below:
+            </para>
+            <!--in <link target-id="fig:motion:graphs"/>.</para>-->
+            <figure id="fig:motion:graphs">
+              <type>figure</type>
+              <pspicture>
+                <code>(-1.5,-1.5)(7,5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, yLabels={0}, xLabels={0} }
+                
+\psaxes[linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=4cm,yticksize=6cm,Dx=3, Dy=4]{-&gt;}(0,0)(6.5,4.5)%[$x$,-90][$y$,180] 
+\rput[t]{0}(3.25,-1){$t~\text{(s)}$}
+                
+\rput[b]{90}(-1,2.25){Displacement (m)} 
+\rput[ur]{0}(-.1,-.1){0} 
+\rput[bl]{0}(.15,.05){$x_i$}
+                
+\psplot[algebraic=true,plotstyle=curve]{0}{6}{x*(x-6)*(-4/9)} 
+\uput[d](3.0,0){$t_m$}
+                
+\uput*[d](6.0,0){$t_f$} 
+\uput*[l](0,4){$h_m$} 
+\psdot[](0,0) 
+\psdot[](6,0) 
+\rput[bl]{0}(6.05,.05){$x_f$}
+                
+\psdot[](3,4)
+                </code>
+              </pspicture>
+            </figure>
+
+<note type='important'>
+<para>It is important to notice that we are plotting displacement versus time and the initial displacement, <latex>\vec{x}_{i}</latex>, is not necessarily zero. The displacement as a function of time
+will be given by <latex>\vec{x}_f = \vec{x}_{i} + \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2}</latex>. The initial displacement, <latex>\vec{x}_{i}</latex>, will shift the graph of <latex>\Delta \vec{x}</latex> up or down by a constant factor. Whether it is an upward or downward shift will depend on which direction was chosen as the positive direction. The magnitude of the shift will depend on the choice of origin for the coordinate system (frame of reference). </para>
+</note>
+
+            <para>The second graph is a linear function showing the velocity as a function of time: 
+            <latex>\vec{v}_{f} = \vec{v}_{i}+\vec{g}t</latex>. Note that we chose upwards as our positive direction therefore the acceleration due to gravity will be negative. The slope (i.e. 
+            the coefficient of <latex>t</latex>) of the
+            velocity versus time graph is the acceleration and the slope is negative which is 
+            consistent with our expectations after choosing upwards as the positive direction.</para>
+            <figure id="fig:motion:graphs2">
+              <type>figure</type>
+              <pspicture>
+                <code>(-1.5,-4)(7,4) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+                
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+                Dy=4]{-&gt;}(0,0)(0,-3.5)(6.5,3.5)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+                
+\rput[b]{90}(-1,0){Velocity ($
+\text{m}
+\cdot
+\text{s}^{-1}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+                
+\psline[linecolor=purple]{-}(0,3)(6,-3) 
+\rput[r]{0}(-0.05,3.05){$v_i$} 
+\rput[r]{0}(-.05,-2.95){$v_f$}
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(6,-3) 
+\uput[d](3.0,0){$t_m$} 
+\uput*[d](6.0,0){$t_f$}
+                
+\psdot[linecolor=purple](0,3) 
+\psdot[linecolor=purple](3,0) 
+\psdot[linecolor=purple](6,-3)
+\psdot[linecolor=purple](0,-3)
+\psdot[linecolor=purple](6,0)
+</code>
+              </pspicture>
+            </figure>
+
+            <para>The final plot is a graph of acceleration versus time, and is constant because the magnitude and direction of the acceleration due to gravity are constant.</para>
+
+            <figure id="fig:motion:graphs2">
+              <type>figure</type>
+              <pspicture>
+                <code>(-1.5,-4)(7,2.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+                
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=.0cm,yticksize=.0cm,Dx=3,
+                Dy=4]{-&gt;}(0,0)(0,-3.5)(6.5,1.5)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+                
+\rput[b]{90}(-1,0){Acceleration ($
+\text{m}
+\cdot
+\text{s}^{-2}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+                
+\psline[linecolor=orange]{-}(0,-3)(6,-3) 
+\rput[r]{0}(-.05,-3){$g$}
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3)
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(3,0)(3,-3) 
+\uput*[d](3.0,0){$t_m$} 
+\uput*[d](6.0,0){$t_f$}
+                \psdot[linecolor=orange](0,-3) \psdot[linecolor=orange](3,-3) \psdot[linecolor=orange](6,-3)
+                 \psdot[linecolor=orange](3,0) \psdot[linecolor=orange](6,0)
+                </code>
+              </pspicture>
+<!--              <caption>
+                <para>Graphs for an object thrown upwards with an initial velocity 
+                <latex>{v}_{i}</latex>. The object takes 
+                <latex>{t}_{m} \text{s}</latex>to reach its maximum height of 
+                <latex>{h}_{m} \text{m}</latex>after which it falls back to the ground. (a) position vs time graph
+                (b) velocity vs time graph (c) acceleration vs time graph.</para>
+              </caption>-->
+            </figure>
+          </section>
+          <section type="subsubsection">
+            <title>Cases 2 \&amp; 3: Initial velocity zero or downwards</title>
+            <!-- case of object moving in the same direction as gravity initially -->
+
+            <para>We start by choosing a direction as the positive direction. We want to compare the graphs with the first case, so 
+            we will choose the same direction (upwards) to be the positive direction.</para> 
+            <para>The one thing that remains the same is the acceleration, 
+            <latex>\vec{g}</latex>, due to gravity. Therefore:</para>
+            <figure id="fig:motion:graphs2">
+              <type>figure</type>
+              <pspicture>
+                <code>(-1.5,-4)(7,2.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+                
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=.0cm,yticksize=.0cm,Dx=3,
+                Dy=4]{-&gt;}(0,0)(0,-3.5)(6.5,1.5)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+                
+\rput[b]{90}(-1,0){Acceleration ($
+\text{m}
+\cdot
+\text{s}^{-2}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+                
+\psline[linecolor=orange]{-}(0,-3)(6,-3) 
+\rput[r]{0}(-.1,-3){$g$}
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3)
+                
+\uput*[d](6.0,0){$t_f$}
+                \psdot[linecolor=orange](0,-3) \psdot[linecolor=orange](6,-3)
+                 \psdot[linecolor=orange](6,0)
+                </code>
+              </pspicture>
+            </figure>
+            <para></para>
+            <!-- case of starting from rest and falling -->
+            <para>If an object starts from rest (for example is dropped), then the initial velocity is zero. We know that there is constant acceleration and hence the graph of velocity 
+            versus time looks like this:</para>
+            <pspicture>
+              <code>(-1.5,-8)(7,1.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+              
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+              Dy=4]{-&gt;}(0,0)(0,-7)(6.5,1)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+              
+\rput[b]{90}(-1,-3){Velocity ($
+\text{m}
+\cdot
+\text{s}^{-1}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+              
+\psline[linecolor=purple]{-}(0,0)(6,-6) 
+\rput[bl]{0}(0.05,.05){$v_i$} 
+\rput[r]{0}(-.1,-6){$v_f$}
+              
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-6) % 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-6)(6,-6) % 
+\uput*[d](6.0,0){$t_f$}
+              
+\psdot[linecolor=purple](0,0) % 
+\psdot[linecolor=purple](0,-6) 
+\psdot[linecolor=purple](6,0) 
+\psdot[linecolor=purple](6,-6)
+</code>
+            </pspicture>
+            <!-- case of being thrown in the negative direction -->
+            <para>If the object starts with an initial velocity downwards the velocity 
+            graph looks like:</para>
+            <pspicture>
+              <code>(-1.5,-8)(7,1.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+              
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+              Dy=4]{-&gt;}(0,0)(0,-7.5)(6.5,1)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+              
+\rput[b]{90}(-1,-3){Velocity ($
+\text{m}
+\cdot
+\text{s}^{-1}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+              
+\psline[linecolor=purple]{-}(0,-1)(6,-7) 
+\rput[r]{0}(-0.05,-1.05){$v_i$} 
+\rput[r]{0}(-.05,-7){$v_f$}
+              
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-7) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-7)(6,-7) 
+\uput*[d](6.0,0){$t_f$}
+              
+\psdot[linecolor=purple](0,-1) 
+\psdot[linecolor=purple](6,0) 
+\psdot[linecolor=purple](0,-7) 
+\psdot[linecolor=purple](6,-7)</code>
+            </pspicture>
+
+<note type='important'>
+<para>It is important to notice that the slope of all the velocity versus time graphs has the same magnitude. If the same direction is chosen as positive then the slope 
+has the same magnitude AND the same sign (direction). The difference in these graphs is related to the initial velocity, <latex>\vec{v}_{i}</latex>.</para>
+</note>
+            <para>For the case where the object falls from rest, the equation for displacement is <latex>\ \vec{x} = \vec{x}_i +\underbrace{\vec{v}_{i}t}_{<number>0</number>}+\frac{1}{2}\vec{g}{t}^{2}</latex> and the graph of the displacement versus time looks like this:</para>
+            <pspicture>
+              <code>(-1.5,-4)(7,1.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+              
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+              Dy=4]{-&gt;}(0,0)(0,-3.5)(6.5,1)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+              
+\rput[b]{90}(-1,-1){Displacement (m)} 
+\rput[ur]{0}(-.1,-.1){0} 
+\rput[bl]{0}(.15,.05){$x_i$}
+              
+\psplot[algebraic=true,plotstyle=curve]{0}{6}{(-3/36)*x*x}
+              
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(6,-3) 
+\uput*[d](6.0,0){$t_f$} 
+\psdot[](0,0)
+              
+\psdot[](6,-3) 
+\psdot[](0,-3) 
+\rput[r](-.05,-3){$x_f$}</code>
+            </pspicture>
+            <para>For motion with an initial velocity in the negative direction, the graph of displacement versus 
+            time will be a narrower parabola as compared to the case where the object falls from rest. This is shown in this graph
+            where the initial velocity is in the negative direction:
+        </para>
+            <pspicture>
+              <code>(-1.5,-7)(7,1.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+              
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+              Dy=4]{-&gt;}(0,0)(0,-6.5)(6.5,1)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+              
+\rput[b]{90}(-1,-3){Displacement (m)} 
+\rput[ur]{0}(-.1,-.1){0} 
+\rput[bl]{0}(.15,.05){$x_i$}
+              
+\psplot[algebraic=true,plotstyle=curve]{0}{6}{(-6/36)*x*x}
+              
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-6) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-6)(6,-6) 
+\uput*[d](6.0,0){$t_f$} 
+\psdot[](0,0)
+              
+\psdot[](6,-6) 
+\psdot[](6,0) 
+\psdot[](0,-6) 
+\rput[r](-.05,-6){$x_f$}</code>
+            </pspicture>
+          </section>
+          <para>The primary difference in features between the cases we've looked at is that for Case 1, the displacement graph has a maximum  positive displacement (it has a peak), while in Cases 2 and 3, where the initial velocity is negative, the displacement is always negative.</para>
+          <para>You may be wondering if the final displacement is always the same as the initial displacement, as we had for our Case 1 example. That is not necessarily true. If an object is thrown up from the edge of a cliff, the initial position of the object will be the height of the cliff but the final displacement will be at the base of the cliff. If we choose the point from which the object is thrown as the origin of our coordinate system then the graph will look like this:</para>
+
+      <pspicture>
+                <code>(-1.5,-5.5)(5,5)
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.5 }
+
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=0cm,Dx=3, Dy=4]{-&gt;}(0,0)(0,-4)(8.5,4.5)%[$x$,-90][$y$,180]
+\rput[b]{0}(7.3,.1){$t~\text{(s)}$}
+
+\rput[b]{90}(-1,2.25){Displacement (m)}
+\rput[ur]{0}(-.1,-.1){0}
+\rput[bl]{0}(.15,.05){$x_i$}
+
+\psplot[algebraic=true,plotstyle=curve]{0}{7}{x*(x-6)*(-4/9)}
+\uput[d](3.0,0){$t_m$}
+
+\psline[linecolor=gray,linestyle=dotted]{-}(3,0)(3,4) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,4)(3,4) 
+\psline[linecolor=gray,linestyle=dotted]{-}(7,0)(7,-3.111) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-3.111)(7,-3.111) 
+\uput*[d](7.0,0){$t_f$}
+\uput*[l](0,4){$h_m$}
+\psdot[](0,0)
+\psdot[](7,0)
+\psdot[](3,0)
+\rput[r]{0}(-.1,-3.111){$x_f$}
+
+\psdot[](0,4)
+\psdot[](3,4)
+\psdot[](0,-3.111)
+\psdot[](7,-3.111)
+                </code>
+              </pspicture>
+
+
+<para>If we choose to centre our coordinate system at the base of the cliff then the graph will look like this, 
+because the initial displacement is the height of the cliff:</para>
+
+      <pspicture>
+                <code>(-1.5,-5.5)(5,5)
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.5 }
+
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=0cm,Dx=3, Dy=4]{-&gt;}(0,-3.1111)(0,-4)(8.5,4.5)%[$x$,-90][$y$,180]
+\rput[b]{0}(7.7,-3){$t~\text{(s)}$}
+
+\rput[b]{90}(-1,2.25){Displacement (m)}
+\rput[ur]{0}(-.15,-3.111){0}
+\rput[bl]{0}(.15,.05){$x_i$}
+
+\psplot[algebraic=true,plotstyle=curve]{0}{7}{x*(x-6)*(-4/9)}
+\uput[d](3.0,-3.111){$t_m$}
+
+\psline[linecolor=gray,linestyle=dotted]{-}(3,-3.111)(3,4) 
+\psline[linecolor=gray,linestyle=dotted]{-}(0,4)(3,4) 
+\uput*[d](7.0,-3.111){$t_f$}
+\uput*[l](0,4){$h_m$}
+\psdot[](0,0)
+\psdot[](3,-3.111)
+\rput[l]{0}(.1,-2.95){$x_f$}
+
+\psdot[](0,4)
+\psdot[](3,4)
+\psdot[](0,-3.111)
+\psdot[](7,-3.111)
+                </code>
+              </pspicture>
+
+
+         <!-- <section type="subsubsection">
+            <title>Things to remember</title>
+          </section>-->
+          <worked_example>
+            <title>Drawing graphs of projectile motion</title>
+            <question>
+              <para>Stanley is standing on a balcony 
+              <unit_number>
+                <number>
+                  <coeff>20</coeff>
+                </number>
+                <unit>m</unit>
+              </unit_number> above the ground. Stanley tosses a rubber ball upwards with an initial velocity of 
+              <unit_number>
+                <number>
+                  <coeff>4.9</coeff>
+                </number>
+                <unit>m·s
+                <sup>-1</sup></unit>
+              </unit_number>. The ball travels upwards to a maximum height, and then falls to the ground. Draw graphs of position vs time,
+              velocity vs time and acceleration vs time. Choose upwards as the positive direction.</para>
+                <pspicture>
+                  <code>(-0.5,-0.5)(4.9,5.5) 
+                  
+                  
+                  \psframe[fillstyle=solid,fillcolor=darkgray](0,0)(1,5) 
+                  \psframe[fillcolor=darkgray,fillstyle=solid](1,4)(1.4,4.2) 
+
+\psdots[dotsize=4pt,linecolor=black!20!white](1.45,4.2)
+\psdots[dotsize=4pt,linecolor=black!35!white](1.45,5)
+\psdots[dotsize=4pt,linecolor=black!50!white](1.45,3.75)
+\psdots[dotsize=4pt,linecolor=black!65!white](1.45,2.5)
+\psdots[dotsize=4pt,linecolor=black!80!white](1.45,1.25)
+\psdots[dotsize=4pt,linecolor=black](1.45,0)
+
+                  
+                  \psline(1,0)(2.4,0)
+                  \psline[linecolor=orange]{-&gt;}(2.5,3.95)(2.5,3.55) 
+                  \uput[r](2.5,3.75){$g=$ 
+                  <unit_number>
+                    <number>9.8</number>
+                    <unit>m·s
+                    <sup>-2</sup></unit>
+                  </unit_number>} 
+\psline[linecolor=purple]{-&gt;}(2.5,3.1)(2.5,3.5)
+                  
+\uput[r](2.5,3.3){$v_i=$<unit_number><number>4.9</number><unit>m·s
+                    <sup>-1</sup></unit>
+                                      </unit_number>}
+                  
+\uput[r](2.5,4.2){$v_f=$<unit_number><number>0</number><unit>m·s
+                    <sup>-1</sup></unit>
+                                      </unit_number>} 
+
+%\psline[linewidth=1pt](1.4,4.2)(1.4,4.8)
+                  
+%\pscurve(1.4,4.8)(1.6,5)(1.8,4.8) 
+%\psline[linewidth=1pt]{-&gt;}(1.8,4.8)(1.8,0)
+                  
+\psline[linecolor=lightgray,linestyle=dotted](1,5)(2.5,5)
+</code>
+                </pspicture>
+
+
+            </question>
+            <answer>
+              <workstep>
+                <title>Determine what is required</title>
+                <para>We are required to draw graphs of:</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>
+                    <latex>\Delta \vec{x}</latex> vs <latex>t</latex></para>
+                  </item>
+                  <item>
+                    <para>
+                    <latex>\vec{v}</latex> vs 
+                    <latex>t</latex></para>
+                  </item>
+                  <item>
+                    <para>
+                    <latex>\vec{a}</latex> vs 
+                    <latex>t</latex></para>
+                  </item>
+                </list>
+              </workstep>
+              <workstep>
+                <title>Determine how to approach the problem</title>
+                <para>There are two parts to the motion of the ball:</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>ball travelling upwards from the building</para>
+                  </item>
+                  <item>
+                    <para>ball falling to the ground</para>
+                  </item>
+                </list>
+                <para>We examine each of these parts separately. To be able to draw the graphs, we need to determine
+                the time taken and displacement for each of the motions.</para>
+              </workstep>
+              <workstep>
+                <title>Find the height and the time taken for the first motion</title>
+                <para>For the first part of the motion we have:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>
+                      <latex>\vec{v}_{i}=
+                      <unit_number>
+                        <number>+4.9</number>
+                        <unit>m·s
+                        <sup>-1</sup></unit>
+                      </unit_number></latex>
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{v}_{f}= 
+                      <unit_number>
+                        <number>0</number>
+                        <unit>m·s
+                        <sup>-1</sup></unit>
+                      </unit_number></latex>
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{g}=
+                      <unit_number>
+                        <number>-9.8</number>
+                        <unit>m·s
+                        <sup>-2</sup></unit>
+                      </unit_number></latex>
+                    </para>
+                  </item>
+                </list>
+
+
+                <pspicture>
+                  <code>(-0.5,-0.5)(4.9,5.5) 
+                  
+                  
+                  \psframe[fillstyle=solid,fillcolor=darkgray](0,0)(1,5) 
+                  \psframe[fillcolor=darkgray,fillstyle=solid](1,4)(1.4,4.2) 
+
+\psdots[dotsize=4pt,linecolor=black!20!white](1.45,4.2)
+\psdots[dotsize=4pt,linecolor=black!35!white](1.45,5)
+%\psdots[dotsize=4pt,linecolor=black!50!white](1.45,3.75)
+%\psdots[dotsize=4pt,linecolor=black!65!white](1.45,2.5)
+%\psdots[dotsize=4pt,linecolor=black!80!white](1.45,1.25)
+%\psdots[dotsize=4pt,linecolor=black](1.45,0)
+
+                  
+                  \psline(1,0)(2.4,0)
+                  \psline[linecolor=orange]{-&gt;}(2.5,3.95)(2.5,3.55) 
+                  \uput[r](2.5,3.75){$\vec{g}=$ 
+                  <unit_number>
+                    <number>-9.8</number>
+                    <unit>m·s
+                    <sup>-2</sup></unit>
+                  </unit_number>} 
+\psline[linecolor=purple]{-&gt;}(2.5,3.1)(2.5,3.5)
+                  
+\uput[r](2.5,3.3){$v_i=$<unit_number><number>4.9</number><unit>m·s
+                    <sup>-2</sup></unit>
+                                      </unit_number>}
+                  
+\uput[r](2.5,4.2){$v_f=$<unit_number><number>0</number><unit>m·s<sup>-2</sup></unit></unit_number>}
+
+%\psline[linewidth=1pt](1.4,4.2)(1.4,4.8)
+                  
+%\pscurve(1.4,4.8)(1.6,5)(1.8,4.8) 
+%\psline[linewidth=1pt]{-&gt;}(1.8,4.8)(1.8,0)
+                  
+\psline[linecolor=lightgray,linestyle=dotted](1,5)(2.5,5)
+</code>
+                </pspicture>
+
+
+
+                <para>Therefore we can use 
+                <latex>\vec{v}_{f}^{2}=\vec{v}_{i}^{2}+2\vec{g}\Delta \vec{x}</latex> to solve for the height and 
+                <latex>\vec{v}_{f}=\vec{v}_{i}+\vec{g}t</latex> to solve for the time.</para>
+                <latex display='block'>
+                \begin{align} 
+                \vec{v}_{f}^{2}&amp; = \vec{v}_{i}^{2}+2\vec{g}\Delta \vec{x} \\
+                {\left(0\right)}^{2}&amp; = {\left( <number>4.9</number>\right)}^{2}+2\times \left(<number>-9.8</number>\right)\times \Delta \vec{x} \\
+                <number>19.6</number>\Delta x&amp; = {\left(<number>4.9</number>\right)}^{2} \\
+                \Delta \vec{x}&amp; =  <unit_number><number>1.225</number><unit>m</unit></unit_number> 
+                \end{align}
+                </latex>
+                <latex display='block'>
+                \begin{align} \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{g}t \\
+ 0&amp; = 
+                <number>4.9</number>+\left(
+                <number>-9.8</number>\right)\times t \\ 
+                <number>9.8</number>t&amp; = 
+                <number>4.9</number>\\
+ t&amp; = 
+                <unit_number><number>0.5</number><unit>s</unit></unit_number> \end{align}</latex>
+              </workstep>
+              <workstep>
+                <title>Find the height and the time taken for the second motion</title>
+                <pspicture>
+                  <code>(-0.5,-0.5)(4.9,5.5) 
+                  
+                  
+                  \psframe[fillstyle=solid,fillcolor=darkgray](0,0)(1,5) 
+                  \psframe[fillcolor=darkgray,fillstyle=solid](1,4)(1.4,4.2) 
+
+\psdots[dotsize=4pt,linecolor=black!35!white](1.45,5)
+\psdots[dotsize=4pt,linecolor=black!50!white](1.45,3.75)
+\psdots[dotsize=4pt,linecolor=black!65!white](1.45,2.5)
+\psdots[dotsize=4pt,linecolor=black!80!white](1.45,1.25)
+\psdots[dotsize=4pt,linecolor=black](1.45,0)
+
+                  
+                  \psline(1,0)(2.4,0)
+                  \psline[linecolor=orange]{-&gt;}(2.5,3.95)(2.5,3.55) 
+                  \uput[r](2.5,3.75){$g=$ 
+                  <unit_number>
+                    <number>9.8</number>
+                    <unit>m·s
+                    <sup>-2</sup></unit>
+                  </unit_number>} 
+\psline[linecolor=purple]{-&gt;}(2.5,3.1)(2.5,3.5)
+                  
+\uput[r](2.5,3.3){$v_i=$<unit_number><number>0</number><unit>m·s<sup>-1</sup></unit></unit_number>}
+                  
+\uput[r](2.5,4.2){$v_f=$?<unit>m·s<sup>-1</sup></unit>} 
+
+%\psline[linewidth=1pt](1.4,4.2)(1.4,4.8)
+                  
+%\pscurve(1.4,4.8)(1.6,5)(1.8,4.8) 
+%\psline[linewidth=1pt]{-&gt;}(1.8,4.8)(1.8,0)
+                  
+\psline[linecolor=lightgray,linestyle=dotted](1,5)(2.5,5)
+</code>
+                </pspicture>
+
+
+                <para>For the second part of the motion we have:</para>
+                <list list-type="bulleted">
+                  <item>
+                    <para>
+                      <latex>\vec{v}_{i}=<unit_number><number>0</number><unit>m·s<sup>-1</sup></unit></unit_number></latex>
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\Delta \vec{x}=-\left(<number>20</number>+<number>1.225</number>\right) \text{m}</latex>
+                    </para>
+                  </item>
+                  <item>
+                    <para>
+                      <latex>\vec{g}=
+                      <unit_number>
+                        <number>-9.8</number>
+                        <unit>m·s
+                        <sup>-2</sup></unit>
+                      </unit_number></latex>
+                    </para>
+                  </item>
+                </list>
+                <para>Therefore we can use 
+                <latex>\Delta \vec{x}=\vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2}</latex> to solve for the time.</para>
+                <latex display='block'>\begin{align} \Delta \vec{x}&amp; = \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2} \\
+                -\left(<number>20</number>+<number>1.225</number>\right)&amp; = \left(0\right)\times t+\frac{1}{2}\times \left(
+                <number>-9.8</number>\right)\times {t}^{2} \\ 
+                <number>-21.225</number>&amp; = 0
+                <number>-4.9</number>{t}^{2} \\
+ {t}^{2}&amp; = <number>4.33163</number>... \\
+ t&amp; = 
+                <unit_number><number>2.08125</number><unit>s</unit></unit_number> \end{align}</latex>
+
+                <pspicture>
+                  <code>(-1.5,-1)(5.4,6)
+                    \psframe[fillstyle=solid,fillcolor=darkgray](0,0)(1,5) 
+                    \psframe[fillcolor=darkgray,fillstyle=solid](1,4)(1.4,4.2) 
+                    \psline[linecolor=lightgray,linestyle=dotted](1,5)(2.5,5)
+                    \psline[]{->}(1.45,5)(1.45,0)
+                  \psline(1,0)(2.4,0)
+                    \psline[linestyle=dashed]{|-|}(-0.5,0)(-0.5,4.2) 
+                    \rput[r](-0.65,2.2){20 m}
+                    \uput[r](2,4.8){$v_i=$<unit_number><number>0</number><unit>m·s<sup>-1</sup></unit></unit_number>}
+                    \rput(0,1.2){ 
+                        \psline[linecolor=orange]{-&gt;}(2,2.6)(2,2.2) 
+                        \uput[r](2,2.4){$\vec{g}=$
+                  <unit_number>
+                    <number>-9.8</number>
+                    <unit>m·s
+                    <sup>-2</sup></unit>
+                  </unit_number>} 
+                  
+                        \psline[]{-&gt;}(2,3.2)(2,2.8) 
+                        \uput[r](2,3){$
+                        \Delta \vec{x}=-21,225$ m}
+                    }
+</code>
+                </pspicture>
+              </workstep>
+              <workstep>
+                <title>Graph of position vs time</title>
+                <para>The ball starts from a position of 
+                <unit_number><number>20</number><unit>m</unit></unit_number> (at t = 
+                <unit_number>
+                  <number>0</number>
+                  <unit>s</unit>
+                </unit_number>) from the ground and moves upwards until it reaches 
+                <number>20</number>+<number>1.225</number> <unit>m</unit> (at <latex>t=<unit_number><number>0.5</number><unit>s</unit></unit_number></latex>). It then falls back to 
+                <unit_number>
+                  <number>
+                    <coeff>20</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number> (at 
+                <latex>t=<number>0.5</number>+<number>0.5</number>=
+                <number>1.0</number><unit>s</unit></latex>) and then falls to the ground, 
+                <latex>\Delta \vec{x}=<unit_number><number>0</number><unit>m</unit></unit_number></latex> at (<latex>t=<number>0.5</number>+<number>2.08</number>=<number>2.58</number>~\text{s}</latex>).</para>
+                <pspicture>
+                  <code>(-1.5,-1.5)(8,7) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=2 }
+                  
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3, Dy=4]{-&gt;}(0,0)(3.3,6)%[$x$,-90][$y$,180] 
+\rput[b]{0}(3.1,.1){$t~
+\text{(s)}$}
+                  
+\rput[b]{90}(-.5,3){Displacement (m)} 
+\rput[ur]{0}(-.1,-.1){0} 
+\rput[r]{0}(-0.1,5){
+\footnotesize{20}}
+                  
+\rput[r]{0}(-0.1,5.30625){
+\footnotesize{21.225}}
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(0,5)(1,5)
+\psline[linecolor=gray,linestyle=dotted]{-}(1,0)(1,5)
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(0,5.30625)(.5,5.30625)
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(0.5,0)(.5,5.30625)
+                  
+\psplot[algebraic=true,plotstyle=curve]{0}{2.58}{-1.225*x*x + 1.225*x + 5} %
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3) 
+\uput[d](2.58,0){
+\footnotesize{2,58}}
+                  
+\uput[d](.5,0){
+\footnotesize{0,5}} 
+\uput[d](1,0){
+\footnotesize{1}} % do the dots last so that they  overlay any lines. 
+\psdot(.5,5.30625) 
+\psdot[](0,5.30625) 
+\psdot[](0,5) 
+\psdot(1,5)
+                  
+\psdot[](0,0)
+\psdot[](0.5,0)
+\psdot[](1,0) 
+\psdot[](2.58,0)</code>
+                </pspicture>
+              </workstep>
+              <workstep>
+                <title>Graph of velocity vs time</title>
+                <para>The ball starts off with a velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>+4.9</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> at t = 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number>, it then reaches a velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> at t = 
+                <unit_number>
+                  <number>
+                    <coeff>0.5</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number>. It stops and falls back to the Earth. At t = 
+                <unit_number>
+                  <number>
+                    <coeff>1.0</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> (i.e. after a further 
+                <unit_number>
+                  <number>
+                    <coeff>0.5</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number>) it has a velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>-4.9</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>. This is the same as the initial upwards velocity but it is downwards. It carries on at
+                constant acceleration until <latex>t=<unit_number><number><coeff>2.58</coeff></number><unit>s</unit></unit_number></latex>. 
+                In other words, the velocity graph will be a straight line. The final velocity of the
+                ball can be calculated as follows:</para>
+                <latex display='block'>\begin{align} \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{g}t \\
+ &amp; = 0+\left(
+                <number>-9.8</number>\right)\left(
+                <number>2.08</number>...\right) \\
+ &amp; = 
+                <number>-20.396</number>... \text{m}·{\text{s}}^{-1} \end{align}</latex>
+                <pspicture>
+                  <code>(-1.5,-6.5)(7,2) 
+                  \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=2 }
+                  \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-6)(3.3,2)
+                  \rput[b]{0}(3.1,.1){$t~\text{(s)}$}
+                  \rput[b]{90}(-.5,-1.5){Velocity ($\text{m}\cdot\text{s}^{-1}$)} \rput[ur]{0}(-.1,-.1){0}
+                  \psline[linecolor=purple]{-}(0,1.225)(2.58,-5.1)
+                  \psline[linecolor=gray,linestyle=dotted]{-}(0,-1.225)(1,-1.225)(1,0)
+                  \psline[linecolor=gray,linestyle=dotted]{-}(0,-5.1)(2.58,-5.1)(2.58,0)
+                  \psdot[linecolor=purple](0,1.225) \psdot[linecolor=purple](0,-1.225) \psdot[linecolor=purple](0,-5.1)
+                  \psdot[linecolor=purple](0.5,0) \psdot[linecolor=purple](1,-1.225)
+                  \psdot[linecolor=purple](2.58,-5.1) \psdot[linecolor=purple](1,0) \psdot[linecolor=purple](2.58,0)
+                  \uput[d](2.58,0){\footnotesize{2,58}} \uput[d](1.,0){\footnotesize{1}}
+                  \uput[d](.4,0){\footnotesize{0,5}} \rput[r]{0}(-0.1,1.225){\footnotesize{4,9}}
+                  \rput[r]{0}(-0.1,-1.225){\footnotesize{-4,9}} \rput[r]{0}(-0.1,-5.1){\footnotesize{-20,40}}</code>
+                </pspicture>
+              </workstep>
+              <workstep>
+                <title>Graph of a vs t</title>
+                <para>We chose upwards to be positive. The acceleration of the ball is downward. 
+                <latex>\vec{g}=
+                <unit_number>
+                  <number>9.8</number>
+                  <unit>m·s
+                  <sup>-2</sup></unit>
+                </unit_number></latex>. Because the acceleration is constant throughout the motion, the graph looks
+                like this:</para>
+                <!-- reworked plot goes here -->
+                <pspicture>
+                  <code>(-1.5,-4)(7,2.5) 
+                  \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=2 }
+                  \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=.0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-3.5)(3.3,1.5)
+                  \rput[b]{0}(3.1,.1){$t~\text{(s)}$}
+                  \rput[b]{90}(-.5,0){Acceleration ($\text{m}\cdot\text{s}^{-2}$)} \rput[ur]{0}(-.1,-.1){0}
+                  \psline[linecolor=orange]{-}(0,-3)(2.58,-3)
+                  \psline[linecolor=gray,linestyle=dotted]{-}(2.58,0)(2.58,-3)
+                  \psline[linecolor=gray,linestyle=dotted]{-}(1.,0)(1.,-3)
+                  \psline[linecolor=gray,linestyle=dotted]{-}(.5,0)(.5,-3) \psdot[linecolor=orange](0,-3)
+                  \psdot[linecolor=orange](.5,-3) \psdot[linecolor=orange](1.,-3) \psdot[linecolor=orange](2.58,-3)
+                  \psdot[linecolor=orange](0,0) \psdot[linecolor=orange](.5,0) \psdot[linecolor=orange](1.,0)
+                  \psdot[linecolor=orange](2.58,0) \uput[d](2.58,0){\footnotesize{2,58}}
+                  \uput[d](1.,0){\footnotesize{1}} \uput[d](.5,0){\footnotesize{0,5}}
+                  \rput[r]{0}(-0.1,-3){\footnotesize{-9,8}}</code>
+                </pspicture>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Analysing graphs of projectile motion</title>
+            <question>
+              <para>The graph below (not drawn to scale) shows the motion of a tennis ball that was thrown vertically
+              upwards from an open window some distance from the ground. It takes the ball 
+              <unit_number>
+                <number>
+                  <coeff>0.2</coeff>
+                </number>
+                <unit>s</unit>
+              </unit_number>to reach its highest point before falling back to the ground. Study the graph given and
+              calculate:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>how high the window is above the ground.</para>
+                </item>
+                <item>
+                  <para>the time it takes the ball to reach the maximum height.</para>
+                </item>
+                <item>
+                  <para>the initial velocity of the ball.</para>
+                </item>
+                <item>
+                  <para>the maximum height that the ball reaches.</para>
+                </item>
+                <item>
+                  <para>the final velocity of the ball when it reaches the ground.</para>
+                </item>
+              </list>
+              <pspicture>
+                <code>(-1.5,-1.5)(8,7) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=1.5 }
+                
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3, Dy=4]{-&gt;}(0,0)(3.3,6)%[$x$,-90][$y$,180] 
+\rput[b]{0}(3.1,.1){$t~
+\text{(s)}$}
+                
+\rput[b]{90}(-.5,3){Displacement (m)} 
+\rput[ur]{0}(-.1,-.1){0} 
+\rput[r]{0}(-0.1,5){
+\footnotesize{4}}
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(0,5)(1,5)
+\psline[linecolor=gray,linestyle=dotted]{-}(1,0)(1,5)
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(0,5.30625)(.5,5.30625)
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(0.5,0)(.5,5.30625)
+                
+\psplot[algebraic=true,plotstyle=curve]{0}{2.58}{-1.225*x*x + 1.225*x + 5} %
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3) 
+\uput[d](2.58,0){
+\footnotesize{?}}
+                
+\uput[d](.5,0){
+\footnotesize{0,2}} 
+\uput[d](1,0){
+\footnotesize{0,4}} % do the dots last so that they overlay any lines. 
+\psdot(.5,5.30625) 
+\psdot[](0,5.30625) 
+\psdot[](0,5) 
+\psdot(1,5)
+                
+\psdot[](0,0)
+\psdot[](0.5,0)
+\psdot[](1,0) 
+\psdot[](2.58,0)</code>
+              </pspicture>
+            </question>
+            <answer>
+              <workstep>
+                <title>Find the height of the window</title>
+                <para>The initial position of the ball will tell us how high the window is. From the y-axis on the
+                graph we can see that the ball is 
+                <unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number> from the ground.</para>
+                <para>The window is therefore 
+                <unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number> above the ground.</para>
+              </workstep>
+              <workstep>
+                <title>Find the time taken to reach the maximum height</title>
+                <para>The maximum height is where the position vs time graph reaches its maximum position.
+                This is when t = 
+                <unit_number>
+                  <number>
+                    <coeff>0.2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number>.</para>
+                <para>It takes the ball 
+                <unit_number>
+                  <number>
+                    <coeff>0.2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> to reach the maximum height.</para>
+              </workstep>
+              <workstep>
+                <title>Find the initial velocity (
+                <latex>\vec{v}_{i}</latex>) of the ball</title>
+                <para>To find the initial velocity we only look at the first part of the motion of the ball. That is
+                from when the ball is released until it reaches its maximum height. We have the following for this: In
+                this case, let's choose upwards as positive.</para>
+                <latex display='block'>\begin{align} t&amp; = 
+                <number>0.2</number> \text{s} \\
+ \vec{g}&amp; = 
+                <unit_number>
+                  <number>9.8</number>
+                  <unit>m·s
+                  <sup>-2</sup></unit>
+                </unit_number>\\
+ \vec{v}_{f}&amp; = 0 \text{m}·{\text{s}}^{-1} \text{(because the ball stops)}
+                \end{align}</latex>
+                <para>To calculate the initial velocity of the ball (
+                <latex>\vec{v}_{i}</latex>), we use:</para>
+                <latex display='block'>\begin{align} \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{g}t \\
+ 0&amp; = \vec{v}_{i}+\left(
+                <number>-9.8</number>\right)\left(
+                <number>0.2</number>\right) \\
+ {v}_{i}&amp; = 
+                <number>1.96</number> \text{m}·{\text{s}}^{-1} \end{align}</latex>
+                <para>The initial velocity of the ball is 
+                <unit_number>
+                  <number>
+                    <coeff>1.96</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>upwards.</para>
+              </workstep>
+              <workstep>
+                <title>Find the maximum height of the ball</title>
+                <para>To find the maximum height we look at the initial motion of the ball. We have the
+                following:</para>
+                <latex display='block'>\begin{align} t&amp; = 
+                <number>0.2</number> \text{s} \\
+ \vec{g}&amp; = 
+                <unit_number>
+                  <number>9.8</number>
+                  <unit>m·s
+                  <sup>-2</sup></unit>
+                </unit_number>\\
+ \vec{v}_{f}&amp; = <number>0</number> \text{m}·{\text{s}}^{-1}~\text{(because the ball stops)} \\
+                \vec{v}_{i}&amp; = 
+                <number>+1.96</number> \text{m}·{\text{s}}^{-1}\text{(calculated above)} \end{align}</latex>
+                <para>To calculate the displacement from the window to the maximum height (<latex>\Delta x</latex>) we use:</para>
+                <latex display='block'>\begin{align} \Delta \vec{x}&amp; = \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2} \\
+ \Delta \vec{x}&amp; =
+                \left(
+                <number>1.96</number>\right)\left(
+                <number>0.2</number>\right)+\frac{1}{2}\left(
+                <number>-9.8</number>\right){\left(
+                <number>0.2</number>\right)}^{2} \\
+ \Delta \vec{x}&amp; = 
+                <number>0.196</number> \text{m} \end{align}</latex>
+                <para>The maximum height of the ball is 
+                <latex>\left(<number>4</number>+<number>0.196</number>\right)=
+                <number>4.196</number> \text{m}</latex> above the ground.</para>
+              </workstep>
+              <workstep>
+                <title>Find the final velocity (
+                <latex>\vec{v}_{f}</latex>) of the ball</title>
+                <para>To find the final velocity of the ball we look at the second part of the motion. For this we
+                have:</para>
+                <latex display='block'>\begin{align} \Delta \vec{x}&amp; = 
+                <number>-4.196</number> \text{m}~\text{(because upwards is positive)} \\
+ \vec{g}&amp; = 
+                <unit_number>
+                  <number>-9.8</number>
+                  <unit>m·s
+                  <sup>-2</sup></unit>
+                </unit_number>\\
+ \vec{v}_{i}&amp; = <number>0</number> \text{m}·{\text{s}}^{-1} \end{align}</latex>
+                <para>We can use 
+                <latex>\vec{v}^2_{f}=\vec{v}^2_{i}+2\vec{g}\Delta\vec{x}</latex> to calculate the final
+                velocity of the ball.</para>
+                <latex display='block'>\begin{align} 
+                \vec{v}^2_{f}=\vec{v}^2_{i}+2\vec{g}\Delta\vec{x} \\
+                \vec{v}^2_{f}&amp; = {\left(0\right)}^{2}+2\left(
+                <number>-9.8</number>\right)\left(
+                <number>-4.196</number>\right) \\
+ \vec{v}^2_{f}&amp; = 
+                <number>82.2416</number>\\
+ \vec{v}_{f}&amp; = 
+                <unit_number><number>9.0687</number><unit>m·s<sup>-1</sup></unit></unit_number>~\text{downwards} \end{align}</latex>
+                <para>The final velocity of the ball is 
+                <unit_number>
+                  <number>
+                    <coeff>9.07</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number>
+                <emphasis effect="italics">downwards</emphasis>.</para>
+              </workstep>
+            </answer>
+          </worked_example>
+          <worked_example>
+            <title>Describing projectile motion</title>
+            <question>
+              <para>A cricketer hits a cricket ball from the ground and the following graph of velocity vs time was
+              drawn. Upwards was taken as positive. Study the graph and follow the instructions below:</para>
+              <list list-type="enumerated">
+                <item>
+                  <para>Describe the motion of the ball according to the graph.</para>
+                </item>
+                <item>
+                  <para>Draw a sketch graph of the corresponding displacement-time graph. Label the axes.</para>
+                </item>
+                <item>
+                  <para>Draw a sketch graph of the corresponding acceleration-time graph. Label the axes.</para>
+                </item>
+              </list>
+              <pspicture>
+                <code>(-1.5,-4)(7,4) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+                
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+                Dy=4]{-&gt;}(0,0)(0,-3.5)(6.5,3.5)%[$x$,-90][$y$,180] 
+\rput[b]{0}(5.8,.1){$t~
+\text{(s)}$}
+                
+\rput[b]{90}(-1,0){Velocity ($
+\text{m}
+\cdot
+\text{s}^{-1}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+                
+\rput[r]{0}(-0.1,3){
+\footnotesize{19,6}} 
+\rput[r]{0}(-0.1,-3){
+\footnotesize{-19,6}}
+                
+\psline[linecolor=purple]{-}(0,3)(6,-3) 
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,-3)
+                
+\psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(6,-3) 
+\uput[d](3,0){
+\footnotesize{2}}
+                \uput[d](6,0){\footnotesize{4}} \psdot[linecolor=purple](0,3) \psdot[linecolor=purple](0,-3)
+                \psdot[linecolor=purple](6,0) \psdot[linecolor=purple](3,0) \psdot[linecolor=purple](6,-3)</code>
+              </pspicture>
+            </question>
+            <answer>
+              <workstep>
+                <title>Describe the motion of the ball</title>
+                <para>We need to study the velocity-time graph to answer this question. We will break the motion of the
+                ball up into two time zones: <latex>t=<unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex> to <latex>t=<unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex> and  <latex>t=<unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex> to  <latex>t=<unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex>.</para>
+                <para>From  <latex>t=<unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex> to  <latex>t=<unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex> the following happens:</para>
+                <para>The ball starts to move at an initial velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>19.6</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> and decreases its velocity to 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> at  <latex>t=<unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex>. At  <latex>t=<unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex> the velocity of the ball is 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> and therefore it stops.</para>
+                <para>From  <latex>t=<unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex> to  <latex>t=<unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex> the following happens:</para>
+                <para>The ball moves from a velocity of 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> to 
+                <unit_number>
+                  <number>
+                    <coeff>19.6</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-1</sup></unit>
+                </unit_number> in the opposite direction to the original motion.</para>
+                <para>If we assume that the ball is hit straight up in the air (and we take upwards as positive), it
+                reaches its maximum height at  <latex>t=
+                <unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number></latex>, stops, and falls back to the Earth to reach the ground 
+                at  <latex>t=
+                <unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex>.</para>
+              </workstep>
+              <workstep>
+                <title>Draw the displacement-time graph</title>
+                <para>To draw this graph, we need to determine the displacements at  <latex>t = 
+                <unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex> and  <latex>t = 
+                <unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex>.</para>
+                <para>At  <latex>t = 
+                <unit_number>
+                  <number>
+                    <coeff>2</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex>:</para>
+                <para>The displacement is equal to the area under the graph:</para>
+                <para>Area under graph = Area of triangle</para>
+                <para>
+                  <latex>\text{Area}=\frac{1}{2}bh</latex>
+                </para>
+                <para>
+                  <latex>\text{Area}=\frac{1}{2}\times 2\times 
+                  <number>19.6</number></latex>
+                </para>
+                <para>Displacement = 
+                <unit_number>
+                  <number>
+                    <coeff>19.6</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number></para>
+                <para>At  <latex>t = 
+                <unit_number>
+                  <number>
+                    <coeff>4</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number> </latex>:</para>
+                <para>The displacement is equal to the area under the whole graph (top and bottom). Remember that an
+                area under the time line must be subtracted:</para>
+                <para>Area under graph = Area of triangle 1 + Area of triangle 2</para>
+                <para>
+                  <latex>\text{Area}=\frac{1}{2}bh+\frac{1}{2}bh</latex>
+                </para>
+                <para>
+                  <latex>\text{Area}=\left(\frac{1}{2}\times 2\times 
+                  <number>19.6</number>\right)+\left(\frac{1}{2}\times 2\times \left(
+                  <number>-19.6</number>\right)\right)</latex>
+                </para>
+                <para>
+                  <latex>\text{Area}=19,6-19,6</latex>
+                </para>
+                <para>Displacement = 
+                <unit_number>
+                  <number>
+                    <coeff>0</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number></para>
+                <para>The displacement vs time graph for motion at constant acceleration is a curve. The graph will look
+                like this:</para>
+                <pspicture>
+                  <code>(-1.5,-1.5)(5,7) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, yunit=.3 }
+                  
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3, Dy=4]{-&gt;}(0,0)(5,20.5)%[$x$,-90][$y$,180] 
+\rput[b]{0}(4.6,.1){$t~
+\text{(s)}$}
+                  
+\rput[b]{90}(-.5,10){Height (m)} 
+\rput[ur]{0}(-.1,-.1){0} 
+\rput[r]{0}(-0.1,19.6){
+\footnotesize{19,6}}
+                  
+\psplot[algebraic=true,plotstyle=curve]{0}{4}{-4.9*x*x + 4.9*4*x}
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(2,0)(2,19.6)
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(0,19.6)(2,19.6) 
+\uput[d](4,0){
+\footnotesize{4}}
+                  
+\uput[d](2.,0){
+\footnotesize{2}} % do the dots last so that they overlay any lines. 
+\psdot(2,0)
+                  
+\psdot(2,19.6) 
+\psdot(0,19.6) 
+\psdot(4,0)</code>
+                </pspicture>
+              </workstep>
+              <workstep>
+                <title>Draw the acceleration versus time graph</title>
+                <para>To draw the acceleration vs time graph, we need to know what the acceleration is. The
+                velocity versus time graph is a straight line which means that the acceleration is constant. The gradient of
+                the line will give the acceleration.</para>
+                <para>The line has a negative slope (goes down towards the left) which means that the acceleration has
+                a negative value.</para>
+                <para>Calculate the gradient of the line:</para>
+                  <latex display='block'>
+                  \begin{align}
+                  \text{gradient}=\frac{\Delta \vec{v}}{\Delta t} \\
+                  \text{gradient}=\frac{0
+                  <number>-19.6</number>}{2-0} \\
+                  \text{gradient}=\frac{
+                  <number>-19.6</number>}{2} \\
+                  \text{gradient}=
+                  <number>-9.8</number>
+                  \end{align}
+                  </latex>
+                <para>Therefore the acceleration = 
+                <unit_number>
+                  <number>
+                    <coeff>9.8</coeff>
+                  </number>
+                  <unit>m·s
+                  <sup>-2</sup></unit>
+                </unit_number> downwards.</para>
+                <!-- reworked -->
+                <pspicture>
+                  <code>(-1.5,-4)(7,2.5) 
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=3 }
+                  
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=.0cm,yticksize=.0cm,Dx=3, Dy=4]{-&gt;}(0,0)(0,-3.5)(1.5,1.5)%[$x$,-90][$y$,180] 
+\rput[b]{0}(1.3,.1){$t~
+\text{(s)}$}
+                  
+\rput[b]{90}(-.3,0){Acceleration ($
+\text{m}
+\cdot
+\text{s}^{-2}$)} 
+\rput[ur]{0}(-.1,-.1){0}
+                  
+\psline[linecolor=orange]{-}(0,-3)(1,-3) 
+\psline[linecolor=gray,linestyle=dotted]{-}(1.,0)(1.,-3)
+                  
+\psline[linecolor=gray,linestyle=dotted]{-}(.5,0)(.5,-3) 
+\psdot[linecolor=orange](0,-3)
+                  
+\psdot[linecolor=orange](.5,-3) 
+\psdot[linecolor=orange](1.,-3) 
+\psdot[linecolor=orange](0,0)
+                  
+\psdot[linecolor=orange](.5,0) 
+\psdot[linecolor=orange](1.,0) 
+\uput[d](1.,0){
+\footnotesize{4}}
+                  
+\uput[d](.5,0){
+\footnotesize{2}} 
+\rput[r]{0}(-0.1,-3){
+\footnotesize{-9,8}}</code>
+                </pspicture>
+              </workstep>
+            </answer>
+          </worked_example>
+
+        <worked_example>
+        <title>Interpreting velocity graphs</title>
+        <question>
+            <para>Describe the motion corresponding to the following graph and plot the position vs time and acceleration vs time assuming the initial position is <number>0</number>:</para>
+                <pspicture>
+                  <code>(-1.5,-4)(5,4.3) 
+                    \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.3 }
+                    \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-3.5)(13,4)%[$x$,-90][$y$,180] 
+                    \rput[b]{0}(12.9,.1){$t~\text{(s)}$}
+                    \rput[b]{90}(-2,0){Velocity ($\text{m}\cdot\text{s}^{-1}$)} 
+                    \rput[ur]{0}(-.1,-.1){0}
+                    \rput[r]{0}(-0.3,3){\footnotesize{40}} 
+                    \rput[r]{0}(-0.3,-3){\footnotesize{-40}}
+
+                    \psline[linecolor=purple]{-}(0,3)(6,-3) 
+                    \psline[linecolor=purple]{-}(6,3)(12,-3) 
+
+                    \psline[linecolor=gray,linestyle=dotted]{-}(6,-3)(6,3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,3)(6,3) 
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(12,-3) 
+                    \psline[linecolor=gray,linestyle=dotted]{-}(12,0)(12,-3) 
+                    \uput[d](2.2,0.1){\scriptsize{4,08}}
+                    \uput[d](6,0.1){\scriptsize{8,16}} 
+                    \uput[u](9.9,-0.05){\scriptsize{12,24}} 
+                    \uput[d](12,0.1){\scriptsize{16,32}} 
+                    \psdot[linecolor=purple](0,3) \psdot[linecolor=purple](0,-3)
+                    \psdot[linecolor=purple](9,0) 
+                    \psdot[linecolor=purple](12,0) 
+                    \psdot[linecolor=purple](6,-3)
+                    \psdot[linecolor=purple](12,-3)
+                    \psdot[linecolor=purple](6,0) \psdot[linecolor=purple](3,0) \psdot[linecolor=purple,dotstyle=o](6,3)
+                  </code>
+                </pspicture>
+
+        </question>
+        <answer>
+            <workstep>
+                <title>Determine what is required</title>
+                <para>The velocity vs time graph corresponding to the motion of an object is given, using the graph we need to describe the actual motion. Notice that the graph has discontinuities, 
+                this naturally breaks the graph into phases. We should process each phase separately and then try to infer (figure out) what probably happened to change
+                from one phase to the next.</para>
+                <para>The first thing that you normally do in a vertical projectile motion problem is choose
+                a positive direction. In this case you can't do that because it has already been decided. 
+                We need to use the information given to figure out which direction was chosen as positive.
+                </para>
+            </workstep>
+            <workstep>
+                <title>Determine the direction chosen as positive</title>
+                <para>We are given a velocity vs time graph. We know that the slope of the velocity time
+                graph is the acceleration and we know that in these problems we are only dealing with
+                gravitational acceleration. We can use what we know about gravitational acceleration
+                and the slope of the graph to determine which direction was chosen as positive.
+                </para>
+                <para>Gravitational acceleration is always directed towards the centre of the Earth. If we
+                choose:
+                <list list-type='bulleted'>
+                <item><emphasis effect='bold'>upwards as the positive</emphasis> direction then the slope of the velocity vs time graph 
+                will be negative</item> 
+                <item><emphasis effect='bold'>downwards as the positive</emphasis> direction then the slope of the velocity vs time graph 
+                will be positive</item> 
+                </list>
+                </para>
+                <para>In this problem the slope of the velocity vs time graph is negative and so we know
+                that upwards was chosen as the positive direction.</para>
+            </workstep>
+            <workstep>
+                <title>First phase</title>
+                <para>In the plot below we highlight only the first phase of interest.</para>
+                <pspicture>
+                  <code>(-1.5,-4)(5,4.3)
+                    \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.3 }
+                    \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-3.5)(13,4)%[$x$,-90][$y$,180]    
+                    \rput[b]{0}(12.9,.1){$t~\text{(s)}$}
+                    \rput[b]{90}(-2,0){Velocity ($\text{m}\cdot\text{s}^{-1}$)} 
+                    \rput[ur]{0}(-.1,-.1){0}
+                    \rput[r]{0}(-0.3,3){\footnotesize{40}}  
+                    \rput[r]{0}(-0.3,-3){\footnotesize{-40}}
+
+                    \psline[linecolor=purple]{-}(0,3)(6,-3) 
+                    \psline[linecolor=gray]{-}(6,3)(12,-3)
+
+                    \psline[linecolor=gray,linestyle=dotted]{-}(6,-3)(6,3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,3)(6,3) 
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(12,-3) 
+                    \psline[linecolor=gray,linestyle=dotted]{-}(12,0)(12,-3) 
+                    \uput[d](2.2,0.1){\scriptsize{4,08}}
+                    \uput[d](6,0.1){\scriptsize{8,16}}  
+                    \uput[u](9.9,-0.05){\scriptsize{12,24}}
+                    \uput[d](12,0.1){\scriptsize{16,32}}
+                    \psdot[linecolor=purple](0,3) \psdot[linecolor=purple](0,-3)
+                    \psdot[linecolor=gray](9,0) 
+                    \psdot[linecolor=gray](12,0)
+                    \psdot[linecolor=purple](6,-3)
+                    \psdot[linecolor=gray](12,-3)
+                    \psdot[linecolor=purple](6,0) \psdot[linecolor=purple](3,0) \psdot[linecolor=gray,dotstyle=o](6,3)
+                  </code>
+                </pspicture>
+                <para>The initial velocity is positive and then decreases linearly, passes through zero and reaches the same magnitude in the negative direction. The positive starting value means
+                the object was going upwards, the linear decreases means a constant acceleration in the negative direction, passing through zero means that the object reaches a maximum 
+                height before beginning to fall in the negative direction. The fact that the magnitude of the initial and final velocities is the same means that there is time symmetry.</para>
+                <para>This is just the plot of an object being thrown/shot/projected upwards, peaking and falling back to the same level as it was thrown from.</para>
+            </workstep>
+
+
+            <workstep>
+                <title>Second phase</title>
+                <para>In the plot below we highlight only the second phase.</para>
+                  <pspicture>
+                  <code>(-1.5,-4)(5,4.3)
+                    \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.3 }
+                    \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-3.5)(13,4)%[$x$,-90][$y$,180]
+                    \rput[b]{0}(12.9,.1){$t~\text{(s)}$}
+                    \rput[b]{90}(-2,0){Velocity ($\text{m}\cdot\text{s}^{-1}$)}
+                    \rput[ur]{0}(-.1,-.1){0}
+                    \rput[r]{0}(-0.3,3){\footnotesize{40}}
+                    \rput[r]{0}(-0.3,-3){\footnotesize{-40}}
+
+                    \psline[linecolor=gray]{-}(0,3)(6,-3)
+                    \psline[linecolor=purple]{-}(6,3)(12,-3)
+
+                    \psline[linecolor=gray,linestyle=dotted]{-}(6,-3)(6,3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,3)(6,3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(12,-3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(12,0)(12,-3)
+                    \uput[d](2.2,0.1){\scriptsize{4,08}}
+                    \uput[d](6,0.1){\scriptsize{8,16}}
+                    \uput[u](9.9,-0.05){\scriptsize{12,24}}
+                    \uput[d](12,0.1){\scriptsize{16,32}}
+                    \psdot[linecolor=purple](0,3) \psdot[linecolor=purple](0,-3)
+                    \psdot[linecolor=purple](9,0)
+                    \psdot[linecolor=purple](12,0)
+                    \psdot[linecolor=gray](6,-3)
+                    \psdot[linecolor=purple](12,-3)
+                    \psdot[linecolor=purple](6,0) \psdot[linecolor=gray](3,0) \psdot[linecolor=purple,dotstyle=o](6,3)
+                  </code>
+                </pspicture>
+
+                <para>Just as in the first phase, the initial velocity is positive and then decreases linearly, passes through zero and reaches the same magnitude in the negative direction. The positive starting value means
+                the object was going upwards, the linear decreases means a constant acceleration in the negative direction, passing through zero means that the object reaches a maximum 
+                height before beginning to fall in the negative direction. The fact that the magnitude of the initial and final velocities is the same means that there is time symmetry.</para>
+                <para>This is just the plot of an object being thrown upwards, peaking and falling back to the same level as it was thrown from.</para>
+            </workstep>
+            <workstep>
+                <title>Combining phases</title>
+                <para>We know that the two phases look the same, the object starts off moving upwards, peaks, falls down to the initial position and then repeats the process. 
+                This could be a description of a ball bouncing as an example. </para>
+            </workstep>
+            <workstep>
+                <title>Position vs time</title>
+                <para>To draw an accurate position graph we know that we are dealing with the Case 1 situation from earlier. We need to determine the height that the object rises to and then 
+                we can plot the position vs time. We know the timing information from the velocity vs time plot.</para>
+                <para>We can verify that the acceleration is in fact from gravity by using <latex>\vec{v}_f=\vec{v}_i+\vec{g}t</latex>:</para>
+                <latex display="block">
+                    \begin{align}
+                        \vec{v}_f &amp; =\vec{v}_i+\vec{g}t \\
+                        (-<number>40</number>) &amp; = (<number>40</number>) +\vec{g}(<number>8.16</number>) \\
+                        (-<number>80</number>) &amp; = \vec{g}(<number>8.16</number>) \\
+                        \vec{g} &amp; = \frac{-<number>80</number>}{<number>8.16</number>} \\
+                        \vec{g} &amp; = -<unit_number>      <number>  <coeff>9.8</coeff> </number> <unit>m·s <sup>-2</sup></unit> </unit_number>
+                    \end{align}
+                </latex>
+                <para>We can work out the height using the equation for displacement:</para>
+                <latex display="block">
+                    \begin{align}
+                    \vec{v}_f^2 &amp; =\vec{v}_i^2+2\vec{g}\Delta \vec{x} \\
+                    0 &amp; =(<number>40</number>)^2+2(<number>-4.08</number>)\Delta \vec{x} \\
+                    \Delta \vec{x} &amp; =\frac{-(<number>40</number>)^2}{(<number>-8.16</number>)} \\
+                    \Delta \vec{x} &amp; = <unit_number>      <number>  <coeff>392.16</coeff> </number> <unit>m</unit> </unit_number>
+                    \end{align}
+                </latex>
+                <para>So we can now draw the displacement vs time plot:</para>
+ <pspicture>
+                  <code>(-1.5,-1.5)(10,7)
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, yunit=.3 }
+
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3, Dy=4]{-&gt;}(0,0)(9,20.5)%[$x$,-90][$y$,180]
+\rput[b]{0}(9,.1){$t~
+\text{(s)}$}
+
+\rput[b]{90}(-.5,10){Displacement (m)}
+\rput[ur]{0}(-.1,-.1){0}
+\rput[r]{0}(-0.1,19.6){
+\footnotesize{392,16}}
+
+\psplot[algebraic=true,plotstyle=curve]{0}{4}{-4.9*x*x + 4.9*4*x}
+\rput(4,0){\psplot[algebraic=true,plotstyle=curve]{0}{4}{-4.9*x*x + 4.9*4*x}}
+
+\psline[linecolor=gray,linestyle=dotted]{-}(2,0)(2,19.6)
+\psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,19.6)
+
+\psline[linecolor=gray,linestyle=dotted]{-}(0,19.6)(6,19.6)
+\uput[d](2,0){\footnotesize{4,08}}
+\uput[d](4,0){\footnotesize{8,16}}
+\uput[d](6,0){\footnotesize{12,24}}
+\uput[d](8,0){\footnotesize{16,32}}
+
+\psdot(2,0)
+
+\psdot(2,19.6)
+\psdot(6,19.6)
+\psdot(0,19.6)
+\psdot(4,0)
+\psdot(6,0)
+\psdot(8,0)
+</code>
+                </pspicture>
+            </workstep>
+            <workstep>
+                <title>Acceleration vs time</title>
+<pspicture>
+                  <code>(-1.5,-4)(5,1.5)
+                    \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.3 }
+                    \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-3.5)(13,1)%[$x$,-90][$y$,180]
+                    \rput[b]{0}(12.9,.1){$t~\text{(s)}$}
+                    \rput[b]{90}(-3,-1){Acceleration ($\text{m}\cdot\text{s}^{-2}$)}
+                    \rput[ur]{0}(-.1,-.1){0}
+                    \rput[r]{0}(-0.3,-3){\footnotesize{-9,8}}
+
+                    \psline[linecolor=orange]{-}(0,-3)(12,-3)
+
+
+                    \psline[linecolor=gray,linestyle=dotted]{-}(6,-3)(6,0)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(12,0)(12,-3)
+                    \uput[d](3,0.1){\scriptsize{4,08}}
+                    \uput[d](6,0.1){\scriptsize{8,16}}
+                    \uput[d](9,.1){\scriptsize{12,24}}
+                    \uput[d](12,0.1){\scriptsize{16,32}}
+                    \psdot[linecolor=orange](0,-3)
+                    \psdot[linecolor=orange](9,0)
+                    \psdot[linecolor=orange](12,0)
+                    \psdot[linecolor=orange,dotstyle=o](6,-3)
+                    \psdot[linecolor=orange](12,-3)
+                    \psdot[linecolor=orange](6,0) \psdot[linecolor=orange](3,0) 
+
+                  </code>
+                </pspicture>
+                <para>The acceleration is due to gravity except at one point, when the object bounces. At that point the acceleration must be some other, very large, 
+                value in the positive direction but we don't have enough information to determine what the value must be. We explicitly note that at that point the 
+                acceleration is NOT -<unit_number>      <number>  <coeff>9.8</coeff> </number> <unit>m·s <sup>-2</sup></unit> </unit_number>.</para>
+            </workstep>
+        </answer>
+        </worked_example>
+
+        <worked_example>
+        <title>Hot air balloon [NSC 2011 Paper 1]</title>
+        <question>
+    <para>A hot-air balloon is moving vertically upwards at a constant speed. A camera is accidentally dropped from the balloon at a height of <unit_number><number>92.4</number><unit>m</unit></unit_number> as shown in the diagram below. The camera strikes the ground after <unit_number><number>6</number><unit>s</unit></unit_number>. Ignore the effects of friction.
+  </para>
+ <pspicture style:width=".6">
+<code>
+(0,-3.93)(7.9034376,3.91)
+\definecolor{color597b}{rgb}{0.8,0.8,0.8}
+\psbezier[linewidth=0.04](3.6545455,2.2550273)(3.929091,1.5047714)(4.398262,0.536527)(4.865,0.47)(5.331738,0.40347302)(6.184675,1.7056267)(6.2823377,2.4185245)(6.3800006,3.1314225)(5.8406115,3.89)(4.937782,3.89)(4.0349526,3.89)(3.38,3.0052834)(3.6545455,2.2550273)
+\psframe[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color597b](5.48,-0.05)(4.42,-1.11)
+\pscircle[linewidth=0.02,dimen=outer](4.52,0.41){0.12}
+\psline[linewidth=0.02cm](4.5,0.31)(4.5,-0.05)
+\psline[linewidth=0.02cm](4.5,0.17)(4.14,0.03)
+\pscircle[linewidth=0.02,dimen=outer](4.47,0.44){0.03}
+\psline[linewidth=0.02cm](4.52,0.39)(4.44,0.37)
+\psframe[linewidth=0.02,dimen=outer](4.16,-0.15)(3.9,-0.41)
+\pscircle[linewidth=0.02,dimen=outer](4.03,0.0){0.05}
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](7.345,-0.05)(4.44,-0.05)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 3.0,arrowlength=2.0,arrowinset=0.4]{&lt;-}(7.3,-0.05)(7.285,-1.45)
+\psline[linewidth=0.03cm](0.0,-3.45)(7.3799996,-3.45)
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](4.045,-3.43)(4.04,-0.01)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{&lt;-&gt;}(1.085,-3.21)(3.905,-3.21)
+\pscircle[linewidth=0.02,dimen=outer](0.9,-2.53){0.12}
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{-&lt;}(0.865,-2.63)(0.865,-3.05)
+\pscircle[linewidth=0.02,dimen=outer](0.9324998,-2.5025003){0.03250015}
+\psline[linewidth=0.02cm](0.885,-2.55)(0.965,-2.59)
+\psline[linewidth=0.02](0.865,-2.99)(0.685,-3.19)(0.565,-3.01)(0.485,-3.11)
+\psline[linewidth=0.02](0.865,-2.99)(0.985,-3.23)(0.825,-3.37)(0.905,-3.43)
+\psline[linewidth=0.02](0.865,-2.73)(1.005,-2.85)(1.205,-2.77)
+\psline[linewidth=0.02](0.865,-2.73)(0.985,-2.89)(1.185,-2.85)
+\rput(7.347031,-1.66){92,4 m}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 3.0,arrowlength=2.0,arrowinset=0.4]{-&gt;}(7.285,-1.89)(7.305,-3.43)
+\rput(2.433125,-2.96){10 m}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 3.0,arrowlength=2.0,arrowinset=0.4]{&lt;-}(3.2,3.65)(3.185,2.99)
+\rput(2.9064062,3.26){$v_{i}$}
+\psbezier[linewidth=0.04](4.805,0.494689)(3.905,2.49)(4.365,3.45)(4.585,3.81)
+\psbezier[linewidth=0.04](4.685,0.47)(3.805,2.47)(3.685,2.77)(4.225,3.71)
+\psbezier[linewidth=0.04](5.125,3.8500001)(5.645,3.43)(5.445,1.25)(4.925,0.47)
+\psbezier[linewidth=0.04](5.645,3.67)(6.165,3.25)(5.625,1.31)(5.145,0.55)
+\rput(4.0157814,-3.78){P}
+\psline[linewidth=0.04cm](4.685,0.51)(4.625,-0.05)
+\psline[linewidth=0.04cm](4.885,0.45)(4.905,-0.05)
+\psline[linewidth=0.04cm](5.085,0.51)(5.185,-0.07)
+</code>
+</pspicture>
+  <list mark-prefix="3." list-type="enumerated"  >
+    <item> <!-- 3.1 -->
+      <para>At the instant the camera is dropped, it moves upwards. Give a reason for this observation. </para>
+      <para>(1 mark)</para>
+    </item>
+    <item> <!-- 3.2 -->
+    <para>Calculate the speed <latex>v_i</latex> at which the balloon is rising when the camera is dropped. </para>
+      <para>(4 marks)</para>
+    </item>
+    <item> <!-- 3.3 -->
+      <para>Draw a sketch graph of velocity versus time for the entire motion of the camera.</para>
+      <para>Indicate the following on the graph:</para>
+      <list>
+        <item>Initial velocity</item>
+        <item>Time at which it reaches the ground</item>
+      </list>
+      <para>(4 marks)</para>
+    </item>
+    <item> <!-- 3.4 -->
+      <para>If a jogger, <unit_number><number>10</number><unit>m</unit></unit_number> away from point <emphasis effect="bold">P</emphasis> as shown in the above diagram and running at a constant speed of <unit_number><number>2</number><unit>m&#183;s<sup>-1</sup></unit></unit_number>, sees the camera at the same instant it starts falling from the balloon, will he be able to catch the camera before it strikes the ground? </para>
+      <para>Use a calculation to show how you arrived at the answer.</para>
+      <para>(5 marks)</para>
+    </item>
+  </list>
+  <para> <emphasis effect="bold">[TOTAL: 14 marks]</emphasis> </para>
+
+        </question>
+        <answer>
+
+     <para><emphasis effect="bold">Question 1</emphasis></para>
+      <para>The initial velocity / speed of the camera is the same (as that of the balloon).</para>
+      <para>(1 marks)</para>
+
+      <para><emphasis effect="bold">Question 2</emphasis></para>
+      <para>
+    <emphasis effect="bold">Taking downwards as the positive direction:</emphasis>
+      </para>
+      <latex display="block">
+        \begin{align*}
+          \Delta y &amp;= v_i \Delta t + \frac{1}{2} a \Delta t^2 \\
+          \therefore  <number>92.4</number> &amp;= v_i (<number>6</number>) + \frac{1}{2} (<number>9.8</number>) (<number>6</number>)^2 \\
+          \therefore v_i &amp;= -\text{14 m}\cdot\text{s}^{-1} \\
+          \therefore v_i &amp;=  \text{14 m}\cdot\text{s}^{-1}
+        \end{align*}
+      </latex>
+      <para>
+        <emphasis effect="bold">Taking downwards as the negative direction:</emphasis>
+      </para>
+      <latex display="block">
+        \begin{align*}
+          \Delta y &amp;= v_i \Delta t + \frac{1}{2} a \Delta t^2 \\
+          \therefore -<number>92.4</number> &amp;= v_i (<number>6</number>) + \frac{1}{2} (-<number>9.8</number>) (<number>6</number>)^2 \\
+          \therefore v_i &amp;= \text{14 m}\cdot\text{s}^{-1}
+        \end{align*}
+      </latex>
+      <para>(4 marks)</para>
+
+
+    <para><emphasis effect="bold">Question 3</emphasis></para>
+      <para>
+        <emphasis effect="bold">Taking downwards as the positive direction:</emphasis>
+      </para>
+      <pspicture>
+        <code>
+(-1,-4)(6,4)
+\psaxes[labels=none,ticks=none]{-&gt;}(0,0)(0,-4)(5,4)
+\psline{-&gt;}(0,-3.9)(0,-4)
+\rput(-0.3,2){14}
+\rput(-0.5,-2){$-$14}
+\rput(-0.2,0){0}
+\rput(4.5,-0.3){Time (s)}
+\rput{-270}(-0.7,-0.2){velocity (m$\cdot$s$^{-1}$)}
+\psplot{0}{3.2}{x neg 1.5 mul 2 add}
+\psline(0,-2)(-0.1,-2)
+\psline(0,2)(-0.1,2)
+\rput(3.2,-0.3){6}
+\psline(3.2,0)(3.2,-0.1)
+        </code>
+      </pspicture>
+      <para><emphasis effect="bold">Criteria for graph:</emphasis></para>
+      <list>
+        <item>Correct shape as shown. (Straight line with gradient.)</item>
+        <item>Graph starts at <latex>v = \text{14 m}\cdot\text{s}^{-1}\ /\ v_i</latex> at <latex>t = \text{0 s}.</latex></item>
+        <item>Graph extends below <latex>t</latex> axis until <latex>t = \text{6 s}.</latex></item>
+        <item>Section of graph below <latex>t</latex> axis is longer than section above <latex>t</latex> axis.</item>
+      </list>
+      <para>
+        <emphasis effect="bold">Taking downwards as the negative direction:</emphasis>
+      </para>
+      <pspicture>
+        <code>
+(-1,-4)(6,4)
+\psaxes[labels=none,ticks=none]{-&gt;}(0,0)(0,-4)(5,4)
+\psline{-&gt;}(0,-3.9)(0,-4)
+\rput(-0.3,2){14}
+\rput(-0.5,-2){$-$14}
+\rput(-0.2,0){0}
+\rput(4.5,-0.3){Time (s)}
+\rput{-270}(-0.7,-0.2){velocity (m$\cdot$s$^{-1}$)}
+\psplot{0}{3.2}{x 1.5 mul 2 sub}
+\psline(0,-2)(-0.1,-2)
+\psline(0,2)(-0.1,2)
+\rput(3.2,-0.3){6}
+\psline(3.2,0)(3.2,-0.1)
+        </code>
+      </pspicture>
+    <para><emphasis effect="bold">Criteria for graph:</emphasis></para>
+      <list>
+        <item>Correct shape as shown. (Straight line with gradient.)</item>
+        <item>Graph starts at <latex>v = -\text{14 m}\cdot\text{s}^{-1}\ /\ v_i</latex> at <latex>t = \text{0 s}.</latex></item>
+        <item>Graph extends above <latex>t</latex> axis until <latex>t = \text{6 s}.</latex></item>
+        <item>Section of graph above <latex>t</latex> axis is longer than section below <latex>t</latex> axis.</item>
+      </list>
+      <para>(4 marks)</para>
+
+      <para><emphasis effect="bold">Question 4</emphasis></para>
+      <para><emphasis effect="bold">Option 1:</emphasis></para>
+      <latex display="block">
+        \begin{align*}
+          \Delta x &amp;=  v \Delta t \\
+          \therefore <number>10</number> &amp;= (<number>2</number>) \Delta t \\
+          \therefore \Delta t &amp;= \text{5 s}
+        \end{align*}
+      </latex>
+      <para>Yes, he will catch the camera since the time is less than <unit_number><number>6</number><unit>s</unit></unit_number>.</para>
+      <para><emphasis effect="bold">Option 2:</emphasis></para>
+      <latex display="block">
+        \begin{align*}
+          \Delta x &amp; =  v \Delta t \\
+          \therefore   &amp; =  (<number>2</number>)(<number>6</number>) \\
+          \therefore  &amp; =  \text{12 m}
+        \end{align*}
+      </latex>
+      <para>Yes, he will catch the camera since the distance covered is greater than <unit_number><number>10</number><unit>m</unit></unit_number>.</para>
+      <para><emphasis effect="bold">Option 3:</emphasis></para>
+      <latex display="block">
+        \begin{align*}
+          \Delta x &amp; =  v_i \Delta t + \frac{1}{2} a \Delta t^2 \\
+          \therefore <number>10</number>  &amp; =  (<number>2</number>)\Delta t + \frac{1}{2}(<number>0</number>)\Delta t^2 \\
+          \therefore \Delta t  &amp; =  \text{5 t}
+        \end{align*}
+      </latex>
+      <para>Yes, he will catch the camera since the time is less than <unit_number><number>6</number><unit>s</unit></unit_number>.</para>
+      <para><emphasis effect="bold">Option 4:</emphasis></para>
+      <latex display="block">
+        \begin{align*}
+          \Delta x &amp; =  \left( \frac{v_i+v_f}{2} \right ) \Delta t \\
+          \therefore <number>10</number> &amp; =  \left( \frac{<number>2</number>+<number>2</number>}{2} \right ) \Delta t \\
+          \therefore \Delta t  &amp; =  \text{5 t}
+        \end{align*}
+      </latex>
+      <para>Yes, he will catch the camera since the time is less than <unit_number><number>6</number><unit>s</unit></unit_number>.</para>
+      <para><emphasis effect="bold">Option 5:</emphasis></para>
+      <latex display="block">
+        \begin{align*}
+          \Delta x &amp; =  \left( \frac{v_i+v_f}{2} \right ) \Delta t \\
+          &amp; =  \left( \frac{<number>2</number>+<number>2</number>}{2} \right )(<number>6</number>) \\
+          \therefore \Delta x  &amp; =  \text{12 m}
+        \end{align*}
+      </latex>
+      <para>Yes, he will catch the camera since the distance covered is greater than <unit_number><number>10</number><unit>m</unit></unit_number>.</para>
+      <para>(5 marks)</para>
+      <para><emphasis effect="bold">[TOTAL: 14 marks]</emphasis></para>
+    </answer>
+        </worked_example>
+
+          <exercises>
+            <title>Graphs of vertical projectile motion</title>
+            <entry>
+              <shortcode>01s2</shortcode>
+              <problem>
+                <para>Amanda throws a tennis ball from a height of 
+                <unit_number>
+                  <number>
+                    <coeff>1.5</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number> straight up into the air and then lets it fall to the ground. Draw graphs of 
+                <latex>\Delta x</latex> vs t; v vs t and a vs t for the motion of the ball. The initial velocity of the
+                tennis ball is 
+                <latex>2 \text{m}·{\text{s}}^{-1}</latex>. Choose upwards as positive.</para>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000979/view" />
+              <correct />
+            </entry>
+            <entry>
+              <shortcode>01s3</shortcode>
+              <problem>
+                <para>A bullet is shot straight upwards from a gun. The following graph is drawn. Downwards was chosen
+                as positive</para>
+                <list list-type="enumerated">
+                  <item>
+                    <para>Describe the motion of the bullet.</para>
+                  </item>
+                  <item>
+                    <para>Draw a displacement - time graph.</para>
+                  </item>
+                  <item>
+                    <para>Draw an acceleration - time graph.</para>
+                  </item>
+                </list>
+                <pspicture>
+                  <code>(-1.5,-4)(7,4) \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, }
+                  \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,
+                  Dy=4]{-&gt;}(0,0)(0,-3.5)(6.6,3.5)%[$x$,-90][$y$,180] \rput[b]{0}(6.4,.1){$t~\text{(s)}$}
+                  \rput[b]{90}(-1,0){Velocity ($\text{m}\cdot\text{s}^{-1}$)} \rput[ur]{0}(-.1,-.1){0}
+                  \rput[r]{0}(-0.1,3){\footnotesize{200}} \rput[r]{0}(-0.1,-3){\footnotesize{-200}}
+                  \psline[linecolor=purple]{-}(0,-3)(6,3) \psline[linecolor=gray,linestyle=dotted]{-}(6,0)(6,3)
+                  \psline[linecolor=gray,linestyle=dotted]{-}(0,3)(6,3) \uput[d](3.1,0){\footnotesize{20,4}}
+                  \uput[d](6,0){\footnotesize{40,8}} \psdot[linecolor=purple](0,3) \psdot[linecolor=purple](0,-3)
+                  \psdot[linecolor=purple](6,0) \psdot[linecolor=purple](3,0) \psdot[linecolor=purple](6,3)</code>
+                </pspicture>
+              </problem>
+              <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000980/view" />
+              <correct />
+            </entry>
+            <entry>
+                <shortcode></shortcode>
+                <problem>
+                <para>Describe the motion resulting from the velocity vs time graph shown below, assuming an initial height of <unit_number><number>0</number><unit>m</unit></unit_number>, and draw a displacement vs time graph and an
+                acceleration vs time graph: 
+                </para>
+                <pspicture>
+                  <code>(-1.5,-4)(5,4.3)
+                    \psset{ axesstyle=axes, llx=-1cm,lly=-1cm, xunit=.3 }
+                    \psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3,Dy=4]{-&gt;}(0,0)(0,-3.5)(13,4)%[$x$,-90][$y$,180]
+                    \rput[b]{0}(12.9,.1){$t~\text{(s)}$}
+                    \rput[b]{90}(-2.4,0){Velocity ($\text{m}\cdot\text{s}^{-1}$)}
+                    \rput[ur]{0}(-.1,-.1){0}
+                    \rput[r]{0}(-0.3,2){\footnotesize{19,6}}
+                    \rput[r]{0}(-0.3,-2){\footnotesize{-19,6}}
+                    \rput[r]{0}(-0.3,1){\footnotesize{9,8}}
+                    \rput[r]{0}(-0.3,-1){\footnotesize{-9,8}}
+                    \rput[r]{0}(-0.3,3){\footnotesize{29,4}}
+                    \rput[r]{0}(-0.3,-3){\footnotesize{-29,4}}
+
+                    \psline[linecolor=purple]{-}(0,1)(2,-1)
+                    \psline[linecolor=purple]{-}(2,2)(6,-2)
+                    \psline[linecolor=purple]{-}(6,3)(12,-3)
+
+                    \psline[linecolor=gray,linestyle=dotted]{-}(6,-2)(6,3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,3)(6,3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,2)(2,2)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(2,-1)(2,2)
+
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,-3)(12,-3)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,-2)(6,-2)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(0,-1)(2,-1)
+                    \psline[linecolor=gray,linestyle=dotted]{-}(12,0)(12,-3)
+                    \uput[d](2.2,0.1){\scriptsize{2}}
+                    \uput[d](6,0.1){\scriptsize{6}}
+                    %\uput[u](9.9,-0.05){\scriptsize{12,24}}
+                    \uput[d](12,0.1){\scriptsize{12}}
+                    \psdot[linecolor=purple](0,3) 
+                    \psdot[linecolor=purple](0,-3)
+                    \psdot[linecolor=purple](9,0)
+                    \psdot[linecolor=purple](12,0)
+                    \psdot[linecolor=purple](12,-3)
+                    \psdot[linecolor=purple](6,0) 
+                    \psdot[linecolor=purple](2,0) 
+                    
+                    \psdot[linecolor=purple](2,-1)
+                    \psdot[linecolor=purple](6,-2)
+
+                    \psdot[linecolor=purple](0,1)
+                    \psdot[linecolor=purple](0,2)
+                    \psdot[linecolor=purple](0,-2)
+                    \psdot[linecolor=purple,dotstyle=o](2,2)
+                    \psdot[linecolor=purple,dotstyle=o](6,3)
+                  </code>
+                </pspicture>
+                </problem>
+                <solution/>
+                <correct/>
+            </entry>
+            <entry>
+                <shortcode></shortcode>
+                <problem>
+                <para>What is the initial height? Draw a velocity vs time graph and an acceleration vs time graph that would result in this displacement vs time graph: </para>
+<pspicture>
+                  <code>(-1.5,-1.5)(10,7)
+\psset{ axesstyle=axes, llx=-1cm,lly=-1cm, yunit=.3 }
+
+\psaxes[labels=none,linecolor=gray,subgriddiv=1,griddots=10,tickcolor=gray,ticklinestyle=dotted,xticksize=0cm,yticksize=.0cm,Dx=3, Dy=4]{-&gt;}(0,0)(9,20.5)%[$x$,-90][$y$,180]
+\rput[b]{0}(9,.1){$t~
+\text{(s)}$}
+
+\rput[b]{90}(-.5,10){Height (m)}
+\rput[ur]{0}(-.1,-.1){0}
+\rput[r]{0}(-0.1,19.6){
+\footnotesize{392,16}}
+
+\rput(-1,0){\psplot[algebraic=true,plotstyle=curve]{1}{4}{-4.9*x*x + 4.9*4*x}}
+\rput(3,0){\psplot[algebraic=true,plotstyle=curve]{0}{4}{-4.9*x*x + 4.9*4*x}}
+
+\psline[linecolor=gray,linestyle=dotted]{-}(1,0)(1,19.6)
+\psline[linecolor=gray,linestyle=dotted]{-}(5,0)(5,19.6)
+
+\psline[linecolor=gray,linestyle=dotted]{-}(0,19.6)(5,19.6)
+\uput[d](1,0){\footnotesize{2,04}}
+\uput[d](3,0){\footnotesize{6,12}}
+\uput[d](5,0){\footnotesize{10,20}}
+\uput[d](7,0){\footnotesize{14,28}}
+
+\psdot(1,0)
+
+\psdot(1,19.6)
+\psdot(5,19.6)
+\psdot(0,19.6)
+\psdot(3,0)
+\psdot(5,0)
+\psdot(7,0)
+</code>
+                </pspicture>
+                </problem>
+                <solution/>
+                <correct/>
+            </entry>
+            <entry>
+                <shortcode></shortcode>
+                <problem>
+                    <para>A ball that always bounces off the floor with the same magnitude of the velocity as it hit the floor is dropped from <unit_number><number>3</number><unit>m</unit></unit_number>
+                            above a stack of 7 crates. Each crate is <unit_number><number>30</number><unit>cm</unit></unit_number> high. After the ball bounces off a crate it is quickly removed so that
+                            the next time the ball bounces it bounces off the next crate in the pile. This is repeated until all the crates have been removed. Draw the following graphs for the situation:</para>
+                    <list>
+                        <item>Displacement vs time</item>
+                        <item>Velocity vs time</item>
+                        <item>Acceleration vs time</item>
+                    </list>
+                </problem>
+                <solution/>
+                <correct/>
+            </entry>
+            <entry>
+                <shortcode></shortcode>
+                <problem>
+                    <para>A ball is dropped from <unit_number><number>4</number><unit>m</unit></unit_number>
+                            above a cushioned mat. Each time the ball bounces the magnitude of the velocity in the upwards direction is half the magnitude of the velocity with which it hit the floor.
+                            The ball is allowed to bounce 5 times, draw the following graphs for the situation and the equation describing each section of the graph:</para>
+                    <list>
+                        <item>Displacement vs time</item>
+                        <item>Velocity vs time</item>
+                        <item>Acceleration vs time</item>
+                    </list>
+                </problem>
+                <solution/>
+                <correct/>
+            </entry>
+          </exercises>
+        </section>
+      </section>
+      <section type="section">
+        <title>Chapter summary</title>
+        <presentation>
+          <shortcode>VPnmi</shortcode>
+          <url>http://www.slideshare.net/slideshow/embed_code/12065406</url>
+        </presentation>
+        <list list-type="bulleted">
+          <item>
+            <para>Projectiles are objects that move through the air. In vertical projectile motion we deal with objects that fall under the influence of gravity and only vertically.</para>
+          </item>
+          <item>
+            <para>Objects that move up and down (vertical projectiles) on the Earth accelerate with a constant
+            acceleration <latex>\vec{g}</latex> which is approximately equal to 
+            <unit_number>
+              <number>9.8</number>
+              <unit>m·s
+              <sup>-2</sup></unit>
+            </unit_number>directed downwards towards the centre of the earth.</para>
+          </item>
+          <item>The time it takes an object to rise to its maximum height, is the same as the time it will take to fall back to its initial height. The magnitude of the velocity will also be the same
+                but the direction will be reversed. This is known as time symmetry.
+          </item>
+          <item>
+            <para>The equations of motion can be used to solve vertical projectile problems.</para>
+            <latex display='block'>\begin{align} \vec{v}_{f}&amp; = \vec{v}_{i}+\vec{g}t \\
+ \Delta \vec{x}&amp; =
+            \frac{\left(\vec{v}_{i}+\vec{v}_{f}\right)}{2}t \\
+ \Delta \vec{x}&amp; = \vec{v}_{i}t+\frac{1}{2}\vec{g}{t}^{2} \\
+ \vec{v}_{f}^{2}&amp;
+            = \vec{v}_{i}^{2}+2\vec{g}\Delta \vec{x} \end{align}</latex>
+          </item>
+          <item>
+            <para>Graphs for vertical projectile motion are similar to graphs for motion at constant acceleration. 
+            </para>
+          </item>
+        </list>
+ <figure id="table:verticalprojectilemotion:units">
+          <type>table</type>
+          <table>
+            <tgroup cols="4">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <colspec colname="c4" colnum="4"/>
+              <tbody>
+                <row>
+                  <entry nameend="c4" namest="c1">
+                    <para><emphasis effect="bold">Physical Quantities</emphasis></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry nameend="c1" namest="c1">
+                    <para><emphasis effect="bold">Quantity</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Vector</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Unit name</emphasis></para>
+                  </entry>
+                  <entry>
+                    <para><emphasis effect="bold">Unit symbol</emphasis></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Position (<m:math><m:mi>x</m:mi></m:math>)</para>
+                  </entry>
+                  <entry>
+                    <para>-</para>
+                  </entry>
+                  <entry>
+                    <para>metre</para>
+                  </entry>
+                  <entry>
+                    <para>m</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Displacement (<latex>\Delta \vec{x}</latex>)</para>
+                  </entry>
+                  <entry>
+                    <para>\cmark</para>
+                  </entry>
+                  <entry>
+                    <para>metre</para>
+                  </entry>
+                  <entry>
+                    <para>m</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Instantaneous velocity (<m:math><m:mover accent="true"><m:mi>v</m:mi> <m:mo>→</m:mo></m:mover></m:math>)</para>
+                  </entry>
+                  <entry>
+                    <para>\cmark</para>
+                  </entry>
+                  <entry>
+                    <para>metre per second</para>
+                  </entry>
+                  <entry>
+                    <para><unit>m·s<sup>-1</sup></unit></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Instantaneous speed (<m:math><m:mi>v</m:mi></m:math>)</para>
+                  </entry>
+                  <entry>
+                    <para>-</para>
+                  </entry>
+                  <entry>
+                    <para>metre per second</para>
+                  </entry>
+                  <entry>
+                    <para><unit>m·s<sup>-1</sup></unit></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Instantaneous acceleration (<m:math><m:mover accent="true"><m:mi>a</m:mi> <m:mo>→</m:mo></m:mover></m:math>)</para>
+                  </entry>
+                  <entry>
+                    <para>\cmark</para>
+                  </entry>
+                  <entry>
+                    <para>metre per second per second</para>
+                  </entry>
+                  <entry>
+                    <para><unit>m·s<sup>-2</sup></unit></para>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <para>Magnitude of acceleration (<m:math><m:mi>a</m:mi></m:math>)</para>
+                  </entry>
+                  <entry>
+                    <para>-</para>
+                  </entry>
+                  <entry>
+                    <para>metre per second per second</para>
+                  </entry>
+                  <entry>
+                    <para><unit>m·s<sup>-2</sup></unit></para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <caption>
+            <para>Units used in <emphasis effect="bold">vertical projectile motion</emphasis>.</para>
+          </caption>
+        </figure>
+
+      </section>
+      <exercises>
+        <title />
+        <entry>
+          <shortcode>01s9</shortcode>
+          <problem>
+            <para>[SC 2001/11 HG1] A bullet fired vertically upwards reaches a maximum height and falls back to the
+            ground.</para>
+            <para>Which 
+            <emphasis effect="bold">one</emphasis> of the following statements is 
+            <emphasis effect="bold">true</emphasis> with reference to the acceleration of the bullet during its motion,
+            if air resistance is ignored? The acceleration:</para>
+            <list list-type="enumerated">
+              <item>
+                <para>is always downwards</para>
+              </item>
+              <item>
+                <para>is first upwards and then downwards</para>
+              </item>
+              <item>
+                <para>is first downwards and then upwards</para>
+              </item>
+              <item>
+                <para>decreases first and then increases</para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000986/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01sb</shortcode>
+          <problem>
+            <para>[IEB 2002/11 HG1] Two balls, P and Q, are simultaneously thrown into the air from the same height
+            above the ground. P is thrown vertically upwards and Q vertically downwards with the same initial speed.
+            Which of the following is true of both balls just before they hit the ground? (Ignore any air resistance.
+            Take downwards as the positive direction.)</para>
+            <table>
+              <tgroup cols="3">
+                <colspec colname="c1" colnum="1" />
+                <colspec colname="c2" colnum="2" />
+                <colspec colname="c3" colnum="3" />
+                <tbody>
+                  <row>
+                    <entry />
+                    <entry>
+                      <para>
+                        <emphasis effect="bold">Velocity</emphasis>
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        <emphasis effect="bold">Acceleration</emphasis>
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>A</para>
+                    </entry>
+                    <entry>
+                      <para>The same</para>
+                    </entry>
+                    <entry>
+                      <para>The same</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>B</para>
+                    </entry>
+                    <entry>
+                      <para>P has a greater velocity than Q</para>
+                    </entry>
+                    <entry>
+                      <para>\begin{tabular}{c}P has a negative acceleration;\\
+                      Q has a positive acceleration
+                      \end{tabular}</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>C</para>
+                    </entry>
+                    <entry>
+                      <para>P has a greater velocity than Q</para>
+                    </entry>
+                    <entry>
+                      <para>The same</para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>D</para>
+                    </entry>
+                    <entry>
+                      <para>The same</para>
+                    </entry>
+                    <entry>
+                      <para>\begin{tabular}{c}P has a negative acceleration;\\ 
+                      Q has a positive acceleration\end{tabular}</para>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000988/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01sd</shortcode>
+          <problem>
+            <para>[SC 2003/11] A ball X of mass m is projected vertically upwards at a speed 
+            <latex>{u}_{x}</latex> from a bridge 
+            <unit_number>
+              <number>
+                <coeff>20</coeff>
+              </number>
+              <unit>m</unit>
+            </unit_number>high. A ball Y of mass 
+            <latex>2m</latex> is projected vertically downwards from the same bridge at a speed of 
+            <latex>{u}_{y}</latex>. The two balls reach the water at the same speed. Air friction can be
+            ignored.</para>
+            <para>Which of the following is true with reference to the speeds with which the balls are
+            projected?</para>
+            <list list-type="enumerated">
+              <item>
+                <para>
+                  <latex>{u}_{x}=\frac{1}{2}{u}_{y}</latex>
+                </para>
+              </item>
+              <item>
+                <para>
+                  <latex>{u}_{x}={u}_{y}</latex>
+                </para>
+              </item>
+              <item>
+                <para>
+                  <latex>{u}_{x}=2{u}_{y}</latex>
+                </para>
+              </item>
+              <item>
+                <para>
+                  <latex>{u}_{x}=4{u}_{y}</latex>
+                </para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000990/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01se</shortcode>
+          <problem>
+            <para>[SC 2002/03 HG1] A stone falls freely from rest from a certain height. Which one of the following
+            quantities could be represented on the y-axis of the graph below?</para>
+            <pspicture>
+              <code>(0,0)(3,3) 
+              \psline{&lt;-&gt;}(0,3)(0,0)(3,0) 
+              \uput[l](0,3){Y} 
+              \uput[d](3,0){time} 
+              \psplot{0}{1.5}{x 2 exp}</code>
+            </pspicture>
+            <list list-type="enumerated">
+              <item>
+                <para>velocity</para>
+              </item>
+              <item>
+                <para>acceleration</para>
+              </item>
+              <item>
+                <para>momentum</para>
+              </item>
+              <item>
+                <para>displacement</para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000991/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01sg</shortcode>
+          <problem>
+            <para>A stone is thrown vertically upwards and it returns to the ground. If friction is ignored, its
+            acceleration as it reaches the highest point of its motion is</para>
+            <list list-type="enumerated">
+              <item>
+                <para>greater than just after it left the throwers hand.</para>
+              </item>
+              <item>
+                <para>less than just before it hits the ground.</para>
+              </item>
+              <item>
+                <para>the same as when it left the throwers hand.</para>
+              </item>
+              <item>
+                <para>less than it will be when it strikes the ground.</para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000993/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01si</shortcode>
+          <problem>
+            <para>[IEB 2004/11 HG1] A stone is thrown vertically up into the air. Which of the following graphs best
+            shows the resultant force exerted on the stone against time while it is in the air? (Air resistance is
+            negligible.)</para>
+            <pspicture style:width="0.7">
+              <code>(-1,-1.4)(12.4,3.6) \rput(0,0){ \psaxes[labels=none,ticks=none]{-&gt;}(0,0)(3,3)
+              \psplot[unit=2,plotstyle=curve]{0}{1.02}{x 2 exp -4.9 mul 5 x mul add} \uput[u](0,3){$F_{res}$}
+              \uput[r](3,0){$t$} \psline[linestyle=dashed](1.02,0)(1.02,2.75) \uput[d](1.5,-0.5){A} \uput[l](0,0){0}}
+              \rput(3.5,1){ \psaxes[labels=none,ticks=none]{-&gt;}(0,0)(0,-2)(2.5,2)
+              \psplot[xunit=2,yunit=0.3]{0}{1.02}{ -9.8 x mul 5 add} \uput[u](0,2){$F_{res}$} \uput[r](2.5,0){$t$}
+              \psline[linestyle=dashed](2.04,-1.6)(2.04,0) \uput[l](0,0){0} \uput[d](1.5,-1.5){B}}
+              \rput(7,0){\psaxes[labels=none,ticks=none]{-&gt;}(0,0)(2.5,3) \psline[linewidth=2pt](0,1)(2,1)
+              \uput[u](0,2){$F_{res}$} \uput[r](2.5,0){$t$} \uput[d](1.5,-0.5){C} \uput[l](0,0){0}}</code>
+            </pspicture>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000995/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01sj</shortcode>
+          <problem>
+            <para>What is the velocity of a ball just as it hits the ground if it is thrown upward at 
+            <unit_number>
+              <number>
+                <coeff>10</coeff>
+              </number>
+              <unit>m·s
+              <sup>-1</sup></unit>
+            </unit_number> from a height 
+            <number>5</number> meters above the ground?</para>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A000996/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01sq</shortcode>
+          <problem>
+            <para>[IEB 2002/11 HG1 - Bouncing Ball]</para>
+            <para>A ball bounces vertically on a hard surface after being thrown vertically up into the air by a boy
+            standing on the ledge of a building.</para>
+            <para>Just before the ball hits the ground for the first time, it has a velocity of magnitude 
+            <unit_number>
+              <number>
+                <coeff>15</coeff>
+              </number>
+              <unit>m·s
+              <sup>-1</sup></unit>
+            </unit_number>. Immediately, after bouncing, it has a velocity of magnitude 
+            <unit_number>
+              <number>
+                <coeff>10</coeff>
+              </number>
+              <unit>m·s
+              <sup>-1</sup></unit>
+            </unit_number>.</para>
+            <para>The graph below shows the velocity of the ball as a function of time from the moment it is thrown
+            upwards into the air until it reaches its maximum height after bouncing once.</para>
+            <pspicture>
+              <code>(-1.4,-3.5)(9.4,3) \psset{xunit=2} \psline{-&gt;}(0,0)(4,0) \uput[r](4,0){time (s)}
+              \psline{-&gt;}(0,-3.5)(0,2.5) \uput[u](0,2.5){velocity ($\text{m}\cdot\text{s}^{-1}$)}
+              \psline(0,1)(2,-3)(2,2)(3,0) \psline[linestyle=dashed](0,2)(2,2) \psline[linestyle=dashed](0,-3)(2,-3)
+              \psline(1,0.2)(1,-0.2) \uput[l](0,2){10} \uput[l](0,1){5} \uput[l](0,0){0} \uput[l](0,-1){-5}
+              \uput[l](0,-2){-10} \uput[l](0,-3){-15} \uput[d](1,0){1,0} \uput[d](2,0){2,0}</code>
+            </pspicture>
+            <list list-type="enumerated">
+              <item>
+                <para>At what velocity does the boy throw the ball into the air?</para>
+              </item>
+              <item>
+                <para>What can be determined by calculating the gradient of the graph during the first two
+                seconds?</para>
+              </item>
+              <item>
+                <para>Determine the gradient of the graph over the first two seconds. State its units.</para>
+              </item>
+              <item>
+                <para>How far below the boy's hand does the ball hit the ground?</para>
+              </item>
+              <item>
+                <para>Use an equation of motion to calculate how long it takes, from the time the ball was thrown, for
+                the ball to reach its maximum height after bouncing.</para>
+              </item>
+              <item>
+                <para>What is the position of the ball, measured from the boy's hand, when it reaches its maximum
+                height after bouncing?</para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001001/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01sr</shortcode>
+          <problem>
+            <para>[IEB 2001/11 HG1] - 
+            <emphasis effect="bold">Free Falling?</emphasis></para>
+            <para>A parachutist steps out of an aircraft, flying high above the ground. She falls for the first 
+            <number>8</number> seconds before opening her parachute. A graph of her velocity is shown in Graph A
+            below.</para>
+            <pspicture style:width="0.8">
+              <code>(-1.4,-0.6)(11.4,6.6) \psset{unit=0.6} \psline{-&gt;}(0,0)(16.5,0) \uput[r](16.5,0){time (s)}
+              \psline{-&gt;}(0,0)(0,10) \uput[u](0,10){velocity ($\text{m}\cdot\text{s}^{-1}$)} \psline(0,0)(3,7)
+              \psline(4,8)(8,8)(9,1)(15,1) \psplot{3}{4}{x 2 exp -1 mul 8 x mul add 8 sub} \psplot{15}{16}{x 2 exp 32 x
+              mul sub 256 add} \rput(13,8){Graph A} \psline[linestyle=dashed](0,8)(4,8)
+              \psline[linestyle=dashed](0,1)(9,1) \psline[linestyle=dashed](4,0)(4,8)
+              \psline[linestyle=dashed](8,0)(8,8) \psline[linestyle=dashed](9,0)(9,1)
+              \psline[linestyle=dashed](15,0)(15,1) \uput[l](0,8){40} \uput[l](0,1){5} \uput[l](0,0){0}
+              \uput[d](4,0){4} \uput[d](8,0){8} \uput[d](9,0){9} \uput[d](15,0){15} \uput[d](16,0){16}</code>
+            </pspicture>
+            <list list-type="enumerated">
+              <item>
+                <para>Use the information from the graph to calculate an approximate height of the aircraft when she
+                stepped out of it (to the nearest 
+                <unit_number>
+                  <number>
+                    <coeff>10</coeff>
+                  </number>
+                  <unit>m</unit>
+                </unit_number>).</para>
+              </item>
+              <item>
+                <para>What is the magnitude of her velocity during her descent with the parachute fully open?</para>
+                <para>The air resistance acting on the parachute is related to the speed at which the parachutist
+                descends. Graph B shows the relationship between air resistance and velocity of the parachutist
+                descending with the parachute open.</para>
+                <pspicture style:width="0.45">
+                  <code>(-1.4,-1)(5.2,7.2) \psset{unit=0.75} %\psgrid[gridcolor=lightgray,gridlabels=0](0,0)(7,10)
+                  \psaxes[dy=1,Dy=100]{&lt;-&gt;}(0,0)(7,9.5) \psplot{0}{6}{x 2 exp 0.2368 mul 0.0127 x mul add}
+                  \pcline[offset=0.8cm,linestyle=none](0,0)(0,10) \aput{:U}{Air resistance on parachutist (N)}
+                  \pcline[offset=-0.4cm,linestyle=none](0,0)(7,0) \bput{:U}{velocity ($\text{m}\cdot\text{s}^{-1}$)}
+                  \rput(2,8.5){Graph B}</code>
+                </pspicture>
+              </item>
+              <item>
+                <para>Use Graph B to find the magnitude of the air resistance on her parachute when she was descending
+                with the parachute open.</para>
+              </item>
+              <item>
+                <para>Assume that the mass of the parachute is negligible. Calculate the mass of the parachutist
+                showing your reasoning clearly.</para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001002/view" />
+          <correct />
+        </entry>
+        <entry>
+          <shortcode>01st</shortcode>
+          <problem>
+            <para>Niko, in the basket of a hot-air balloon, is stationary at a height of 
+            <unit_number>
+              <number>
+                <coeff>10</coeff>
+              </number>
+              <unit>m</unit>
+            </unit_number> above the level from where his friend, Bongi, will throw a ball. Bongi intends throwing the
+            ball upwards and Niko, in the basket, needs to 
+            <emphasis effect="bold">descend</emphasis> (move downwards) to catch the ball at its maximum height.</para>
+            <pspicture style:width="0.65">
+              <code>(0,-4.06)(10.46,4.06) \definecolor{color597b}{rgb}{0.8,0.8,0.8}
+              \psbezier[](5.6945453,2.4050274)(5.969091,1.6547714)(6.478262,0.54652697)(6.94,0.52)(7.401738,0.49347302)(8.224675,1.8556266)(8.322338,2.5685246)(8.42,3.2814226)(7.8806114,4.04)(6.977782,4.04)(6.0749526,4.04)(5.42,3.1552832)(5.6945453,2.4050274)
+              \psline[](5.64,2.54)(8.3,2.54)
+              \psframe[dimen=outer,fillstyle=solid,fillcolor=color597b](7.48,0.86)(6.42,-0.2)
+              \psline[linestyle=dotted,dotsep=0.16cm](6.44,0.76)(1.96,0.76) \psline[]{&lt;-&gt;}(2.06,0.78)(2.06,-2.62)
+              \psline[linestyle=dotted,dotsep=0.16cm](2.06,-2.56)(9.44,-2.56) \psline[](0.0,-4.04)(10.44,-4.04)
+              \psline[](4.44,-2.84)(4.44,-3.64) \pscircle[dimen=outer](4.45,-2.63){0.25}
+              \psline[](4.44,-3.62)(4.14,-4.0) \psline[](4.44,-3.6)(4.76,-4.02) \psline[](4.44,-3.18)(5.2,-2.74)
+              \psline[](4.42,-3.16)(4.1,-2.96) \psline[](4.14,-2.96)(3.84,-3.14) \psdots[dotsize=0.1](4.36,-2.6)
+              \psdots[dotsize=0.1](4.56,-2.6)
+              \rput{-179.88995}(8.866179,-5.2129245){\psarc[](4.430587,-2.6107197){0.14993295}{53.75402}{144.51685}}
+              \psdots[dotsize=0.18](5.2,-2.64) \psline[]{-&gt;}(5.2,-2.54)(5.2,-1.54)
+              \rput(6.041406,-1.89){$13\,\text{m} \cdot \text{s}^{-1}$} \rput(1.0496875,-0.97){$10$ m}</code>
+            </pspicture>
+            <para>Bongi throws the ball upwards with a velocity of 
+            <unit_number>
+              <number>
+                <coeff>13</coeff>
+              </number>
+              <unit>m·s
+              <sup>-1</sup></unit>
+            </unit_number>. Niko starts his descent at the same instant the ball is thrown upwards, by letting air
+            escape from the balloon, causing it to accelerate downwards. Ignore the effect of air friction on the
+            ball.</para>
+            <list list-type="enumerated">
+              <item>
+                <para>Calculate the maximum height reached by the ball.</para>
+              </item>
+              <item>
+                <para>Calculate the magnitude of the minimum average acceleration the balloon must have in order for
+                Niko to catch the ball, if it takes 
+                <unit_number>
+                  <number>
+                    <coeff>1.3</coeff>
+                  </number>
+                  <unit>s</unit>
+                </unit_number>for the ball to reach its maximum height.</para>
+              </item>
+            </list>
+          </problem>
+          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001004/view" />
+          <correct />
+        </entry>
+      </exercises>
+    </section>
+  </content>
+</document>
