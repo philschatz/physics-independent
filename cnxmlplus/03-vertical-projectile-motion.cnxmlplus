@@ -232,7 +232,14 @@ shows the time ordering.
               <item>graph paper</item>
               <item>ruler</item>
               </list>
-              <para><emphasis effect='bold'>PHOTOGRAPH PENDING!!</emphasis></para>
+              <image style:width='0.6'>
+              <src>photos/VertMot-AReynolds-1.jpg</src>
+              <attribution>A. Reynolds from Pinelands High School</attribution>
+              </image>
+              <image style:width='0.6'>
+              <src>photos/VertMot-AReynolds-2.jpg</src>
+              <attribution>A. Reynolds from Pinelands High School</attribution>
+              </image>
               <figure>
                 <type>figure</type>
                 <pspicture>
