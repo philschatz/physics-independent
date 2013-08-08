@@ -544,7 +544,8 @@ frequency is lower.</para>-->
           <shortcode>ESCEJ</shortcode>
           <para>Ultrasonic waves (ultrasound) are sound waves with a frequency greater than <unit_number><number>20000</number><unit>Hz</unit></unit_number> (the upper limit of human hearing). These waves can be used in medicine to determine the direction of blood flow. The device, called a Doppler flow meter, sends out sound waves. The sound waves can travel through skin and tissue and will be reflected by moving objects in the body (like blood). The reflected waves return to the flow meter where its frequency (received frequency) is compared to the transmitted frequency.
 Because of the Doppler effect, blood that is moving towards the flow meter will change the sound to a higher frequency and blood that is moving away from the flow meter will cause a lower frequency.</para>
-          <pspicture>
+<!--Direction of reflected wave is wrong in figure below. It should go at the same angle as the incoming wave but opposite direction. See http://flowrental.com/clamp-on-ultrasonic-flow-meter-working-principles.html for an example diagram -->
+<!--          <pspicture>
             <code>
               (0,-2.99)(12.48,2.99)
 \definecolor{color542b}{rgb}{0.8,0.8,0.8}
@@ -590,7 +591,7 @@ Because of the Doppler effect, blood that is moving towards the flow meter will 
 \rput{-297.98828}(5.13853,-5.5427065){\psarc[linewidth=0.03](7.1805034,1.5036315){0.13266453}{0.0}{180.0}}
 
             </code>
-          </pspicture>
+          </pspicture>-->
           <para>Ultrasound can be used to determine whether blood is flowing in the right direction in the circulation system of unborn babies, or identify areas in the body where blood flow is restricted due to narrow veins. The use of ultrasound equipment in medicine is called sonography or ultrasonography.</para>
 <figure>
 <type>figure</type>
@@ -643,16 +644,30 @@ The Ultrasound Properties of Various Media, Including Soft Tissue Found in the B
 <problem>
               <para>Suppose a train is approaching you as you stand on the platform at the station. As the train approaches the station, it slows down. All the while, the engineer is sounding the hooter at a constant frequency of <unit_number><number>400</number><unit>Hz</unit></unit_number>. Describe the pitch and the changes in pitch that you hear. Assume the speed of sound in air is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
             </problem>
-            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001233/view"/>
-		<correct/>
+           <!-- <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001233/view"/>-->
+           <solution>
+           <correct><para>The frequency of the sound gradually increases as the train moves towards you. The pitch increases. You would hear a higher pitched sound.</para></correct>
+           </solution>
 </entry>
 <entry>
 <shortcode>01ug</shortcode>
 <problem>
               <para>Passengers on a train hear its whistle at a frequency of <unit_number><number>740</number><unit>Hz</unit></unit_number>. Anja is standing next to the train tracks. What frequency does Anja hear as the train moves directly toward her at a speed of <unit_number><number>25</number><unit>m·s<sup>-1</sup></unit></unit_number>? Assume the speed of sound in air is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
             </problem>
-            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001234/view"/>
-		<correct/>
+            <!--<solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001234/view"/>-->
+	    <solution>
+<latex display="block">
+  \begin{align}
+{f}_{L}&amp;=\left(\frac{v+{v}_{L}}{v+{v}_{S}}\right){f}_{S} \\
+{f}_{L}&amp;=\left(\frac{340+0}{340-25}\right)(740) \\
+&amp;=<unit_number><number>798.73</number><unit>Hz</unit></unit_number>
+  \end{align}
+</latex>
+	      <correct> 
+		<unit_number><number>798.73</number><unit>Hz</unit></unit_number>
+	      </correct>
+	    </solution>
+		
 </entry>
 
 <entry>
@@ -660,18 +675,50 @@ The Ultrasound Properties of Various Media, Including Soft Tissue Found in the B
 <problem>
               <para>A small plane is taxiing directly away from you down a runway. The noise of the engine, as the pilot hears it, has a frequency <number>1.15</number> times the frequency that you hear. What is the speed of the plane? Assume the speed of sound in air is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
             </problem>
-            <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001235/view"/>
-		<correct/>
+            <!--<solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001235/view"/>-->
+	  <solution>
+	    <para>
+	      You, the listener are stationary so your velocity is 0. The source is moving away from you at an unknown velocity. This velocity must be positive.
+We also know that:
+	    </para>
+	    <latex>f_{s} = <number>1.15</number>f_{L} </latex>
+	    <latex display="block">
+\begin{align}
+{f}_{L}&amp;=\left(\frac{v+{v}_{L}}{v+{v}_{S}}\right){f}_{S} \\
+{f}_{L}&amp; = \left(\frac{340+0}{340+v_{S}}\right)\left(<number>1.15</number>f_{S}\right)\\
+340 + v_{S}&amp;= \left(340\right)\left(<number>1.15</number>\right) \\
+v_{S} &amp;=  <unit_number><number>51</number><unit>m·s<sup>-1</sup></unit></unit_number>
+\end{align}
+</latex>
+<correct><unit_number><number>51</number><unit>m·s<sup>-1</sup></unit></unit_number> </correct>
+</solution>  	
 </entry>
 
 <entry>
 <shortcode>todo</shortcode>
 <problem>
-              <para>In places like Canada during winter temperatures can get as low as <unit_number><number>-35</number><unit>℃ </unit></unit_number>. This affects the speed of sound in air and you can use the Doppler effect to determine what the speed of sound is. On a winters day in Canada with a temperature of  <unit_number><number>-35</number><unit>℃ </unit></unit_number>, a source emits sound at a frequency of <unit_number><number>1050</number><unit>Hz</unit></unit_number> and moves towards an observer at <unit_number><number>25</number><unit>m·s<sup>-1</sup></unit></unit_number>. The frequency that the observer measures is <unit_number><number>971.41</number><unit>Hz</unit></unit_number>, what is the speed of sound?
+              <para>In places like Canada during winter temperatures can get as low as <unit_number><number>-35</number><unit>℃ </unit></unit_number>. This affects the speed of sound in air and you can use the Doppler effect to determine what the speed of sound is. On a winter's day in Canada with a temperature of  <unit_number><number>-35</number><unit>℃ </unit></unit_number>, a source emits sound at a frequency of <unit_number><number>1050</number><unit>Hz</unit></unit_number> and moves away from an observer at <unit_number><number>25</number><unit>m·s<sup>-1</sup></unit></unit_number>. The frequency that the observer measures is <unit_number><number>971.41</number><unit>Hz</unit></unit_number>, what is the speed of sound?
               </para>
             </problem>
             <solution>
-            <correct>The speed of sound in air at -35 degrees celsius is 309.5 m/s</correct>
+	      <para>
+		The observer is stationary, so <latex>v_{L}=0</latex>.
+	      </para>
+	      <latex display="block">
+\begin{align}
+{f}_{L}&amp;=\left(\frac{v+{v}_{L}}{v+{v}_{S}}\right){f}_{S} \\
+\frac{{f}_{L}}{f_{S}}&amp;=\left(\frac{v+0}{v+{v}_{S}}\right) \\
+\frac{f_{S}}{f_{L}} &amp;=\left(\frac{v+{v}_{S}}{v}\right) \\
+\frac{f_{S}}{f_{L}} &amp;=1 + \frac{v_{S}}{v} \\
+\frac{v_{S}}{v} &amp;= \frac{f_{S}}{f_{L}} -1 \\
+\frac{v_{S}}{v} &amp;= \frac{f_{S}-f_{L}}{f_{L}} \\
+\frac{v}{v_{S}} &amp;= \frac{f_{L}}{f_{S}-f_{L}} \\
+v  &amp;= v_{S}\left(\frac{f_{L}}{f_{S}-f_{L}}\right) \\
+&amp;= 25\left(\frac{<number>971.41</number>}{<number>1050</number>-<number>971.41</number>}\right)\\
+&amp;= <unit_number><number>309</number><unit>m·s<sup>-1</sup></unit></unit_number>
+\end{align}
+	      </latex>
+            <correct>The speed of sound in air at -35 degrees celsius is<unit_number><number>309</number><unit>m·s<sup>-1</sup></unit></unit_number> </correct>
             </solution>
 </entry>
 
@@ -679,12 +726,45 @@ The Ultrasound Properties of Various Media, Including Soft Tissue Found in the B
 <entry>
 <shortcode>todo</shortcode>
 <problem><para>How fast would an observer need to approach a source emitting sound with a 
-frequency of <unit_number><number>437.1</number><unit>Hz</unit></unit_number> to observer a 
+frequency of <unit_number><number>437.1</number><unit>Hz</unit></unit_number> to observe a 
 frequency that is 20 percent higher? Assume the speed of sound in air is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>. If they pass the source at this speed what 
 frequency will they measure when moving away? What is a practical means of achieving this speed?</para>
             </problem>
-            <solution />
-		<correct/>
+            <solution>
+	      <para>First we need to determine the approach speed of the observer. The source is stationary, so  <latex>v_{S}=0</latex>.
+We are given:</para>
+<latex>f_{L}=1.2f_{S}</latex>. Rearranging the Doppler formula:
+<latex display="block">
+\begin{align}
+\frac{{f}_{L}}{f_{S}}&amp;=\left(\frac{v+{v}_{L}}{v+0}\right) \\
+\frac{1.2{f}_{S}}{f_{S}}&amp;=\left(\frac{v+{v}_{L}}{v}\right) \\
+1.2 &amp;= 1 + \frac{v_{L}}{v} \\
+1.2 - 1 &amp;= \frac{v_{L}}{340} \\
+v_{L} &amp;= <unit_number><number>68</number><unit>m·s<sup>-1</sup></unit></unit_number>
+\end{align}
+</latex>
+<para>
+The second part of the question asks what the frequency will be that the observer hears after passing the source and moving away: 
+</para>
+<latex display="block">
+\begin{align}
+\frac{{f}_{L}}{f_{S}}&amp;=\left(\frac{v-{v}_{L}}{v}\right) \\
+\frac{{f}_{L}}{f_{S}}&amp;=\left(\frac{340-68}{340}\right) \\
+f_{L} &amp;= <number>0.8</number>f_{S} \\
+&amp;= <number>0.8</number>\left(<number>437.1</number> \right) \\
+&amp;= <unit_number><number>349.7</number><unit>Hz</unit></unit_number>
+\end{align}
+</latex>
+<para>Converting <unit_number><number>68</number><unit>m·s<sup>-1</sup></unit></unit_number> to <unit>km·h<sup>-1</sup></unit>: </para>
+<latex>68\frac{m}{s}\times\frac{1<unit>km</unit>}{1000<unit>m</unit>}\times \frac{3600<unit>s</unit>}{1<unit>h</unit>} = <unit_number><number>244.8</number><unit>km·h<sup>-1</sup></unit></unit_number></latex>.
+<para>This sort of speed could be reached if the observer was in a high-speed train or a racing car.</para>
+	    
+		<correct>
+		  <para>The approach speed of the observer is <unit_number><number>68</number><unit>m·s<sup>-1</sup></unit></unit_number>.  </para>
+		  <para>The frequency observed when moving away is <unit_number><number>349.7</number><unit>Hz</unit></unit_number>. </para>
+		  <para>A speed of <unit_number><number>68</number><unit>m·s<sup>-1</sup></unit></unit_number> or equivalently, <unit_number><number>244.8</number><unit>km·h<sup>-1</sup></unit></unit_number>, could be reached if the observer was in a high-speed train or a racing car. </para>
+		</correct>
+</solution>
 </entry>
 
 
@@ -708,9 +788,11 @@ frequency will they measure when moving away? What is a practical means of achie
         When talking about light we use slightly different terminology to describe what 
         happens. If you look at the colour spectrum (more details in Chapter 
         <link target-id="chap:electromagnetic-radiation"/>) then you will see that blue 
-        light has a shorter wavelength than red light. Relative to the  middle of the 
-        visible spectrum (approximately green light) longer wavelengths are more red 
-        and shorter wavelengths are more blue. So we call shifts towards longer 
+        light has a shorter wavelength than red light. Since for light, 
+	<latex>c=f\lambda </latex>, shorter wavelength equals higher frequency.
+	Relative to the  middle of the 
+        visible spectrum (approximately green light) longer wavelengths (or lower frequencies) are redder
+        and shorter wavelengths (or higher frequencies) are bluer. So we call shifts towards longer 
         wavelengths "redshifts" and shifts towards shorter wavelengths "blueshifts".</para>
         <figure>
           <type>figure</type>
@@ -743,7 +825,7 @@ frequency will they measure when moving away? What is a practical means of achie
             <para>Blue light has a shorter wavelength than red light.</para>
           </caption>
         </figure>
-        <para>A shift in wavelength implies that there is also a shift in frequency (<latex>c=f\lambda</latex>). Longer wavelengths of light have lower frequencies and shorter wavelengths have higher frequencies. From the Doppler effect we know that when the source moves towards the observer any waves they emit that you measure are shifted to shorter wavelengths (blueshifted). If the source moves away from the observer, the shift is to longer wavelengths (redshifted).</para>
+        <para>A shift in wavelength implies that there is also a shift in frequency. Longer wavelengths of light have lower frequencies and shorter wavelengths have higher frequencies. From the Doppler effect we know that when the source moves towards the observer any waves they emit that you measure are shifted to shorter wavelengths (blueshifted). If the source moves away from the observer, the shift is to longer wavelengths (redshifted).</para>
 
 
 
@@ -758,7 +840,7 @@ frequency will they measure when moving away? What is a practical means of achie
           from distant galaxies. The spectrum of light can tell us what elements are in 
           the stars in the galaxies because each element has unique energy levels and therefore 
           emits or absorbs light at particular 
-          wavelengths. These characteristic wavelenghts are called spectral lines because
+          wavelengths. These characteristic wavelengths are called spectral lines because
           the show up as discrete frequencies in the spectrum of light from the star.</para>
           <figure>
           <type>figure</type>
@@ -784,7 +866,7 @@ wavelength is greater (redshifted).</para>
             <para>2. If the source is moving towards the observer (negative velocity), the observed frequency is higher and the wavelength is shorter (blueshifted).</para>
           </note>
 
-          <para>Edwin Hubble (20 November 1889 - 28 September 1953) measured the Doppler shift of a large sample of galaxies. He found that the light from distant galaxies is <emphasis effect="italics">redshifted</emphasis> and he discovered that there is a proportionality relationship between the <emphasis effect="italics">redshift</emphasis> and the <emphasis effect="italics">distance</emphasis> to the galaxy. Galaxies that are further away always appear more redshifted than nearby galaxies. Remember that a redshift in Doppler terms means a velocity of the light source <emphasis effect="italics">away</emphasis> from the observer. So why do all distant galaxies appear to be moving away from our Galaxy? None of them seem to be moving towards us.</para>
+          <para>Edwin Hubble (20 November 1889 - 28 September 1953) measured the Doppler shift of a large sample of galaxies. He found that the light from distant galaxies is <emphasis effect="italics">redshifted</emphasis> and he discovered that there is a proportionality relationship between the <emphasis effect="italics">redshift</emphasis> and the <emphasis effect="italics">distance</emphasis> to the galaxy. Galaxies that are further away always appear more redshifted than nearby galaxies. Reemember that a redshift in Doppler terms means a velocity of the light source <emphasis effect="italics">away</emphasis> from the observer. So why do all distant galaxies appear to be moving away from our Galaxy? None of them seem to be moving towards us.</para>
 <figure>
           <type>figure</type>
 <pspicture>
@@ -984,15 +1066,29 @@ in one year,
               <para>Doppler effect</para>
             </item>
             <item>
-              <para>Red-shift</para>
+              <para>Redshift</para>
             </item>
             <item>
               <para>Ultrasound</para>
             </item>
           </list>
         </problem>
-        <solution url="TODO"/>
-		<correct/>
+	<solution>
+	  <correct> 
+<list list-type="enumerated">
+            <item>
+              <para>The Doppler effect occurs when a source of waves and/or an observer move relative to each other, resulting in the observer measuring a different frequency of the waves than the frequency at which the source is emitting.</para>
+            </item>
+            <item>
+              <para>Redshift is the shift in the position of spectral lines to longer wavelengths due to the relative motion of a source away from the observer.</para>
+            </item>
+            <item>
+              <para>Ultrasound or ultra-sonic waves are sound waves with a frequency greater than <unit_number><number>20000</number><unit>Hz</unit></unit_number> (or <unit_number><number>20</number><unit>kHz</unit></unit_number>).</para>
+            </item>
+          </list>
+	  </correct>
+	</solution>
+
 </entry>
 <entry>
 <shortcode>01uk</shortcode>
@@ -1008,13 +1104,43 @@ in one year,
           </list>
           <para>Draw a sketch of the observed frequency as a function of time.</para>
         </problem>
-        <solution url="TODO"/>
-		<correct/>
+        <solution>
+	  <list list-type="enumerated">
+            <item>
+	      <para>The observer is not moving, so <latex>v_{L}=0</latex>, and the source is approaching. Therefore: </para>
+	      <latex display="block">
+\begin{align}
+{f}_{L}&amp;=\left(\frac{v}{v-{v}_{S}}\right){f}_{S} \\
+&amp;=\left(\frac{340}{340-30}\right)\left(500\right) \\
+&amp;= <unit_number><number>548.4</number><unit>Hz</unit></unit_number>
+\end{align}
+</latex>
+	    </item>
+	    <item>
+	      <para>Now the taxi is moving away from the observer, so: </para>
+	      <latex display="block">
+\begin{align}
+{f}_{L}&amp;=\left(\frac{v}{v+{v}_{S}}\right){f}_{S} \\
+&amp;=\left(\frac{340}{340+30}\right)\left(500\right) \\
+&amp;= <unit_number><number>459.5</number><unit>Hz</unit></unit_number>
+\end{align}
+</latex>
+	    </item>
+	    <item><para>FIGURE TO BE INCLUDED HERE???</para> </item>
+	  </list>
+<correct>
+<list list-type="enumerated">
+            <item><para><unit_number><number>548.4</number><unit>Hz</unit></unit_number> </para> </item>
+	    <item><para><unit_number><number>459.5</number><unit>Hz</unit></unit_number> </para> </item>
+	    <item><para> </para> </item>
+</list>
+</correct>
+	</solution>
 </entry>
 <entry>
 <shortcode>01um</shortcode>
 <problem>
-          <para>A truck approaches you at an unknown speed. The sound of the trucks engine has a frequency of <unit_number><number>210</number><unit>Hz</unit></unit_number>, however you hear a frequency of <unit_number><number>220</number><unit>Hz</unit></unit_number>. The speed of sound is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
+          <para>A truck approaches you at an unknown speed. The sound of the truck's engine has a frequency of <unit_number><number>210</number><unit>Hz</unit></unit_number>, however you hear a frequency of <unit_number><number>220</number><unit>Hz</unit></unit_number>. The speed of sound is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>.</para>
           <list list-type="enumerated">
             <item>
               <para>Calculate the speed of the truck.</para>
@@ -1024,31 +1150,88 @@ in one year,
             </item>
           </list>
         </problem>
-        <solution url="TODO"/>
-		<correct/>
+        <solution>
+	<list list-type="enumerated">
+            <item><para>The observer is stationary, so <latex>v_{L}=0</latex>. Therefore: </para> 
+	    <latex display="block">
+\begin{align}
+\frac{{f}_{L}}{f_{S}}&amp;=\frac{v}{v-{v}_{S}} \\
+\frac{v-{v}_{S}}{v} &amp;= \frac{f_{S}}{f_{L}} \\
+1 - \frac{v_{S}}{v} &amp;= \frac{f_{S}}{f_{L}} \\
+\frac{v_{S}}{v} &amp;= 1 - \frac{f_{S}}{f_{L}} \\
+v_{S}  &amp;= 340 \left(1-\frac{210}{220} \right) \\
+&amp;= <unit_number><number>15.5</number><unit>m·s<sup>-1</sup></unit></unit_number>
+\end{align}
+</latex>
+</item>
+	     <item><para>As the truck goes by, the frequency goes from higher to lower and the wavelength of the sound waves goes from shorter to longer. </para> </item>
+	</list>
+	<correct>
+	  <list list-type="enumerated">
+            <item><para><unit_number><number>15.5</number><unit>m·s<sup>-1</sup></unit></unit_number></para> </item>
+	     <item><para>As the truck goes by, the frequency goes from higher to lower and the wavelength of the sound waves goes from shorter to longer.</para> </item>
+	</list>
+	</correct>
+</solution>
 </entry>
 <entry>
 <shortcode>01un</shortcode>
 <problem>
           <para><emphasis effect='bold'>[Extension question]</emphasis> A police car is driving towards a fleeing suspect at <latex>\frac{v}{35} \text{m}·{\mathrm{s}}^{-1}</latex>, where v is the speed of sound. The frequency of the police car's siren is <unit_number><number>400</number><unit>Hz</unit></unit_number>. The suspect is running away at <latex>\frac{v}{68}</latex>. What frequency does the suspect hear?</para>
         </problem>
-        <solution url="TODO"/>
-		<correct/>
+        <solution>
+	  <latex>
+	    {f}_{L}=\left(\frac{v\pm{v}_{L}}{v\pm{v}_{S}}\right){f}_{S}
+	  </latex>
+	  <para>The source is moving towards the listener, so we need to put: </para>
+	  <latex> -v_{S} </latex>
+	  <para>and the listener is moving away from the source, so we need to put:</para>
+	  <latex> -v_{L} </latex>
+	  <para>So we use the formula as : </para>
+	  <latex>{f}_{L}=\left(\frac{v-{v}_{L}}{v-{v}_{S}}\right){f}_{S}</latex>
+	  <para>We are given that <latex>v_{L}= \frac{v}{68} \text{m}·{\mathrm{s}}^{-1}</latex> and <latex>v_{S}=\frac{v}{35} \text{m}·{\mathrm{s}}^{-1}</latex>. Substituting into the formula: </para>
+	  <latex display="block">
+\begin{align}
+{f}_{L}&amp;=\left(\frac{v-\frac{v}{68} }{v-\frac{v}{35}}\right){f}_{S} \\
+&amp;= \left(\frac{\frac{68v-v}{68}}{\frac{35v-v}{35}}  \right){f}_{S} \\
+&amp;= \left(\frac{\left(\frac{67}{68}\right)v}{\left(\frac{34}{35}\right)v}  \right){f}_{S} \\
+&amp;= \left(\frac{\left(\frac{67}{68}\right)}{\left(\frac{34}{35}\right)}  \right)400 \\
+{f}_{L}&amp;= <unit_number><number>405.7</number><unit>Hz</unit></unit_number>
+\end{align}
+</latex>
+		<correct><para><unit_number><number>405.7</number><unit>Hz</unit></unit_number></para> </correct>
+	</solution>
 </entry>
 <entry>
 <shortcode>01up</shortcode>
 <problem>
-          <list list-type="enumerated">
-            <item>
-              <para>Why are ultrasound waves used in sonography and not audible sound waves?</para>
-            </item>
-            <item>
               <para>Explain how the Doppler effect is used to determine the direction of flow of blood in veins.</para>
-            </item>
-          </list>
         </problem>
-        <solution url="TODO"/>
-		<correct/>
+        <solution>
+		<correct>
+		  <para>An instrument called a Doppler flow meter can be used to transmit ultrasonic waves into a person's body. The sound waves will be reflected by tissue, bone, blood etc., and measured by the flow meter. If blood flow is being measured in an artery for example, the moving blood cells will reflect the transmitted wave and due to the movement of the cells, the reflected sound waves will be Doppler shifted to higher frequency if the blood is moving towards the flow meter and to lower frequency if the blood is moving away from the flow meter.   </para>
+		</correct>
+	</solution>
+</entry>
+<entry>
+  <shortcode>TODO</shortcode>
+  <problem>
+    <para>An person in a car travelling at <unit_number><number>22.2</number><unit>m·s<sup>-1</sup></unit></unit_number> approaches a source emitting sound waves with a frequency of <unit_number><number>410</number><unit>Hz</unit></unit_number>. What is the frequency of the sound waves observed by the person? Assme the speed of sound in air is <unit_number><number>340</number><unit>m·s<sup>-1</sup></unit></unit_number>.
+    </para>
+  </problem>
+  <solution>
+    <para>The Doppler formula is: </para>
+    <latex>{f}_{L}=\left(\frac{v\pm{v}_{L}}{v\pm{v}_{S}}\right){f}_{S} </latex>
+    <para>The source is stationary so <latex>v_{S}=0 </latex>. Rearranging the formula:</para>
+    <latex display="block">
+\begin{align}
+{f}_{L}&amp;=\left(\frac{v+{v}_{L}}{v}\right){f}_{S} \\
+{f}_{L}&amp; = \left(\frac{340+<number>22.2</number>}{340}\right)\left(410\right)\\
+	&amp; = <number>436.8</number> \mathrm{Hz} 
+\end{align}
+</latex>
+    <correct><para><unit_number><number>436.8</number><unit>Hz</unit></unit_number> </para> </correct>
+  </solution>
 </entry>
 </exercises>
     </section>

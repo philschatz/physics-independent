@@ -11,9 +11,12 @@
         <title>Introduction</title>
         <shortcode>ESCEB</shortcode>
         <para>We use the idea of work every day.  We talk about going to work, doing homework, working in class. What do we mean and are we correct?  </para>
-        <para>In Physics we mean something very specific when we use the term work! Work is done when an applied force causes an object to move through a displacement.</para>
-		<para>Going to work involves a body – you – moving to a specific place i.e. the workplace and so work is done on the body moving.  While when you are sitting in your chair – you are not moving and so no work is done.  Be careful to not confuse what we say is work and what Physics says is work!</para>
-        <para>You will learn that work and energy are closely related. You shall see that the energy of an object is its capacity to do work and doing work is the process of transferring energy from one object or form to another. In other
+        <para>In Physics we mean something very specific when we use the term work. Work is the process
+        of transferring energy. </para>
+        
+        <para>You will learn that work and energy are closely related. You shall see that the 
+        energy of an object is its capacity to do work and doing work is the process of transferring 
+        energy from one object or form to another. In other
 words,</para>
         <list list-type="bulleted">
           <item>
@@ -36,45 +39,271 @@ words,</para>
       <section type="section">
         <title>Work</title>
         <shortcode>ESCEC</shortcode>
+        <para>In the specific case of a force acting on an object, worked can be defined in terms of the 
+        force and the displacement of the object. This means that there is an energy transfer from the
+        source of the force to the object. The total energy transferred is the work done.</para>
         <definition>
           <term>Work</term>
           <meaning>
-            <para>When a force exerted on an object causes it to move, work is done on the object (except if the force and displacement are at right angles to each other).</para>
+            <para>When a force exerted on an object causes it to move, work is done on the object.</para>
+        <latex display="block" >W=F\Delta x\cos\theta </latex>
           </meaning>
         </definition>
-        <para>This means that in order for work to be done, an object must have its position changed by an amount <latex> \Delta x </latex> an applied force F, such that there is some non-zero component of the force in the direction of the displacement. Work is calculated as:</para>
+        <para>This means that in order for work to be done, an object must have its position changed by 
+        an amount <latex> \Delta x </latex> an applied force F, such that there is some non-zero 
+        component of the force in the direction of the displacement. Work is calculated as:</para>
         
 
         <latex display="block" >W=F\Delta x\cos\theta </latex>
-        
-		<latex display="block" > W = work in joules (J) \\ 
-								F =  applied force in newtons (N) \\
-								\Delta x = displacement in metres (m) \\
-								θ is the angle between the applied force and the direction of motion</latex>
-		
+        <para>Where:</para>
+        <list>
+        <item><latex>W</latex> = work in joules (J)</item>
+        <item><latex>F</latex> = magnitude of applied force in newtons (N)</item>
+        <item><latex>\Delta x</latex> = displacement in metres (m)</item>
+        <item><latex>\theta</latex> = angle between the applied force and the direction of motion</item>
+	    </list>
         
         <figure id="fig:wpe12:wgeneral">
           <type>figure</type>
+          <table frame="none" rowsep="0" colsep="0">
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <tbody>
+                <row>
+                <entry>
           <pspicture>
             <code>
-              (0,-1)(2,2)
-\psline{-&gt;}(0,0)(2;60)
-\psline[linestyle=dashed](2;60)(1,0)
-\psline{-&gt;}(0,0)(2;0)
-\uput[l](2;60){$F$}
-\rput(0.5;30){$\theta$}
-\psline{-&gt;}(0,-0.2)(1,-0.2)
-\uput[d](0.5,-0.2){$F\cos\theta$}
-comment :  Put a line below this image with separate displacement delta x i.e  ------>  delta x
-
+                (-1,-1)(2.5,2.5)
+                \psdot[linecolor=gray](0,0)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;60){$F$}
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;60)
+                \rput[b](1.5,.1){$\Delta x$}
+                \rput(0.5;30){$\theta$}
+                \psarc{-&gt;}(0,0){0.8}{0}{60}
             </code>
           </pspicture>
+          </entry>
+          <entry>
+          <pspicture>
+            <code>
+              (-1,-1)(2.5,2.5)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;60)
+                \psline[linestyle=dotted,linecolor=gray](2;60)(1,0)
+%\psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;60){$F$}
+                \rput(0.5;30){$\theta$}
+                \psline[linecolor=blue]{-&gt;}(0,-0.)(1.0,-0.)
+                \uput[d](0.5,-0.2){$F\cos\theta$}
+                \psarc{-&gt;}(0,0){0.8}{0}{60}
+            </code>
+          </pspicture>
+          </entry>
+          <entry>
+          <pspicture>
+            <code>
+              (-1,-1)(2.5,2.5)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;60)
+                \psline[linestyle=dotted,linecolor=gray](2;60)(1,0)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;60){$F$}
+                \rput(0.5;30){$\theta$}
+                \psline[linecolor=blue]{-&gt;}(0,-0.)(1.0,-0.)
+                \uput[d](0.5,-0.2){$F\cos\theta$}
+                \rput[b](1.5,.1){$\Delta x$}
+                \psarc{-&gt;}(0,0){0.8}{0}{60}
+            </code>
+          </pspicture>
+
+           </entry>
+                </row>
+            </tbody>
+            </tgroup>
+            </table>
+          <caption>
+            <para>The force <latex>F</latex> causes the object to be displaced by <latex>\Delta x</latex> at angle θ.</para>
+          </caption>
+        </figure>
+        <para><emphasis effect='bold'>Important:</emphasis> the sign of <latex>\cos\theta</latex> is 
+        important. If the component of the force along the direction of the displacement is opposite
+        in direction to the displacement then the sign of the displacement vector and force vector
+        will be different. This is regardless of which direction was chosen as a positive direction.
+        Work isn't a vector quantity but if the force and dispalcement vectors are in opposite directions
+        the work done has a negative value.</para>
+        <para>Let us look at some examples to understand this properly. In the images below the grey dot 
+        represents an object. A force, <latex>\vec{F}</latex>, acts on the object. The object moves
+        through a displacement, <latex>\Delta \vec{x}</latex>. What is the sign of the work done, <latex>W=F\Delta x\cos\theta </latex>, in each case?</para>
+<!--        <figure id="fig:wpe12:wgeneral">
+          <type>figure</type>
+          <table frame="none" rowsep="0" colsep="0">
+            <tgroup cols="2">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <tbody>
+                <row>
+                <entry> -->
+                <para>At <latex>\theta=90^\circ</latex> the magnitude of the component of the
+                force in the direction of the displacement is zero so <emphasis effect='bold'>
+                no work is done</emphasis>.</para>
+          <pspicture>
+            <code>
+              (-1.5,-1)(2.5,2.5)
+                \psframe(0,0)(.3,.3)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;90)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;90){$F$}
+                \rput(0.7,.5){$\theta=90^\circ$}
+                \uput[d](-0.,-0.2){$F\cos\theta=0$}
+                \rput[b](1.5,.1){$\Delta x$}
+            </code>
+          </pspicture>
+<!--           </entry>
+           <entry>-->
+                <para>At <latex>\theta>90^\circ</latex> the magnitude of the component of the
+                force along the line of the displacement is opposite in direction to the 
+                displacement so <emphasis effect='bold'>
+                negative work is done</emphasis>.</para>
+          <pspicture>
+            <code>
+              (-1.5,-1)(2.5,2.5)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;120)
+                \psline[linestyle=dotted,linecolor=gray](2;120)(-1,0)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;120){$F$}
+                \rput(0.5;30){$\theta$}
+                \psline[linecolor=blue]{-&gt;}(0,-0.)(-1.0,-0.)
+                \uput[d](-0.5,-0.2){$F\cos\theta$}
+                \rput[b](1.5,.1){$\Delta x$}
+                \psarc{-&gt;}(0,0){0.8}{0}{120}
+            </code>
+          </pspicture>
+<!--           </entry>
+                </row>
+            </tbody>
+            </tgroup>
+            </table>
+          <caption>
+            <para>The force F causes the object to be displaced by <latex>\Delta x</latex> at angle θ.</para>
+          </caption>
+        </figure> -->
+
+        <para>It is very important to note that for work to be done there must be a component of the applied force in the direction of motion. Forces perpendicular to the direction of motion do no work.</para>
+        
+
+        <figure id="fig:wpe12:wgeneral">
+          <type>figure</type>
+          <table frame="none" rowsep="0" colsep="0">
+            <tgroup cols="3">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <colspec colname="c3" colnum="3"/>
+              <tbody>
+                <row>
+                <entry>
+          <pspicture>
+            <code>
+              (-1.5,-2.5)(2.5,1)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;-120)
+                \psline[linestyle=dotted,linecolor=gray](2;-120)(-1,0)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;-120){$F$}
+                \rput(0.5;-30){$\theta$}
+                \psline[linecolor=blue]{-&gt;}(0,-0.)(-1.0,-0.)
+                \uput*[u](-0.5,0.2){$F\cos\theta$}
+                \rput[b](1.5,.1){$\Delta x$}
+                \psarc{-&gt;}(0,0){0.3}{0}{-120}
+                \psarc{&lt;-}(0,0){0.8}{-120}{0}
+            </code>
+          </pspicture>
+
+           </entry>
+           <entry>
+
+          <pspicture>
+            <code>
+              (-1.5,-2.5)(2.5,1)
+                \psframe(0,0)(.3,-.3)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;-90)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;-90){$F$}
+                \rput(0.8,-.5){$\theta=90^\circ$}
+                \uput[u](-0.,0.2){$F\cos\theta=0$}
+                \rput[b](1.5,.1){$\Delta x$}
+            </code>
+          </pspicture>
+           </entry>
+           <entry>
+
+          <pspicture>
+            <code>
+              (-1,-2.5)(2.5,1)
+                \psdot[linecolor=gray](0,0)
+                \psline[linecolor=blue]{-&gt;}(0,0)(2;-60)
+                \psline[linestyle=dotted,linecolor=gray](2;-60)(1,0)
+                \psline{-&gt;}(0,0)(2;0)
+                \uput[l](2;-60){$F$}
+                \rput(0.5;-30){$\theta$}
+                \psline[linecolor=blue]{-&gt;}(0,-0.)(1.0,-0.)
+                \uput[u](0.5,0.2){$F\cos\theta$}
+                \rput[b](1.5,.1){$\Delta x$}
+                \psarc{&lt;-}(0,0){0.8}{300}{0}
+                \psarc{-&gt;}(0,0){0.3}{0}{300}
+            </code>
+          </pspicture>
+           </entry>
+                </row>
+            </tbody>
+            </tgroup>
+            </table>
           <caption>
             <para>The force F causes the object to be displaced by <latex>\Delta x</latex> at angle θ.</para>
           </caption>
         </figure>
-        <para>It is very important to note that for work to be done there must be a component of the applied force in the direction of motion. Forces perpendicular to the direction of motion do no work.</para>
-        
+        <para>It is only the direction of the force on the object that matters and not the direction 
+        from the source of the force to the object. In Figure <link target-id='fig:wpe12:powerlifters' /> both
+        powerlifters are exerting an upwards force on the weights. On the left the weight is being
+        pulled upwards and on the right it is being pushed upwards.
+        </para>
+        <figure id="fig:wpe12:powerlifters">
+          <type>figure</type>
+          <table frame="none" rowsep="0" colsep="0">
+            <tgroup cols="2">
+              <colspec colname="c1" colnum="1"/>
+              <colspec colname="c2" colnum="2"/>
+              <tbody>
+                <row>
+                <entry>
+
+		<image style:width='.45'> 
+			<src>photos/Deadlift-by-IsafMedia-on-Flickr-6910861361_1cef287167_o.jpg</src> 
+			<attribution>http://www.flickr.com/photos/isafmedia/6910861361/sizes/o/</attribution>
+			</image>
+            </entry>
+            <entry>
+		<image style:width='.45'> 
+			<src>photos/BenchPress-by-ABlight-on-Flickr-4411752843_007003fbb7_o.jpg</src> 
+			<attribution>http://www.flickr.com/photos/ablight/4411752843/sizes/o/in/photostream/</attribution>
+			</image>
+
+            </entry>
+                </row>
+            </tbody>
+            </tgroup>
+            </table>
+          <caption>
+            <para>Left: A powerlifter deadlifts a weight. Right: A powerlifter benchpresses a weight.</para>
+          </caption>
+        </figure>
+
+<!--
 
         <para>For example work is done on the object in <link target-id="fig:wpe12:wparallel"/>,</para>
         <figure id="fig:wpe12:wparallel">
@@ -108,13 +337,40 @@ comment :  Put a line below this image with separate displacement delta x i.e  -
             <para>(a) The force F causes the object to be displaced by <latex>\Delta x</latex> in the same direction as the force. <latex>\theta =0°</latex> and <latex>\cos\theta =1</latex>. Work is done in this situation. (b) A force F is applied to the object. The object is displaced by <latex>\Delta y</latex> at right angles to the force. <latex>\theta =90°</latex> and <latex>\cos\theta =0</latex>. Work is not done in this situation.</para>
           </caption>
         </figure>
-		<image style:width='.6'> 
-			<src> images/wepmanwithbox.png </src> 
-			<attribution> Don Duffield </attribution>
-			</image>
-			<para> Consider the man walking at a constant speed for 4 m. He applies an upward force of 10 N on the box, and gravity acts downwards on the box with a force of 10 N. For this problem ignore any frictional forces.  What work is the man doing on the box? Explain your thinking.</para>
-			<para> Looking at the man, we can see that <latex> \Delta x</latex> is 4 m.  However the force applied by the man on the box is at <latex> {90}^{0}</latex> to the direction of motion.  We can see by applying the formula <latex> {W}={F}_{applied}\cos\theta </latex> that the value of W is zero. So NO work has been done by the man on the box!  Remember that work requires the force or a component of the force to act parallel to the direction of displacement.</para>
+        -->
+        <para>Weight lifting is a good context to think about work because it helps to identify
+        misconceptions introduced by everyday use of the word work.
+        In the two cases in Figure <link target-id='fig:wpe12:powerlifters' /> everyone would
+        describe moving the weights upwards as very hard work. From a physics perspective, if the
+        powerlifters lift the weight they are exerting a force in the direction of the
+        displacement so positive work is done.</para>
 			
+        <para> Consider the strongman walking in Figure <link target-id='fig:wep:carry' />.
+        He  carries two very heavy sleds as far as he can in a competition. 
+        What work is the man doing on the sleds and why?</para>
+        
+        <figure id='fig:wep:carry'>
+        <type>figure</type>
+		<image style:width='.4'> 
+			<src>photos/CarryWeight-by-Greencolander-on-Flickr-2542090538_1a327e305b_o.jpg</src> 
+			<attribution>http://www.flickr.com/photos/greencolander/2542090538/sizes/o/in/photostream/</attribution>
+			</image>
+            <caption>A strongman carries heavy sleds as far as possible in a competition.</caption>
+        </figure>
+
+        <para>
+        Most people would say he is working very
+        hard because they are heavy to carry but from a physics perspective he is doing
+        no work. The reason that he does no work is because the force he exerts is directly
+        upwards to balance the force of gravity and the displacement is in the horizontal
+        direction. Therefore there is no component of the force in the direction of displacement
+        (<latex>\theta=90^\circ</latex>) and no work done.</para>
+
+        <para>His muscles do need to use their energy reserves to maintain the force to 
+        balance gravity. That does not result in energy tranfser to the 
+        sleds. Our definition for work is restricted to the case where energy transfer 
+        happens because of a net force in the direction of displacement of an object.</para>
+
         <activity type="investigation">
           <title>Is work done?</title>
           <para>Decide whether on not work is done in the following situations. Remember that for work to be done a force must be applied in the direction of motion and there must be a displacement. Give reasons for your answer.</para>
@@ -132,6 +388,27 @@ comment :  Put a line below this image with separate displacement delta x i.e  -
               <para>A waiter holds a tray full of meals above his head with one arm and carries it straight across the room at constant speed. (Careful! This is a tricky question.)</para>
             </item>
           </list>
+          <teachers-guide>
+          <list list-type="enumerated">
+            <item>
+              <para>Max pushes against a wall and becomes tired. Answer: No work is done because there
+              is no displacement.</para>
+            </item>
+            <item>
+              <para>A book falls off a table and free falls to the ground. Answer: Yes work is done
+              because there is a displacement in the direction of the force of gravity.</para>
+            </item>
+            <item>
+              <para>A rocket accelerates through space. Answer: Yes work is done because there is a 
+              net force acting for there to be a net acceleration. If there is an acceleration then
+              there is a displacement.</para>
+            </item>
+            <item>
+              <para>A waiter holds a tray full of meals above his head with one arm and carries it straight across the room at constant speed. (Careful! This is a tricky question.) Answer: No work is done because
+              there is no net force in the direction of the displacement.</para>
+            </item>
+          </list>
+          </teachers-guide>
         </activity>
         
         <pspicture>
@@ -165,20 +442,26 @@ comment :  Put a line below this image with separate displacement delta x i.e  -
         </pspicture>
 		<para>For each of the above pictures, the force vector is acting in the same direction as the displacement vector. As a result, the <latex>\theta =0°</latex> because there is no difference in angle between the direction of applied force and the direction of displacement.</para>
         <para>As with all physical quantities, work must have units. Following from the definition, work is measured in <unit>N·m</unit>. The name given to this combination of S.I. units is the joule (symbol J).</para>
-        <definition>
+<!--        <definition>
           <term>Joule</term>
           <meaning>
             <para>1 joule is the work done when an object is moved <unit_number><number>1</number><unit>m</unit></unit_number> under the application of a force of <unit_number><number>1</number><unit>N</unit></unit_number> in the direction of motion.</para>
           </meaning>
-        </definition>
-        <para>The work done by an object can be positive or negative. Since force (<latex>F_{applied}</latex>) and displacement <latex>\Delta x</latex> are both vectors, the result of the above equation depends on their directions:</para>
+        </definition>-->
+        <para>The work done by a force can then be positive or negative. This sign tells us about the
+        direction of the energy transfer. Work is a scalar so the sign should not be misinterpreted to 
+        mean that work is a vector.
+        </para>
         <list list-type="bulleted">
           <item>
             <para>If <latex>{F}_{applied}</latex> acts in the same direction as the motion then positive work is being done. In this case the object on which the force is applied gains energy.</para>
           </item>
           <item>
-            <para>If the direction of motion and <latex>{F}_{applied }</latex> are opposite, then negative
-work is being done. This means that energy is transferred in the opposite direction. For example, if you try to push a car uphill by applying a force up the slope and instead the car rolls down the hill you are doing negative work on the car. Alternatively, the car is doing positive work on you!</para>
+            <para>If the direction of motion and <latex>{F}_{applied }</latex> are opposite, then 
+            negative work is being done. This means that energy is transferred in the opposite 
+            direction. For example, if you try to push a car uphill by applying a force up the 
+            slope and instead the car rolls down the hill you are doing negative work on the car. 
+            Alternatively, the car is doing positive work on you!</para>
           </item>
         </list>
         <note type="tip">
@@ -368,7 +651,8 @@ any unit conversions.</para>
               </code>
             </pspicture>
           </problem>
-          <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001015/view"/>
+         <!-- <solution url="http://www.fullmarks.org.za/Members/wllhea002/questions/A001015/view"/>-->
+         <solution><para>dfsdfasfasf</para></solution>
 		<correct/>
 </entry>
 <entry>
@@ -1701,7 +1985,7 @@ We can therefore calculate power from: <latex>P=F·v</latex>.</para>
                     <para><emphasis effect="bold">or </emphasis>  <unit>m·s<sup>-1</sup></unit></para>
                   </entry>
                   <entry>
-                    ✓ 
+                    \cmark 
                   </entry>
                 </row>
                 <row>
@@ -1721,7 +2005,7 @@ We can therefore calculate power from: <latex>P=F·v</latex>.</para>
                     <para><emphasis effect="bold">or </emphasis>  <unit>kg·m·s<sup>-1</sup></unit></para>
                   </entry>
                   <entry>
-                    ✓</entry>
+                    \cmark</entry>
                 </row>
                 <row>
                   <entry>
