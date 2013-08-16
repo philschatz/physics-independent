@@ -8,8 +8,8 @@
       <meta property="dcterms:modified">2012-02-27T16:38:35Z</meta>
    </metadata>
    <manifest>
-<!--      <item href="xhtml/epub30-titlepage.xhtml" id="ttl" media-type="application/xhtml+xml"/>
-      <item href="xhtml/epub30-nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>-->
+<!--      <item href="xhtml/epub30-titlepage.xhtml" id="ttl" media-type="application/xhtml+xml"/>-->
+      <item href="xhtml/epub30-nav.html" id="nav" media-type="application/xhtml+xml" properties="nav"/>
 <item href="xhtml/_plone_ignore_/cache/pspictures/022709acdb3b678b11b449ac7e151e66.png" id="pspicture-022709acdb3b678b11b449ac7e151e66" media-type="image/png" />
 <item href="xhtml/_plone_ignore_/cache/pspictures/02402f112e69c380c60f142dc7b20694.png" id="pspicture-02402f112e69c380c60f142dc7b20694" media-type="image/png" />
 <item href="xhtml/_plone_ignore_/cache/pspictures/02a15ba4712290dfce203490528ba9e0.png" id="pspicture-02a15ba4712290dfce203490528ba9e0" media-type="image/png" />
