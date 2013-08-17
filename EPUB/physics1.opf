@@ -238,6 +238,7 @@
 <item href="xhtml/photos/WEPThebusybraincar500Nforceforward.jpg" id="WEPThebusybraincar500Nforceforward" media-type="image/jpeg"/>
 <item href="xhtml/photos/WEPThebusybraincarfrictionandapplied.jpg" id="WEPThebusybraincarfrictionandapplied" media-type="image/jpeg"/>
     <item href="xhtml/01-science-skills.cnxmlplus.html" id="01" media-type="application/xhtml+xml"/>
+    <item href="xhtml/file-kathi-sent-tom.cnxmlplus.html" id="06" media-type="application/xhtml+xml"/>
     <item href="xhtml/02-momentum-and-impulse.cnxmlplus.html" id="02" media-type="application/xhtml+xml"/>
     <item href="xhtml/03-vertical-projectile-motion.cnxmlplus.html" id="03" media-type="application/xhtml+xml"/>
     <item href="xhtml/05-work-energy-and-power.cnxmlplus.html" id="05" media-type="application/xhtml+xml"/>
@@ -247,6 +248,7 @@
    <spine>
    <!--   <itemref idref="ttl"/>-->
       <itemref idref="01"/>
+      <itemref idref="06"/>
       <itemref idref="02"/>
       <itemref idref="03"/>
       <itemref idref="05"/>
