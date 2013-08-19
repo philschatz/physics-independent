@@ -3,11 +3,16 @@
   <head>
     
     
+    
     undefined
+  
   
   
   </head>
   <body>
+    
+  
+    
     
   
     
@@ -25,14 +30,34 @@
 <div class="note">
 <span class="title">
 </span>
-
 <p>adfasdfasdf</p>
+</div>
+<div class="note aloha-block-dropzone">
+<span class="title">
+</span>
+<div class="note aloha-block-dropzone">
+<span class="title">
+</span>
+</div>
+</div>
+<div class="note aloha-block-dropzone">
+<span class="title">
+</span>
+<div class="note">
+<span class="title">
+</span>
+<p>asdfasdfasdfasdf</p>
+</div>
 </div>
 <div class="note">
 <span class="title">
 </span>
 <p>asdfasfasdfasdfasdf</p>
 </div>
+  
+  
+
+
   
   
 
